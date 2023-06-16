@@ -1,10 +1,20 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
+
+:root {
+  --g-background-html: rgb(0, 0, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: var(--g-background-html);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.App {
+  overflow-y: hidden;
+  text-align: center;
+  font-family: 'poppins';
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,26 +23,36 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--mygrad);
+  background: linear-gradient(315deg, rgba(2, 0, 36, 1) 0%, rgba(0, 255, 235, 1) 0%, var(--mygrad) 100%);
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  width: 15px;
+  background: linear-gradient(240deg, rgba(2, 0, 36, 1) 0%, rgba(0, 255, 235, 1) 0%, var(--mygrad) 100%);
 }
