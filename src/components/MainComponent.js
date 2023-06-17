@@ -3,14 +3,16 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 import Navbar from './Navbar/NavBar';
 import Home from './Home/Home';
-import ServiceCard from './Services/Card';
+import ServiceCard from './Services/ServiceCard';
 
-import { services } from './Services/data/data';
+import { services, extraServices } from './Services/data/data';
 
 
 import '../css/styles.scss'
 import About from './Footer/About';
 import Contact from './Footer/Contact';
+import Extra from './Services/Extra';
+import ImageSlideCompare from './Common/ImageSlideCompare/ImageSlideCompare';
 
 export default function MainComponent() {
     // function changeTheme(color){
@@ -18,27 +20,22 @@ export default function MainComponent() {
     //   }
     //   changeTheme()
 
-    const servicePages = (services.length) * 2
-    const pages = 1 + servicePages + 1;
-    // home + servicesPages + footer
+    const home = 1;
+    const extra = 2;
+    const footer = 1;
+    const servicePages = (services.length);
+    const totalPages = home + servicePages + extra + footer;
     function Page(pageData) {
-        const pageStart = pageData.pageOffset
-        const start = pageStart;
-        const end = pageStart + 1;
+        const pageOffset = pageData.pageOffset
 
         return (
             <>
-                <ParallaxLayer sticky={{ start: start, end: end }} speed={0.5} horizontal>
+                <ParallaxLayer offset={pageOffset} speed={0.2}>
                     <ServiceCard {...pageData} />
                 </ParallaxLayer>
-                <ParallaxLayer sticky={{ start: start, end: servicePages }} speed={1.5}>
+                <ParallaxLayer offset={pageOffset} speed={0.2}>
                     <div className='image-services-right page'>
-                        <img src={pageData.imageBefore}></img>
-                    </div>
-                </ParallaxLayer>
-                <ParallaxLayer sticky={{ start: start + 1, end: servicePages }} speed={0.5}>
-                    <div className='image-services-right page vignette'>
-                        <img src={pageData.imageAfter}></img>
+                        <ImageSlideCompare imageBefore={pageData.imageBefore} imageAfter={pageData.imageAfter}/>
                     </div>
                 </ParallaxLayer>
             </>
@@ -47,17 +44,24 @@ export default function MainComponent() {
     return (
         <div className='main grad1'>
             <Navbar />
-            <Parallax pages={pages}>
+            <Parallax pages={totalPages}>
                 <ParallaxLayer offset={0} speed={0.5}>
                     <Home />
                 </ParallaxLayer>
                 {services.map((item) => {
                     return Page(item)
                 })}
-                <ParallaxLayer offset={pages - 1} speed={0.5}>
+                {extraServices.map((item, index) => {
+                    return (
+                        <ParallaxLayer offset={home + servicePages + index} speed={0.2}>
+                            <Extra {...item} />
+                        </ParallaxLayer>
+                    )
+                })}
+                <ParallaxLayer offset={totalPages - 1} speed={0.5}>
                     <About />
                 </ParallaxLayer>
-                <ParallaxLayer offset={pages - 1} speed={5}>
+                <ParallaxLayer offset={totalPages - 1} speed={5}>
                     <Contact />
                 </ParallaxLayer>
             </Parallax>
