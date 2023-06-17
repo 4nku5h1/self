@@ -3,31 +3,42 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 import Navbar from './Navbar/NavBar';
 import Home from './Home/Home';
+import ServiceCard from './Services/Card';
+
+import { services } from './Services/data/data';
+
 
 import '../css/styles.scss'
-import { Details } from './Services/Details/Details';
-import imgg from '../assets/bg.webp'
+import About from './Footer/About';
+import Contact from './Footer/Contact';
+
 export default function MainComponent() {
     // function changeTheme(color){
     //     document.documentElement.style.setProperty('--g-font-nav', '#f32456');
     //   }
     //   changeTheme()
 
-    const pages = 6;
-    function Page(data, start, end) {
+    const servicePages = (services.length) * 2
+    const pages = 1 + servicePages + 1;
+    // home + servicesPages + footer
+    function Page(pageData) {
+        const pageStart = pageData.pageOffset
+        const start = pageStart;
+        const end = pageStart + 1;
+
         return (
             <>
                 <ParallaxLayer sticky={{ start: start, end: end }} speed={0.5} horizontal>
-                    <Details />
+                    <ServiceCard {...pageData} />
                 </ParallaxLayer>
-                <ParallaxLayer sticky={{ start: start, end: pages }} speed={1.5}>
-                    <div className='image-services-right'>
-                        <img src={imgg}></img>
+                <ParallaxLayer sticky={{ start: start, end: servicePages }} speed={1.5}>
+                    <div className='image-services-right page'>
+                        <img src={pageData.imageBefore}></img>
                     </div>
                 </ParallaxLayer>
-                <ParallaxLayer sticky={{ start: start + 1, end: pages }} speed={0.5}>
-                    <div className='image-services-right'>
-                        <img src={imgg}></img>
+                <ParallaxLayer sticky={{ start: start + 1, end: servicePages }} speed={0.5}>
+                    <div className='image-services-right page vignette'>
+                        <img src={pageData.imageAfter}></img>
                     </div>
                 </ParallaxLayer>
             </>
@@ -40,10 +51,15 @@ export default function MainComponent() {
                 <ParallaxLayer offset={0} speed={0.5}>
                     <Home />
                 </ParallaxLayer>
-                {Page({}, 1, 2)}
-                {Page({}, 3, 4)}
-                {Page({}, 5, 6)}
-
+                {services.map((item) => {
+                    return Page(item)
+                })}
+                <ParallaxLayer offset={pages - 1} speed={0.5}>
+                    <About />
+                </ParallaxLayer>
+                <ParallaxLayer offset={pages - 1} speed={5}>
+                    <Contact />
+                </ParallaxLayer>
             </Parallax>
 
         </div>

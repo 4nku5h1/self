@@ -15,10 +15,10 @@ export default function Home() {
 
             <div className='info-left'>
                 <h2>GRAPHIC<span>NIX</span></h2>
-                <h4>Design & Development Studio</h4>
+                <h4>A Design  Studio</h4>
                 <div className='subtitle'>
                     <span>Turning Ideas into</span>
-                    <h2><TextAnimation texts={['Reality.', 'PHOTO.', 'VIDEO.', 'Web Apps.', 'Android Apps.']} /></h2>
+                    <h2><TextAnimation texts={['Reality.', 'PHOTO.', 'VIDEO.']} /></h2>
                 </div>
 
                 <div className='home-id-cards'>
@@ -34,11 +34,3 @@ export default function Home() {
 
     )
 }
-{/* <div className='info-right'>
-                <h5>phone</h5>
-                <h5>email</h5>
-                <h5>Instagram</h5>
-                <h5>twitter</h5>
-                <h5>facebook</h5>
-                <h5>linkedin</h5>
-            </div> */}

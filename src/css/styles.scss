@@ -8,6 +8,9 @@
   // f7a57f
   // 9376e6
   // 729efa
+  --padding-page:60px;
+  --nav-height: 7vh;
+  --element-margin:8px;
 }
 
 .flex-center {
@@ -23,28 +26,15 @@
 }
 
 .main {
-  .image-services-right{
-    display: flex;
-    // flex-flow: row-reverse;
-    height: 100%;
-    align-items: center;
-    justify-content: flex-end;
-    img{
-      width: 50vw;
-      height: 70vh;
-    }
-    // position: absolute;
-  }
 }
 
 .navbar {
-  height: 7vh;
+  height: var(--nav-height);
   color: var(--color-nav-font);
   z-index: 10;
   backdrop-filter: blur(7px);
   position: absolute;
   top : 0;
-  // border-bottom: solid 0.1px var(--color-nav-font);
 
   h2 {
     font-size: 1.5rem;
@@ -70,10 +60,10 @@
   * {
     z-index: 9;
   }
-  padding: 48px;
   width: 100vw;
   height: 100vh;
-  padding-top: 10vh; //navbar spacing
+  padding: var(--padding-page);
+  padding-top: calc(var(--nav-height) + var(--padding-page));
 }
 
 .background-image {
@@ -82,7 +72,6 @@
 }
 
 .home {
-  // background-color: var(--color-home-background);
   color: var(--color-home-font);
 
   justify-content: space-between;
@@ -92,13 +81,10 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
-    padding-top: 5rem;
-    // padding-left: 10vh;
-
     >* {
-      margin-top: 8px;
+      margin-top: var(--element-margin);
     }
 
     h2 {
@@ -111,7 +97,6 @@
       font-size: 1.8rem;
       font-weight: 500;
       letter-spacing: 5px;
-      margin-top: 0 !important;
     }
 
     span {
@@ -136,12 +121,6 @@
       display: flex;
     }
 
-    // .contact-button {
-    //   padding: 8px;
-    //   border-radius: 25px;
-    //   stroke: #6b89e9;
-    //   margin-left: auto;
-    // }
     .description {
       height: 100%;
       justify-content: flex-end;
@@ -159,20 +138,39 @@
       }
     }
   }
-
-  .info-right {
-    >* {
-      padding: 16px;
-    }
-  }
 }
 
 .details {
-  .content {
-    max-width: 35%;
+  padding-right: 0 !important;
+  max-width: 35%;
+  >* {
+    margin-top: var(--element-margin);
+    text-align: left;
+    color: #fff;
+  }
+  h2{
+    font-size: 3.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    word-spacing: 4px;
   }
 }
+.image-services-right{
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
 
+  img{
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+    width: 50vw;
+    height: 70vh;
+  }
+}
 
 .id-card {
   margin-right: 16px;
@@ -186,7 +184,7 @@
 
   .content {
     text-align: center;
-    margin-top: 8px;
+    margin-top: var(--element-margin);
     padding: 16px;
 
     h2 {
