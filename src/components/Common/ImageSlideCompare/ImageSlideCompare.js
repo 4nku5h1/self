@@ -4,7 +4,7 @@ export default function ImageSlideCompare({ imageBefore, imageAfter }) {
 
     return (
         <div class="image-slider">
-            <div>
+            <div className='imageBefore'>
                 <img src={imageBefore}
                     alt="GFG_Image" />
             </div>
