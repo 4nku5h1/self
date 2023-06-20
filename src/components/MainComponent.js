@@ -1,16 +1,17 @@
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
-import Navbar from './Navbar/NavBar';
-import Home from './Home/Home';
-
 import { services, extraServices } from './Services/data/data';
 
-import '../css/styles.scss'
-import About from './Footer/About';
-import Contact from './Footer/Contact';
+import Navbar from './Navbar/NavBar';
+import Home from './Home/Home';
 import Extra from './Services/Extra';
 import Service from './Services/Service';
+
+import '../css/styles.scss'
+import InfiniteImageGallary from './Common/ImageCompare/InfiniteImageGallary/InfiniteImageGallary';
+import Clients from './Clients/Clients';
+import Footer from './Footer/Footer';
 
 export default function MainComponent() {
     // const imageRef = useRef();
@@ -19,12 +20,13 @@ export default function MainComponent() {
     //     document.documentElement.style.setProperty('--g-font-nav', '#f32456');
     //   }
     //   changeTheme()
-   
+
     const home = 1;
-    const extra = 2;
+    const extra = 1;
+    const client = 1;
     const footer = 1;
     const servicePages = (services.length);
-    const totalPages = home + servicePages + extra + footer;
+    const totalPages = home + servicePages + extra + client +  footer;
 
     return (
         <div className='main grad1'>
@@ -43,12 +45,10 @@ export default function MainComponent() {
                         </ParallaxLayer>
                     )
                 })}
-                <ParallaxLayer offset={totalPages - 1} speed={0.5}>
-                    <About />
+                <ParallaxLayer sticky={{ start: home + servicePages+ extra, end: totalPages }} speed={0.5} style={{zIndex:-1}}>
+                    <Clients />
                 </ParallaxLayer>
-                <ParallaxLayer offset={totalPages - 1} speed={5}>
-                    <Contact />
-                </ParallaxLayer>
+                <Footer pageOffset={home + servicePages + extra + client}/>
             </Parallax>
 
         </div>

@@ -8,9 +8,9 @@
   // f7a57f
   // 9376e6
   // 729efa
-  --padding-page:60px;
+  --padding-page: 60px;
   --nav-height: 7vh;
-  --element-margin:8px;
+  --element-margin: 8px;
 }
 
 .flex-center {
@@ -25,8 +25,7 @@
   height: 2px;
 }
 
-.main {
-}
+.main {}
 
 .navbar {
   height: var(--nav-height);
@@ -34,7 +33,7 @@
   z-index: 10;
   backdrop-filter: blur(7px);
   position: absolute;
-  top : 0;
+  top: 0;
 
   h2 {
     font-size: 1.5rem;
@@ -60,6 +59,7 @@
   * {
     z-index: 9;
   }
+
   width: 100vw;
   height: 100vh;
   padding: var(--padding-page);
@@ -83,6 +83,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
     >* {
       margin-top: var(--element-margin);
     }
@@ -139,75 +140,138 @@
     }
   }
 }
+
 .details {
   padding-right: 0 !important;
-    max-width: 40%;
+  max-width: 40%;
+
   * {
     margin-top: var(--element-margin);
     text-align: left;
     color: #fff;
   }
-  h2{
+
+  h2 {
     font-size: 2.3rem;
     font-weight: 600;
     text-transform: uppercase;
   }
-  p{
+
+  p {
     font-size: 1.3rem;
     font-weight: 300;
     word-spacing: 3px;
   }
-  .process{ 
-    p{
+
+  .process {
+    p {
       font-weight: 500;
     }
-    li{
+
+    li {
       font-size: 1.2rem;
       font-weight: 300;
       word-spacing: 3px;
     }
   }
-  
+
 }
-.extra{
-  *{
+
+.extra {
+  * {
     margin: var(--element-margin);
   }
+
   backdrop-filter: blur(5px);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  .content{
+
+  .content {
     width: fit-content;
     z-index: 10;
     bottom: var(--nav-height);
-    h2{
+
+    h2 {
       font-weight: 900;
       font-size: 4rem;
     }
-    p{
+
+    p {
       font-weight: 900;
       font-size: 1.5rem;
     }
   }
-  .gallary *{
+
+  .gallary * {
     margin: 16px;
   }
-  img{
+
+  img {
     width: 35%;
     height: 40%;
   }
 }
-.image-services-right{
+
+.image-services-right {
   display: flex;
   height: 100%;
   justify-content: flex-end;
 
-  img{
-    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+  img {
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
     width: 50vw;
     height: 70vh;
+  }
+}
+
+.footer-about {
+  * {
+    color: #fff;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  .contact {
+    display: flex;
+    margin-top: var(--element-margin);
+    .item {
+      margin: var(--element-margin);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 10vh;
+      min-width: 10vw;
+      background-color: #6b89e9;
+  
+    }
+  }
+}
+
+
+
+.logo {
+  padding-left: 0;
+  padding-right: 0;
+
+  h2 {
+    width: 100vw;
+    font-size: 5.5rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+  }
+
+  span {
+    letter-spacing: normal;
+    font-weight: 100;
   }
 }
 
@@ -239,10 +303,32 @@
 
 }
 
+.clients {
+  * {
+    color: #fff;
+  }
+  padding-left: 0;
+  padding-right: 0;
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+}
+
 .grad1 {
   background: radial-gradient(circle at 90%, #6b89e9, #000000 40%, #000000 100%, #000000 75%);
 }
 
 .grad2 {
   background: radial-gradient(circle at 90%, #6be9e9, #000000 40%, #000000 100%, #000000 75%);
+}
+
+// parralax background pages 
+.footer-about.page{
+  border-top: solid #000 5px;
+  background-color: #00000094;
+  backdrop-filter: blur(20px);
 }

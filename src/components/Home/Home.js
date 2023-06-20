@@ -28,8 +28,6 @@ export default function Home() {
                     <button className='contact-button'>Contact Us</button>
                 </div> */}
             </div>
-            <div className='info-right flex-row'>
-            </div>
         </div>
 
     )
