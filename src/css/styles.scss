@@ -226,52 +226,117 @@
   }
 }
 
-.footer-about {
+.footer {
   * {
     color: #fff;
   }
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
 
-  p {
-    font-size: 1.1rem;
-    font-weight: 400;
-    text-transform: capitalize;
-  }
-  .contact {
-    display: flex;
-    margin-top: var(--element-margin);
-    .item {
-      margin: var(--element-margin);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 10vh;
-      min-width: 10vw;
-      background-color: #6b89e9;
-  
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    * {
+      text-align: left;
     }
+
+    flex: 1;
+
+    p {
+      margin-top: var(--element-margin);
+      font-size: 1.5rem;
+      font-weight: 200;
+      text-transform: capitalize;
+    }
+
+    .services {
+      margin-top: var(--nav-height);
+
+      div {
+        display: flex;
+        flex-wrap: wrap;
+
+        p {
+          text-align: center;
+          width: 30%;
+          margin: var(--element-margin);
+          padding: var(--element-margin);
+          margin-left: 0;
+          font-size: 1.1rem;
+          font-weight: 400;
+          background-color: #ffffff;
+          color: #000000;
+          border-radius: 5px;
+        }
+      }
+
+    }
+
+  }
+
+  // .spacer {
+  //   flex: 2;
+  // }
+
+  .right {
+    * {
+      text-align: right;
+    }
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    .right-container {
+      .contact {
+        h2{
+          text-align: left;
+        }
+        margin-top: var(--nav-height);
+        .social {
+          display: flex;
+
+          .item {
+            margin: var(--element-margin);
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: #ffffff;
+
+            img {
+              height: 40px;
+              width: 40px;
+            }
+          }
+        }
+      }
+    }
+
+
   }
 }
 
 
 
 .logo {
+  * {
+    font-size: 3rem;
+  }
+
   padding-left: 0;
   padding-right: 0;
 
   h2 {
-    width: 100vw;
-    font-size: 5.5rem;
     font-weight: 900;
     letter-spacing: 5px;
+    margin-bottom: 0;
   }
 
   span {
     letter-spacing: normal;
     font-weight: 100;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 200;
   }
 }
 
@@ -307,8 +372,10 @@
   * {
     color: #fff;
   }
+
   padding-left: 0;
   padding-right: 0;
+
   h2 {
     width: 100%;
     text-align: center;
@@ -327,7 +394,7 @@
 }
 
 // parralax background pages 
-.footer-about.page{
+.footer.page {
   border-top: solid #000 5px;
   background-color: #00000094;
   backdrop-filter: blur(20px);
