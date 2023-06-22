@@ -3,31 +3,52 @@ import insta from '../../assets/social/insta.svg';
 import mail from '../../assets/social/mail.svg';
 import linkedin from '../../assets/social/linkedin.svg';
 import twitter from '../../assets/social/twitter.svg';
-const socialdata = [
+
+import location from '../../assets/contact/location.svg';
+import email from '../../assets/contact/mail.svg';
+import phone from '../../assets/contact/phone.svg';
+export const socialdata = [
     {
         image: facebook,
-        name: "",
+        title: "",
         url: ""
     },
     {
         image: mail,
-        name: "",
+        title: "",
         url: ""
     },
     {
         image: linkedin,
-        name: "",
+        title: "",
         url: ""
     },
     {
         image: twitter,
-        name: "",
+        title: "",
         url: ""
     },
     {
         image: insta,
-        name: "",
+        title: "",
         url: ""
     }
 ]
-export default socialdata
+
+export const contactData = [
+    {
+        image: location,
+        title: "Wisconsin Ave, Suite 700 Chevy Chase, Maryland 20815",
+        url: ""
+    },
+    {
+        image: email,
+        title: "avbc@gmail.com",
+        url: ""
+    },
+    {
+        image: phone,
+        title: "1800 180 79459",
+        url: ""
+    },
+]

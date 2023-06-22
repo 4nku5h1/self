@@ -231,85 +231,60 @@
     color: #fff;
   }
 
-  display: flex;
-  justify-content: space-between;
-
-  .left {
-    * {
-      text-align: left;
+  .footer-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 120px;
+      height: 120px;
     }
+  }
+  .footer-content{
+    display: flex;
+    justify-content: center;
+    // align-items: flex-end;
+    >div{
+      margin: var(--element-margin);
+      flex: 1;
+      max-width: 50%;
+    }
+    .contact-us{
+      
+    }
+    
+  }
 
-    flex: 1;
-
+  .about{
+      position: fixed;
+      bottom: 0;
     p {
       margin-top: var(--element-margin);
-      font-size: 1.5rem;
+      font-size: 0.8rem;
       font-weight: 200;
       text-transform: capitalize;
     }
-
-    .services {
-      margin-top: var(--nav-height);
-
-      div {
-        display: flex;
-        flex-wrap: wrap;
-
-        p {
-          text-align: center;
-          width: 30%;
-          margin: var(--element-margin);
-          padding: var(--element-margin);
-          margin-left: 0;
-          font-size: 1.1rem;
-          font-weight: 400;
-          background-color: #ffffff;
-          color: #000000;
-          border-radius: 5px;
-        }
-      }
-
-    }
-
   }
 
-  // .spacer {
-  //   flex: 2;
-  // }
+  .services {
+    
+  }
 
-  .right {
-    * {
-      text-align: right;
-    }
-    flex: 1;
+
+  .social {
     display: flex;
-    justify-content: flex-end;
-    .right-container {
-      .contact {
-        h2{
-          text-align: left;
-        }
-        margin-top: var(--nav-height);
-        .social {
-          display: flex;
 
-          .item {
-            margin: var(--element-margin);
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
-            background-color: #ffffff;
+    .item {
+      margin: var(--element-margin);
+      border-radius: 50%;
+      background-color: #ffffff;
 
-            img {
-              height: 40px;
-              width: 40px;
-            }
-          }
-        }
+      img {
+        height: 35px;
+        width: 35px;
       }
     }
-
-
   }
 }
 
