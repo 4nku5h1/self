@@ -1,8 +1,8 @@
 {
-  "name": "vrfilmspostproduction",
+  "name": "graphicnix",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://vrfilmspostproduction.com",
+  "homepage": "http://graphicnix.com",
   "dependencies": {
     "@motionone/utils": "^10.15.1",
     "@react-spring/parallax": "^9.7.2",
