@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import useCheckVisibility from '../hooks/useCheckVisibility';
 
 import './styles.scss'
+import RangeSlider from '../RangeSlider/RangeSlider';
 
 export default function ImageCompare({ imageBefore, imageAfter }) {
     const imageRef = useRef(null);
@@ -11,19 +12,19 @@ export default function ImageCompare({ imageBefore, imageAfter }) {
     function handleController(e) {
         setControllerValue(e.target.value);
     }
-    useEffect(()=>{
-        if(isImageInViewport){
+    useEffect(() => {
+        if (isImageInViewport) {
             setControllerValue(50);
-        }else{
+        } else {
             setControllerValue(100);
         }
-    },[isImageInViewport])
+    }, [isImageInViewport])
     return (
         <div class="image-compare" ref={imageRef}>
             <div class="controller">
                 {/* Dummy image to make slider width equal to image */}
                 <img src={imageBefore} />
-                <input type="range" min="0" max="100" defaultValue={50} onChange={handleController} />
+                <RangeSlider onChange={handleController} min={0} max={100} value={controllerValue} />
             </div>
             <div className={`imageBefore ${isImageInViewport ? 'active' : ''}`} style={{ width: `${controllerValue}%` }}>
                 <img src={imageBefore}
