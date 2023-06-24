@@ -9,7 +9,7 @@ import Extra from './Services/Extra';
 import Service from './Services/Service';
 
 import '../css/styles.scss'
-import InfiniteImageGallary from './Common/ImageCompare/InfiniteImageGallary/InfiniteImageGallary';
+import InfiniteImageGallary from './Common/InfiniteImageGallary/InfiniteImageGallary';
 import Clients from './Clients/Clients';
 import Footer from './Footer/Footer';
 

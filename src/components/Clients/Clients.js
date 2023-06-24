@@ -1,4 +1,4 @@
-import InfiniteImageGallary from "../Common/ImageCompare/InfiniteImageGallary/InfiniteImageGallary";
+import InfiniteImageGallary from "../Common/InfiniteImageGallary/InfiniteImageGallary";
 import { motion } from "framer-motion";
 import ClientsData from './data.js'
 export default function Clients() {
