@@ -17,9 +17,12 @@ function onMount() {
     slider_input.addEventListener('input', showSliderValue, false);
 
 }
-export default function RangeSlider({min, max, defaultValue, onChange}) {
+export default function RangeSlider({ min, max, defaultValue, onChange, show }) {
     useEffect(() => {
         onMount();
+        return ()=>{
+            // window.removeEventListener("resize");
+        }
     }, [])
     return (
         <div class="range-slider">
@@ -29,7 +32,7 @@ export default function RangeSlider({min, max, defaultValue, onChange}) {
                     <div className='arrow-right' />
                 </div>
             </div>
-            <input id="slider_input" class="input" type="range" min={min} max={max} defaultValue={defaultValue} onChange={onChange}/>
+            <input id="slider_input" class="input" type="range" min={min} max={max} defaultValue={defaultValue} onChange={onChange} />
         </div>
     )
 }

@@ -24,7 +24,7 @@ export default function ImageCompare({ imageBefore, imageAfter }) {
             <div class="controller">
                 {/* Dummy image to make slider width equal to image */}
                 <img src={imageBefore} />
-                <RangeSlider onChange={handleController} min={0} max={100} value={controllerValue} />
+                <RangeSlider onChange={handleController} min={0} max={100} value={controllerValue} show={isImageInViewport}/>
             </div>
             <div className={`imageBefore ${isImageInViewport ? 'active' : ''}`} style={{ width: `${controllerValue}%` }}>
                 <img src={imageBefore}
