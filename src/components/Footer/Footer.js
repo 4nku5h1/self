@@ -18,16 +18,15 @@ export default function Footer({ pageOffset }) {
         return (
             <div className="contact-us">
                 <h2>Contact Us</h2>
-                <div className="container">
-                    {contactData.map((item) => {
-                        return (
-                            <div className="item">
-                                <img src={item.image}></img>
-                                <span>{item.title}</span>
-                            </div>
-                        )
-                    })}
-                </div>
+                <div className="line" />
+                {contactData.map((item) => {
+                    return (
+                        <div className="item">
+                            <img src={item.image}></img>
+                            <span>{item.title}</span>
+                        </div>
+                    )
+                })}
             </div>
         )
     }
@@ -61,13 +60,14 @@ export default function Footer({ pageOffset }) {
             </div>
         )
     }
-    const Services = () => {
+    const Services = ({ title, data }) => {
         return (
-            <div className="services">
-                <h2>Services</h2>
-                <div>
-                    {services.map((it) => {
-                        return (<p>{it.title}</p>)
+            <div className="services-container">
+                <h2>{title}</h2>
+                <div className="line" />
+                <div className="item">
+                    {data.map((service) => {
+                        return (<p>{service}</p>)
                     })}
                 </div>
             </div>
@@ -83,7 +83,9 @@ export default function Footer({ pageOffset }) {
                         <Social />
                     </div>
                     <div className="footer-content">
-                        <Services />
+                        <Services title={'Image Services'} data={['Custom Editing', 'Enhancement', 'Virtual Staging', 'Day to Dusk', 'Item removal', 'Renders']} />
+                        <Services title={'Video Services'} data={['Custom Editing', 'Animation', 'Motion Graphics', 'Compositing', 'Sound FX', 'VFX']} />
+                        <Services title={'Extra Services'} data={['Product (Shoes, Bags, Cloth)', 'Jewellery', 'Real Estate', 'Restoration']} />
                         <ContactUs />
                     </div>
                     <AboutUs />

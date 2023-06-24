@@ -14,11 +14,6 @@ export const socialdata = [
         url: ""
     },
     {
-        image: mail,
-        title: "",
-        url: ""
-    },
-    {
         image: linkedin,
         title: "",
         url: ""
@@ -38,7 +33,7 @@ export const socialdata = [
 export const contactData = [
     {
         image: location,
-        title: "Wisconsin Ave, Suite 700 Chevy Chase, Maryland 20815",
+        title: "Bichpuri, Califiornia",
         url: ""
     },
     {
