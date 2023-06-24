@@ -27,6 +27,7 @@ export default function Footer({ pageOffset }) {
                         </div>
                     )
                 })}
+                <button>Call now</button>
             </div>
         )
     }
