@@ -25,12 +25,17 @@
 	cursor: pointer;
 	opacity: 0;
 }
-
+.thumb-track{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	max-width: 100%;
+	min-width: 40px;
+}
 .thumb {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	position: relative;
 
 	.slider-circle {
 		width: 40px;
