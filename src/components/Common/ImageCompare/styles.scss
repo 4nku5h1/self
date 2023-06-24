@@ -11,7 +11,9 @@
     .active {
         // transition: all 1.5s;
         // width: 50%;
-        border-right: solid #fff 5px;
+        // border-right: solid linear-gradient(90deg, rgba(0,0,0,0.5) 46%, rgba(255,255,255,0.5019257703081232) 52%) 100px;
+        
+        border-right: 1px solid rgba(0, 0, 0, 0.315);
     }
 
     .controller {

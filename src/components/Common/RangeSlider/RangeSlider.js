@@ -4,7 +4,7 @@ export default function RangeSlider({ min, max, value, onChange }) {
     const alighmenterror = value < 50 ? 10 : 0;
     return (
         <div class="range-slider">
-            <div className="thumb-track" style={{ width: `calc(${value}% + ${alighmenterror}px)` }}>
+            <div className="thumb-track" style={{ width: `calc(${value}% + ${40}px)` }}>
                 <div id="slider_thumb" class="thumb">
                     <div className='slider-circle'>
                         <div className='arrow-left' />

@@ -3,9 +3,6 @@
 		user-select: none;
 		width: 100%;
 	}
-
-	width: calc(100% + 40px) !important;
-	margin-left: -20px;
 	position: relative;
 }
 
@@ -26,11 +23,12 @@
 	opacity: 0;
 }
 .thumb-track{
+	position: absolute;
+	margin-left: -20px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	max-width: 100%;
-	min-width: 40px;
+	max-width: calc(100% + 40px);
 }
 .thumb {
 	width: 40px;
