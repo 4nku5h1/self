@@ -2,21 +2,35 @@
 import { useEffect, useRef, useState } from 'react'
 import useCheckVisibility from '../hooks/useCheckVisibility';
 
-import './styles.scss'
 import RangeSlider from '../RangeSlider/RangeSlider';
+
+import './styles.scss'
 
 export default function ImageCompare({ imageBefore, imageAfter }) {
     const imageRef = useRef(null);
     const isImageInViewport = useCheckVisibility(imageRef);
     const [controllerValue, setControllerValue] = useState(100);
+    const [controllerVisible, setControllerVisible] = useState(false);
     function handleController(e) {
         setControllerValue(e.target.value);
+    }
+    function toggleControllerVisibility(v){
+        if(v){
+            setTimeout(() => {
+                setControllerVisible(v)
+            }, 1500);
+        }else{
+            setControllerVisible(v)
+        }
+        
     }
     useEffect(() => {
         if (isImageInViewport) {
             setControllerValue(50);
+            toggleControllerVisibility(true);
         } else {
             setControllerValue(100);
+            toggleControllerVisibility(false);
         }
     }, [isImageInViewport])
     return (
@@ -24,9 +38,9 @@ export default function ImageCompare({ imageBefore, imageAfter }) {
             <div class="controller">
                 {/* Dummy image to make slider width equal to image */}
                 <img src={imageBefore} />
-                <RangeSlider onChange={handleController} min={0} max={100} value={controllerValue} show={isImageInViewport}/>
+               {controllerVisible ?  <RangeSlider onChange={handleController} min={0} max={100} value={controllerValue} show={isImageInViewport}/> : null}
             </div>
-            <div className={`imageBefore ${isImageInViewport ? 'active' : ''}`} style={{ width: `${controllerValue}%` }}>
+            <div className={`imageBefore ${isImageInViewport ? 'active' : ''}`} style={{ width: `${controllerValue}%`, transition:`${controllerVisible?'none' : 'all 1.5s'}` }}>
                 <img src={imageBefore}
                     alt="GFG_Image" />
             </div>
