@@ -15,15 +15,15 @@ import { observeElementById } from './Common/helper';
 
 function registerBackgroundColorEffect() {
     const colorMapping = {
-        'page-0': 'green',
-        'page-1': 'green',
-        'page-2': 'blue',
-        'page-3': 'blue',
-        'page-4': 'purple',
-        'page-5': 'purple',
-        'page-6': 'orange',
-        'page-7': 'orange',
-        'page-8': 'green'
+        'page-0': 'rgb(255, 127, 1)',
+        'page-1': 'rgb(147, 190, 218)',
+        'page-2': 'rgb(200, 200, 200)',
+        'page-3': 'rgb(200, 200, 200)',
+        'page-4': 'rgb(255, 101, 101)',
+        'page-5': 'rgb(255, 101, 101)',
+        'page-6': '#b188ff',
+        'page-7': '#b188ff',
+        'page-8': '#b188ff'
     }
     function changeColor(id) {
         document.documentElement.style.setProperty('--color-background', colorMapping[id]);

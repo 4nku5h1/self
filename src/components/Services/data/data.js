@@ -33,7 +33,7 @@ export const services = [
     {
         id: 'service1',
         pageOffset: 2,
-        title: 'Enhancement',
+        title: 'Image Enhancement',
         description: 'Perfect for real estate photo editing so you can present your listing with top-notch, retouched professional-looking photos.',
         imageBefore: imageEnhancementBefore,
         imageAfter: imageEnhancementAfter,
@@ -54,7 +54,7 @@ export const services = [
         id: 'service3',
         pageOffset: 4,
         title: 'Day to Dusk',
-        description: 'Dusk is a beautiful time of the day but is notoriously hard to photograph, especially for an amateur. Our team of editing professionals will take your property photo from day to dusk with advanced editing techniques. We can turn any daytime or gloomy sky into a breathtaking sunset to really make your listing stand out from the rest. Our photo retouching service will take your exterior property photo from drab to fab by replacing your sky with a beautiful dusk setting.',
+        description: 'Dusk is a beautiful time of the day but is notoriously hard to photograph,We can turn any daytime or gloomy sky into a breathtaking sunset to really make your listing stand out from the rest. Our photo retouching service will take your exterior property photo from drab to fab by replacing your sky with a beautiful dusk setting.',
         imageBefore: day2DuskBefore,
         imageAfter: day2DuskAfter,
         process:{
