@@ -150,7 +150,7 @@
   z-index: 1;
 }
 .details {
-  padding-right: 0 !important;
+  // padding-right: 0;
   max-width: 40%;
 
   * {
@@ -184,7 +184,9 @@
   }
 
 }
-
+.details.right{
+  margin-left: auto;
+}
 .extra {
   * {
     margin: var(--element-margin);
@@ -221,7 +223,7 @@
   }
 }
 
-.image-services-right {
+.image-services {
   display: flex;
   height: 100%;
   justify-content: flex-end;
@@ -232,7 +234,9 @@
     height: 70vh;
   }
 }
-
+.image-services.right{
+  flex-direction: row-reverse;
+}
 .footer {
   * {
     color: var(--color-font-heading);

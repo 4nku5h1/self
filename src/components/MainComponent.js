@@ -9,7 +9,6 @@ import Extra from './Services/Extra';
 import Service from './Services/Service';
 
 import '../css/styles.scss'
-import InfiniteImageGallary from './Common/InfiniteImageGallary/InfiniteImageGallary';
 import Clients from './Clients/Clients';
 import Footer from './Footer/Footer';
 import { observeElementById } from './Common/helper';
@@ -17,10 +16,10 @@ import { observeElementById } from './Common/helper';
 function registerBackgroundColorEffect() {
     const colorMapping = {
         'page-0': 'red',
-        'page-1': 'yellow',
+        'page-1': 'green',
         'page-2': 'blue',
         'page-3': 'white',
-        'page-4': 'yellow',
+        'page-4': 'green',
         'page-5': 'orange',
         'page-6': 'purple',
         'page-7': 'blue',
@@ -57,8 +56,8 @@ export default function MainComponent() {
                 <ParallaxLayer offset={0} speed={1}>
                     <Home id={'page-0'} />
                 </ParallaxLayer>
-                {services.map((item, i) => {
-                    return <Service data={item} id={`page-${i + 1}`} />
+                {services.map((item, index) => {
+                    return <Service data={item} id={`page-${index + 1}`} index={index}/>
                 })}
                 {extraServices.map((item, index) => {
                     return (

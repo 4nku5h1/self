@@ -1,7 +1,7 @@
-export default function ServiceCard({ title, description, process }) {
+export default function ServiceCard({ title, description, process, aligh }) {
 
     return (
-        <div className='page details'>
+        <div className={`page details ${aligh}`}>
             <h2>{title}</h2>
             <p>{description}</p>
             <div className="process">
