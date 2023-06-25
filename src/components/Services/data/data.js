@@ -33,7 +33,7 @@ export const services = [
     {
         id: 'service1',
         pageOffset: 2,
-        title: 'Image Enhancement',
+        title: 'Enhancement',
         description: 'Perfect for real estate photo editing so you can present your listing with top-notch, retouched professional-looking photos.',
         imageBefore: imageEnhancementBefore,
         imageAfter: imageEnhancementAfter,
