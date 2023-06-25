@@ -14,8 +14,6 @@ import Clients from './Clients/Clients';
 import Footer from './Footer/Footer';
 import { observeElementById } from './Common/helper';
 
-
-
 function registerBackgroundColorEffect() {
     const colorMapping = {
         'page-0': 'red',
@@ -39,11 +37,10 @@ function registerBackgroundColorEffect() {
     })
 }
 export default function MainComponent() {
-    function changeTheme(color) {
-        document.documentElement.style.setProperty('--color-background', '#eabe1e96');
-    }
     useEffect(() => {
-        registerBackgroundColorEffect()
+        setTimeout(() => {
+            registerBackgroundColorEffect()
+        }, 1000);
     }, [])
 
     const home = 1;
