@@ -11,7 +11,6 @@ const useCheckVisibility = ref => {
     }, []);
 
     useEffect(() => {
-        console.log('yuerf', ref?.current)
         if (ref.current) {
             observerRef.current.observe(ref.current);
         }

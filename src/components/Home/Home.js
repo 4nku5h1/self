@@ -4,12 +4,12 @@ import TextAnimation from '../Common/TextAnimation';
 import image from '../../assets/home-background.webp'
 import Card from './Card/Card';
 import { idCards } from '../../js/sitedata';
-export default function Home() {
+export default function Home({id}) {
 
     const a = ['asd', 'htasd', 'fdfgh', 'dfgdfg']
     return (
 
-        <div className='home page flex-center'>
+        <div className='home page flex-center' id={id}>
 
             {/* <img className='background-image' src={image}></img> */}
 

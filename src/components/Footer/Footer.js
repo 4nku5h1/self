@@ -5,7 +5,7 @@ import { contactData, socialdata } from "./data.js";
 
 import backgroundImage from './../../assets/absbackcircle.svg'
 
-export default function Footer({ pageOffset }) {
+export default function Footer({ id, pageOffset }) {
 
     const AboutUs = () => {
         return (
@@ -77,7 +77,7 @@ export default function Footer({ pageOffset }) {
     return (
         <>
             <ParallaxLayer offset={pageOffset} speed={1}>
-                <div className='page footer'>
+                <div className='page footer' id={id}>
                     <div className="footer-banner">
                         <img src={backgroundImage}></img>
                         <Logo />
