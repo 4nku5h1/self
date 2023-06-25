@@ -13,7 +13,7 @@
     }
 
     .controller {
-        z-index: 10;
+        z-index: 1;
         height: 100%;
 
         input[type=range] {
@@ -30,7 +30,6 @@
         img {
             height: 45%;
             opacity: 0;
-            z-index: -1;
         }
     }
 }

@@ -64,9 +64,6 @@
   }
 }
 .page {
-  * {
-    // z-index: 9;
-  }
   // background-color: var(--color-background) !important;
   width: 100vw;
   height: 100vh;
@@ -149,9 +146,8 @@
 .home.page{
   z-index: 1;
 }
-.details {
-  // padding-right: 0;
-  max-width: 40%;
+.service-card {
+  max-width: 60%;
 
   * {
     margin-top: var(--element-margin);
@@ -160,8 +156,11 @@
   }
 
   h2 {
-    font-size: 2.3rem;
+    margin-right: -50px;
+    font-size: 8rem;
     font-weight: 600;
+    letter-spacing: 0px;
+    font-family: "Coign",sans-serif;
     text-transform: uppercase;
   }
 
@@ -184,7 +183,7 @@
   }
 
 }
-.details.right{
+.service-card.right{
   margin-left: auto;
 }
 .extra {
