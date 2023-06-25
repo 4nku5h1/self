@@ -15,14 +15,14 @@ import { observeElementById } from './Common/helper';
 
 function registerBackgroundColorEffect() {
     const colorMapping = {
-        'page-0': 'red',
+        'page-0': 'green',
         'page-1': 'green',
         'page-2': 'blue',
-        'page-3': 'white',
-        'page-4': 'green',
-        'page-5': 'orange',
-        'page-6': 'purple',
-        'page-7': 'blue',
+        'page-3': 'blue',
+        'page-4': 'purple',
+        'page-5': 'purple',
+        'page-6': 'orange',
+        'page-7': 'orange',
         'page-8': 'green'
     }
     function changeColor(id) {

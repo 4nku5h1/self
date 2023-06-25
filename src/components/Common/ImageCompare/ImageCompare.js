@@ -18,7 +18,7 @@ export default function ImageCompare({ imageBefore, imageAfter }) {
         if(v){
             setTimeout(() => {
                 setControllerVisible(v)
-            }, 1500);
+            }, 2000);
         }else{
             setControllerVisible(v)
         }
@@ -40,7 +40,7 @@ export default function ImageCompare({ imageBefore, imageAfter }) {
                 <img src={imageBefore} />
                {controllerVisible ?  <RangeSlider onChange={handleController} min={0} max={100} value={controllerValue} show={isImageInViewport}/> : null}
             </div>
-            <div className={`imageBefore ${isImageInViewport ? 'active' : ''}`} style={{ width: `${controllerValue}%`, transition:`${controllerVisible?'none' : 'all 1.5s'}` }}>
+            <div className={`imageBefore ${isImageInViewport ? 'active' : ''}`} style={{ width: `${controllerValue}%`, transition:`${controllerVisible?'none' : 'all 2s'}` }}>
                 <img src={imageBefore}
                     alt="GFG_Image" />
             </div>

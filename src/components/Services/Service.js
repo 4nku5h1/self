@@ -8,10 +8,10 @@ export default function Service({id, data, index}) {
     const aligh = index%2===0? '' : 'right';
     return (
         <>
-            <ParallaxLayer offset={pageOffset} speed={0.2}>
+            <ParallaxLayer offset={pageOffset} speed={1}>
                 <ServiceCard {...pageData} aligh={aligh}/>
             </ParallaxLayer>
-            <ParallaxLayer offset={pageOffset} speed={0.2}>
+            <ParallaxLayer offset={pageOffset} speed={0.7}>
                 <div className={`image-services page ${aligh}`} id={id}>
                     <ImageCompare imageBefore={pageData.imageBefore} imageAfter={pageData.imageAfter} />
                 </div>
