@@ -147,7 +147,9 @@
   z-index: 1;
 }
 .service-card {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   max-width: 95% !important;
   * {
     margin-top: var(--element-margin);
@@ -165,7 +167,7 @@
   }
 
   p {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 500;
     word-spacing: 3px;
   }
@@ -184,17 +186,19 @@
 
 }
 .service-card.right{
-  padding-left: 0;
-  margin-left: auto;
+  // padding-left: 0;
+  // margin-left: auto;
+  text-align: right;
 }
 .image-services {
+  padding-top: 0;
   display: flex;
   justify-content: flex-end;
 
   img {
     box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
     width: 80vw;
-    height: 70vh;
+    height: 80vh;
   }
 }
 .image-services.right{
