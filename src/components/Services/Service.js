@@ -10,13 +10,14 @@ export default function Service({ id, data, index }) {
     const aligh = index % 2 === 0 ? 'right' : '';
     return (
         <>
-            <ParallaxLayer offset={pageOffset} speed={0.7} style={{zIndex:1}}>
+            <ParallaxLayer offset={pageOffset} speed={0.35} style={{ zIndex: 1 }}>
                 <ServiceCard {...pageData} aligh={aligh} />
-            </ParallaxLayer>
-            <ParallaxLayer offset={pageOffset} speed={0.8}>
                 <div className={`image-services ${aligh}`} id={id}>
                     <ImageCompare imageBefore={pageData.imageBefore} imageAfter={pageData.imageAfter} scrollTo={0} />
                 </div>
+            </ParallaxLayer>
+            <ParallaxLayer offset={pageOffset} speed={1} style={{ backdropFilter: 'blur(5px)' }}>
+                <img src={data.background} ></img>
             </ParallaxLayer>
 
         </>
