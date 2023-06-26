@@ -61,7 +61,7 @@ export default function MainComponent() {
                 })}
                 {extraServices.map((item, index) => {
                     return (
-                        <ParallaxLayer offset={home + servicePages + index} speed={0.2}>
+                        <ParallaxLayer offset={home + servicePages + index} speed={0.7}>
                             <Extra {...item} id={`page-${index + 6}`} />
                         </ParallaxLayer>
                     )
