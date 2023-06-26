@@ -15,7 +15,7 @@ import { observeElementById } from './Common/helper';
 
 function registerBackgroundColorEffect() {
     const colorMapping = {
-        'page-0': 'rgb(255, 127, 1)',
+        'page-0': 'rgb(255, 127, 1, 0.3)',
         'page-1': 'rgb(147, 190, 218)',
         'page-2': 'rgb(200, 200, 200)',
         'page-3': 'rgb(200, 200, 200)',
@@ -50,16 +50,16 @@ export default function MainComponent() {
     const totalPages = home + servicePages + extra + client + footer;
 
     return (
-        <div className='main grad1'>
+        <div className='main'>
             <Navbar />
             <Parallax pages={totalPages} className='parallax-container'>
                 <ParallaxLayer offset={0} speed={1}>
                     <Home id={'page-0'} />
                 </ParallaxLayer>
                 {services.map((item, index) => {
-                    return <Service data={item} id={`page-${index + 1}`} index={index}/>
+                    return <Service data={item} id={`page-${index + 1}`} index={index} />
                 })}
-                {extraServices.map((item, index) => {
+                {/* {extraServices.map((item, index) => {
                     return (
                         <ParallaxLayer offset={home + servicePages + index} speed={0.7}>
                             <Extra {...item} id={`page-${index + 6}`} />
@@ -69,7 +69,7 @@ export default function MainComponent() {
                 <ParallaxLayer sticky={{ start: home + servicePages + extra, end: totalPages }} speed={0.5} style={{ zIndex: -1 }}>
                     <Clients id={`page-7`} />
                 </ParallaxLayer>
-                <Footer pageOffset={home + servicePages + extra + client} id={`page-8`} />
+                <Footer pageOffset={home + servicePages + extra + client} id={`page-8`} /> */}
             </Parallax>
 
         </div>
