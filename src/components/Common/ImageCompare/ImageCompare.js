@@ -6,31 +6,19 @@ import RangeSlider from '../RangeSlider/RangeSlider';
 
 import './styles.scss'
 
-export default function ImageCompare({ imageBefore, imageAfter }) {
+export default function ImageCompare({ imageBefore, imageAfter, disablecompare = true, scrollTo=50 }) {
     const imageRef = useRef(null);
     const isImageInViewport = useCheckVisibility(imageRef);
     const [controllerValue, setControllerValue] = useState(100);
-    const [controllerVisible, setControllerVisible] = useState(false);
     function handleController(e) {
         setControllerValue(e.target.value);
     }
-    function toggleControllerVisibility(v){
-        if(v){
-            setTimeout(() => {
-                setControllerVisible(v)
-            }, 2000);
-        }else{
-            setControllerVisible(v)
-        }
-        
-    }
+
     useEffect(() => {
         if (isImageInViewport) {
-            setControllerValue(50);
-            toggleControllerVisibility(true);
+            setControllerValue(scrollTo);
         } else {
             setControllerValue(100);
-            toggleControllerVisibility(false);
         }
     }, [isImageInViewport])
     return (
@@ -38,9 +26,9 @@ export default function ImageCompare({ imageBefore, imageAfter }) {
             <div class="controller">
                 {/* Dummy image to make slider width equal to image */}
                 <img src={imageBefore} />
-               {controllerVisible ?  <RangeSlider onChange={handleController} min={0} max={100} value={controllerValue} show={isImageInViewport}/> : null}
+                {!disablecompare ? <RangeSlider onChange={handleController} min={0} max={100} value={controllerValue} show={isImageInViewport} /> : null}
             </div>
-            <div className={`imageBefore ${isImageInViewport ? 'active' : ''}`} style={{ width: `${controllerValue}%`, transition:`${controllerVisible?'none' : 'all 2s'}` }}>
+            <div className={`imageBefore ${isImageInViewport ? 'active' : ''}`} style={{ width: `${controllerValue}%`, transition: `${disablecompare ? 'all 2s' : 'none'}` }}>
                 <img src={imageBefore}
                     alt="GFG_Image" />
             </div>
