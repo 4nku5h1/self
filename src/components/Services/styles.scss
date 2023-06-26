@@ -1,4 +1,5 @@
 .service-card {
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -49,8 +50,8 @@
   
     img {
       box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
-      width: 70vw;
-      height: 60vh;
+      width: 100vw;
+      height: 100vh;
     }
   }
   .image-services.right{

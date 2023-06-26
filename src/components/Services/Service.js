@@ -7,18 +7,18 @@ import './styles.scss';
 export default function Service({ id, data, index }) {
     const pageData = data;
     const pageOffset = pageData.pageOffset
-    const aligh = index % 2 === 0 ?'right' :'';
+    const aligh = index % 2 === 0 ? 'right' : '';
     return (
         <>
-            <ParallaxLayer offset={pageOffset} speed={0.8}>
+            <ParallaxLayer offset={pageOffset} speed={0.7} style={{zIndex:1}}>
                 <ServiceCard {...pageData} aligh={aligh} />
-                <div className={`image-services page ${aligh}`} id={id}>
-                    <ImageCompare imageBefore={pageData.imageBefore} imageAfter={pageData.imageAfter} />
+            </ParallaxLayer>
+            <ParallaxLayer offset={pageOffset} speed={0.8}>
+                <div className={`image-services ${aligh}`} id={id}>
+                    <ImageCompare imageBefore={pageData.imageBefore} imageAfter={pageData.imageAfter} scrollTo={0} />
                 </div>
             </ParallaxLayer>
-            {/* <ParallaxLayer offset={pageOffset} speed={0.7}>
-                <h2 className='service-title'>{data.title}</h2>
-            </ParallaxLayer> */}
+
         </>
     )
 }
