@@ -11,21 +11,17 @@ export default function Service({ id, data, index }) {
         <>
             <ParallaxLayer offset={pageOffset} speed={0.35} style={{ zIndex: 1 }}>
                 <div className={`page service-container ${align}`}>
-                    <div className={`service-card `}>
-                        <div className="title">
-                            <h2>{pageData.title[0]}</h2>
-                            <h2>{pageData.title[1]}</h2>
-                        </div>
-                        <p>{pageData.description}</p>
-
+                    <div className="title">
+                        <h2>{pageData.title[0]}</h2>
+                        <h2>{pageData.title[1]}</h2>
                     </div>
-                    <div className={`image-services`} id={id}>
-                        <h1></h1>
+                    <div className="content" id={id}>
+                        <p>{pageData.description}</p>
                         <ImageCompare imageBefore={pageData.imageBefore} imageAfter={pageData.imageAfter} scrollTo={0} />
                     </div>
                 </div>
             </ParallaxLayer>
-            <ParallaxLayer offset={pageOffset} speed={0.1} style={{ backdropFilter: 'blur(5px)' }}>
+            <ParallaxLayer offset={pageOffset} speed={1} style={{ backdropFilter: 'blur(5px)' }}>
                 <div className='background-image'>
                     <img src={data.background} ></img>
                 </div>

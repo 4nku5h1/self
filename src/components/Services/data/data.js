@@ -90,7 +90,7 @@ export const extraServices = [
     {
         id: 'service6',
         pageOffset: 13,
-        title: ['Image', 'Renders'],
+        title: 'Renders',
         description: 'Bring plans to life with our render service available for a range of plans and designs.',
         images: [render1, render2, render3, render4]
     }

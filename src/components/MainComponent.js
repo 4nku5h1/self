@@ -59,7 +59,7 @@ export default function MainComponent() {
                 {services.map((item, index) => {
                     return <Service data={item} id={`page-${index + 1}`} index={index} />
                 })}
-                {/* {extraServices.map((item, index) => {
+                {extraServices.map((item, index) => {
                     return (
                         <ParallaxLayer offset={home + servicePages + index} speed={0.7}>
                             <Extra {...item} id={`page-${index + 6}`} />
@@ -69,7 +69,7 @@ export default function MainComponent() {
                 <ParallaxLayer sticky={{ start: home + servicePages + extra, end: totalPages }} speed={0.5} style={{ zIndex: -1 }}>
                     <Clients id={`page-7`} />
                 </ParallaxLayer>
-                <Footer pageOffset={home + servicePages + extra + client} id={`page-8`} /> */}
+                <Footer pageOffset={home + servicePages + extra + client} id={`page-8`} />
             </Parallax>
 
         </div>
