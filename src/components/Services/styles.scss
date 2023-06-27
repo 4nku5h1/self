@@ -1,57 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+  color: var(--color-font-heading);
+}
 .service-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    * {
-        text-align: left;
-        color: var(--color-font-heading);
-    }
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  .title {
+    width: fit-content;
     h2 {
-        text-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
-        line-height: 7rem;
-        height: fit-content;
-        font-size: 7rem;
-        font-weight: 900;
-        letter-spacing: 0px;
-        font-family: "Coign", sans-serif;
-        text-transform: uppercase;
+      // transform: rotate(90deg);
+      text-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+      line-height: 7rem;
+      height: fit-content;
+      font-size: 5rem;
+      font-weight: 900;
+      letter-spacing: 8px;
+      -webkit-text-stroke: 1px #112434;
+      font-family: 'Montserrat', serif;
     }
-    .title:last-child{
-        margin-left: 5%;
+    p {
+      font-size: 2rem;
+      font-weight: 700;
+      font-family: "Montserrat";
+      word-spacing: 3px;
+    }
+  }
+
+  .content {
+
+    img {
+      box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+      width: 35vw;
+      height: 40vh;
     }
 
-    .content {
-        display: flex;
-        justify-content: space-between;
-        img {
-            box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
-            width: 35vw;
-            height: 40vh;
-        }
-
-        p {
-            max-width: 50%;
-            font-size: 2rem;
-            font-weight: 700;
-            word-spacing: 3px;
-        }
+    
+  }
+  .paragraph{
+    max-width: 70%;
+    color: #fff;
+    position: fixed;
+    bottom: 30%;
+    p {
+      font-size: 2rem;
+      font-weight: 500;
+      font-family: "Montserrat";
+      word-spacing: 3px;
     }
+  }
 }
 
 .service-container.right {
-    .content{
-        flex-direction: row-reverse;
-    }
+  .content {
+  }
 
 }
 
 .background-image {
-    // filter: blur(5px);
-    // img {
-    //     height: 100vh;
-    //     width: 100vw;
-    // }
+  // filter: blur(5px);
+  // img {
+  //     height: 100vh;
+  //     width: 100vw;
+  // }
 }
 
 // .process {
@@ -67,45 +82,45 @@
 // }
 
 .extra {
+  * {
+    margin: var(--element-margin);
+  }
+
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .content {
     * {
-      margin: var(--element-margin);
+      color: #fff;
     }
-  
-    backdrop-filter: blur(5px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  
-    .content {
-      *{
-        color: #fff;
-      }
-  
-      h2 {
-        text-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
-        line-height: 7rem;
-        height: fit-content;
-        font-size: 7rem;
-        font-weight: 900;
-        letter-spacing: 0px;
-        font-family: "Coign", sans-serif;
-        text-transform: uppercase;
-      }
-  
-      p {
-        font-size: 2rem;
-        font-weight: 700;
-        word-spacing: 3px;
-      }
+
+    h2 {
+      text-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+      line-height: 7rem;
+      height: fit-content;
+      font-size: 7rem;
+      font-weight: 900;
+      letter-spacing: 0px;
+      font-family: "Coign", sans-serif;
+      text-transform: uppercase;
     }
-  
-    .gallary * {
-      margin: 16px;
-    }
-  
-    img {
-      width: 35%;
-      height: 40%;
+
+    p {
+      font-size: 2rem;
+      font-weight: 700;
+      word-spacing: 3px;
     }
   }
+
+  .gallary * {
+    margin: 16px;
+  }
+
+  img {
+    width: 35%;
+    height: 40%;
+  }
+}
