@@ -1,42 +1,60 @@
-import { ParallaxLayer } from '@react-spring/parallax'
 import ImageCompare from '../Common/ImageCompare/ImageCompare'
 
 import './styles.scss';
 
-export default function Service({ id, data, index }) {
-    const pageData = data;
-    const pageOffset = pageData.pageOffset
-    const align = index % 2 === 0 ? 'right' : '';
-    return (
-        <>
-            <ParallaxLayer offset={`${pageOffset}.2`} speed={0.7} style={{ zIndex: 1 }}>
-                <div className='service-container'>
-                    <div className="title">
-                        <h2>{pageData.title[0]} {' '} {pageData.title[1]}</h2>
-                        {/* <h2>{pageData.title[1]}</h2> */}
-                        {/* <p>{pageData.description}</p> */}
-                    </div>
-                </div>
-            </ParallaxLayer>
-            <ParallaxLayer offset={pageOffset} speed={0.5} style={{ zIndex: 1 }}>
-                <div className={`page service-container ${align}`}>
-                    <div className="title">
-                        <p>{pageData.description}</p>
-                    </div>
-                    <div className="content" id={id}>
-                        <ImageCompare imageBefore={pageData.imageBefore} imageAfter={pageData.imageAfter} scrollTo={0} />
-                    </div>
-                </div>
-            </ParallaxLayer>
-            <ParallaxLayer offset={pageOffset} speed={1} >
-                <div className='background-image'>
-                    <img src={data.background} ></img>
-                </div>
-            </ParallaxLayer>
 
-        </>
+function getAlignmentment(index) {
+    return index % 2 === 0 ? '' : 'mirror';
+}
+
+export function ServiceImage({ id, data, index }) {
+    const align = getAlignmentment(index);
+    const { imageBefore, imageAfter } = data;
+    return (
+        <div className={`page service-image ${align}`} id={id}>
+            <ImageCompare imageBefore={imageBefore} imageAfter={imageAfter} scrollTo={0} />
+        </div>
     )
 }
+
+export function ServiceGallary({ data, index }) {
+    const {imageBefore, imageAfter} = data;
+    const align = getAlignmentment(index);
+    return (
+        <div className={`page service-gallary-container ${align}`}>
+            <div className="gallary">
+                <ImageCompare imageBefore={imageBefore} imageAfter={imageAfter} scrollTo={0} disablecompare={false}/>
+                <ImageCompare imageBefore={imageBefore} imageAfter={imageAfter} scrollTo={0} disablecompare={false}/>
+                <ImageCompare imageBefore={imageBefore} imageAfter={imageAfter} scrollTo={0} disablecompare={false}/>
+                <ImageCompare imageBefore={imageBefore} imageAfter={imageAfter} scrollTo={0} disablecompare={false}/>
+            </div>
+        </div>
+    )
+}
+
+export function ServiceBackground({ data }) {
+    const { background } = data;
+    return (
+        <div className='background-image'>
+            <img src={background} ></img>
+        </div>
+    )
+}
+
+export function ServiceText({ data, index }) {
+    const align = getAlignmentment(index);
+    const { title, description } = data;
+    return (
+        <div className={`page service-text-container ${align}`}>
+            <div className='service-text'>
+                <h2>{title[0]} </h2>
+                <h2>{title[1]}</h2>
+                <p>{description}</p>
+            </div>
+        </div>
+    )
+}
+
 // PROCESS
 {/* <div className="process">
                 <p>{process?.title}</p>

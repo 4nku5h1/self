@@ -6,7 +6,7 @@ import { services, extraServices } from './Services/data/data';
 import Navbar from './Navbar/NavBar';
 import Home from './Home/Home';
 import Extra from './Services/Extra';
-import Service from './Services/Service';
+import { ServiceBackground, ServiceGallary, ServiceText, ServiceImage } from './Services/Service';
 
 import '../css/styles.scss'
 import Clients from './Clients/Clients';
@@ -46,7 +46,7 @@ export default function MainComponent() {
     const extra = 1;
     const client = 1;
     const footer = 1;
-    const servicePages = (services.length);
+    const servicePages = (services.length) * 2;
     const totalPages = home + servicePages + extra + client + footer;
 
     return (
@@ -56,9 +56,39 @@ export default function MainComponent() {
                 <ParallaxLayer offset={0} speed={1}>
                     <Home id={'page-0'} />
                 </ParallaxLayer>
+                {/* SERVICES START */}
                 {services.map((item, index) => {
-                    return <Service data={item} id={`page-${index + 1}`} index={index} />
+                    return (
+                        <ParallaxLayer offset={item.pageOffset} speed={0.5}>
+                            <ServiceBackground data={item} />
+                        </ParallaxLayer>
+                    )
                 })}
+                {services.map((item, index) => {
+                    return (
+                        <ParallaxLayer offset={item.pageOffset + 1} speed={0.2} style={{ zIndex: 1 }}>
+                            <ServiceGallary data={item} index={index}/>
+                        </ParallaxLayer>
+                    )
+                })}
+                {services.map((item, index) => {
+                    return (
+                        <ParallaxLayer offset={item.pageOffset} speed={0.2} style={{ zIndex: 1 }}>
+                            <ServiceImage data={item} index={index}/>
+                        </ParallaxLayer>
+                    )
+                })}
+
+                {services.map((item, index) => {
+                    return (
+                        <ParallaxLayer speed={0.7} style={{ zIndex: 1 }} sticky={item.headingParallax.sticky}>
+                            <ServiceText data={item} index={index}/>
+                        </ParallaxLayer>
+                    )
+                })}
+
+                {/* <ServiceBackground data={item} id={`page-${index + 1}`} index={index}/> */}
+                {/* SERVICES END */}
                 {extraServices.map((item, index) => {
                     return (
                         <ParallaxLayer offset={home + servicePages + index} speed={0.7}>
