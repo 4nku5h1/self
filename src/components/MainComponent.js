@@ -57,13 +57,13 @@ export default function MainComponent() {
                     <Home id={'page-0'} />
                 </ParallaxLayer>
                 {/* SERVICES START */}
-                {services.map((item, index) => {
+                {/* {services.map((item, index) => {
                     return (
                         <ParallaxLayer offset={item.pageOffset} speed={0.5}>
                             <ServiceBackground data={item} />
                         </ParallaxLayer>
                     )
-                })}
+                })} */}
                 {services.map((item, index) => {
                     return (
                         <ParallaxLayer offset={item.pageOffset + 1} speed={0.2} style={{ zIndex: 1 }}>
