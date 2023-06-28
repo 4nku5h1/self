@@ -39,7 +39,7 @@ export default function MainComponent() {
     useEffect(() => {
         setTimeout(() => {
             registerBackgroundColorEffect()
-        }, 1000);
+        }, 2000);
     }, [])
 
     const home = 1;
@@ -66,15 +66,15 @@ export default function MainComponent() {
                 })} */}
                 {services.map((item, index) => {
                     return (
-                        <ParallaxLayer offset={item.pageOffset + 1} speed={0.2} style={{ zIndex: 1 }}>
+                        <ParallaxLayer offset={item.pageOffset + 1} speed={0.5} style={{ zIndex: 1 }}>
                             <ServiceGallary data={item} index={index}/>
                         </ParallaxLayer>
                     )
                 })}
                 {services.map((item, index) => {
                     return (
-                        <ParallaxLayer offset={item.pageOffset} speed={0.2} >
-                            <ServiceImage data={item} index={index}/>
+                        <ParallaxLayer offset={item.pageOffset} speed={0.8} >
+                            <ServiceImage data={item} index={index} id={`page-${index+1}`}/>
                         </ParallaxLayer>
                     )
                 })}

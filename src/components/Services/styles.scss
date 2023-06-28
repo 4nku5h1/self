@@ -22,7 +22,7 @@
 
   img {
     box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
-    width: var(--width-content-vw);
+    width: 50vw;
     height: 60vh;
   }
 }
@@ -37,9 +37,10 @@
 .service-text-container {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   padding-right: 0;
 
+  *{text-align: right;}
   .service-text {
     max-width: var(--width-content-vw);
 
@@ -63,6 +64,7 @@
 }
 
 .service-text-container.mirror {
+  *{text-align: left;}
   justify-content: flex-start;
 }
 
