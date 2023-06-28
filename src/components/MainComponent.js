@@ -66,14 +66,14 @@ export default function MainComponent() {
                 })} */}
                 {services.map((item, index) => {
                     return (
-                        <ParallaxLayer offset={item.pageOffset + 1} speed={0.2} style={{ zIndex: 2 }}>
+                        <ParallaxLayer offset={item.pageOffset + 1} speed={0.2} style={{ zIndex: 1 }}>
                             <ServiceGallary data={item} index={index}/>
                         </ParallaxLayer>
                     )
                 })}
                 {services.map((item, index) => {
                     return (
-                        <ParallaxLayer offset={item.pageOffset} speed={0.2} style={{ zIndex: 4 }}>
+                        <ParallaxLayer offset={item.pageOffset} speed={0.2} >
                             <ServiceImage data={item} index={index}/>
                         </ParallaxLayer>
                     )
@@ -81,7 +81,7 @@ export default function MainComponent() {
 
                 {services.map((item, index) => {
                     return (
-                        <ParallaxLayer speed={0.7} style={{ zIndex: 1 }} sticky={item.headingParallax.sticky}>
+                        <ParallaxLayer speed={0.7} sticky={item.headingParallax.sticky}>
                             <ServiceText data={item} index={index}/>
                         </ParallaxLayer>
                     )

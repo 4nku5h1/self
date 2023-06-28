@@ -5,32 +5,13 @@
 
 :root {
   --width-content-percent: 50%;
-  --width-content-vw: 50vw;
+  --width-content-vw: 40vw;
   --nav-height: 7vh;
 }
 
 * {
   text-align: left;
   color: var(--color-font-heading);
-}
-
-.service-gallary {
-  max-width: var(--width-content-percent);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-
-  .title {
-    width: fit-content;
-
-    p {
-      font-size: 2.5rem;
-      font-weight: 700;
-      font-family: "Montserrat";
-      word-spacing: 3px;
-    }
-  }
 }
 
 // SERVICE IMAGE
@@ -60,11 +41,11 @@
   padding-right: 0;
 
   .service-text {
-    max-width: calc(90% - var(--width-content-percent));
+    max-width: var(--width-content-vw);
 
     h2 {
       color: #FF4300;
-      font-size: 7rem;
+      font-size: 7vw;
       text-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
       font-weight: 900;
       letter-spacing: -2px;
@@ -89,13 +70,17 @@
 // -----------------------------------------------------------------
 // SERVICE GALLARY
 .service-gallary-container {
+  width: var(--width-content-vw);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
 
   .gallary {
-    // max-width: calc(90% - var(--width-content-percent));
+    >div {
+      margin: var(--element-margin);
+    }
+    max-width: 50%;
     img {
       width: calc(var(--width-content-vw)/2);
       height: calc(60vh/2);
@@ -160,15 +145,3 @@
     height: 40%;
   }
 }
-
-// .process {
-//     p {
-//         font-weight: 500;
-//     }
-
-//     li {
-//         font-size: 1.2rem;
-//         font-weight: 300;
-//         word-spacing: 3px;
-//     }
-// }
