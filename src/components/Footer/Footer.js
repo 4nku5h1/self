@@ -1,11 +1,10 @@
 import { motion } from "framer-motion"
-import { ParallaxLayer } from "@react-spring/parallax";
 import { about, services } from "../Services/data/data";
 import { contactData, socialdata } from "./data.js";
 
 import backgroundImage from './../../assets/absbackcircle.svg'
 
-export default function Footer({ id, pageOffset }) {
+export default function Footer({ id }) {
 
     const AboutUs = () => {
         return (
@@ -76,7 +75,6 @@ export default function Footer({ id, pageOffset }) {
     }
     return (
         <>
-            <ParallaxLayer offset={pageOffset} speed={1}>
                 <div className='page footer' id={id}>
                     <div className="footer-banner">
                         <img src={backgroundImage}></img>
@@ -91,7 +89,6 @@ export default function Footer({ id, pageOffset }) {
                     </div>
                     <AboutUs />
                 </div>
-            </ParallaxLayer>
         </>
     )
 }

@@ -4,75 +4,76 @@
 @import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
 
 :root {
-  --width-content-percent: 50%;
-  --width-content-vw: 40vw;
-  --nav-height: 7vh;
+  --text-width: 60%;
+  --content-margin: 16px;
+
+  --font-color-heading: #E3E3E3; //#111111; //, ;
+  --font-color-content: #5E5E5E;
+  --button-border: #525252 ; //,#525252 
 }
 
 * {
   text-align: left;
-  color: var(--color-font-heading);
 }
 
-// SERVICE IMAGE
-.service-image {
+.service {
+
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
+  height: auto;
+  margin-top: 20%;
 
-  img {
-    box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
-    width: 50vw;
-    height: 60vh;
-  }
-}
+  flex-direction: column;
 
-.service-image.mirror {
-  justify-content: flex-end;
-}
-
-// END
-// -----------------------------------------------------------------
-// SERVICE TEXT
-.service-text-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding-right: 0;
-
-  *{text-align: right;}
-  .service-text {
-    max-width: var(--width-content-vw);
-
-    h2 {
-      color: #FF4300;
-      font-size: 7vw;
-      text-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
-      font-weight: 900;
-      letter-spacing: -2px;
-      line-height: 1;
-      // -webkit-text-stroke: 1px #112434;
-      font-family: neue haas grotesk display pro, helvetica, arial, sans-serif;
-      text-transform: uppercase;
+  .image {
+    img {
+      box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+      width: 65vw;
+      height: 60vh;
     }
   }
 
-  .service-heading :last-child {
-    // opacity: .7;
-    // margin-left: 8%;
+  .content {
+    >* {
+      margin-top: var(--content-margin);
+      font-weight: 400;
+      font-size: 28px;
+      // line-height: 37px;
+    }
+
+    max-width: var(--text-width);
+
+    h2 {
+      margin-left: -24px;
+      color: var(--font-color-heading);
+    }
+
+    p {
+      color: var(--font-color-content);
+      letter-spacing: 1px;
+    }
+
+    button {
+      padding: 8px 16px;
+      font-size: 16px;
+      border: 1px solid var(--button-border);
+      color: var(--font-color-heading);
+      text-transform: uppercase;
+      background-color: transparent;
+    }
+  }
+
+  .content :first-child {
+    margin-top: calc(var(--content-margin) * 5);
   }
 }
 
-.service-text-container.mirror {
-  *{text-align: left;}
-  justify-content: flex-start;
-}
 
-// END
-// -----------------------------------------------------------------
+
 // SERVICE GALLARY
 .service-gallary-container {
-  width: var(--width-content-vw);
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -82,9 +83,11 @@
     >div {
       margin: var(--element-margin);
     }
+
     max-width: 50%;
+
     img {
-      width: calc(var(--width-content-vw)/2);
+      width: calc(100%/2);
       height: calc(60vh/2);
     }
   }
@@ -94,16 +97,7 @@
   justify-content: flex-end;
 }
 
-// END
-// -----------------------------------------------------------------
-
-.background-image {
-  img {
-    height: 100vh;
-    width: 100vw;
-  }
-}
-
+// EXTRA
 .extra {
   * {
     margin: var(--element-margin);
