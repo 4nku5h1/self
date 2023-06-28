@@ -32,19 +32,17 @@ export const services = [
     {
         id: 'services',
         pageOffset: 1,
-        title: ['Product', 'Editing'],
+        title: 'Product Editing',
         description: 'Professional jewelry photo retouching attracts potential buyers and presents precious gemstones in the most appealing way. Necklaces, earrings, rings and other jewelry will shine after photoshopping.',
         imageBefore: productBefore,
         imageAfter: productAfter,
         background: b1,
-        headingParallax: {
-            sticky: { start: 1, end: 2 }
-        }
+
     },
     {
         id: 'service1',
         pageOffset: 3,
-        title: ['Enhance', 'ment'],
+        title: 'Image Enhancement',
         description: 'Perfect for real estate photo editing so you can present your listing with top-notch, retouched professional-looking photos.',
         imageBefore: imageEnhancementBefore,
         imageAfter: imageEnhancementAfter,
@@ -53,26 +51,22 @@ export const services = [
             list: ['White Balancing, Sharpening ', 'Remove Minor Blemishes', 'Lens Distortion Removal', 'Brightness Contrast & Tone Adjustment', 'Sky Replacement', 'Lawn Enhancement – Repair or Replace', 'Ocean/River Water Enhancement', 'TV Screen Replacement', 'Flash & Photographer’s Reflection Removal', 'HDR Bracketing with Indoor Window Replacement']
         },
         background: b2,
-        headingParallax: {
-            sticky: { start: 3, end: 4 }
-        }
+
     },
     {
         id: 'service2',
         pageOffset: 5,
-        title: ['Virtual', 'Staging'],
+        title: 'Virtual Staging',
         description: 'Our team can add furniture to real estate photography to show potential buyers just how versatile the space is.',
         imageBefore: virtualStagingBefore,
         imageAfter: virtualStagingAfter,
         background: b3,
-        headingParallax: {
-            sticky: { start: 5, end: 6 }
-        }
+
     },
     {
         id: 'service3',
         pageOffset: 7,
-        title: ['Day to', 'Dusk'],
+        title: 'Day to Dusk',
         description: 'Dusk is a beautiful time of the day but is notoriously hard to photograph,We can turn any daytime or gloomy sky into a breathtaking sunset to really make your listing stand out from the rest. Our photo retouching service will take your exterior property photo from drab to fab by replacing your sky with a beautiful dusk setting.',
         imageBefore: day2DuskBefore,
         imageAfter: day2DuskAfter,
@@ -81,23 +75,19 @@ export const services = [
             list: []
         },
         background: b4,
-        headingParallax: {
-            sticky: { start: 7, end: 8 }
-        }
+
 
 
     },
     {
         id: 'service4',
         pageOffset: 9,
-        title: ['Item', 'Removal'],
+        title: 'Item Removal',
         description: 'Our photo editing experts can remove unwanted items from your photos.',
         imageBefore: itemRemovalBefore,
         imageAfter: itemRemovalAfter,
         background: b5,
-        headingParallax: {
-            sticky: { start: 9, end: 10 }
-        }
+
     }
 ]
 export const extraServices = [

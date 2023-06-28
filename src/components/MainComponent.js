@@ -6,12 +6,14 @@ import { services, extraServices } from './Services/data/data';
 import Navbar from './Navbar/NavBar';
 import Home from './Home/Home';
 import Extra from './Services/Extra';
-import {  ServiceGallary, ServiceText, ServiceImage, Service } from './Services/Service';
+import { Service } from './Services/Service';
 
-import '../css/styles.scss'
 import Clients from './Clients/Clients';
 import Footer from './Footer/Footer';
 import { observeElementById } from './Common/helper';
+
+
+import '../css/styles.scss'
 
 function registerBackgroundColorEffect() {
     const colorMapping = {
