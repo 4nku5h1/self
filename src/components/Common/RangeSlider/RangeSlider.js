@@ -1,7 +1,10 @@
-import { useEffect } from "react"
+import { useEffect } from 'react';
 import './styles.scss'
-export default function RangeSlider({ min, max, value, onChange }) {
-    const alighmenterror = value < 50 ? 10 : 0;
+
+export default function RangeSlider({ min, max, value, onChange, sliderSize }) {
+    useEffect(()=>{
+        document.documentElement.style.setProperty('--thumb-size', `${sliderSize}px`);
+    },[])
     return (
         <div class="range-slider">
             <div className="thumb-track" style={{ width: `calc(${value}% + ${40}px)` }}>

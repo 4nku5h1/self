@@ -1,9 +1,14 @@
+:root{
+	--thumb-size: 40px;
+}
 .range-slider {
+    width: 100%;
 	* {
 		user-select: none;
 		width: 100%;
 	}
-	position: relative;
+	position: absolute;
+	top: calc(50% - var(--thumb-size));
 }
 
 .input {
@@ -23,21 +28,21 @@
 	opacity: 0;
 }
 .thumb-track{
-	position: absolute;
-	margin-left: -20px;
+	// position: absolute;
+	margin-left: calc(0px - var(--thumb-size)/2);
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	max-width: calc(100% + 40px);
+	max-width: calc(100% + var(--thumb-size));
 }
 .thumb {
-	width: 40px;
-	height: 40px;
+	width: var(--thumb-size);
+	height: var(--thumb-size);
 	border-radius: 50%;
 
 	.slider-circle {
-		width: 40px;
-		height: 40px;
+		width: var(--thumb-size);
+		height: var(--thumb-size);
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;

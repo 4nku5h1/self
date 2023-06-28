@@ -23,10 +23,7 @@ export function ServiceGallary({ data, index }) {
     return (
         <div className={`page service-gallary-container ${align}`}>
             <div className="gallary">
-                <ImageCompare imageBefore={imageBefore} imageAfter={imageAfter} scrollTo={0} disablecompare={false}/>
-                <ImageCompare imageBefore={imageBefore} imageAfter={imageAfter} scrollTo={0} disablecompare={false}/>
-                <ImageCompare imageBefore={imageBefore} imageAfter={imageAfter} scrollTo={0} disablecompare={false}/>
-                <ImageCompare imageBefore={imageBefore} imageAfter={imageAfter} scrollTo={0} disablecompare={false}/>
+                <ImageCompare imageBefore={imageBefore} imageAfter={imageAfter} scrollTo={50} disablecompare={false} sliderSize={40}/>
             </div>
         </div>
     )

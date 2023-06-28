@@ -92,14 +92,13 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 
   .gallary {
-    max-width: calc(90% - var(--width-content-percent));
-
+    // max-width: calc(90% - var(--width-content-percent));
     img {
-      padding: var(--element-margin);
-      width: calc(var(--width-content-vw)/4);
-      height: calc(60vh/4);
+      width: calc(var(--width-content-vw)/2);
+      height: calc(60vh/2);
     }
   }
 }
