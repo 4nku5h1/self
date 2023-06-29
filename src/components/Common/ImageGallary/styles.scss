@@ -3,6 +3,7 @@
 }
 
 .image-gallary {
+    overflow-x: hidden;
     margin-top: 40%;
     margin-bottom: 40%;
     display: flex;
@@ -13,7 +14,6 @@
     -webkit-transform:  rotate(var(--rotate-degree));
     -webkit-transform-origin: center;
     .row {
-        overflow-x: scroll;
         width: max-content;
         img {
             margin: calc(var(--element-margin)/2) var(--element-margin) ;
