@@ -19,11 +19,11 @@ function registerBackgroundColorEffect() {
     const colorMapping = {
         'page-0': 'rgb(231, 228, 229)',
         'page-1': '#fff',
-        'page-2': 'rgb(231, 228, 229)',
-        'page-3': 'rgb(240, 240, 240)',
+        'page-2': '#fff',
+        'page-3': '#0c0c15',
         'page-4': 'rgb(240, 240, 240)',
-        'page-5': 'rgb(240, 240, 240)',
-        'page-6': '#000',
+        'page-5': '#000',
+        'page-6': '#fff',
         'page-7': 'rgb(25, 25, 25)',
         'page-8': 'rgb(25, 25, 25)'
     }
@@ -34,7 +34,6 @@ function registerBackgroundColorEffect() {
         const id = `page-${index}`
         observeElementById(id, changeColor);
         return id;
-
     })
 }
 export default function MainComponent() {
@@ -42,13 +41,13 @@ export default function MainComponent() {
         setTimeout(() => {
             registerBackgroundColorEffect()
         }, 2000);
-    })
+    },[])
 
     return (
         <div className='main'>
             <Navbar />
             <Home id={'page-0'} />
-           <AboutUs />
+           <AboutUs id={'page-1'}/>
             {/* {services.map((item, index) => {
                 return (
                     <ServiceGallary data={item} index={index} />
@@ -56,13 +55,13 @@ export default function MainComponent() {
             })} */}
             {services.map((item, index) => {
                 return (
-                    <Service data={item} index={index} id={`page-${index + 1}`} />
+                    <Service data={item} index={index} id={`page-${index + 2}`} />
                 )
             })}
             {/* <ImageGallary /> */}
             {extraServices.map((item, index) => {
                 return (
-                    <Content id={`page-${index + 6}`} {...item} imageWidth={550} imageHeight={300} />
+                    <Content id={`page-${index + 7}`} {...item} imageWidth={550} imageHeight={300} />
                 )
             })}
             <Content images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={"We do brand strategy and brand design. When asked to pick between beautyand reason, we choose both: webelieve they need each other."} />

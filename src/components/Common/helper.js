@@ -4,10 +4,6 @@ export function observeElementById(id, callBack) {
         ([entry]) => {
             if (entry.isIntersecting) {
                 callBack(id);
-                setTimeout(() => {
-                    // el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    console.log("fsdgohjujih", id)
-                }, 100);
                 return;
             }
         },

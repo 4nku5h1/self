@@ -29,9 +29,9 @@ function TextBanner({ id }) {
 
     )
 }
-export default function AboutUs() {
+export default function AboutUs({ id }) {
     return (
-        <div className='about page'>
+        <div className='about page' id={id}>
             <TextBanner />
             <p>{about}</p>
         </div>
