@@ -10,8 +10,6 @@ export default function Home({ id }) {
 
         <div className='home page' id={id}>
             <div className='banner'>
-                {/* <Logo size={36} subtitleAlign='' /> */}
-
                 <div className='text'>
                     <h4> We believe </h4>
                     <h4> Brands Shape the </h4>
