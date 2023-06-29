@@ -15,6 +15,7 @@ import AboutUs from './AboutUs/AboutUs';
 // import InfiniteImageGallary from './Common/InfiniteImageGallary/InfiniteImageGallary'
 
 import '../css/styles.scss'
+import FloatingNav from './FloatingNav/FloatingNav';
 function registerBackgroundColorEffect() {
     const colorConfig = {
         headingLight: '#E3E3E3',
@@ -101,6 +102,7 @@ export default function MainComponent() {
     return (
         <div className='main'>
             <Navbar />
+            <FloatingNav />
             <Home id={'page-0'} />
             <AboutUs id={'page-1'} />
             {/* {services.map((item, index) => {
