@@ -215,12 +215,6 @@
   background: radial-gradient(circle at 90%, #6be9e9, #000000 40%, #000000 100%, #000000 75%);
 }
 
-// parralax background pages 
-.footer.page {
-  border-top: solid #000 5px;
-  background-color: #00000094;
-  backdrop-filter: blur(20px);
-}
 body{
   transition: background-color 1.5s ease;
   background-color: var(--color-background);
