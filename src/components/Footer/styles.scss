@@ -18,21 +18,6 @@
     align-items: flex-start;
     justify-content: space-between;
 
-    .text {
-        flex-direction: column;
-
-        .logo {
-            align-self: center;
-            width: max-content;
-
-            h3 {
-                font-size: 12px;
-                text-align: right;
-            }
-        }
-
-    }
-
     p {
         margin-bottom: 0;
     }

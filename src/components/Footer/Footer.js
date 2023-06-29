@@ -3,76 +3,9 @@ import { about, services } from "../Services/data/data";
 import { contactData, socialdata } from "./data.js";
 
 import './styles.scss';
+import Logo from "../Logo/Logo";
 
 export default function Footer({ id }) {
-
-    const AboutUs = () => {
-        return (
-            <div className="about">
-                <p>{about}</p>
-            </div>
-        )
-    }
-    const ContactUs = () => {
-        return (
-            <div className="contact-us">
-                <h2>Contact Us</h2>
-                <div className="line" />
-                {contactData.map((item) => {
-                    return (
-                        <div className="item">
-                            <img src={item.image}></img>
-                            <span>{item.title}</span>
-                        </div>
-                    )
-                })}
-                <button>Call now</button>
-            </div>
-        )
-    }
-    const Logo = () => {
-        return (
-            <div className='logo'>
-                <h2>GRAPHIC<span>NIX</span></h2>
-                <h3>A design studio</h3>
-            </div>
-        )
-    }
-    const Social = () => {
-        return (
-            <div className='social'>
-                {socialdata.map((item) => {
-                    return (
-                        <motion.div
-                            className="item"
-                            whileHover={{ scale: 1.2, rotate: 90 }}
-                            whileTap={{
-                                scale: 0.8,
-                                rotate: -90,
-                                borderRadius: "100%"
-                            }}
-                        >
-
-                            <img src={item.image}></img>
-                        </motion.div>
-                    )
-                })}
-            </div>
-        )
-    }
-    const Services = ({ title, data }) => {
-        return (
-            <div className="services-container">
-                <h2>{title}</h2>
-                <div className="line" />
-                <div className="item">
-                    {data.map((service) => {
-                        return (<p>{service}</p>)
-                    })}
-                </div>
-            </div>
-        )
-    }
     return (
         <div className='page footer flex-center' id={id}>
             <div className="text flex-center">
