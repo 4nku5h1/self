@@ -14,6 +14,8 @@ import { observeElementById } from './Common/helper';
 
 
 import '../css/styles.scss'
+import { ImageGallary } from './Common/ImageGallary/ImageGallary';
+import About from './About/About';
 
 function registerBackgroundColorEffect() {
     const colorMapping = {
@@ -58,17 +60,14 @@ export default function MainComponent() {
                     <Service data={item} index={index} id={`page-${index + 1}`} />
                 )
             })}
-
-            {/* {services.map((item, index) => {
-                return (
-                    <ServiceText data={item} index={index} />
-                )
-            })} */}
-            {extraServices.map((item, index) => {
+            <ImageGallary />
+            <About />
+            
+            {/* {extraServices.map((item, index) => {
                 return (
                     <Extra {...item} id={`page-${index + 6}`} />
                 )
-            })}
+            })} */}
             <Clients id={`page-7`} />
             <Footer  id={`page-8`} />
         </div>

@@ -3,21 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
 
-:root {
-  --text-width: 60%;
-  --content-margin: 16px;
-
-  --font-color-heading: #E3E3E3; //#111111; //, ;
-  --font-color-content: #5E5E5E;
-  --button-border: #525252 ; //,#525252 
-}
-
-* {
-  text-align: left;
-}
-
 .service {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,42 +17,8 @@
     img {
       box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
       width: 65vw;
-      height: 60vh;
+      height: 65vh;
     }
-  }
-
-  .content {
-    >* {
-      margin-top: var(--content-margin);
-      font-weight: 400;
-      font-size: 28px;
-      // line-height: 37px;
-    }
-
-    max-width: var(--text-width);
-
-    h2 {
-      margin-left: -24px;
-      color: var(--font-color-heading);
-    }
-
-    p {
-      color: var(--font-color-content);
-      letter-spacing: 1px;
-    }
-
-    button {
-      padding: 8px 16px;
-      font-size: 16px;
-      border: 1px solid var(--button-border);
-      color: var(--font-color-heading);
-      text-transform: uppercase;
-      background-color: transparent;
-    }
-  }
-
-  .content :first-child {
-    margin-top: calc(var(--content-margin) * 5);
   }
 }
 
@@ -122,7 +74,6 @@
       font-size: 7rem;
       font-weight: 900;
       letter-spacing: 0px;
-      font-family: "Coign", sans-serif;
       text-transform: uppercase;
     }
 

@@ -1,0 +1,56 @@
+
+@import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
+:root {
+    --text-container-width: 50%;
+    --content-margin: 16px;
+
+    --font-color-heading: #E3E3E3; //#111111; //, ;
+    --font-color-content: #5E5E5E;
+    --button-border: #525252; //,#525252 
+}
+
+* {
+    font-family: 'TT Hoves Pro Trial', sans-serif;
+
+    text-align: left;
+}
+
+.text-content {
+    >* {
+        margin-top: var(--content-margin);
+        font-weight: 400;
+        font-size: 28px;
+        // line-height: 37px;
+    }
+
+    max-width: var(--text-container-width);
+
+    h2 {
+        margin-left: -24px;
+        color: var(--font-color-heading);
+    }
+
+    h3 {
+        margin-left: -24px;
+        color: var(--font-color-heading);
+    }
+
+    p {
+        color: var(--font-color-content);
+        letter-spacing: 1px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 16px;
+        border: 1px solid var(--button-border);
+        color: var(--font-color-heading);
+        text-transform: uppercase;
+        background-color: transparent;
+    }
+
+}
+
+.text-content :first-child {
+    margin-top: calc(var(--content-margin) * 5);
+}
