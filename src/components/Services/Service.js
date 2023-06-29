@@ -13,7 +13,7 @@ export function Service({ id, data }) {
             <div className='text-content'>
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <button>Explore more</button>
+                <button className='button'>Explore more</button>
             </div>
         </div>
     )

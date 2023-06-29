@@ -1,8 +1,9 @@
 import { motion } from "framer-motion"
 import { about, services } from "../Services/data/data";
 import { contactData, socialdata } from "./data.js";
-
 import backgroundImage from './../../assets/absbackcircle.svg'
+
+import './styles.scss';
 
 export default function Footer({ id }) {
 
@@ -77,7 +78,6 @@ export default function Footer({ id }) {
         <>
                 <div className='page footer' id={id}>
                     <div className="footer-banner">
-                        <img src={backgroundImage}></img>
                         <Logo />
                         <Social />
                     </div>

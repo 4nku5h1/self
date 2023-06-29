@@ -22,12 +22,6 @@
         // line-height: 37px;
     }
 
-    >img {
-        margin-top: 40%;
-        width: 500px;
-        height: 300px;
-    }
-
     max-width: var(--text-container-width);
 
     h2 {
@@ -47,15 +41,6 @@
     p {
         color: var(--font-color-content);
         letter-spacing: 1px;
-    }
-
-    button {
-        padding: 8px 16px;
-        font-size: 16px;
-        border: 1px solid var(--button-border);
-        color: var(--font-color-heading);
-        text-transform: uppercase;
-        background-color: transparent;
     }
 
 }
