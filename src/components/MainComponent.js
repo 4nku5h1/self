@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 // import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
-import { services, extraServices } from './Services/data/data';
+import { services, extraServices, about } from './Services/data/data';
 
 import Navbar from './Navbar/NavBar';
 import Home from './Home/Home';
@@ -15,11 +15,12 @@ import clientsData from '../components/Clients/data.js'
 
 
 import '../css/styles.scss'
+import AboutUs from './AboutUs/AboutUs';
 
 function registerBackgroundColorEffect() {
     const colorMapping = {
         'page-0': 'rgb(231, 228, 229)',
-        'page-1': 'rgb(231, 228, 229)',
+        'page-1': '#fff',
         'page-2': 'rgb(231, 228, 229)',
         'page-3': 'rgb(240, 240, 240)',
         'page-4': 'rgb(240, 240, 240)',
@@ -43,12 +44,13 @@ export default function MainComponent() {
         setTimeout(() => {
             registerBackgroundColorEffect()
         }, 2000);
-    }, [])
+    })
 
     return (
         <div className='main'>
             <Navbar />
             <Home id={'page-0'} />
+           <AboutUs />
             {/* {services.map((item, index) => {
                 return (
                     <ServiceGallary data={item} index={index} />
