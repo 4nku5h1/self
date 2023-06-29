@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { services, extraServices, about } from './Services/data/data';
 
 import Navbar from './Navbar/NavBar';
@@ -92,6 +92,7 @@ function registerBackgroundColorEffect() {
         return id;
     })
 }
+
 export default function MainComponent() {
     useEffect(() => {
         setTimeout(() => {
