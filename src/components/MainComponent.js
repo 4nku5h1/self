@@ -62,12 +62,13 @@ export default function MainComponent() {
                 )
             })}
             <ImageGallary />
-            <Content images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={"We do brand strategy and brand design. When asked to pick between beautyand reason, we choose both: webelieve they need each other."} />
             {extraServices.map((item, index) => {
                 return (
                     <Content id={`page-${index + 6}`} {...item} imageWidth={550} imageHeight={300} />
                 )
             })}
+            <Content images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={"We do brand strategy and brand design. When asked to pick between beautyand reason, we choose both: webelieve they need each other."} />
+            
             <Content id={`page-7`} title={'Our trusted clients'} images={clientsData} />
             <Footer id={`page-8`} />
         </div>
