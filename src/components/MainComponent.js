@@ -18,7 +18,7 @@ import '../css/styles.scss'
 
 function registerBackgroundColorEffect() {
     const colorMapping = {
-        'page-0': 'rgb(25, 25, 25)',
+        'page-0': '#000',
         'page-1': 'rgb(25, 25, 25)',
         'page-2': '#000',
         'page-3': 'rgb(240, 240, 240)',
@@ -60,14 +60,14 @@ export default function MainComponent() {
                 )
             })}
             <ImageGallary />
-            <Content images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={"We do brand strategy and brand design. When asked to pick between beautyand reason, we choose both: webelieve they need each other."}/>
+            <Content images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={"We do brand strategy and brand design. When asked to pick between beautyand reason, we choose both: webelieve they need each other."} />
             {extraServices.map((item, index) => {
                 return (
                     <Content id={`page-${index + 6}`} {...item} imageWidth={550} imageHeight={300} />
                 )
             })}
-            <Content id={`page-7`} title={'Our trusted clients'} images={clientsData}/>
-            <Footer  id={`page-8`} />
+            <Content id={`page-7`} title={'Our trusted clients'} images={clientsData} />
+            <Footer id={`page-8`} />
         </div>
     )
 }

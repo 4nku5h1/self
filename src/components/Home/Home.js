@@ -2,6 +2,8 @@ import React from 'react';
 import TextAnimation from '../Common/TextAnimation';
 import Card from './Card/Card';
 import { idCards } from '../../js/sitedata';
+
+import './styles.scss';
 export default function Home({id}) {
     return (
 

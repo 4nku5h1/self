@@ -2,6 +2,7 @@
 @import url(./text.scss);
 @import url('./flex.scss');
 @import url('./button.scss');
+@import url('./fonts.scss');
 :root {
   --color-nav-background: #000000;
   --color-nav-font: #ffffff;
@@ -73,79 +74,6 @@
 .background-image {
   position: fixed;
   height: 100vh;
-}
-
-.home {
-  color: var(--color-font-heading);
-  justify-content: space-between;
-  .info-left {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    >* {
-      margin-top: var(--element-margin);
-    }
-
-    h2 {
-      font-size: 5.5rem;
-      font-weight: 900;
-      letter-spacing: 5px;
-    }
-
-    h4 {
-      font-size: 1.8rem;
-      font-weight: 500;
-      letter-spacing: 5px;
-    }
-
-    span {
-      letter-spacing: normal;
-      font-weight: 100;
-    }
-
-    .subtitle {
-      * {
-        letter-spacing: normal;
-        margin-right: 7px;
-        font-size: 1.2rem;
-        line-height: 1.2;
-        font-weight: 100;
-      }
-
-      span {
-        letter-spacing: normal;
-        font-weight: 300;
-      }
-
-      display: flex;
-    }
-
-    .description {
-      height: 100%;
-      justify-content: flex-end;
-      align-self: flex-end;
-    }
-
-    .home-id-cards {
-      margin-top: 56px;
-      display: flex;
-      flex-wrap: wrap;
-
-      .id-card {
-        min-width: 250px;
-        max-width: 250px;
-      }
-    }
-  }
-}
-.home.page{
-  height: 100vh;
-  width: 100vw;
-  z-index: 1;
 }
 
 .logo {
