@@ -4,7 +4,7 @@ import './styles.scss';
 
 export function Service({ id, data }) {
 
-    const {title, description, imageBefore, imageAfter } = data;
+    const { title, description, imageBefore, imageAfter } = data;
     return (
         <div id={id} className='page service'>
             <div className='image' id={id}>
@@ -13,7 +13,7 @@ export function Service({ id, data }) {
             <div className='text-content'>
                 <h3>{title}</h3>
                 <p>{description}</p>
-            <button>Explore more</button>
+                <button>Explore more</button>
             </div>
         </div>
     )

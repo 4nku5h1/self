@@ -5,17 +5,16 @@ import { services, extraServices } from './Services/data/data';
 
 import Navbar from './Navbar/NavBar';
 import Home from './Home/Home';
-import Extra from './Services/Extra';
 import { Service } from './Services/Service';
-
-import Clients from './Clients/Clients';
 import Footer from './Footer/Footer';
 import { observeElementById } from './Common/helper';
+import { ImageGallary } from './Common/ImageGallary/ImageGallary';
+import Content from './Content/Content';
+import roseImage from '../assets/background/rose.webp'
+import clientsData from '../components/Clients/data.js'
 
 
 import '../css/styles.scss'
-import { ImageGallary } from './Common/ImageGallary/ImageGallary';
-import About from './About/About';
 
 function registerBackgroundColorEffect() {
     const colorMapping = {
@@ -61,14 +60,13 @@ export default function MainComponent() {
                 )
             })}
             <ImageGallary />
-            <About />
-            
-            {/* {extraServices.map((item, index) => {
+            <Content images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={"We do brand strategy and brand design. When asked to pick between beautyand reason, we choose both: webelieve they need each other."}/>
+            {extraServices.map((item, index) => {
                 return (
-                    <Extra {...item} id={`page-${index + 6}`} />
+                    <Content id={`page-${index + 6}`} {...item} imageWidth={550} imageHeight={300} />
                 )
-            })} */}
-            <Clients id={`page-7`} />
+            })}
+            <Content id={`page-7`} title={'Our trusted clients'} images={clientsData}/>
             <Footer  id={`page-8`} />
         </div>
     )

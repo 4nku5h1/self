@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(./text.scss);
+@import url('./flex.scss');
 :root {
   --color-nav-background: #000000;
   --color-nav-font: #ffffff;
@@ -65,10 +66,13 @@
 }
 .page {
   // background-color: var(--color-background) !important;
-  width: 100vw;
-  height: 100vh;
+  
+  // margin-top: 30%;
+  margin-bottom: 25%;
+  // width: 100vw;
+  // height: 100vh;
   padding: var(--padding-page);
-  padding-top: calc(var(--nav-height) + var(--padding-page));
+  // padding-top: calc(var(--nav-height) + var(--padding-page));
 }
 
 .background-image {
@@ -292,30 +296,6 @@
     }
   }
 
-
-}
-
-.clients {
-  * {
-    color: var(--color-font-heading);
-  }
-
-  padding-left: 0;
-  padding-right: 0;
-
-  h2 {
-    width: 100%;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 600;
-  }
-  .item{
-    img{
-      margin: var(--element-margin);
-      max-width: 160px;
-      max-height: 150px;
-    }
-  }
 
 }
 
