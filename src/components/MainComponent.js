@@ -18,9 +18,9 @@ import '../css/styles.scss'
 
 function registerBackgroundColorEffect() {
     const colorMapping = {
-        'page-0': '#000',
+        'page-0': 'rgb(25, 25, 25)',
         'page-1': 'rgb(25, 25, 25)',
-        'page-2': 'rgb(25, 25, 25)',
+        'page-2': '#000',
         'page-3': 'rgb(240, 240, 240)',
         'page-4': 'rgb(240, 240, 240)',
         'page-5': 'rgb(240, 240, 240)',

@@ -43,7 +43,7 @@
   color: var(--color-nav-font);
   z-index: 10;
   backdrop-filter: blur(7px);
-  position: absolute;
+  position: fixed;
   top: 0;
 
   h2 {
@@ -66,14 +66,8 @@
   }
 }
 .page {
-  // background-color: var(--color-background) !important;
-  
-  // margin-top: 30%;
   margin-bottom: 25%;
-  // width: 100vw;
-  // height: 100vh;
   padding: var(--padding-page);
-  // padding-top: calc(var(--nav-height) + var(--padding-page));
 }
 
 .background-image {
@@ -82,8 +76,6 @@
 }
 
 .home {
-  background-image: url('./../assets//parallax/b1.webp');
-  background-size: contain;
   color: var(--color-font-heading);
   justify-content: space-between;
   .info-left {
