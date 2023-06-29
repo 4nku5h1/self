@@ -27,13 +27,13 @@ function registerBackgroundColorEffect() {
     const colorMapping = {
         'page-0': {
             backgroundColor: 'rgb(231, 228, 229)',
-            headingColor: colorConfig.headingLight,
+            headingColor: colorConfig.headingDark,
             contentColor: colorConfig.contentDark,
             buttonColor: colorConfig.borderDark
         },
         'page-1': {
             backgroundColor: '#fff',
-            headingColor: colorConfig.headingLight,
+            headingColor: colorConfig.headingDark,
             contentColor: colorConfig.contentDark,
             buttonColor: colorConfig.borderDark
         },
