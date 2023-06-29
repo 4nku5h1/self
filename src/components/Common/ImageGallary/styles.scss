@@ -3,7 +3,8 @@
 }
 
 .image-gallary {
-    overflow-x: hidden;
+    overflow-x:auto;
+    position: relative;
     margin-top: 40%;
     margin-bottom: 40%;
     display: flex;

@@ -10,7 +10,7 @@ export function ImageGallary({ id, data }) {
         row2: [b1, b2, b3],
     }
     return (
-        <div id={id} className='image-gallary'>
+        <div id={id} className='image-gallary page'>
             {Object.values(data).map((row) => {
                 return(
                     

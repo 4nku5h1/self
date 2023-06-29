@@ -8,6 +8,7 @@ html {
   /* background-color: var(--g-background-html); */
   font-size: 16px;
   cursor: pointer;
+  overflow-x: hidden;
 }
 
 

@@ -13,10 +13,10 @@ import Content from './Content/Content';
 import roseImage from '../assets/background/rose.webp'
 import clientsData from '../components/Clients/data.js'
 
+import AboutUs from './AboutUs/AboutUs';
+import InfiniteImageGallary from './Common/InfiniteImageGallary/InfiniteImageGallary'
 
 import '../css/styles.scss'
-import AboutUs from './AboutUs/AboutUs';
-
 function registerBackgroundColorEffect() {
     const colorMapping = {
         'page-0': 'rgb(231, 228, 229)',
@@ -61,7 +61,7 @@ export default function MainComponent() {
                     <Service data={item} index={index} id={`page-${index + 1}`} />
                 )
             })}
-            <ImageGallary />
+            {/* <ImageGallary /> */}
             {extraServices.map((item, index) => {
                 return (
                     <Content id={`page-${index + 6}`} {...item} imageWidth={550} imageHeight={300} />
