@@ -1,14 +1,12 @@
 import React from 'react';
+import Logo from '../Logo/Logo';
 
 export default function Navbar() {
     return (
-        <div className='navbar flex-justify-space-between w-100 px-5 py-3'>
-            <span ></span>
-            {/* <h2>GRAPHIC<span>NIX</span></h2> */}
-            <div className='items'>
-                <span>SERVICES</span>
-                <span>CONTACT</span>
-            </div>
+        <div className='navbar'>
+            <Logo size={14}/>
         </div>
     )
 }
+//   <span>SERVICES</span>
+{/* <span>CONTACT</span> */}

@@ -3,6 +3,7 @@
 @import url('./flex.scss');
 @import url('./button.scss');
 @import url('./fonts.scss');
+
 :root {
   --color-nav-background: #000000;
   --color-nav-font: #ffffff;
@@ -11,7 +12,8 @@
   // 9376e6
   // 729efa
   // font
-  --sadf : #eabe1e96;
+  --color-font-home:#030304;
+  --sadf: #eabe1e96;
   --color-font-heading: #ffffff;
   --color-font-sub-heading: #ffffff;
   --color-font-content: #ffffff;
@@ -34,38 +36,25 @@
   background-color: var(--color-font-heading);
   height: 2px;
 }
+
 .line-vertical {
   border-left: 2px solid var(--color-font-heading);
 }
+
 .main {}
 
 .navbar {
+  * {
+    color: var(--color-font-home);
+  }
+
   height: var(--nav-height);
   color: var(--color-nav-font);
-  z-index: 10;
-  backdrop-filter: blur(7px);
-  position: fixed;
-  top: 0;
+  // backdrop-filter: blur(7px);
+  padding:24px 36px;
 
-  h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-
-    span {
-      font-weight: 100;
-      transform: rotate(45deg);
-    }
-  }
-
-  .items {
-    span {
-      margin: 1rem;
-      font-size: 0.9rem;
-      font-weight: 100;
-      letter-spacing: 2px;
-    }
-  }
 }
+
 .page {
   margin-bottom: 25%;
   padding: var(--padding-page);
@@ -112,7 +101,7 @@
   background: radial-gradient(circle at 90%, #6be9e9, #000000 40%, #000000 100%, #000000 75%);
 }
 
-body{
+body {
   transition: background-color 1.5s ease;
   background-color: var(--color-background);
 }

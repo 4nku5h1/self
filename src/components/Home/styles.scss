@@ -1,62 +1,102 @@
 .home {
   * {
+    user-select: none;
     font-family: 'poppins';
+    color: var(--color-font-home);
   }
 
-  color: var(--color-font-heading);
-  justify-content: space-between;
 
-  .info-left {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    >* {
-      margin-top: var(--element-margin);
-    }
-
-    .subtitle {
+  .banner {
+    .text {
       * {
-        letter-spacing: normal;
-        margin-right: 7px;
-        font-size: 1.2rem;
-        line-height: 1.2;
-        font-weight: 100;
+        color: var(--color-font-home);
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 6rem;
+        font-weight: 600;
+        font-family: migra, sans-serif;
       }
 
-      span {
-        letter-spacing: normal;
-        font-weight: 300;
-      }
-
-      display: flex;
-    }
-
-    .description {
-      height: 100%;
-      justify-content: flex-end;
-      align-self: flex-end;
-    }
-
-    .home-id-cards {
-      margin-top: 56px;
-      display: flex;
-      flex-wrap: wrap;
-
-      .id-card {
-        min-width: 250px;
-        max-width: 250px;
+      h3 {
+        font-weight: 900;
+        font-family: poppins, sans-serif;
       }
     }
   }
+
+  .service-card {
+    align-self: flex-start;
+    overflow: hidden;
+    *{
+      font-size: 18px;
+      font-weight: 200;
+      color: var(--color-font-home);
+    }
+
+    .image-container {
+      display: flex;
+
+      .image-wrapper {
+        *{
+          font-weight: 200;
+          margin: var(--element-margin);
+        }
+        
+        img {
+          width: 86px;
+          height: 86px;
+          transition: all ease-in 0.3s;
+        }
+
+        img:hover {
+          -webkit-transform: scale(1.1);
+          transform: rotateX(40deg);
+          transform: scale(0.9);
+        }
+        p{
+          font-size: 14px;
+          font-weight: 300;
+          text-align: left;
+          margin-top: 0;
+        }
+      }
+    }
+    h4 {
+      margin: var(--element-margin);
+      text-align: left;
+    }
+
+  }
+
+
+  .subtitle {
+    * {
+      letter-spacing: normal;
+      margin-right: 7px;
+      font-size: 1.2rem;
+      line-height: 1.2;
+      font-weight: 100;
+    }
+
+    span {
+      letter-spacing: normal;
+      font-weight: 300;
+    }
+
+    display: flex;
+  }
+
+
 }
 
 .home.page {
-  // height: 100vh;
+  font-family: 'PP migra';
+  height: 100vh;
   width: 100vw;
   z-index: 1;
-  padding: calc(var(--padding-page) * 2);
 }
