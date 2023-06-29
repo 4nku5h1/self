@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react';
-// import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-
 import { services, extraServices, about } from './Services/data/data';
 
 import Navbar from './Navbar/NavBar';
@@ -14,7 +12,7 @@ import roseImage from '../assets/background/rose.webp'
 import clientsData from '../components/Clients/data.js'
 
 import AboutUs from './AboutUs/AboutUs';
-import InfiniteImageGallary from './Common/InfiniteImageGallary/InfiniteImageGallary'
+// import InfiniteImageGallary from './Common/InfiniteImageGallary/InfiniteImageGallary'
 
 import '../css/styles.scss'
 function registerBackgroundColorEffect() {
@@ -74,17 +72,3 @@ export default function MainComponent() {
         </div>
     )
 }
-{/* <Parallax pages={totalPages} className='parallax-container'>
-               
-
-                <ParallaxLayer sticky={{ start: home + servicePages + extra, end: totalPages }} speed={0.5} style={{ zIndex: -1 }}>
-                   
-                </ParallaxLayer>
-            </Parallax> */}
-{/* {services.map((item, index) => {
-                    return (
-                        <ParallaxLayer offset={item.pageOffset} speed={0.5}>
-                            <ServiceBackground data={item} />
-                        </ParallaxLayer>
-                    )
-                })} */}
