@@ -23,7 +23,7 @@ function TextBanner({ id }) {
                 })}
             </div>
             <div className='foreground-text'>
-                <h3>A design studio, based on bichpuri, Agra</h3>
+                <h3>A design studio, bichpuri fatak ke aage, Agra</h3>
             </div>
         </div>
 
