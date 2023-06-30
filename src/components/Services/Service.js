@@ -1,6 +1,7 @@
 import { useAppContext } from '../Common/AppContext/AppContext';
 import { setCursorDefault, setCursorText } from '../Common/CustomCursor/helper';
 import ImageCompare from '../Common/ImageCompare/ImageCompare'
+import { serviceIds } from '../Common/backgroundcolorEffects';
 import { services } from './data/data';
 
 import './styles.scss';
@@ -9,14 +10,14 @@ export function Service() {
     const appContext = useAppContext();
     return (
         <>
-            <div className='page heading'>
+            <div id="SERVICE-TITLE" className='page heading'>
                 <div className='text-content text-heading'>
                     <h1>OUR SERVICES</h1>
                 </div>
             </div>
             {services.map((data, index) => {
                 const { title, description, imageBefore, imageAfter } = data;
-                const id = `page-${index + 2}`
+                const id = serviceIds[index]
                 return (
                     <div id={id} className='page service'>
                         <div className='image' id={id}>

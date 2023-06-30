@@ -21,8 +21,8 @@ export default function MainComponent() {
         <div className='main'>
             <Navbar />
             <FloatingNav />
-            <Home id={'page-0'} />
-            <AboutUs id={'page-1'} />
+            <Home id={'HOME'} />
+            <AboutUs id={'ABOUT'} />
             <Service />
             {/* <ImageGallary /> */}
             {/* {services.map((item, index) => {
@@ -33,13 +33,13 @@ export default function MainComponent() {
             {/* <InfiniteImageGallary /> */}
             {extraServices.map((item, index) => {
                 return (
-                    <Content id={`page-${index + 7}`} {...item} imageWidth={400} imageHeight={200} />
+                    <Content id={'SERVICE-RENDER'} {...item} imageWidth={400} imageHeight={200} />
                 )
             })}
-            <Content images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={"We also do brand strategy and brand design. When asked to pick between beauty and reason, we choose both: we believe they need each other."} />
+            <Content id={'GRAPHICNIX-ROSE'} images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={"We also do brand strategy and brand design. When asked to pick between beauty and reason, we choose both: we believe they need each other."} />
 
-            <Client id={`page-7`} />
-            <Footer id={`page-8`} />
+            <Client id="CLIENTS"/>
+            <Footer id="FOOTER" />
         </div>
     )
 }

@@ -6,9 +6,25 @@ const colorConfig = {
     contentDark: '#5E5E5E',
     borderDark: '#525252',
 }
-
+export const serviceIds = [
+    'SERVICE-1',
+    'SERVICE-2',
+    'SERVICE-3',
+    'SERVICE-4',
+    'SERVICE-5',
+]
+const pages = [
+    'HOME',
+    'ABOUT',
+    'SERVICE-TITLE',
+    ...serviceIds,
+    'SERVICE-RENDER',
+    'GRAPHICNIX-ROSE',
+    'CLIENTS',
+    'FOOTER'
+]
 const pageConfigObj = {
-    'page-0': {
+    'HOME': {
         backgroundColor: 'rgb(231, 228, 229)',
         headingColor: colorConfig.headingDark,
         contentColor: colorConfig.contentDark,
@@ -16,55 +32,76 @@ const pageConfigObj = {
         pageName: "HOME",
         // hideFloatingMenu: true,
     },
-    'page-1': {
+    'ABOUT': {
         backgroundColor: '#fff',
         headingColor: colorConfig.headingDark,
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.borderDark,
         pageName: "ABOUT",
     },
-    'page-2': {
+    'SERVICE-TITLE': {
         backgroundColor: '#fff',
         headingColor: colorConfig.headingDark,
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.borderDark,
         pageName: "SERVICES",
     },
-    'page-3': {
+    'SERVICE-1': {
         backgroundColor: 'rgb(25, 25, 25)',
         headingColor: colorConfig.headingLight,
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.borderDark,
         pageName: "SERVICES",
     },
-    'page-4': {
+    'SERVICE-2': {
         backgroundColor: 'rgb(240, 240, 240)',
         headingColor: colorConfig.headingDark,
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.borderDark,
         pageName: "SERVICES",
     },
-    'page-5': {
+    'SERVICE-3': {
         backgroundColor: 'rgb(231, 228, 229)',
         headingColor: colorConfig.headingDark,
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.borderDark,
         pageName: "SERVICES",
     },
-    'page-6': {
+    'SERVICE-4': {
         backgroundColor: '#000',
         headingColor: colorConfig.headingLight,
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.borderDark,
         pageName: "SERVICES",
     },
-    'page-7': {
+    'SERVICE-5': {
         backgroundColor: '#000',
         headingColor: colorConfig.headingLight,
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.borderDark,
     },
-    'page-8': {
+    'SERVICE-RENDER': {
+        backgroundColor: '#000',
+        headingColor: colorConfig.headingLight,
+        contentColor: colorConfig.contentDark,
+        buttonColor: colorConfig.borderDark,
+        hideFloatingMenu: true,
+    },
+    'GRAPHICNIX-ROSE': {
+        backgroundColor: '#000',
+        headingColor: colorConfig.headingLight,
+        contentColor: colorConfig.contentDark,
+        buttonColor: colorConfig.borderDark,
+        hideFloatingMenu: true,
+    },
+    'CLIENTS': {
+        backgroundColor: '#fff',
+        headingColor: colorConfig.headingDark,
+        contentColor: colorConfig.contentDark,
+        buttonColor: colorConfig.borderDark,
+        hideFloatingMenu: true,
+    },
+    'FOOTER': {
         backgroundColor: '#000',
         headingColor: colorConfig.headingLight,
         contentColor: colorConfig.contentDark,
@@ -75,14 +112,14 @@ const pageConfigObj = {
 }
 export default function registerBackgroundColorEffect(setPageConfig) {
     function changeColor(id) {
+        console.log(id)
         setPageConfig(pageConfigObj[id])
         document.documentElement.style.setProperty('--color-background', pageConfigObj[id].backgroundColor);
         document.documentElement.style.setProperty('--font-color-heading', pageConfigObj[id].headingColor);
         document.documentElement.style.setProperty('--font-color-content', pageConfigObj[id].contentColor);
         document.documentElement.style.setProperty('--button-border', pageConfigObj[id].buttonColor);
     }
-    new Array(9).fill(0).map((item, index) => {
-        const id = `page-${index}`
+    pages.map((id) => {
         observeElementById(id, changeColor);
         return id;
     })

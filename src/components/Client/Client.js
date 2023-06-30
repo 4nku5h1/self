@@ -4,12 +4,12 @@ import ClientsData from "./data";
 export default function Client({ id }) {
     const images = ClientsData
     return (
-        <div className="client-container">
+        <div className="client-container" id={id}>
             <div className='text-content text-heading  client-heading page'>
                 <h1>TRUSTED </h1>
                 <h1>CLIENTS</h1>
             </div>
-            <motion.div className='page client flex-center' id={id}>
+            <motion.div className='page client flex-center'>
 
 
                 <motion.div className="gallary flex-center">
