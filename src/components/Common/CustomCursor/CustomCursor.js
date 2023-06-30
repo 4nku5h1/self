@@ -28,26 +28,31 @@ export default function () {
             mixBlendMode: "difference"
         }
     }
+    function mouseMove(e) {
+        setMousePosition({
+            x: e.clientX,
+            y: e.clientY
+        })
 
+    }
     useEffect(() => {
-        function mouseMove(e) {
-            setMousePosition({
-                x: e.clientX,
-                y: e.clientY
-            })
-
-        }
-        window.addEventListener("mousemove", mouseMove);
         return () => {
             window.removeEventListener("mousemove", mouseMove);
         }
     }, [])
+    useEffect(() => {
+        if (cursorVarient === 'default') {
+            window.removeEventListener("mousemove", mouseMove);
+        } else {
+            window.addEventListener("mousemove", mouseMove);
+        }
+    }, [cursorVarient])
     return (
         <motion.div
-            className={cursorVarient==='default'? 'cursor' : 'cursor active'}
+            className={cursorVarient === 'default' ? 'cursor' : 'cursor active'}
             variants={variants}
             animate={cursorVarient}
         />
-        
+
     )
 }

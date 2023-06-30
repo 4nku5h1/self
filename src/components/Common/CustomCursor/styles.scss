@@ -15,6 +15,7 @@
     border-radius: 50%;
 }
 .cursor.active{ 
+    transition: none !important;
     height: 32px;
     width: 32px;
     display:block;

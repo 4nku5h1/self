@@ -1,5 +1,5 @@
 :root{
-    --panel-width:450px;
+    --panel-width:30%;
     --panel-height:50px;
     --panel-background-color:#4747473f;
     --panel-border-color:#47474778;
@@ -8,12 +8,14 @@
 }
 .floating-nav{
     z-index: 2;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     *{
+        user-select: none;
         text-align: center;
     }
-    width: var(--panel-width);
-    height: 50px;
+    padding-left: 8px;
+    padding-right: 8px;
+    min-width: var(--panel-width);
     margin-bottom: 60px;
     position: fixed;
     left: calc(50% - (var(--panel-width)/2));
@@ -22,30 +24,32 @@
     border: 1px solid  var(--panel-border-color); 
     border-radius: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     > *{
-        // padding: var(--element-margin) 16px;
+        margin: calc(var(--element-margin));
     }
     >span{
+        padding: 8px;
         border-radius: 15px;
         color: var(--panel-button-text-color);
-        transition: ease-in-out 0.3s;
+        transition: all 0.5s;
         font-size: 12px;
-        font-weight: 500;
+        font-weight: 600;
         color: var(--font-color-heading);
         text-transform: uppercase;
     }
     >span:hover{
-        padding: var(--element-margin) 16px;
+        font-weight: 700;
         background-color: var(--panel-button-background-color);
-        background-color: var(--panel-button-text-color);
+        color: var(--panel-button-text-color);
     }
     .logo{
         *{
             margin: 0;
         }
-        width: min-content;
+        min-width: min-content;
+        max-width: min-content;
         color: var(--font-color-heading);
         justify-self: center;
     }
