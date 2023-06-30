@@ -1,5 +1,5 @@
 :root{
-    --panel-width:30%;
+    --panel-width:450px;
     --panel-height:50px;
     --panel-background-color:#4747473f;
     --panel-border-color:#47474778;
@@ -8,20 +8,20 @@
 }
 .floating-nav{
     z-index: 2;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(4px);
     *{
         user-select: none;
         text-align: center;
     }
+    position: fixed;
+    bottom: 0;
     padding-left: 8px;
     padding-right: 8px;
-    min-width: var(--panel-width);
+    max-width: var(--panel-width);
     margin-bottom: 60px;
-    position: fixed;
     left: calc(50% - (var(--panel-width)/2));
-    bottom: 0;
     background-color: var(--panel-background-color);
-    border: 1px solid  var(--panel-border-color); 
+    border: 3px solid  var(--panel-border-color); 
     border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
@@ -35,7 +35,7 @@
         border-radius: 15px;
         color: var(--panel-button-text-color);
         transition: all 0.5s;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 600;
         color: var(--font-color-heading);
         text-transform: uppercase;
