@@ -14,3 +14,14 @@ export function observeElementById(id, callBack) {
 
     observer.observe(el);
 }
+export function debounce(func) {
+    let isCan = true;
+    
+    return () => {
+      if (isCan) {
+        func();
+        isCan = false;
+        setTimeout(() => isCan = true, 50);
+      }
+     }
+  }
