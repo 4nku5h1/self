@@ -23,14 +23,14 @@ export default function MainComponent() {
             <FloatingNav />
             <Home id={'page-0'} />
             <AboutUs id={'page-1'} />
+            <Service />
+            {/* <ImageGallary /> */}
             {/* {services.map((item, index) => {
                 return (
                     <ServiceGallary data={item} index={index} />
                 )
             })} */}
-            <Service />
-
-            {/* <ImageGallary /> */}
+            {/* <InfiniteImageGallary /> */}
             {extraServices.map((item, index) => {
                 return (
                     <Content id={`page-${index + 7}`} {...item} imageWidth={400} imageHeight={200} />
@@ -38,7 +38,6 @@ export default function MainComponent() {
             })}
             <Content images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={"We also do brand strategy and brand design. When asked to pick between beauty and reason, we choose both: we believe they need each other."} />
 
-            {/* <InfiniteImageGallary /> */}
             <Client id={`page-7`} />
             <Footer id={`page-8`} />
         </div>
