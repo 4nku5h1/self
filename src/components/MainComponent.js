@@ -35,7 +35,7 @@ export default function MainComponent() {
             {/* <ImageGallary /> */}
             {extraServices.map((item, index) => {
                 return (
-                    <Content id={`page-${index + 7}`} {...item} imageWidth={550} imageHeight={300} />
+                    <Content id={`page-${index + 7}`} {...item} imageWidth={400} imageHeight={200} />
                 )
             })}
             <Content images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={"We also do brand strategy and brand design. When asked to pick between beauty and reason, we choose both: we believe they need each other."} />
