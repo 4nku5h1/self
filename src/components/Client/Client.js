@@ -5,9 +5,9 @@ export default function Client({ id }) {
     const images = ClientsData
     return (
         <motion.div className='page content flex-center' id={id}>
-            <motion.div className="text-content">
-                <h1>Our trusted Client</h1>
-            </motion.div>
+            <div className='text-content text-heading'>
+                <h1>TRUSTED CLIENTS</h1>
+            </div>
             <motion.div className="gallary flex-center">
                 {images.map((image) => {
                     return (

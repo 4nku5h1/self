@@ -7,7 +7,6 @@ import b1 from '../../assets/parallax/b1.webp'
 import './styles.scss';
 export default function Home({ id }) {
     return (
-
         <div className='home page' id={id}>
             <div className='banner'>
                 <div className='text'>
@@ -18,7 +17,7 @@ export default function Home({ id }) {
 
 
             </div>
-            <div className='service-card'>
+            {/* <div className='service-card'>
                 <h4>We deals in</h4>
                 <div className='image-container'>
                     <div className='image-wrapper'>
@@ -38,7 +37,7 @@ export default function Home({ id }) {
                         <p>Post production</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
 
     )

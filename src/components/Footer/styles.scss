@@ -17,23 +17,6 @@
     align-items: flex-start;
     justify-content: space-evenly;
 
-    .text {
-        *{
-            color: #E3E3E3;
-        }
-        width: 100%;
-        h2 {
-            font-family: Neutralface, sans-serif;
-            font-size: 160px;
-            font-weight: 400;
-            line-height: 1em;
-        }
-        .line{
-            height: 1px;
-            border-bottom: 1px solid;
-        }
-    }
-
     p {
         // text-align: center;
         margin-bottom: 0;

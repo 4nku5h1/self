@@ -9,8 +9,8 @@ export function Service() {
     const appContext = useAppContext();
     return (
         <>
-            <div className='heading'>
-                <div className='text-content heading'>
+            <div className='page heading'>
+                <div className='text-content text-heading'>
                     <h1>OUR SERVICES</h1>
                 </div>
             </div>

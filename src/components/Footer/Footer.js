@@ -4,16 +4,13 @@ import { contactData, socialdata } from "./data.js";
 
 import './styles.scss';
 import Logo from "../Logo/Logo";
+import BigText from "../Common/BigText/BigText";
 
 export default function Footer({ id }) {
     return (
         <div className='page footer flex-center' id={id}>
             {/* <Logo /> */}
-            <div className="text">
-                <h2>GET IN</h2>
-                <h2>CONTACT</h2>
-                <div className="line" />
-            </div>
+            <BigText line1={"GET IN"} line2={"CONTACT"}/>
             {/* <div className="talk-to-us">
                 <h1>Got a brand on your hands? Let’s talk about it.</h1>
                 <button className="button">Get In Touch</button>
