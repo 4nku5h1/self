@@ -44,7 +44,7 @@ function registerBackgroundColorEffect() {
             buttonColor: colorConfig.borderDark
         },
         'page-3': {
-            backgroundColor: '#000',
+            backgroundColor: 'rgb(25, 25, 25)',
             headingColor: colorConfig.headingLight,
             contentColor: colorConfig.contentDark,
             buttonColor: colorConfig.borderDark
@@ -56,14 +56,14 @@ function registerBackgroundColorEffect() {
             buttonColor: colorConfig.borderDark
         },
         'page-5': {
-            backgroundColor: '#000',
-            headingColor: colorConfig.headingLight,
+            backgroundColor: 'rgb(231, 228, 229)',
+            headingColor: colorConfig.headingDark,
             contentColor: colorConfig.contentDark,
             buttonColor: colorConfig.borderDark
         },
-        'page-6': {
-            backgroundColor: '#fff',
-            headingColor: colorConfig.headingDark,
+        'page-6':{
+            backgroundColor: '#000',
+            headingColor: colorConfig.headingLight,
             contentColor: colorConfig.contentDark,
             buttonColor: colorConfig.borderDark
         },
