@@ -30,12 +30,12 @@
     transition: all 1s;
     > *{
         margin: calc(var(--element-margin));
+        transition: all 0.5s;
     }
     >span{
         padding: 8px;
         border-radius: 15px;
         color: var(--panel-button-text-color);
-        transition: all 0.5s;
         font-size: 10px;
         font-weight: 600;
         color: var(--font-color-heading);
