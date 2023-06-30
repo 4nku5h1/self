@@ -29,19 +29,17 @@
     }
     >span{
         border-radius: 15px;
-        // background-color: var(--panel-button-background-color);
         color: var(--panel-button-text-color);
         transition: ease-in-out 0.3s;
         font-size: 12px;
-        font-weight: 400;
+        font-weight: 500;
         color: var(--font-color-heading);
         text-transform: uppercase;
     }
-    >span:active{
-        transform: scale(0.9);
-    }
     >span:hover{
-        transform: scale(0.9);
+        padding: var(--element-margin) 16px;
+        background-color: var(--panel-button-background-color);
+        background-color: var(--panel-button-text-color);
     }
     .logo{
         *{

@@ -10,9 +10,12 @@ export default function () {
         y: 0
     })
     const appContext = useAppContext();
+    const cursorVarient = appContext.state.cursorVarient;
 
     const variants = {
         default: {
+        },
+        ball: {
             x: mousePosition.x - 16,
             y: mousePosition.y - 16
         },
@@ -41,9 +44,9 @@ export default function () {
     }, [])
     return (
         <motion.div
-            className='cursor'
+            className={cursorVarient==='default'? 'cursor' : 'cursor active'}
             variants={variants}
-            animate={appContext.state.cursorVarient}
+            animate={cursorVarient}
         />
         
     )
