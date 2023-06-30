@@ -17,10 +17,10 @@ export default function () {
             y: mousePosition.y - 16
         },
         text: {
-            height: 150,
-            width: 150,
-            x: mousePosition.x - 75,
-            y: mousePosition.y - 75,
+            height: 100,
+            width: 100,
+            x: mousePosition.x - 50,
+            y: mousePosition.y - 50,
             backgroundColor: "white",
             mixBlendMode: "difference"
         }
@@ -45,6 +45,6 @@ export default function () {
             variants={variants}
             animate={appContext.state.cursorVarient}
         />
-
+        
     )
 }

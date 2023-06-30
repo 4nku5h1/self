@@ -1,8 +1,11 @@
+import { useAppContext } from '../Common/AppContext/AppContext';
+import { setCursorDefault, setCursorText } from '../Common/CustomCursor/helper';
 import ImageCompare from '../Common/ImageCompare/ImageCompare'
 
 import './styles.scss';
 
 export function Service({ id, data }) {
+    const appContext = useAppContext();
 
     const { title, description, imageBefore, imageAfter } = data;
     return (
@@ -13,7 +16,7 @@ export function Service({ id, data }) {
             <div className='text-content'>
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <button className='button'>Explore more</button>
+                <button className='button' onMouseEnter={()=>setCursorText(appContext)} onMouseLeave={()=>setCursorDefault(appContext)}>Explore more</button>
             </div>
         </div>
     )
