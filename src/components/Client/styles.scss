@@ -1,49 +1,82 @@
-.content {
-    display: flex;
-    flex-direction: column;
+.client-container {
+    margin-bottom: 5%;
+    ;
 
-    >img {
-        width: 500px;
-        height: 300px;
-    }
-
-    .gallary {
+    .client {
+        border-radius: 10px;
+        margin: calc(var(--element-margin) * 10);
+        box-shadow: 15px 15px #E3E3E3;
+        background-color: #ffffff;
+        background-image: url(../../assets/parallax/b5.webp);
+        margin-bottom: 0;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
 
-        .image-wrapper {
-            background-color: #fff;
-            margin: 12px;
-            border-radius: 10px;
-            overflow: hidden;
+        >img {
+            width: 500px;
+            height: 300px;
+        }
 
-            img {
-                margin: 0;
-                width: 200px;
-                height: 150px;
-                background-image: url(https://uploads-ssl.webflow.com/63beff5…/63e2afa…_Custom%20Size%20%E2%80%93%205.png);
-                background-position: 50%;
-                background-size: cover;
+        .gallary {
+            display: flex;
+            flex-wrap: wrap;
 
+            .image-wrapper {
+                background-color: #fff;
+                margin: 12px;
+                border-radius: 10px;
+                overflow: hidden;
+
+                img {
+                    margin: 0;
+                    width: 150px;
+                    height: 100px;
+                    background-image: url(https://uploads-ssl.webflow.com/63beff5…/63e2afa…_Custom%20Size%20%E2%80%93%205.png);
+                    background-position: 50%;
+                    background-size: cover;
+
+                }
+
+
+            }
+
+            .image-wrapper img:hover {
+                -webkit-transform: scale(1.6);
+                -moz-transform: scale(1.6);
+                -o-transform: scale(1.6);
+                transform: scale(1.6);
+            }
+
+            .image-wrapper img {
+                -webkit-transition: all .4s ease-in-out;
+                -moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -ms-transition: all .4s ease-in-out;
             }
 
 
         }
+    }
 
-        .image-wrapper img:hover {
-            -webkit-transform: scale(1.6);
-            -moz-transform: scale(1.6);
-            -o-transform: scale(1.6);
-            transform: scale(1.6);
+    .client-heading {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        h1 {
+            min-width: 100%;
+            font-family: poppins;
+            line-height: .7em;
+            color: #e3e3e3;
+            font-weight: 500;
         }
+    }
 
-        .image-wrapper img {
-            -webkit-transition: all .4s ease-in-out;
-            -moz-transition: all .4s ease-in-out;
-            -o-transition: all .4s ease-in-out;
-            -ms-transition: all .4s ease-in-out;
-        }
-
+    .client-heading :last-child {
+        // font-weight: 900;
+        opacity: 1;
+        // color: #e1f210;
+        -webkit-text-stroke: 1px #000;
+        // margin-top: -2px;
 
     }
 }

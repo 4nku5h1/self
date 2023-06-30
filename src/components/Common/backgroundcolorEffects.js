@@ -59,13 +59,13 @@ const pageConfigObj = {
         pageName: "SERVICES",
     },
     'page-7': {
-        backgroundColor: 'rgb(25, 25, 25)',
+        backgroundColor: '#000',
         headingColor: colorConfig.headingLight,
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.borderDark,
     },
     'page-8': {
-        backgroundColor: 'rgb(25, 25, 25)',
+        backgroundColor: '#000',
         headingColor: colorConfig.headingLight,
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.borderDark,
