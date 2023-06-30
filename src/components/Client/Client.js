@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import './styles.scss'
 import ClientsData from "./data";
-export default function Client({ id }) {
+export default function Client({ uid }) {
     const images = ClientsData
     return (
-        <div className="client-container" id={id}>
+        <div className="client-container" id={uid}>
             <div className='text-content text-heading  client-heading page'>
                 <h1>TRUSTED </h1>
                 <h1>CLIENTS</h1>

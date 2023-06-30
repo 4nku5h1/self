@@ -6,9 +6,9 @@ import './styles.scss';
 import Logo from "../Logo/Logo";
 import BigText from "../Common/BigText/BigText";
 
-export default function Footer({ id }) {
+export default function Footer({ uid }) {
     return (
-        <div className='page footer flex-center' id={id}>
+        <div className='page footer flex-center' id={uid}>
             {/* <Logo /> */}
             <BigText line1={"GET IN"} line2={"CONTACT"}/>
             {/* <div className="talk-to-us">

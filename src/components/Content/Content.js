@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import './styles.scss'
-export default function Content({ id, title, description, images, imageHeight, imageWidth }) {
+export default function Content({ uid, title, description, images, imageHeight, imageWidth }) {
     const imageStyle = { height: ` ${imageHeight}px`, width: ` ${imageWidth}px` }
     return (
-        <motion.div className='page content flex-center' id={id}>
+        <motion.div className='page content flex-center' id={uid}>
             {Array.isArray(images) ? (
                 <motion.div className="gallary flex-center">
                     {images.map((image) => {

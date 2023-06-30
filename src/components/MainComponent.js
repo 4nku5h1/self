@@ -14,12 +14,14 @@ import InfiniteImageGallary from './Common/InfiniteImageGallary/InfiniteImageGal
 import '../css/styles.scss'
 import FloatingNav from './FloatingNav/FloatingNav';
 import Client from './Client/Client';
+
 export default function MainComponent() {
 
 
     return (
         <div className='main'>
             <Navbar />
+            {/* <div id="HOME"></div> */}
             <FloatingNav />
             <Home id={'HOME'} />
             <AboutUs id={'ABOUT'} />
@@ -33,13 +35,13 @@ export default function MainComponent() {
             {/* <InfiniteImageGallary /> */}
             {extraServices.map((item, index) => {
                 return (
-                    <Content id={'SERVICE-RENDER'} {...item} imageWidth={400} imageHeight={200} />
+                    <Content uid={'SERVICE-RENDER'} {...item} imageWidth={400} imageHeight={200} />
                 )
             })}
-            <Content id={'GRAPHICNIX-ROSE'} images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={"We also do brand strategy and brand design. When asked to pick between beauty and reason, we choose both: we believe they need each other."} />
+            <Content uid={'GRAPHICNIX-ROSE'} images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={"We also do brand strategy and brand design. When asked to pick between beauty and reason, we choose both: we believe they need each other."} />
 
-            <Client id="CLIENTS"/>
-            <Footer id="FOOTER" />
+            <Client uid={"CLIENTS"}/>
+            <Footer uid={"FOOTER"} />
         </div>
     )
 }
