@@ -57,16 +57,3 @@ html {
   width: 15px;
   background: linear-gradient(240deg, rgba(2, 0, 36, 1) 0%, rgba(0, 255, 235, 1) 0%, var(--mygrad) 100%);
 }
-.cursor{
-  background-color: #111;
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-}
-* {
-  cursor: none;
-}
