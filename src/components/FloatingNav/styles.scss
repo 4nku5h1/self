@@ -26,6 +26,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    transition: all 0.3s;
     > *{
         margin: calc(var(--element-margin));
     }
@@ -44,6 +45,11 @@
         background-color: var(--panel-button-background-color);
         color: var(--panel-button-text-color);
     }
+    >span.active{
+        font-weight: 700;
+        background-color: var(--panel-button-background-color);
+        color: var(--panel-button-text-color);
+    }
     .logo{
         *{
             margin: 0;
@@ -53,4 +59,9 @@
         color: var(--font-color-heading);
         justify-self: center;
     }
+}
+.floating-nav.hidden{
+    transition: all 0.8s;
+    margin-bottom: 60px;
+    display: none;
 }

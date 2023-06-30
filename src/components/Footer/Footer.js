@@ -8,13 +8,15 @@ import Logo from "../Logo/Logo";
 export default function Footer({ id }) {
     return (
         <div className='page footer flex-center' id={id}>
-            <div className="text flex-center">
-                <Logo />
+            {/* <Logo /> */}
+            <div className="text">
+                <h2>GET IN</h2>
+                <h2>CONTACT</h2>
             </div>
-            <div className="talk-to-us">
+            {/* <div className="talk-to-us">
                 <h1>Got a brand on your hands? Let’s talk about it.</h1>
                 <button className="button">Get In Touch</button>
-            </div>
+            </div> */}
             <div className="social">
                 <div className="item">
                     <p className="highlight">graphicnix.com</p>
@@ -39,7 +41,6 @@ export default function Footer({ id }) {
                     })}
                 </div>
             </div>
-            <p>{about}</p>
         </div>
     )
 }

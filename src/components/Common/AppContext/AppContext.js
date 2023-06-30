@@ -4,13 +4,16 @@ const AppContext = React.createContext();
 
 function ContextProvider({ children }) {
     const [cursorVarient, setCursorVarient] = useState("default");
+    const [pageConfig, setPageConfig] = useState(null);
 
     const value = useMemo(() => {
         return {
             state: {
-                cursorVarient
+                cursorVarient,
+                pageConfig
             },
-            setCursorVarient
+            setCursorVarient,
+            setPageConfig
         };
     });
     return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
