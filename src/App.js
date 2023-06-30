@@ -9,22 +9,31 @@ function App() {
     x: 0,
     y: 0
   })
+  const [cursorVarient, setCursorVarient] = useState("default");
 
   const variants = {
     default: {
-      x: mousePosition.x,
-      y: mousePosition.y
+      x: mousePosition.x - 16,
+      y: mousePosition.y - 16
+    },
+    text: {
+      height: 150,
+      width: 150,
+      x: mousePosition.x - 75,
+      y: mousePosition.y - 75,
+      backgroundColor: "white",
+      mixBlendMode: "difference"
     }
   }
 
-  function mouseMove(e) {
-    setMousePosition({
-      x: e.clientX,
-      y: e.clientY
-    })
-
-  }
   useEffect(() => {
+    function mouseMove(e) {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY
+      })
+  
+    }
     window.addEventListener("mousemove", mouseMove);
     return () => {
       window.removeEventListener("mousemove", mouseMove);
@@ -32,11 +41,12 @@ function App() {
   }, [])
   return (
     <div className="App">
+    <h1 onMouseEnter={() => setCursorVarient("text")} onMouseLeave={() => setCursorVarient("default")}>sdghd</h1>
       <MainComponent />
       <motion.div
         className='cursor'
         variants={variants}
-        animate="default"
+        animate={cursorVarient}
       >
 
       </motion.div>
