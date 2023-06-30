@@ -1,23 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import { services, extraServices, about } from './Services/data/data';
+import { extraServices } from './Services/data/data';
 
 import Navbar from './Navbar/NavBar';
 import Home from './Home/Home';
 import { Service } from './Services/Service';
 import Footer from './Footer/Footer';
-import { observeElementById } from './Common/helper';
-import { ImageGallary } from './Common/ImageGallary/ImageGallary';
 import Content from './Content/Content';
 import roseImage from '../assets/background/rose.webp'
-import clientsData from '../components/Clients/data.js'
 
 import AboutUs from './AboutUs/AboutUs';
-// import InfiniteImageGallary from './Common/InfiniteImageGallary/InfiniteImageGallary'
+// import { ImageGallary } from './Common/ImageGallary/ImageGallary';
+import InfiniteImageGallary from './Common/InfiniteImageGallary/InfiniteImageGallary'
 
 import '../css/styles.scss'
 import FloatingNav from './FloatingNav/FloatingNav';
+import Client from './Client/Client';
 export default function MainComponent() {
-    
+
 
     return (
         <div className='main'>
@@ -40,7 +38,8 @@ export default function MainComponent() {
             })}
             <Content images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={"We also do brand strategy and brand design. When asked to pick between beauty and reason, we choose both: we believe they need each other."} />
 
-            <Content id={`page-7`} title={'Our trusted clients'} images={clientsData} />
+            {/* <InfiniteImageGallary /> */}
+            <Client id={`page-7`} />
             <Footer id={`page-8`} />
         </div>
     )
