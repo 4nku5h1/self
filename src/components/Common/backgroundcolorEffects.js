@@ -85,21 +85,18 @@ const pageConfigObj = {
         headingColor: colorConfig.headingLight,
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.borderDark,
-        hideFloatingMenu: true,
     },
     'GRAPHICNIX-ROSE': {
         backgroundColor: '#000',
         headingColor: colorConfig.headingLight,
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.borderDark,
-        hideFloatingMenu: true,
     },
     'CLIENTS': {
         backgroundColor: '#fff',
         headingColor: colorConfig.headingDark,
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.borderDark,
-        hideFloatingMenu: true,
     },
     'FOOTER': {
         backgroundColor: '#000',

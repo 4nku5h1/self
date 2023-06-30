@@ -11,12 +11,12 @@ export default function FloatingNav() {
             <span className={pageConfig?.pageName ==='HOME' ? 'active' : ''}onClick={() => {scrollToId('navbar')}}>
                 Home
             </span>
-            <span className={pageConfig?.pageName ==='SERVICES' ? 'active' : ''} onClick={() => {scrollToId('page-2')}}>
+            <span className={pageConfig?.pageName ==='SERVICES' ? 'active' : ''} onClick={() => {scrollToId('SERVICE-TITLE')}}>
                 Services
             </span>
             <span> Gallary </span>
 
-            <span className={pageConfig?.pageName ==='FOOTER' ? 'active' : ''} onClick={() => {scrollToId('page-8')}}>
+            <span className={pageConfig?.pageName ==='FOOTER' ? 'active' : ''} onClick={() => {scrollToId('FOOTER')}}>
                 Contact
             </span>
         </div>

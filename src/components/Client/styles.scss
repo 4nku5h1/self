@@ -66,17 +66,14 @@
             min-width: 100%;
             font-family: poppins;
             line-height: .7em;
-            color: #e3e3e3;
-            font-weight: 500;
+            // color: #e3e3e3;
+            font-weight: 300;
+            -webkit-text-stroke: 1px #ffffff;
         }
     }
 
     .client-heading :last-child {
-        // font-weight: 900;
-        opacity: 1;
-        // color: #e1f210;
-        -webkit-text-stroke: 1px #000;
-        // margin-top: -2px;
+        opacity: 0.8;
 
     }
 }
