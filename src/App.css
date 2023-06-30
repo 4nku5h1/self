@@ -13,7 +13,6 @@ html {
 
 
 .App {
-  overflow-y: hidden;
   text-align: center;
   font-family: 'poppins';
 }
@@ -35,6 +34,7 @@ html {
 }
 
 ::-webkit-scrollbar {
+  display: none;
   width: 10px;
   border-radius: 10px;
 }
