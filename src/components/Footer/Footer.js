@@ -12,6 +12,7 @@ export default function Footer({ id }) {
             <div className="text">
                 <h2>GET IN</h2>
                 <h2>CONTACT</h2>
+                <div className="line" />
             </div>
             {/* <div className="talk-to-us">
                 <h1>Got a brand on your hands? Let’s talk about it.</h1>

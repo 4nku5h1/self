@@ -6,7 +6,6 @@
 .footer {
     >* {
         margin: calc(var(--element-margin) * 5);
-        margin-top: var(--margin-footer);
     }
 
     * {
@@ -16,14 +15,22 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     .text {
+        *{
+            color: #E3E3E3;
+        }
         width: 100%;
         h2 {
             font-family: Neutralface, sans-serif;
             font-size: 160px;
             font-weight: 400;
+            line-height: 1em;
+        }
+        .line{
+            height: 1px;
+            border-bottom: 1px solid;
         }
     }
 
@@ -59,6 +66,7 @@
 
         .item {
             font-size: 13px;
+            // font-weight: 600;
             padding-bottom: 0;
         }
 
@@ -80,5 +88,5 @@
     height: fit-content;
     width: 100vw;
     margin-bottom: 0;
-    background: #e1f210;
+    background: #000;
 }

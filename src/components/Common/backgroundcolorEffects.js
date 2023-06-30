@@ -70,6 +70,7 @@ const pageConfigObj = {
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.borderDark,
         pageName: "FOOTER",
+        hideFloatingMenu: true,
     }
 }
 export default function registerBackgroundColorEffect(setPageConfig) {
