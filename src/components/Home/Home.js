@@ -14,7 +14,6 @@ export default function Home({ id }) {
                 <h2>& STRATEGY</h2>
             </div>
             <div className='banner'>
-
                 <img src={backg} />
             </div>
             {/* <div className='service-card'>

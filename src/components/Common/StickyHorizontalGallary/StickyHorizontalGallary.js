@@ -1,13 +1,8 @@
 import { useEffect } from 'react'
 
 import './styles.scss'
-import i1 from '../../../assets/horizontalgallary/1.webp'
-import i2 from '../../../assets/horizontalgallary/2.webp'
-import i3 from '../../../assets/horizontalgallary/3.webp'
-import i4 from '../../../assets/horizontalgallary/4.webp'
-import i5 from '../../../assets/horizontalgallary/5.webp'
 
-export default function StickyHorizontalGallary() {
+export default function StickyHorizontalGallary({ data }) {
     useEffect(() => {
         document.addEventListener('scroll', horizontalScroll);
 
@@ -32,31 +27,25 @@ export default function StickyHorizontalGallary() {
             }
         }
     }, [])
+    console.log(`${data.length}vh`)
     return (
         <div>
             <div className='text-content text-heading'>
                 <h1>OUR SERVICES</h1>
             </div>
-            <div className='sticky-image-gallary page'>
-                <div class="sticky-parent">
+            <div className='sticky-image-gallary'>
+                <div class="sticky-parent" style={{height:`${data.length * 100}vh`}}>
                     <div class="sticky">
+                        <h1>adkff</h1>
                         <div class="horizontal">
-                            <div class="item-card" >
-                                <img src={i1} />
-                            </div>
-                            <div class="item-card" >
-
-                                <img src={i2} />
-                            </div>
-                            <div class="item-card">
-                                <img src={i3} />
-                            </div>
-                            <div class="item-card" >
-                                <img src={i4} />
-                            </div>
-                            <div class="item-card" >
-                                <img src={i5} />
-                            </div>
+                            {data.map((e) => {
+                                return (
+                                    <div class="item-card" >
+                                        <img src={e.image} />
+                                        <h4>{e.title}</h4>
+                                    </div>
+                                )
+                            })}
                         </div>
                     </div>
                 </div>

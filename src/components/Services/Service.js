@@ -14,9 +14,6 @@ export function Service() {
     serviceIds.shift()
     return (
         <>
-            <div id="SERVICE-TITLE" className='page heading'>
-                <StickyHorizontalGallary />
-            </div>
             {services.map((data, index) => {
                 const { title, description, imageBefore, imageAfter } = data;
                 const id = serviceIds[index]

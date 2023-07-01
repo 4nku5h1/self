@@ -13,6 +13,8 @@ import InfiniteImageGallary from './Common/InfiniteImageGallary/InfiniteImageGal
 import '../css/styles.scss'
 import FloatingNav from './FloatingNav/FloatingNav';
 import Client from './Client/Client';
+import StickyHorizontalGallary from './Common/StickyHorizontalGallary/StickyHorizontalGallary';
+import { ourServices } from './Common/StickyHorizontalGallary/data/data';
 
 export default function MainComponent() {
     return (
@@ -21,6 +23,9 @@ export default function MainComponent() {
             {/* <div id="HOME"></div> */}
             <FloatingNav />
             <Home id={'HOME'} />
+            <div id="SERVICE-TITLE" className='page heading'>
+                <StickyHorizontalGallary  data={ourServices}/>
+            </div>
             {/* <AboutUs id={'ABOUT'} /> */}
             <Service />
             {/* {services.map((item, index) => {

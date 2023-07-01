@@ -1,7 +1,7 @@
 :root {
     --color-nav-background: #000000;
     --nav-height: 7vh;
-    --font-size:12px;
+    --font-size:18px;
 }
 
 .navbar {
@@ -18,7 +18,7 @@
     align-items: center;
 
     >span {
-        font-size: 8px;
+        font-size: 12px;
         font-weight: 600;
     }
 
@@ -35,10 +35,11 @@
     }
 
     .lets-talk {
-        padding: 4px 8px;
+        // padding: 4px 8px;
         margin-top: 0;
         font-size: var(--font-size);
-        
+        font-weight: 900;
+        color: var(--font-color-heading);
         font-size: 9px;
     }
 
