@@ -10,6 +10,7 @@ import './styles.scss';
 export function Service() {
     const appContext = useAppContext();
     const serviceIds = Object.keys(pageConfig).filter((id) => id.includes("SERVICE"));
+    serviceIds.shift()
     return (
         <>
             <ImageGallary />

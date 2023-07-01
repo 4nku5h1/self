@@ -19,7 +19,11 @@ export default function Themer({ changePageStateFunction }) {
             document.documentElement.style.setProperty('--button-color', pageConfig[id].buttonColor);
         }
         Object.keys(pageConfig).map((id) => {
-            observeElementById(id, changeColor);
+            try {
+                observeElementById(id, changeColor);
+            } catch (error) {
+                console.log("unable to watch id :", id);
+            }
             return id;
         })
     }
