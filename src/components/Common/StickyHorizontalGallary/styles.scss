@@ -1,54 +1,89 @@
 :root {
-    --rotate-degree:-6deg;
+  --rotate-degree: -6deg;
 }
 
 .sticky-image-gallary {
-    .sticky-parent{
+  .sticky {
+    position: sticky;
+    top: 0;
+    // max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .item-card {
+    justify-self: center;
+    align-self: center;
+    margin: 8px;
+
+    img {
+      height: 500px;
+      width: 700px;
+    }
+
+    h4 {
+      color: var(--color-font-content);
+      margin-left: 8px;
+      font-weight: 500;
+      text-align: left;
+      margin-top: 8px;
+      font-size: 24px;
+    }
+
+    .card-foreground {
+      transition: all 0.7s;
+      position: absolute;
+      height: 500px;
+      width: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+
+      p {
+        font-family: migra;
+        font-weight: 600;
+        color: #fff;
+        font-size: 28px;
       }
-      .sticky{
-        position: sticky;
-        top: 0px;
-        // max-height: 100vh;
-        overflow-x: hidden;
-        overflow-y: hidden;
-      }
-      .item-card{
-        justify-self: center;
-        align-self: center;
-        margin: 8px;
-        img{
-          height: 400px;
-          width: 600px;
-        }
-        h4{
-          color: var(--color-font-content);
-          text-transform: uppercase;
-          margin-left: 8px;
-          font-weight: 500;
-          text-align: left;
-          margin-top: 8px;
-          font-size: 16px;
-        }
-      }
-      .horizontal{
-        height: 100vh;
-        // padding: 48px;
-        display: flex;
-      }
-      .br{
-        outline: solid;
-      }
-      
-      @media (max-width: 620px) {
-        .dim{
-          display: block;
-          min-width: 100vw;
-          height: 100vh;
-        }
-      }
-      
-      p{
-        font-size: 10em;
-        text-align: center;
-      }
+    }
+  }
+
+  .item-card:hover {
+    .card-foreground {
+      transition: ease-in-out 0.7s;
+      opacity: 1;
+      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 1) 100%);
+    }
+  }
+
+  .horizontal {
+    height: 100vh;
+    // padding: 48px;
+    display: flex;
+  }
+
+  .br {
+    outline: solid;
+  }
+
+  @media (max-width: 620px) {
+    .dim {
+      display: block;
+      min-width: 100vw;
+      height: 100vh;
+    }
+  }
+
+  p {
+    font-size: 10em;
+    text-align: center;
+  }
+}
+
+.horizontal-gallary {
+  .title {
+    position: sticky;
+    top: 24px;
+  }
 }
