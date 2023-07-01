@@ -2,15 +2,17 @@ import { useAppContext } from '../Common/AppContext/AppContext';
 import { setCursorDefault, setCursorText } from '../Common/CustomCursor/helper';
 import ImageCompare from '../Common/ImageCompare/ImageCompare'
 import pageConfig from '../Common/Themer/config/pageConfig';
+import { ImageGallary } from './../Common/ImageGallary/ImageGallary';
 import { services } from './data/data';
 
 import './styles.scss';
 
 export function Service() {
     const appContext = useAppContext();
-    const serviceIds = Object.keys(pageConfig).filter((id)=>id.includes("SERVICE"));
+    const serviceIds = Object.keys(pageConfig).filter((id) => id.includes("SERVICE"));
     return (
         <>
+            <ImageGallary />
             <div id="SERVICE-TITLE" className='page heading'>
                 <div className='text-content text-heading'>
                     <h1>OUR SERVICES</h1>
@@ -21,7 +23,7 @@ export function Service() {
                 const id = serviceIds[index]
                 return (
                     <div id={id} className='page service'>
-                        <div className='image' id={id}>
+                        <div className='image'>
                             <ImageCompare imageBefore={imageBefore} imageAfter={imageAfter} scrollTo={0} />
                         </div>
                         <div className='text-content'>

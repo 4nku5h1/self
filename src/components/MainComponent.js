@@ -8,7 +8,6 @@ import Content from './Content/Content';
 import roseImage from '../assets/background/rose.webp'
 
 import AboutUs from './AboutUs/AboutUs';
-// import { ImageGallary } from './Common/ImageGallary/ImageGallary';
 import InfiniteImageGallary from './Common/InfiniteImageGallary/InfiniteImageGallary'
 
 import '../css/styles.scss'
@@ -24,7 +23,6 @@ export default function MainComponent() {
             <Home id={'HOME'} />
             <AboutUs id={'ABOUT'} />
             <Service />
-            {/* <ImageGallary /> */}
             {/* {services.map((item, index) => {
                 return (
                     <ServiceGallary data={item} index={index} />
