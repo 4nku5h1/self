@@ -31,8 +31,9 @@
     max-width: var(--text-container-width);
 
     h1 {
+        width: 100%;
         font-family: Neutralface, sans-serif;
-        font-size: 10vw;
+        font-size: 2vw;
         line-height: 20vh;
     }
 
@@ -63,6 +64,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 24px !important;
     margin-bottom: 5%;
 }
 

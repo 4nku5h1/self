@@ -6,8 +6,7 @@ export default function Client({ uid }) {
     return (
         <div className="client-container" id={uid}>
             <div className='text-content text-heading  client-heading page'>
-                <h1>TRUSTED </h1>
-                <h1>CLIENTS</h1>
+                <h3>TRUSTED CLIENTS</h3>
             </div>
             <motion.div className='page client flex-center'>
 

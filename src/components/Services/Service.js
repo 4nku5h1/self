@@ -2,7 +2,8 @@ import { useAppContext } from '../Common/AppContext/AppContext';
 import { setCursorDefault, setCursorText } from '../Common/CustomCursor/helper';
 import ImageCompare from '../Common/ImageCompare/ImageCompare'
 import pageConfig from '../Common/Themer/config/pageConfig';
-import { ImageGallary } from './../Common/ImageGallary/ImageGallary';
+import StickyHorizontalGallary from './../Common/StickyHorizontalGallary/StickyHorizontalGallary';
+import ImageGallary from './../Common/ImageGallary/ImageGallary';
 import { services } from './data/data';
 
 import './styles.scss';
@@ -14,9 +15,7 @@ export function Service() {
     return (
         <>
             <div id="SERVICE-TITLE" className='page heading'>
-                <div className='text-content text-heading'>
-                    <h1>OUR SERVICES</h1>
-                </div>
+                <StickyHorizontalGallary />
             </div>
             {services.map((data, index) => {
                 const { title, description, imageBefore, imageAfter } = data;
