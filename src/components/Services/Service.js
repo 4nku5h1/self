@@ -1,13 +1,14 @@
 import { useAppContext } from '../Common/AppContext/AppContext';
 import { setCursorDefault, setCursorText } from '../Common/CustomCursor/helper';
 import ImageCompare from '../Common/ImageCompare/ImageCompare'
-import { serviceIds } from '../Common/backgroundcolorEffects';
+import pageConfig from '../Common/Themer/config/pageConfig';
 import { services } from './data/data';
 
 import './styles.scss';
 
 export function Service() {
     const appContext = useAppContext();
+    const serviceIds = Object.keys(pageConfig).filter((id)=>id.includes("SERVICE"));
     return (
         <>
             <div id="SERVICE-TITLE" className='page heading'>

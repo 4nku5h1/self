@@ -16,8 +16,6 @@ import FloatingNav from './FloatingNav/FloatingNav';
 import Client from './Client/Client';
 
 export default function MainComponent() {
-
-
     return (
         <div className='main'>
             <Navbar />
