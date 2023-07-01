@@ -1,4 +1,4 @@
-import { extraServices } from './Services/data/data';
+import { about, extraServices } from './Services/data/data';
 
 import Navbar from './Navbar/NavBar';
 import Home from './Home/Home';
@@ -39,7 +39,7 @@ export default function MainComponent() {
                     <Content uid={'SERVICE-RENDER'} {...item} imageWidth={400} imageHeight={200} />
                 )
             })}
-            <Content uid={'GRAPHICNIX-ROSE'} images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={"We also do brand strategy and brand design. When asked to pick between beauty and reason, we choose both: we believe they need each other."} />
+            <Content uid={'GRAPHICNIX-ROSE'} images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={about} />
 
             <Client uid={"CLIENTS"}/>
             <Footer uid={"FOOTER"} />
