@@ -15,7 +15,7 @@ export default function StickyHorizontalGallary({ data }) {
 
         //Scroll function 
         function horizontalScroll() {
-
+            console.log(stickyParent.getBoundingClientRect().top, stickyParent.getBoundingClientRect().bottom, 'HIII' )
             //Checking whether the sticky element has entered into view or not
             let stickyPosition = sticky.getBoundingClientRect().top;
             if (stickyPosition > 1) {
