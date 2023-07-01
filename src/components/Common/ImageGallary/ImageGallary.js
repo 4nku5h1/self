@@ -1,5 +1,5 @@
-import b1 from '../../../assets/parallax/b1.webp'
-import b2 from '../../../assets/parallax/b2.webp'
+import b1 from '../../../assets/parallax/b3.webp'
+import b2 from '../../../assets/parallax/b3.webp'
 import b3 from '../../../assets/parallax/b3.webp'
 
 import './styles.scss';

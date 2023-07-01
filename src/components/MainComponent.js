@@ -21,7 +21,7 @@ export default function MainComponent() {
             {/* <div id="HOME"></div> */}
             <FloatingNav />
             <Home id={'HOME'} />
-            <AboutUs id={'ABOUT'} />
+            {/* <AboutUs id={'ABOUT'} /> */}
             <Service />
             {/* {services.map((item, index) => {
                 return (

@@ -1,0 +1,21 @@
+:root {
+    --color-nav-background: #000000;
+    --nav-height: 7vh;
+}
+
+.navbar {
+    * {
+        color: var(--font-color-heading);
+    }
+
+    height: var(--nav-height);
+    backdrop-filter: blur(7px);
+    padding:24px 36px;
+    >span{
+        font-size: 8px;
+        font-weight: 600;
+    }
+    .lets-talk{
+    }
+
+}

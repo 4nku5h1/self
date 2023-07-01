@@ -5,7 +5,7 @@ const data = imageGallaryData
 function setScrollDuration(duration) {
     document.documentElement.style.setProperty('--duration', `${duration}s`);
 }
-export default function InfiniteImageGallary(row, col, duration=30) {
+export default function InfiniteImageGallary(row, col, duration=10) {
     useEffect(() => {
        setScrollDuration(duration) 
     },[])

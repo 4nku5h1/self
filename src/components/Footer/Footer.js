@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import { about, services } from "../Services/data/data";
 import { contactData, socialdata } from "./data.js";
 
+import video from '../../assets/video/backgroundVideo.mp4'
 import './styles.scss';
 import Logo from "../Logo/Logo";
 import BigText from "../Common/BigText/BigText";
@@ -15,6 +16,9 @@ export default function Footer({ uid }) {
                 <h1>Got a brand on your hands? Let’s talk about it.</h1>
                 <button className="button">Get In Touch</button>
             </div> */}
+            {/* <video preload="auto" autoplay="" loop="true" muted="" playsinline="" id="bgvid"  class="">
+                    <source src={video} type="video/mp4" />
+                </video> */}
             <div className="social">
                 <div className="item">
                     <p className="highlight">graphicnix.com</p>

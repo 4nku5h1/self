@@ -1,4 +1,18 @@
+@keyframes slide-left {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
 .home {
+  margin-top: 48px;
+
   * {
     user-select: none;
     font-family: 'poppins';
@@ -11,28 +25,51 @@
   align-items: center;
   flex-direction: column;
 
-  .banner {
-    .text {
-      * {
-        color: var(--color-font-home);
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 6rem;
-        font-weight: 600;
-        font-family: migra, sans-serif;
-      }
+  .back-text-marquee {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    min-width: 100%;
+    overflow-x: hidden;
+    z-index: -2;
 
-      h3 {
-        font-weight: 900;
-        font-family: poppins, sans-serif;
-      }
+    h1 {
+      text-transform: uppercase;
+      // font-size: 10rem;
+      font-weight: 900;
+      animation: slide-left 500s linear infinite;
+    }
+  }
+
+  .text {
+    * {
+      color: var(--color-font-home);
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    h2 {
+      transform: scale(1, 1.2);
+      transform: (1, 1.2);
+      font-size: 6vw;
+      font-weight: 400;
+    }
+  }
+
+  .banner {
+    margin-top: 10%;
+    img {
+      width: 93vw;
+      height: 100vh;
     }
   }
 
   .service-card {
     align-self: flex-start;
     overflow: hidden;
-    *{
+
+    * {
       font-size: 18px;
       font-weight: 200;
       color: var(--color-font-home);
@@ -42,11 +79,11 @@
       display: flex;
 
       .image-wrapper {
-        *{
+        * {
           font-weight: 200;
           margin: var(--element-margin);
         }
-        
+
         img {
           width: 86px;
           height: 86px;
@@ -58,7 +95,8 @@
           transform: rotateX(40deg);
           transform: scale(0.9);
         }
-        p{
+
+        p {
           font-size: 14px;
           font-weight: 300;
           text-align: left;
@@ -66,6 +104,7 @@
         }
       }
     }
+
     h4 {
       margin: var(--element-margin);
       text-align: left;
@@ -96,7 +135,5 @@
 
 .home.page {
   font-family: 'PP migra';
-  height: 100vh;
-  width: 100vw;
   z-index: 1;
 }

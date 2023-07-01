@@ -13,7 +13,6 @@ export function Service() {
     serviceIds.shift()
     return (
         <>
-            <ImageGallary />
             <div id="SERVICE-TITLE" className='page heading'>
                 <div className='text-content text-heading'>
                     <h1>OUR SERVICES</h1>
