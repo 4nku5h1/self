@@ -3,6 +3,7 @@ import theme from "../theme/themes"
 const pageConfig = {
     'HOME': {
         pageName: "HOME",
+        ...theme.themeLight,
     },
     'ABOUT': {
         ...theme.themeLight,
