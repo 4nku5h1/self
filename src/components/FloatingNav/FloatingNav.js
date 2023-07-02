@@ -1,9 +1,7 @@
 import { useAppContext } from '../Common/AppContext/AppContext'
 import { scrollToId } from '../Common/helper'
-import Logo from '../Logo/Logo'
 import logo from '../../assets/logo/logo.svg'
 import './styles.scss'
-import Card from '../Home/Card/Card'
 export default function FloatingNav() {
     const appContext = useAppContext();
     const pageConfig = appContext.state.pageConfig;
