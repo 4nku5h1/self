@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import './styles.scss';
 import { services } from '../data/data';
 import { scrollToId } from '../../Common/helper';
+import './styles.scss';
 
 export function ServiceTitle({ appContext, data }) {
 
@@ -26,34 +26,26 @@ export function ServiceTitle({ appContext, data }) {
         }
     };
     return (
-        <div className=' text-banner' id="SERVICE-TITLE">
-            <div className='service-title-heading flex-center'>
-                <h2>Our services</h2>
-                <p>5.0 (google)</p>
-            </div>
+        <div className='page-text service-title' id="SERVICE-TITLE">
+            <h2>Our services</h2>
+            <p>First impressions matter, and not just in dating! We ensure that the spark ignites instantly with your customers in the future.</p>
+
             <motion.div
-                className="service-title"
+                className="item-container"
                 variants={container}
                 initial="hidden"
                 viewport={{ once: true }}
                 animate={isCurrentPage ? "visible" : "hidden"}
             >
-                <>{data.map((e, index) => {
+                {data.map((e, index) => {
                     return (
-                        <motion.div className="item-card" variants={item} >
-                            <div className='card-foreground'>
-                            </div>
-                            <img src={e.titleImage} />
-                            <div className='service-title-content'>
-                                <p>{e.title}</p>
-                                <button className='button' onClick={()=>{
-                                    scrollToId(`SERVICE-${index+1}`)
-                                }}>View</button>
-                            </div>
+                        <motion.div className="item" variants={item} >
+                            <span onClick={() => {
+                                scrollToId(`SERVICE-${index + 1}`)
+                            }}>{e.title}</span>
                         </motion.div>
                     )
                 })}
-                </>
 
 
             </motion.div>

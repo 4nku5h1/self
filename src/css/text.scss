@@ -60,7 +60,8 @@
     }
 
 }
-.text-heading{
+
+.text-heading {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,15 +72,75 @@
 
 .text-banner {
     * {
-      color: var(--color-font-home);
-      text-transform: uppercase;
-      text-align: center;
+        color: var(--color-font-home);
+        text-transform: uppercase;
+        text-align: center;
     }
 
     h2 {
-      transform: scale(1, 1.2);
-      transform: (1, 1.2);
-      font-size: 6vw;
-      font-weight: 400;
+        transform: scale(1, 1.2);
+        transform: (1, 1.2);
+        font-size: 6vw;
+        font-weight: 400;
     }
-  }
+}
+
+.page-text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    margin-bottom: 10%;
+    padding: var(--padding-page);
+
+    >* {
+        font-weight: 400;
+        letter-spacing: -0.07px;
+        line-height: 37px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        text-transform: capitalize;
+        font-size: 44px;
+        color: var(--font-color-heading);
+    }
+
+    p {
+        color: var(--font-color-content);
+        font-size: 28px;
+
+    }
+
+    .item-container {
+        display: flex;
+        // max-width: 150px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+
+        .item {
+            min-width: 33%;
+            *{
+                text-align: left !important;
+            }
+            height: fit-content;
+            width: 25%;
+
+            span {
+                text-transform: uppercase;
+                font-family: TT Hoves Pro Trial;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: tth;
+                // overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            span:hover{
+                color: var(--font-color-heading) !important;
+            }
+        }
+    }
+
+}

@@ -11,6 +11,7 @@ const pageConfig = {
     },
     'SERVICE-TITLE': {
         ...theme.themeLight,
+        backgroundColor:"#F0F0F0",
         pageName: "SERVICES",
         id:"SERVICE-TITLE"
     },
