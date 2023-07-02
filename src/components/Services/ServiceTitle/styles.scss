@@ -1,0 +1,101 @@
+:root {
+  --image-height-st: 250px;
+  --image-width-st: 400px;
+}
+.service-title-heading{
+  flex-direction: column;
+  margin-bottom: 5%;
+  p{
+    
+    text-transform: capitalize;
+  }
+  h2{
+    text-transform: capitalize;
+    font-size: 36px !important;
+    font-family: "TT Hoves Pro Trial", sans-serif !important;
+  }
+}
+.service-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    width: 24px !important;
+    font-size: 12px;
+  }
+
+  .item-card {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+
+    img {
+      height: var(--image-height-st);
+      width: var(--image-width-st);
+    }
+
+    .service-title-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 24px;
+      .button {
+        opacity: 1;
+      }
+      p {
+        text-transform: capitalize;
+        margin: 0;
+        font-family: poppins;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+    }
+    .card-foreground {
+      * {
+        transition: all 0.7s;
+      }
+
+      position: absolute;
+      height: var(--image-height-st);
+      width: var(--image-width-st);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .button {
+        opacity: 0;
+        font-size: 0;
+      }
+
+      p {
+        text-transform: capitalize;
+        margin: 0;
+        font-family: poppins;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .item-card:hover {
+    .card-foreground {
+      transition: all 0.7s;
+      * {
+        color: #FFD700;
+      }
+
+      .button {
+        font-size: 14px;
+        color: #fff;
+        opacity: 1;
+      }
+
+    }
+  }
+}

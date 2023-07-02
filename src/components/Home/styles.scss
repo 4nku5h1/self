@@ -42,23 +42,7 @@
     }
   }
 
-  .text {
-    * {
-      color: var(--color-font-home);
-      text-transform: uppercase;
-      text-align: center;
-    }
-
-    h2 {
-      transform: scale(1, 1.2);
-      transform: (1, 1.2);
-      font-size: 6vw;
-      font-weight: 400;
-    }
-  }
-
   .banner {
-    margin-top: 10%;
     img {
       width: 93vw;
       height: 100vh;

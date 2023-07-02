@@ -5,10 +5,11 @@ import { idCards } from '../../js/sitedata';
 import backg from '../../assets/parallax/b3.webp'
 
 import './styles.scss';
+import Logo from '../Logo/Logo';
 export default function Home({ id }) {
     return (
         <div className='home page' id={id}>
-            <div className='text'>
+            <div className='text-banner'>
                 <h2>Design studio </h2>
                 <h2> DRIVEN BY RESEARCH  </h2>
                 <h2>& STRATEGY</h2>

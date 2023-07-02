@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.scss'
+import { scrollToId } from '../Common/helper';
 
 export default function Navbar() {
     return (
@@ -8,7 +9,9 @@ export default function Navbar() {
                 <h2>GRAPHIC<span>NIX</span></h2>
             </div>
             <span>GRAPHICNIX © 2023</span>
-            <button className='button lets-talk'>Let's Talk</button>
+            <button className='button lets-talk' onClick={()=>{
+                scrollToId('FOOTER')
+            }}>Let's Talk</button>
         </div>
     )
 }

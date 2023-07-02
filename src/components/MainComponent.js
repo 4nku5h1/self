@@ -14,18 +14,18 @@ import '../css/styles.scss'
 import FloatingNav from './FloatingNav/FloatingNav';
 import Client from './Client/Client';
 import StickyHorizontalGallary from './Common/StickyHorizontalGallary/StickyHorizontalGallary';
-import { ourServices } from './Common/StickyHorizontalGallary/data/data';
 
 export default function MainComponent() {
     return (
         <div className='main'>
+            <div className='background-image'/>
             <Navbar />
             {/* <div id="HOME"></div> */}
             <FloatingNav />
             <Home id={'HOME'} />
-            <div id="SERVICE-TITLE" className='page heading'>
-                <StickyHorizontalGallary  data={ourServices}/>
-            </div>
+            {/* <div id="SERVICE-TITLE" className='page heading'>
+            <StickyHorizontalGallary  data={ourServices}/>
+            </div> */}
             {/* <AboutUs id={'ABOUT'} /> */}
             <Service />
             {/* {services.map((item, index) => {
@@ -36,12 +36,12 @@ export default function MainComponent() {
             {/* <InfiniteImageGallary /> */}
             {extraServices.map((item, index) => {
                 return (
-                    <Content uid={'SERVICE-RENDER'} {...item} imageWidth={400} imageHeight={200} />
+                    <Content uid={'SERVICE-6'} {...item} imageWidth={400} imageHeight={200} />
                 )
             })}
             <Content uid={'GRAPHICNIX-ROSE'} images={roseImage} imageWidth={500} imageHeight={300} title={"Grahicnix"} description={about} />
 
-            <Client uid={"CLIENTS"}/>
+            <Client uid={"CLIENTS"} />
             <Footer uid={"FOOTER"} />
         </div>
     )

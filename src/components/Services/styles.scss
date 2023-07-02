@@ -1,3 +1,10 @@
+.background-image{
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  background-image: url('../../assets/background/bg-bb.webp');
+  background-color: red;
+}
 .service {
   display: flex;
   justify-content: center;

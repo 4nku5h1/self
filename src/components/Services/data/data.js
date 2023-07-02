@@ -20,6 +20,12 @@ import render2 from '../../../assets/services/render2.jpeg'
 import render3 from '../../../assets/services/render3.jpeg'
 import render4 from '../../../assets/services/render4.webp'
 
+import i1 from '../../../assets/horizontalgallary/1.webp'
+import i2 from '../../../assets/horizontalgallary/2.webp'
+import i3 from '../../../assets/horizontalgallary/3.webp'
+import i4 from '../../../assets/horizontalgallary/4.webp'
+import i5 from '../../../assets/horizontalgallary/5.webp'
+
 export const about = 'graphicnix.com is the leading online hub for all things digital. Our global team of professional editing experts are ready to transform your photos into eye-catching professional images. Simply upload your photos and let our professionals take care of the rest. We offer a wide range of services including, photo editing, virtual staging, floor plan redraws, renders, and virtual renovations. The process is fast, easy-to-use and extremely affordable.'
 export const services = [
     {
@@ -29,6 +35,7 @@ export const services = [
         description: 'Professional jewelry photo retouching attracts potential buyers and presents precious gemstones in the most appealing way. Necklaces, earrings, rings and other jewelry will shine after photoshopping.',
         imageBefore: productBefore,
         imageAfter: productAfter,
+        titleImage:productAfter,
 
     },
     {
@@ -42,6 +49,7 @@ export const services = [
             title: '10 Step Enhancement Process',
             list: ['White Balancing, Sharpening ', 'Remove Minor Blemishes', 'Lens Distortion Removal', 'Brightness Contrast & Tone Adjustment', 'Sky Replacement', 'Lawn Enhancement – Repair or Replace', 'Ocean/River Water Enhancement', 'TV Screen Replacement', 'Flash & Photographer’s Reflection Removal', 'HDR Bracketing with Indoor Window Replacement']
         },
+        titleImage:i1,
 
     },
     {
@@ -51,6 +59,7 @@ export const services = [
         description: 'Our team can add furniture to real estate photography to show potential buyers just how versatile the space is.',
         imageBefore: virtualStagingBefore,
         imageAfter: virtualStagingAfter,
+        titleImage:i3,
 
     },
     {
@@ -64,6 +73,7 @@ export const services = [
             title: '10 Step Enhancement Process',
             list: []
         },
+        titleImage:day2DuskBefore,
 
 
     },
@@ -74,6 +84,7 @@ export const services = [
         description: 'Our photo editing experts can remove unwanted items from your photos.',
         imageBefore: itemRemovalBefore,
         imageAfter: itemRemovalAfter,
+        titleImage:itemRemovalAfter,
 
     }
 ]
@@ -83,6 +94,7 @@ export const extraServices = [
         pageOffset: 13,
         title: 'Renders',
         description: 'Bring plans to life with our render service available for a range of plans and designs.',
-        images: [render1, render2, render3, render4]
+        images: [render1, render2, render3, render4],
+        titleImage:render1,
     }
 ]

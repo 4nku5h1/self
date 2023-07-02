@@ -4,6 +4,7 @@ const pageConfig = {
     'HOME': {
         pageName: "HOME",
         ...theme.themeLight,
+        hideFloatingMenu: true,
     },
     'ABOUT': {
         ...theme.themeLight,
@@ -12,10 +13,12 @@ const pageConfig = {
     'SERVICE-TITLE': {
         ...theme.themeLight,
         pageName: "SERVICES",
+        id:"SERVICE-TITLE"
     },
     'SERVICE-1': {
         ...theme.themeLight,
         pageName: "SERVICES",
+        id:"SERVICE-1"
     },
     'SERVICE-2': {
         ...theme.themeGray,
@@ -33,7 +36,7 @@ const pageConfig = {
         ...theme.themeLight,
         pageName: "SERVICES",
     },
-    'SERVICE-RENDER': {
+    'SERVICE-6': {
         ...theme.themeDark,
         pageName: "SERVICES",
     },
