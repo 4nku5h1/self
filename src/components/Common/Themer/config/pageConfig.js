@@ -4,7 +4,6 @@ const pageConfig = {
     'HOME': {
         pageName: "HOME",
         ...theme.themeLight,
-        hideFloatingMenu: true,
     },
     'ABOUT': {
         ...theme.themeLight,

@@ -1,67 +1,75 @@
-:root{
-    --panel-width:450px;
-    --panel-height:50px;
-    --panel-background-color:#4747473f;
-    --panel-border-color:#47474778;
-    --panel-button-background-color:rgb(22, 22, 22);
-    --panel-button-text-color :#E3E3E3;
+:root {
+    --panel-width: 30vw;
+    --panel-height: 50px;
+    --panel-background-color: #4747473f;
+    --panel-border-color: #47474778;
+    --panel-button-background-color: rgb(22, 22, 22);
+    --panel-button-text-color: #E3E3E3;
+    --floating-nav-color: #000;
 }
-.floating-nav{
+
+.floating-nav {
     z-index: 2;
     backdrop-filter: blur(4px);
-    *{
+
+    * {
         user-select: none;
         text-align: center;
     }
+
     position: fixed;
     bottom: 0;
     padding-left: 8px;
     padding-right: 8px;
     max-width: var(--panel-width);
+    min-width: var(--panel-width);
     margin-bottom: 30px;
     left: calc(50% - (var(--panel-width)/2));
     background-color: var(--panel-background-color);
-    border: 2px solid  var(--panel-border-color); 
-    // --font-color-heading
+    border: 1px solid var(--font-color-heading);
     border-radius: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     transition: all 1s;
-    > *{
+
+    >* {
         margin: calc(var(--element-margin));
         transition: all 0.5s;
     }
-    >span{
+
+    .nav-logo {
+        margin-right: 24px;
+        img {
+            height: calc(var(--panel-height) - 18px);
+        }
+    }
+
+    span {
         padding: 8px;
-        border-radius: 15px;
+        border-radius: 10px;
         color: var(--panel-button-text-color);
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 600;
         color: var(--font-color-heading);
         text-transform: uppercase;
+        color: var(--font-color-content);
     }
-    >span:hover{
+
+    span:hover {
         font-weight: 700;
-        background-color: var(--panel-button-background-color);
+        border: 20x var(--panel-button-background-color);
         color: var(--panel-button-text-color);
     }
-    >span.active{
-        font-weight: 700;
-        background-color: var(--panel-button-background-color);
-        color: var(--panel-button-text-color);
-    }
-    .logo{
-        *{
-            margin: 0;
-        }
-        min-width: min-content;
-        max-width: min-content;
-        color: var(--font-color-heading);
-        justify-self: center;
+
+    span.active {
+        font-weight: 800;
+        background-color: var(--font-color-heading);
+        color: var(--floating-nav-color);
     }
 }
-.floating-nav.hidden{
+
+.floating-nav.hidden {
     margin-bottom: 60px;
     // display: none;
     transform: translateY(500px);

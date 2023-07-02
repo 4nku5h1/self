@@ -14,6 +14,7 @@ const theme = {
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.buttonDark,
         borderColor: colorConfig.borderLight,
+        floatingNavColor: '#fff'
     },
     themeGray : {
         backgroundColor: '#0d0d0d',
@@ -21,6 +22,7 @@ const theme = {
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.buttonLight,
         borderColor: colorConfig.borderDark,
+        floatingNavColor: '#000'
     },
     themeDark : {
         backgroundColor: '#000',
@@ -28,6 +30,7 @@ const theme = {
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.buttonLight,
         borderColor: colorConfig.borderDark,
+        floatingNavColor: '#000'
     }
 
 }

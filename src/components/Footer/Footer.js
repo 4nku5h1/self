@@ -25,12 +25,12 @@ export default function Footer({ uid }) {
                     <p>Privacy Policy © 2023 <span className="highlight"> Graphicnix</span></p>
                 </div>
                 <div className="item">
-                    <p>Bichpuri</p>
-                    <p>00145 Rome — Italy</p>
+                    <p>NGK-145</p>
+                    <p>New Delhi India</p>
                 </div>
                 <div className="item">
-                    <p className="highlight">abxcs@aa.com</p>
-                    <p>(+39) <span className="highlight">333 329 77</span></p>
+                    <p className="highlight">graphicnix@gmail.com</p>
+                    <p>(+39) <span className="highlight">7417189899</span></p>
                 </div>
                 <div className="item-img">
                     {socialdata.map((e) => {
