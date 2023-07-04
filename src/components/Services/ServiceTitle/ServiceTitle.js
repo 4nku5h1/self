@@ -26,7 +26,7 @@ export function ServiceTitle({ appContext, data }) {
         }
     };
     return (
-        <div className='page-text service-title' id="SERVICE-TITLE">
+        <div className='page-text service-title themer' id="SERVICE-TITLE">
             <h2>Our services</h2>
             <p>First impressions matter, and not just in dating! We ensure that the spark ignites instantly with your customers in the future.</p>
 

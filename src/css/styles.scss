@@ -3,9 +3,10 @@
 @import url('./flex.scss');
 @import url('./button.scss');
 @import url('./fonts.scss');
+@import url('../components//Common/Themer/styles.scss');
 
 :root {
-  --color-font-home:#030304;
+  --color-font-home: #030304;
   --sadf: #eabe1e96;
   --color-font-heading: #ffffff;
   --color-font-sub-heading: #ffffff;
@@ -33,8 +34,7 @@
   border-left: 2px solid var(--color-font-heading);
 }
 
-.main {
-}
+.main {}
 
 .page {
   padding: var(--padding-page);
@@ -53,9 +53,10 @@
 .grad2 {
   background: radial-gradient(circle at 90%, #6be9e9, #000000 40%, #000000 100%, #000000 75%);
 }
-.main{
-}
-.page,.themer{
+
+.main {}
+
+.page {
   transition: background-color 0.8s ease;
   background-color: var(--themer-background);
 }
