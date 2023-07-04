@@ -112,6 +112,7 @@ padding-top: 5%;
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
+        margin-bottom: 3%;
 
         .item {
             min-width: 250px;
@@ -133,7 +134,28 @@ padding-top: 5%;
             span:hover{
                 color: var(--themer-heading) !important;
             }
+            .border{
+                padding: 0;
+                margin: 0;
+                width: 0%;
+                height: 1px;
+                transition: all 0.7s;
+                border-bottom: 1px solid transparent;
+            }
+            
         }
+        .item:hover{
+            .border{
+                width: 50%;
+                border-bottom: 1px solid rgb(0, 0, 0) !important;
+            }
+        }
+        
+    }
+    h5{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 8px;
     }
 
 }
