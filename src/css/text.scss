@@ -36,7 +36,7 @@
 
     h2 {
 
-        color: var(--font-color-heading);
+        color: var(--themer-heading);
         margin-top: calc(var(--content-margin) * 5);
         margin-left: -24px;
         font-size: 36px;
@@ -44,7 +44,7 @@
     }
 
     h3 {
-        color: var(--font-color-heading);
+        color: var(--themer-heading);
         margin-top: calc(var(--content-margin) * 5);
         margin-left: -10px;
         font-size: 28px;
@@ -52,7 +52,7 @@
     }
 
     p {
-        color: var(--font-color-content);
+        color: var(--themer-content);
         letter-spacing: 1px;
     }
 
@@ -99,11 +99,11 @@
     h2 {
         text-transform: capitalize;
         font-size: 44px;
-        color: var(--font-color-heading);
+        color: var(--themer-heading);
     }
 
     p {
-        color: var(--font-color-content);
+        color: var(--themer-content);
         font-size: 28px;
 
     }
@@ -135,7 +135,7 @@
                 text-overflow: ellipsis;
             }
             span:hover{
-                color: var(--font-color-heading) !important;
+                color: var(--themer-heading) !important;
             }
         }
     }

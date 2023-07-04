@@ -5,11 +5,6 @@
 @import url('./fonts.scss');
 
 :root {
-  --color-background: #000000;
-  // f7a57f
-  // 9376e6
-  // 729efa
-  // font
   --color-font-home:#030304;
   --sadf: #eabe1e96;
   --color-font-heading: #ffffff;
@@ -62,5 +57,5 @@
 }
 .page,.themer{
   transition: background-color 0.8s ease;
-  background-color: var(--color-background);
+  background-color: var(--themer-background);
 }

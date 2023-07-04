@@ -12,12 +12,12 @@ export default function Themer({ changePageStateFunction }) {
         function changeColor(id) {
             console.log(id)
             changePageStateFunction(pageConfig[id])
-            document.documentElement.style.setProperty('--color-background', pageConfig[id].backgroundColor);
-            document.documentElement.style.setProperty('--font-color-heading', pageConfig[id].headingColor);
-            document.documentElement.style.setProperty('--font-color-content', pageConfig[id].contentColor);
-            document.documentElement.style.setProperty('--button-border', pageConfig[id].borderColor);
-            document.documentElement.style.setProperty('--button-color', pageConfig[id].buttonColor);
-            document.documentElement.style.setProperty('--floating-nav-color', pageConfig[id].floatingNavColor);
+            document.documentElement.style.setProperty('--themer-background', pageConfig[id].backgroundColor);
+            document.documentElement.style.setProperty('--themer-heading', pageConfig[id].headingColor);
+            document.documentElement.style.setProperty('--themer-content', pageConfig[id].contentColor);
+            document.documentElement.style.setProperty('--themer-button-border', pageConfig[id].borderColor);
+            document.documentElement.style.setProperty('--themer-button', pageConfig[id].buttonColor);
+            document.documentElement.style.setProperty('--themer-floating-nav', pageConfig[id].floatingNavColor);
         }
         Object.keys(pageConfig).map((id) => {
             try {

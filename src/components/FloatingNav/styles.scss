@@ -25,7 +25,7 @@
     margin-bottom: 30px;
     left: calc(50% - (var(--panel-width)/2));
     background-color: var(--panel-background-color);
-    border: 1px solid var(--font-color-heading);
+    border: 1px solid var(--themer-heading);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -50,9 +50,9 @@
         color: var(--panel-button-text-color);
         font-size: 12px;
         font-weight: 600;
-        color: var(--font-color-heading);
+        color: var(--themer-heading);
         text-transform: uppercase;
-        color: var(--font-color-content);
+        color: var(--themer-content);
     }
 
     span:hover {
@@ -61,8 +61,8 @@
     }
 
     span.active {
-        background-color: var(--font-color-heading);
-        color: var(--floating-nav-color);
+        background-color: var(--themer-heading);
+        color: var(--themer-floating-nav);
     }
 }
 
