@@ -42,8 +42,8 @@
 }
 
 .page {
-  margin-bottom: 10%;
   padding: var(--padding-page);
+  padding-bottom: 10%;
 }
 
 .background-image {
@@ -59,7 +59,8 @@
   background: radial-gradient(circle at 90%, #6be9e9, #000000 40%, #000000 100%, #000000 75%);
 }
 .main{
-  
+}
+.page{ 
   transition: background-color 0.8s ease;
   background-color: var(--color-background);
 }

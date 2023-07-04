@@ -5,12 +5,11 @@
 }
 
 .navbar {
+    background-color: #fff;
     * {
         color: var(--font-color-heading);
         font-size: var(--font-size);
     }
-
-    height: var(--nav-height);
     backdrop-filter: blur(7px);
     padding:24px 36px;
     display: flex;
