@@ -7,8 +7,7 @@ export default function Client({ uid }) {
             <div className='client-heading'>
                 <h3>TRUSTED CLIENTS</h3>
             </div>
-            
-            <AnimatedItems animate={true} data={clientNames} child={(item)=><span>{item}</span>} />
+            <AnimatedItems className={'client-item'} animate={true} data={clientNames} child={(item)=><span>{item}</span>} />
         </div>
 
     )

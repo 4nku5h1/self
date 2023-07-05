@@ -6,13 +6,15 @@
         justify-content: center;
         h3 {
             font-family: poppins;
-            font-weight: 300;
-            color: var(--themer-heading);
+            font-weight: 400;
+            font-size: 11px;
+            color: var(--themer-heading);    
+            letter-spacing: 3px;
+            line-height: 20px;
         }
     }
-
-    .client-heading :last-child {
-        opacity: 0.8;
-
+    .client-item{
+        text-align: center;
+        color: var(--themer-content);
     }
 }

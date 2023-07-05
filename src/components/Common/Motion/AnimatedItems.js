@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function AnimatedItems({ data=[], child, animate }) {
+export default function AnimatedItems({ className, data=[], child, animate }) {
     const container = {
         hidden: { opacity: 1, scale: 0 },
         visible: {
@@ -30,7 +30,7 @@ export default function AnimatedItems({ data=[], child, animate }) {
         >
             {data.map((itemData, index) => {
                 return (
-                    <motion.div className="item" variants={item} >
+                    <motion.div className={`item ${className}`} variants={item} >
                         {child(itemData, index)}
                     </motion.div>
                 )
