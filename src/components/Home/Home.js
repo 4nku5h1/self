@@ -1,8 +1,6 @@
 import React from 'react';
 import TextAnimation from '../Common/TextAnimation';
-import Card from './Card/Card';
-import { idCards } from '../../js/sitedata';
-import backg from '../../assets/parallax/b3.webp'
+import backg from '../../assets/background/bus.webp'
 
 import './styles.scss';
 import Logo from '../Logo/Logo';
