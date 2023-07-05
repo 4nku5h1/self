@@ -18,7 +18,6 @@ export default function Themer({ changePageStateFunction }) {
             document.documentElement.style.setProperty('--themer-content', pageConfig[id].contentColor);
             document.documentElement.style.setProperty('--themer-button-border', pageConfig[id].borderColor);
             document.documentElement.style.setProperty('--themer-button', pageConfig[id].buttonColor);
-            document.documentElement.style.setProperty('--themer-floating-nav', pageConfig[id].floatingNavColor);
         }
         Object.keys(pageConfig).map((id) => {
             try {

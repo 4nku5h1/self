@@ -1,16 +1,8 @@
-:root {
-    --panel-width: 400px;
-    --panel-height: 50px;
-    --panel-background-color: #4747473f;
-    --panel-border-color: #47474778;
-    --panel-button-background-color: rgb(22, 22, 22);
-    --panel-button-text-color: #E3E3E3;
-}
+$panel-width: 400px;
+$panel-height: 50px;
 
 .floating-nav {
     z-index: 2;
-    backdrop-filter: blur(4px);
-
     * {
         user-select: none;
         text-align: center;
@@ -20,12 +12,10 @@
     bottom: 0;
     padding-left: 8px;
     padding-right: 8px;
-    // max-width: var(--panel-width);
-    // min-width: var(--panel-width);
     margin-bottom: 30px;
-    left: calc(50% - (var(--panel-width)/2));
-    background-color: var(--panel-background-color);
-    border: 1px solid var(--themer-heading);
+    left: calc(50% - ($panel-width/2));
+    background-color: #fdfdfdfd;
+    border: 0.5px solid #d6d6d6;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -40,29 +30,26 @@
     .nav-logo {
         margin-right: 24px;
         img {
-            height: calc(var(--panel-height) - 18px);
+            height: calc($panel-height - 18px);
         }
     }
 
     span {
         padding: 8px;
         border-radius: 10px;
-        color: var(--panel-button-text-color);
         font-size: 12px;
         font-weight: 600;
-        color: var(--themer-heading);
         text-transform: uppercase;
-        color: var(--themer-content);
+        color: #b6b6b6;
     }
 
     span:hover {
-        border: 20x var(--panel-button-background-color);
-        color: var(--panel-button-text-color);
+        color: #000;
     }
 
     span.active {
-        background-color: var(--themer-heading);
-        color: var(--themer-floating-nav);
+        background-color: #272727;
+        color: #fff;
     }
 }
 
