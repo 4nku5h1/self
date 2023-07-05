@@ -1,44 +1,4 @@
 .client-container {
-    justify-content: space-around;
-
-    align-items: center;
-    justify-content: center;
-    .client {
-        border-radius: 10px;
-        margin: calc(var(--element-margin) * 10);
-        margin-bottom: 0;
-        display: flex;
-        flex-direction: column;
-
-        >img {
-            width: 500px;
-            height: 300px;
-        }
-
-        .gallary {
-            max-width: 80%;
-            display: flex;
-            flex-wrap: wrap;
-
-            .image-wrapper {
-                margin: 12px;
-                overflow: hidden;
-
-                img {
-                    margin: 0;
-                    width: 150px;
-                    height: 100px;
-                    background-image: url(https://uploads-ssl.webflow.com/63beff5…/63e2afa…_Custom%20Size%20%E2%80%93%205.png);
-                    background-position: 50%;
-                    background-size: cover;
-
-                }
-
-
-            }
-        }
-    }
-
     .client-heading {
         display: flex;
         flex-direction: column;

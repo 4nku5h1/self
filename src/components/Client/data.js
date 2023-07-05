@@ -9,5 +9,6 @@ import c8 from '../../assets/clients/8.png';
 import c9 from '../../assets/clients/9.png';
 import c10 from '../../assets/clients/10.png';
 
-const ClientsData = [c1, c2, c3, c4, c5, c6, c7, c8 , c9, c10];
-export default ClientsData;
+const clientNames = ["Alien were", 'Google', 'FACEBOOK', "microsoft", 'TXC', "AIB", 'visa', 'airtel', 'lg', 'cpoo', 'portronics', 'vrioaj'];
+
+export default clientNames;
