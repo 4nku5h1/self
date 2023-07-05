@@ -3,7 +3,9 @@ import { useEffect, useState } from 'react'
 import { useAppContext } from '../AppContext/AppContext'
 
 import './styles.scss'
-
+// NOTE:
+// USAGE
+// add on element onMouseEnter={()=>setCursorBall(appContext)} 
 export default function () {
     const [mousePosition, setMousePosition] = useState({
         x: 0,

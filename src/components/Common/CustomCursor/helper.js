@@ -4,3 +4,6 @@ export function setCursorText(appContext){
 export function setCursorDefault(appContext){
     appContext.setCursorVarient("default")
 }
+export function setCursorBall(appContext){
+    appContext.setCursorVarient("ball")
+}

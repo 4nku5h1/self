@@ -1,5 +1,5 @@
 import { useAppContext } from '../Common/AppContext/AppContext';
-import { setCursorDefault, setCursorText } from '../Common/CustomCursor/helper';
+import { setCursorBall, setCursorDefault, setCursorText } from '../Common/CustomCursor/helper';
 import ImageCompare from '../Common/ImageCompare/ImageCompare'
 import pageConfig from '../Common/Themer/config/pageConfig';
 import StickyHorizontalGallary from './../Common/StickyHorizontalGallary/StickyHorizontalGallary';
@@ -28,7 +28,7 @@ export function Service() {
                         <div className='text-content'>
                             <h3>{title}</h3>
                             <p>{description}</p>
-                            <button className='button' onMouseEnter={() => setCursorText(appContext)} onMouseLeave={() => setCursorDefault(appContext)}>Explore more</button>
+                            <button className='button'>Explore more</button>
                         </div>
                     </div>
 
