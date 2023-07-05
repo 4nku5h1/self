@@ -4,9 +4,7 @@ import pageConfig from "./config/pageConfig";
 import './styles.scss';
 export default function Themer({ changePageStateFunction }) {
     useEffect(() => {
-        setTimeout(() => {
-            startThemer()
-        }, 500);
+        startThemer()
     }, [])
 
     function startThemer() {
