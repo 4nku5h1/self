@@ -6,13 +6,6 @@
 @import url('../components//Common/Themer/styles.scss');
 
 :root {
-  --color-font-home: #030304;
-  --sadf: #eabe1e96;
-  --color-font-heading: #ffffff;
-  --color-font-sub-heading: #ffffff;
-  --color-font-content: #ffffff;
-
-  // spacing
   --padding-page: 60px;
   --element-margin: 8px;
 }
@@ -22,18 +15,6 @@
   justify-content: center;
   align-items: end;
 }
-
-.line {
-  margin-top: calc(var(--element-margin)*2);
-  margin-bottom: calc(var(--element-margin)*2);
-  background-color: var(--color-font-heading);
-  height: 2px;
-}
-
-.line-vertical {
-  border-left: 2px solid var(--color-font-heading);
-}
-
 .main {}
 
 .page {

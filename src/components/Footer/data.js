@@ -11,7 +11,7 @@ export const socialdata = [
     {
         image: facebook,
         title: "",
-        url: ""
+        url: "https://www.facebook.com/profile.php?id=100085868422293&mibextid=ZbWKwL"
     },
     {
         image: linkedin,
@@ -26,7 +26,7 @@ export const socialdata = [
     {
         image: insta,
         title: "",
-        url: ""
+        url: "https://instagram.com/graphicnexwebservice?igshid=MzNlNGNkZWQ4Mg=="
     }
 ]
 

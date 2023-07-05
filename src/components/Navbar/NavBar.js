@@ -1,6 +1,7 @@
 import React from 'react';
-import './styles.scss'
 import { scrollToId } from '../Common/helper';
+
+import './styles.scss'
 
 export default function Navbar() {
     return (

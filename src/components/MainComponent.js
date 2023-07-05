@@ -2,17 +2,15 @@ import { about } from './Services/data/data';
 
 import Navbar from './Navbar/NavBar';
 import Home from './Home/Home';
-import { Service } from './Services/Service';
 import Footer from './Footer/Footer';
 import Content from './Content/Content';
 import roseImage from '../assets/background/rose.webp'
-
-import AboutUs from './AboutUs/AboutUs';
-import InfiniteImageGallary from './Common/InfiniteImageGallary/InfiniteImageGallary'
-
-import '../css/styles.scss'
 import FloatingNav from './FloatingNav/FloatingNav';
 import Client from './Client/Client';
+
+import { Service } from './Services/Service';
+
+import '../css/styles.scss'
 
 export default function MainComponent() {
     return (

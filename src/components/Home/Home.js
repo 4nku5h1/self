@@ -3,7 +3,6 @@ import TextAnimation from '../Common/TextAnimation';
 import backg from '../../assets/background/bus.webp'
 
 import './styles.scss';
-import Logo from '../Logo/Logo';
 export default function Home({ id }) {
     return (
         <div className='home page' id={id}>

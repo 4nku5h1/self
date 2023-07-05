@@ -5,7 +5,7 @@
 }
 
 .navbar {
-    background-color: #fff;
+    background-color: var(--themer-background);
     * {
         color: var(--themer-heading);
         font-size: var(--font-size);
