@@ -4,7 +4,7 @@ import ImageCompare from '../Common/ImageCompare/ImageCompare'
 import pageConfig from '../Common/Themer/config/pageConfig';
 import StickyHorizontalGallary from './../Common/StickyHorizontalGallary/StickyHorizontalGallary';
 import ImageGallary from './../Common/ImageGallary/ImageGallary';
-import { services, extraServices } from './data/data';
+import { services } from './data/data';
 
 import './styles.scss';
 import { ServiceTitle } from './ServiceTitle/ServiceTitle';
@@ -13,11 +13,10 @@ export function Service() {
     const appContext = useAppContext();
     const serviceIds = Object.keys(pageConfig).filter((id) => id.includes("SERVICE"));
     serviceIds.shift()
-    const allServices = [...services, ...extraServices]
     return (
         <>
 
-            <ServiceTitle appContext={appContext} data={allServices}/>
+            <ServiceTitle appContext={appContext} data={services}/>
             {services.map((data, index) => {
                 const { title, description, imageBefore, imageAfter } = data;
                 const id = serviceIds[index]

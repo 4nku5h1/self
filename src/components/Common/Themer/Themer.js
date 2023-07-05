@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { observeElementById } from "../helper";
 import pageConfig from "./config/pageConfig";
+import './styles.scss';
 export default function Themer({ changePageStateFunction }) {
     useEffect(() => {
         setTimeout(() => {

@@ -44,10 +44,10 @@ const pageConfig = {
         ...theme.themeDark,
     },
     'CLIENTS': {
-        ...theme.themeDark,
+        ...theme.themeGray,
     },
     'FOOTER': {
-        ...theme.themeDark,
+        ...theme.themeGray,
         pageName: "FOOTER",
         hideFloatingMenu: true,
     }

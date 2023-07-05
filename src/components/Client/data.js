@@ -9,6 +9,6 @@ import c8 from '../../assets/clients/8.png';
 import c9 from '../../assets/clients/9.png';
 import c10 from '../../assets/clients/10.png';
 
-const clientNames = ["Alien were", 'Google', 'FACEBOOK', "microsoft", 'TXC', "AIB", 'visa', 'airtel', 'lg', 'cpoo', 'portronics', 'vrioaj'];
+const clientNames = ["GOLD MARK", 'Geeky Estate', 'BIMBRA', "IGNITE CREATIVE", 'INTERPRETING', "FOX MORTGAGE", 'RHINO', 'CITI ESTATE', 'NEON TREE', 'GREEN STREET', 'CHOPSTYX', 'AURA', 'ENLIVEN SENIOR', 'HOUSES MART'];
 
 export default clientNames;
