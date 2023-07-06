@@ -16,5 +16,3 @@ export default function Navbar() {
         </div>
     )
 }
-//   <span>SERVICES</span>
-{/* <span>CONTACT</span> */ }

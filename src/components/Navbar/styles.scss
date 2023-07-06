@@ -1,14 +1,11 @@
-:root {
-    --color-nav-background: #000000;
-    --nav-height: 7vh;
-    --font-size:18px;
-}
+$font-size: 18px;
 
 .navbar {
     background-color: var(--themer-background);
+
     * {
         color: var(--themer-heading);
-        font-size: var(--font-size);
+        font-size: $font-size;
     }
     backdrop-filter: blur(7px);
     padding:24px 36px;
@@ -25,7 +22,8 @@
         h2 {
             font-weight: 800;
             letter-spacing: 1px;
-            span{
+
+            span {
                 color: rgb(134, 124, 124);
                 font-weight: 100;
 
@@ -34,12 +32,26 @@
     }
 
     .lets-talk {
-        // padding: 4px 8px;
         margin-top: 0;
-        font-size: var(--font-size);
+        font-size: $font-size;
         font-weight: 900;
         color: var(--themer-heading);
         font-size: 9px;
     }
 
+}
+
+@media only screen and (max-width:480px) {
+    $font-size: 10px !important;
+
+    .navbar {
+        * {
+            font-size: $font-size;
+        }
+
+        padding:24px 12px;
+        >span {
+            font-size: 8px !important;
+        }
+    }
 }

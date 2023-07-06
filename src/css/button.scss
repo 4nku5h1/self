@@ -8,3 +8,11 @@
     background-color: transparent;
     letter-spacing: 1px;
 }
+
+@media only screen and (max-width:480px) {
+    .button {
+        padding: 10px 22px;
+        font-size: 10px;
+        font-weight: 800;
+    }
+}

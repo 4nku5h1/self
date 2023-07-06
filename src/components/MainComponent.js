@@ -19,18 +19,7 @@ export default function MainComponent() {
             <Navbar />
             <FloatingNav />
             <Home id={'HOME'} />
-            {/* <div id="SERVICE-TITLE" className='page heading'>
-            <StickyHorizontalGallary  data={ourServices}/>
-            </div> */}
-            {/* <AboutUs id={'ABOUT'} /> */}
             <Service />
-            {/* {services.map((item, index) => {
-                return (
-                    <ServiceGallary data={item} index={index} />
-                )
-            })} */}
-            {/* <InfiniteImageGallary /> */}
-          
             <Content uid={'GRAPHICNIX-ROSE'} image={roseImage} imageWidth={500} imageHeight={300} title={"ABOUT US"} description={about} />
             <Client uid={"CLIENTS"} />
             <Footer uid={"FOOTER"} aboutData={about}/>
