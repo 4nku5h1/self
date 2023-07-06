@@ -10,49 +10,9 @@ html {
   overflow-x: hidden;
 }
 
-
+body{
+}
 .App {
   text-align: center;
   font-family: 'poppins';
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-::-webkit-scrollbar {
-  display: none;
-  width: 10px;
-  border-radius: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: none;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: var(--mygrad);
-  background: linear-gradient(315deg, rgba(2, 0, 36, 1) 0%, rgba(0, 255, 235, 1) 0%, var(--mygrad) 100%);
-
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  width: 15px;
-  background: linear-gradient(240deg, rgba(2, 0, 36, 1) 0%, rgba(0, 255, 235, 1) 0%, var(--mygrad) 100%);
 }
