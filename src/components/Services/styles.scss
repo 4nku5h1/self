@@ -51,13 +51,13 @@
     $content-margin: 10px;
 
     .service-container {
-      $container-width: 85vw;
+      $container-width: 83vw;
       width: $container-width;
       align-items: flex-start;
 
       .image img {
         width: $container-width;
-        height: 85vw;
+        height: $container-width;
       }
 
       .text-content {
@@ -68,13 +68,17 @@
           margin-top: calc($content-margin * 5);
           margin-left: 0px;
           font-size: $font-size;
-          font-weight: 400;   
+          font-weight: 400;
 
         }
 
         p {
           font-size: $font-size;
           letter-spacing: -0.07px;
+          display: -webkit-box;
+          -webkit-line-clamp: 5;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
         }
 
       }
