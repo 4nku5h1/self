@@ -1,14 +1,13 @@
-import { motion } from "framer-motion";
 import './styles.scss'
-export default function Content({ uid, title, description, image, imageHeight, imageWidth }) {
-    const imageStyle = { height: ` ${imageHeight}px`, width: ` ${imageWidth}px` }
+export default function Content({ uid, title, description, image }) {
     return (
-        <div className="themer page-text flex-column flex-center">
-            <motion.div className='content ' id={uid}>
-                <img src={image} style={imageStyle} />
+        <div className="themer page content" id={uid}>
+            <div className="container">
+                <img src={image}/>
                 <h3 className='center-small-capital-heading'>{title}</h3>
-                <p>{description}</p>
-            </motion.div>
+                <p className='paragraph'>{description}</p>
+            </div>
+
         </div>
 
     )

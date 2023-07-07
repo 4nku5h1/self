@@ -74,6 +74,7 @@
         }
 
         height: fit-content;
+
         span {
             text-transform: uppercase;
             font-family: poppins !important;
@@ -122,14 +123,19 @@
     .heading-h2 {
         font-size: 28px;
     }
-    
+
     .heading-h5 {
         font-size: 21px;
         font-weight: 400;
+        letter-spacing: 2.73px;
     }
-    
+
     .paragraph {
         font-size: 21px;
-        margin-bottom: 24px !important;
+        color: var(--themer-heading);
+    }
+
+    .center-small-capital-heading {
+        color: var(--themer-content);
     }
 }
