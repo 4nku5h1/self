@@ -20,7 +20,7 @@ export default function MainComponent() {
             <FloatingNav />
             <Home id={'HOME'} />
             <Service />
-            <Content uid={'GRAPHICNIX-ROSE'} image={roseImage} imageWidth={500} imageHeight={300} title={"ABOUT US"} description={about} />
+            <Content uid={'GRAPHICNIX-ROSE'} image={roseImage} title={"ABOUT US"} description={about} />
             <Client uid={"CLIENTS"} />
             <Footer uid={"FOOTER"} aboutData={about}/>
         </div>

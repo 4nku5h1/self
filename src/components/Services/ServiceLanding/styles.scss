@@ -2,12 +2,22 @@
     .container {
         align-items: flex-start;
 
-        >* {
-            margin-bottom: 56px;
+        >h2, >p {
+            margin-bottom: 60px;
+        }
+        >h5{
+            margin-bottom: 24px;
         }
     }
-
+    h5{
+        color: var(--themer-accent);
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    
     .service-card {
+        // border-bottom: 1px solid var(--themer-content);
         max-width: calc(100%/2);
         min-width: calc(100%/2);
         margin-bottom: 30px;
@@ -54,8 +64,8 @@
         }
 
         .service-card {
-            max-width: calc(100);
-            min-width: calc(100);
+            max-width: calc(100%);
+            min-width: calc(100%);
         }
     }
 }

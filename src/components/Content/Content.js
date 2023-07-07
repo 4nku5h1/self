@@ -4,7 +4,7 @@ export default function Content({ uid, title, description, image }) {
         <div className="themer page content" id={uid}>
             <div className="container">
                 <img src={image}/>
-                <h3 className='center-small-capital-heading'>{title}</h3>
+                <h3 className='small-capital-heading'>{title}</h3>
                 <p className='paragraph'>{description}</p>
             </div>
 

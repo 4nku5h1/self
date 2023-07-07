@@ -19,7 +19,7 @@ export default function ServiceTitle({ appContext, data }) {
     const ItemVideoEditing = (item, index) => {
         return (
             <div>
-                <h2 c>{item}</h2>
+                <h2>{item}</h2>
                 <p>4X HONORABLE MENTION</p>
             </div>
         )
@@ -28,11 +28,11 @@ export default function ServiceTitle({ appContext, data }) {
         <div className='page service themer service-landing' id="SERVICE-LANDING">
             {/* https://www.sublimio.com/about/ */}
             <div className='container'>
-                <h2 className='heading-h2'>Our Services</h2>
+                <h2 className='heading-h2'>Services</h2>
                 <p className='paragraph'>Graphicnix boasts over 10,000 accomplished projects, accompanied by the esteemed recognition of winning the German Editing Award for our exceptional editing. Partnering with us means collaborating with a dedicated team of professionals who are passionate about driving your success.</p>
-                <h5 className='heading-h5'>Image Editing</h5>
+                <h5 className='small-capital-heading'>Image Editing</h5>
                 <AnimatedItems className="service-card" animate={isCurrentPage} data={data} child={ItemImageEditing} />
-                <h5 className='heading-h5'>Video Editing</h5>
+                <h5 className='small-capital-heading'>Video Editing</h5>
                 <AnimatedItems className="service-card" animate={isCurrentPage} data={['Video Editing', 'VFX', 'Sound-FX', 'Compositing', 'Motion Graphics', 'Animation',]} child={ItemVideoEditing} />
             </div>
         </div>
