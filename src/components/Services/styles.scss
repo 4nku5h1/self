@@ -1,4 +1,5 @@
 .service {
+  $content-margin: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,8 +14,64 @@
       height: 65vh;
     }
   }
+
+  .text-content {
+    >* {
+      pointer-events: none;
+      margin-top: $content-margin;
+      font-weight: 400;
+    }
+
+    max-width: 60%;
+
+    h3 {
+      color: var(--themer-heading);
+      margin-top: calc($content-margin * 5);
+      margin-left: -10px;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--themer-content);
+      letter-spacing: 1px;
+      font-size: 24px;
+    }
+
+  }
 }
 
+@media only screen and (max-width:480px) {
+  .service {
+    $content-margin: 10px;
+
+    .image {
+      img {
+        box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+        width: 330px;
+        height: 330px;
+      }
+    }
+
+    .text-content {
+      $font-size: 21px;
+      max-width: 70%;
+
+      h3 {
+        margin-top: calc($content-margin * 5);
+        margin-left: 0px;
+        font-size: $font-size;
+        font-weight: 400;
+      }
+
+      p {
+        font-size: $font-size;
+        letter-spacing: -0.07px;
+      }
+
+    }
+  }
+}
 
 
 // SERVICE GALLARY
@@ -41,48 +98,4 @@
 
 .service-gallary-container.mirror {
   justify-content: flex-end;
-}
-
-// EXTRA
-.extra {
-  * {
-    margin: var(--element-margin);
-  }
-
-  backdrop-filter: blur(5px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  .content {
-    * {
-      color: #fff;
-    }
-
-    h2 {
-      text-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
-      line-height: 7rem;
-      height: fit-content;
-      font-size: 7rem;
-      font-weight: 900;
-      letter-spacing: 0px;
-      text-transform: uppercase;
-    }
-
-    p {
-      font-size: 2rem;
-      font-weight: 700;
-      word-spacing: 3px;
-    }
-  }
-
-  .gallary * {
-    margin: 16px;
-  }
-
-  img {
-    width: 35%;
-    height: 40%;
-  }
 }

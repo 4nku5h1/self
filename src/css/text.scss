@@ -8,56 +8,6 @@
     text-align: left;
 }
 
-.text-content {
-
-    h1,
-    h2,
-    h3,
-    p {
-
-        pointer-events: none;
-    }
-
-    >* {
-        margin-top: var(--content-margin);
-        font-weight: 400;
-        font-size: 24px;
-        // line-height: 37px;
-    }
-
-    max-width: var(--text-container-width);
-
-    h1 {
-        width: 100%;
-        font-family: Neutralface, sans-serif;
-        font-size: 2vw;
-        line-height: 20vh;
-    }
-
-    h2 {
-
-        color: var(--themer-heading);
-        margin-top: calc(var(--content-margin) * 5);
-        margin-left: -24px;
-        font-size: 36px;
-        font-weight: 600;
-    }
-
-    h3 {
-        color: var(--themer-heading);
-        margin-top: calc(var(--content-margin) * 5);
-        margin-left: -10px;
-        font-size: 28px;
-        font-weight: 600;
-    }
-
-    p {
-        color: var(--themer-content);
-        letter-spacing: 1px;
-    }
-
-}
-
 .text-heading {
     display: flex;
     align-items: center;
