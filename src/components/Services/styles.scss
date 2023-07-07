@@ -7,37 +7,42 @@
 
   flex-direction: column;
 
-  .image {
-    img {
+  .service-container {
+    $container-width: 65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $container-width;
+
+    .image img {
       box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
-      width: 65vw;
+      width: $container-width;
       height: 65vh;
     }
-  }
 
-  .text-content {
-    >* {
-      pointer-events: none;
-      margin-top: $content-margin;
-      font-weight: 400;
+    .text-content {
+      >* {
+        pointer-events: none;
+        margin-top: $content-margin;
+        font-weight: 400;
+      }
+
+      max-width: 75%;
+
+      h3 {
+        color: var(--themer-heading);
+        margin-top: calc($content-margin * 5);
+        margin-left: -16px;
+        font-size: 28px;
+      }
+
+      p {
+        color: var(--themer-content);
+        letter-spacing: 1px;
+        font-size: 24px;
+      }
+
     }
-
-    max-width: 60%;
-
-    h3 {
-      color: var(--themer-heading);
-      margin-top: calc($content-margin * 5);
-      margin-left: -10px;
-      font-size: 28px;
-      font-weight: 600;
-    }
-
-    p {
-      color: var(--themer-content);
-      letter-spacing: 1px;
-      font-size: 24px;
-    }
-
   }
 }
 
@@ -45,30 +50,34 @@
   .service {
     $content-margin: 10px;
 
-    .image {
-      img {
-        box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
-        width: 330px;
-        height: 330px;
-      }
-    }
+    .service-container {
+      $container-width: 85vw;
+      width: $container-width;
+      align-items: flex-start;
 
-    .text-content {
-      $font-size: 21px;
-      max-width: 70%;
-
-      h3 {
-        margin-top: calc($content-margin * 5);
-        margin-left: 0px;
-        font-size: $font-size;
-        font-weight: 400;
+      .image img {
+        width: $container-width;
+        height: 85vw;
       }
 
-      p {
-        font-size: $font-size;
-        letter-spacing: -0.07px;
-      }
+      .text-content {
+        $font-size: 21px;
+        max-width: 100%;
 
+        h3 {
+          margin-top: calc($content-margin * 5);
+          margin-left: 0px;
+          font-size: $font-size;
+          font-weight: 400;   
+
+        }
+
+        p {
+          font-size: $font-size;
+          letter-spacing: -0.07px;
+        }
+
+      }
     }
   }
 }
