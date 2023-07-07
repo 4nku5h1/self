@@ -3,9 +3,9 @@ import TextAnimation from '../Common/TextAnimation';
 import backg from '../../assets/background/bus.webp'
 
 import './styles.scss';
-export default function Home({ id }) {
+export default function Home({ uid }) {
     return (
-        <div className='home page' id={id}>
+        <div className='home page' id={uid}>
             <div className='text-banner'>
                 <h2>Design studio </h2>
                 <h2> DRIVEN BY RESEARCH  </h2>

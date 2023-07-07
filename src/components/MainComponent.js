@@ -18,11 +18,11 @@ export default function MainComponent() {
             <div className='background-image'/>
             <Navbar />
             <FloatingNav />
-            <Home id={'HOME'} />
+            <Home uid='HOME' />
             <Service />
-            <Content uid={'ABOUT'} image={roseImage} title={"ABOUT US"} description={about} />
-            <Client uid={"CLIENTS"} />
-            <Footer uid={"FOOTER"} aboutData={about}/>
+            <Content uid='ABOUT' image={roseImage} title={"ABOUT US"} description={about} />
+            <Client uid="CLIENTS" />
+            <Footer uid="FOOTER" aboutData={about}/>
         </div>
     )
 }
