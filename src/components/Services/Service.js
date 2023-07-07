@@ -1,9 +1,6 @@
 import { useAppContext } from '../Common/AppContext/AppContext';
-import { setCursorBall, setCursorDefault, setCursorText } from '../Common/CustomCursor/helper';
 import ImageCompare from '../Common/ImageCompare/ImageCompare'
 import pageConfig from '../Common/Themer/config/pageConfig';
-import StickyHorizontalGallary from './../Common/StickyHorizontalGallary/StickyHorizontalGallary';
-import ImageGallary from './../Common/ImageGallary/ImageGallary';
 import { services } from './data/data';
 
 import './styles.scss';
