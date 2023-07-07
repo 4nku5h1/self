@@ -1,18 +1,23 @@
-.client-container {
+.client {
     padding-top: 10%;
     padding-bottom: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h3{
+
+    h3 {
         align-self: center;
     }
-    .client-item{
-        max-width: 150px !important;
-        span{
+
+}
+
+@media only screen and (max-width:480px) {
+    .client {
+        h3 {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 24px;
         }
-        text-align: center;
-        color: var(--themer-content);
     }
 }
