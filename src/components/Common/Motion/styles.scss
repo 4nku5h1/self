@@ -1,0 +1,50 @@
+.item-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3%;
+
+    .item {
+        min-width: 250px;
+
+        * {
+            text-align: left !important;
+        }
+
+        height: fit-content;
+
+        span {
+            text-transform: uppercase;
+            font-family: poppins !important;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: tth;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        span:hover {
+            color: var(--themer-heading) !important;
+        }
+
+        .border {
+            padding: 0;
+            margin: 0;
+            width: 0%;
+            height: 1px;
+            transition: all 0.7s;
+            border-bottom: 1px solid transparent;
+        }
+
+    }
+
+    .item:hover {
+        .border {
+            width: 50%;
+            border-bottom: 1px solid rgb(0, 0, 0) !important;
+        }
+    }
+
+}

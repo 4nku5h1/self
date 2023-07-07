@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+import './styles.scss'
 export default function AnimatedItems({ className, data=[], child, animate }) {
     const container = {
         hidden: { opacity: 1, scale: 0 },
