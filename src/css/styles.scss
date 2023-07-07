@@ -8,20 +8,8 @@
 :root {
   --padding-page: 60px;
   --element-margin: 8px;
-  --container-width:65vw;
-  --container-width-mobile:83vw;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-}
-.main {
-}
-.page {
-  padding: 60px;
-  padding-bottom: 10%;
+  --container-width: 65vw;
+  --container-width-mobile: 83vw;
 }
 
 .background-image {
@@ -29,32 +17,31 @@
   height: 100vh;
 }
 
-.grad1 {
-  background: radial-gradient(circle at 90%, #6b89e9, #000000 40%, #000000 100%, #000000 75%);
-}
-
-.grad2 {
-  background: radial-gradient(circle at 90%, #6be9e9, #000000 40%, #000000 100%, #000000 75%);
-}
-
 .page {
+  padding: 60px;
+  padding-bottom: 10%;
+  margin: -1px;
   transition: background-color 0.8s ease;
   background-color: var(--themer-background);
 }
+
 .container {
   all: unset;
 }
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: var(--container-width);
 }
-@media only screen and (max-width:480px){
+
+@media only screen and (max-width:480px) {
   .page {
     padding: 0;
     padding-bottom: 40%;
   }
+
   .container {
     width: var(--container-width-mobile);
     align-items: flex-start;
