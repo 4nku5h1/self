@@ -5,17 +5,13 @@ const pageConfig = {
         pageName: "HOME",
         ...theme.themeLight,
     },
-    'ABOUT': {
-        ...theme.themeLight,
-        pageName: "ABOUT",
-    },
     'SERVICE-LANDING': {
         ...theme.themeDark,
         pageName: "SERVICES",
         id:"SERVICE-LANDING"
     },
     'SERVICE-1': {
-        ...theme.themeLight,
+        ...theme.themeDark,
         pageName: "SERVICES",
         id:"SERVICE-1"
     },
@@ -39,11 +35,11 @@ const pageConfig = {
         ...theme.themeDark,
         pageName: "SERVICES",
     },
-    'GRAPHICNIX-ROSE': {
+    'ABOUT': {
         ...theme.themeDark,
     },
     'CLIENTS': {
-        ...theme.themeDark,
+        ...theme.themeGray,
     },
     'FOOTER': {
         ...theme.themeGray,
