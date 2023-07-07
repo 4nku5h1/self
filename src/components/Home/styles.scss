@@ -1,21 +1,8 @@
-@keyframes slide-left {
-  from {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  to {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
-
 .home {
   * {
     user-select: none;
     font-family: 'poppins';
   }
-
 
   display: flex;
   justify-content: center;
@@ -29,87 +16,33 @@
     }
   }
 
-  .service-card {
-    align-self: flex-start;
-    overflow: hidden;
-
-    * {
-      font-size: 18px;
-      font-weight: 200;
-    }
-
-    .image-container {
-      display: flex;
-
-      .image-wrapper {
-        * {
-          font-weight: 200;
-          margin: var(--element-margin);
-        }
-
-        img {
-          width: 86px;
-          height: 86px;
-          transition: all ease-in 0.3s;
-        }
-
-        img:hover {
-          -webkit-transform: scale(1.1);
-          transform: rotateX(40deg);
-          transform: scale(0.9);
-        }
-
-        p {
-          font-size: 14px;
-          font-weight: 300;
-          text-align: left;
-          margin-top: 0;
-        }
-      }
-    }
-
-    h4 {
-      margin: var(--element-margin);
-      text-align: left;
-    }
-
-  }
-
-
-  .subtitle {
-    * {
-      letter-spacing: normal;
-      margin-right: 7px;
-      font-size: 1.2rem;
-      line-height: 1.2;
-      font-weight: 100;
-    }
-
-    span {
-      letter-spacing: normal;
-      font-weight: 300;
-    }
-
-    display: flex;
-  }
-
   .text-banner {
     * {
-        color: var(--themer-heading);
-        text-transform: uppercase;
-        text-align: center;
+      color: var(--themer-heading);
+      text-transform: uppercase;
+      text-align: center;
     }
 
     h2 {
-        transform: scale(1, 1.2);
-        transform: (1, 1.2);
-        font-size: 6vw;
-        font-weight: 400;
+      transform: (1, 1.2);
+      font-size: 6vw;
+      font-weight: 400;
     }
-}
+  }
 }
 
-.home.page {
-  font-family: 'PP migra';
-  z-index: 1;
+@media only screen and (max-width:480px) {
+  .home {
+    .banner {
+      img {
+        width: 100vw;
+        height: 40vh;
+      }
+    }
+    .text-banner {
+      h2 {
+        font-weight: 500;
+      }
+    }
+  }
 }
