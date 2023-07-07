@@ -1,5 +1,6 @@
 .service {
   $content-margin: 16px;
+  $container-width: 65vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,82 +9,89 @@
   flex-direction: column;
 
   .service-container {
-    $container-width: 65vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: $container-width;
+  }
 
-    .image img {
-      box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
-      width: $container-width;
-      height: 65vh;
+  .image img {
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+    width: $container-width;
+    height: 65vh;
+  }
+
+  .text-content {
+    >* {
+      pointer-events: none;
+      margin-top: $content-margin;
+      font-weight: 400;
     }
 
-    .text-content {
-      >* {
-        pointer-events: none;
-        margin-top: $content-margin;
-        font-weight: 400;
-      }
+    max-width: 75%;
 
-      max-width: 75%;
-
-      h3 {
-        color: var(--themer-heading);
-        margin-top: calc($content-margin * 5);
-        margin-left: -16px;
-        font-size: 28px;
-      }
-
-      p {
-        color: var(--themer-content);
-        letter-spacing: 1px;
-        font-size: 24px;
-      }
-
+    h3 {
+      color: var(--themer-heading);
+      margin-top: calc($content-margin * 5);
+      margin-left: -16px;
+      font-size: 28px;
     }
+
+    p {
+      color: var(--themer-content);
+      letter-spacing: 1px;
+      font-size: 24px;
+    }
+
+  }
+
+}
+
+.service-title .service-container {
+  align-items: flex-start;
+
+  * {
+    margin-bottom: 30px;
   }
 }
 
 @media only screen and (max-width:480px) {
   .service {
     $content-margin: 10px;
+    $container-width: 83vw;
 
     .service-container {
-      $container-width: 83vw;
       width: $container-width;
       align-items: flex-start;
+    }
 
-      .image img {
-        width: $container-width;
-        height: $container-width;
-      }
+    .image img {
+      width: $container-width;
+      height: $container-width;
+    }
 
-      .text-content {
-        $font-size: 21px;
-        max-width: 100%;
+    .text-content {
+      $font-size: 21px;
+      max-width: 100%;
 
-        h3 {
-          margin-top: calc($content-margin * 5);
-          margin-left: 0px;
-          font-size: $font-size;
-          font-weight: 400;
-
-        }
-
-        p {
-
-          margin-top: calc($content-margin*1.5);
-          font-size: $font-size;
-          letter-spacing: -0.07px;
-          display: -webkit-box;
-          -webkit-line-clamp: 5;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
+      h3 {
+        margin-top: calc($content-margin * 5);
+        margin-left: 0px;
+        font-size: $font-size;
+        font-weight: 400;
 
       }
+
+      p {
+        margin-top: calc($content-margin*1.5);
+        font-size: $font-size;
+        letter-spacing: -0.07px;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
     }
   }
 }

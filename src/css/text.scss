@@ -8,15 +8,6 @@
     text-align: left;
 }
 
-.text-heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px !important;
-}
-
-.text-content :first-child {}
-
 .page-text {
     $container-width: 55%;
     padding-top: 5%;
@@ -43,62 +34,79 @@
 
     }
 
-    .item-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        margin-bottom: 3%;
-
-        .item {
-            min-width: 250px;
-
-            * {
-                text-align: left !important;
-            }
-
-            height: fit-content;
-            // width: 20%;
-
-            span {
-                text-transform: uppercase;
-                font-family: poppins !important;
-                font-size: 16px;
-                font-weight: 400;
-                font-family: tth;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-
-            span:hover {
-                color: var(--themer-heading) !important;
-            }
-
-            .border {
-                padding: 0;
-                margin: 0;
-                width: 0%;
-                height: 1px;
-                transition: all 0.7s;
-                border-bottom: 1px solid transparent;
-            }
-
-        }
-
-        .item:hover {
-            .border {
-                width: 50%;
-                border-bottom: 1px solid rgb(0, 0, 0) !important;
-            }
-        }
-
-    }
-
     h5 {
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 8px;
+    }
+
+}
+
+.heading-h2 {
+    text-transform: capitalize;
+    font-size: 44px;
+    color: var(--themer-heading);
+}
+
+.heading-h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.paragraph {
+    color: var(--themer-content);
+    font-size: 28px;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3%;
+
+    .item {
+        min-width: 250px;
+
+        * {
+            text-align: left !important;
+        }
+
+        height: fit-content;
+        // width: 20%;
+
+        span {
+            text-transform: uppercase;
+            font-family: poppins !important;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: tth;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        span:hover {
+            color: var(--themer-heading) !important;
+        }
+
+        .border {
+            padding: 0;
+            margin: 0;
+            width: 0%;
+            height: 1px;
+            transition: all 0.7s;
+            border-bottom: 1px solid transparent;
+        }
+
+    }
+
+    .item:hover {
+        .border {
+            width: 50%;
+            border-bottom: 1px solid rgb(0, 0, 0) !important;
+        }
     }
 
 }
