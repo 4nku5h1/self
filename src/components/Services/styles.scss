@@ -1,6 +1,5 @@
 .service {
   $content-margin: 16px;
-  $container-width: 65vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,16 +7,9 @@
 
   flex-direction: column;
 
-  .service-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: $container-width;
-  }
-
   .image img {
     box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
-    width: $container-width;
+    width: var(--container-width);
     height: 65vh;
   }
 
@@ -47,7 +39,7 @@
 
 }
 
-.service-title .service-container {
+.service-title .container {
   align-items: flex-start;
 
   * {
@@ -55,19 +47,39 @@
   }
 }
 
+// SERVICE GALLARY
+.service-gallary-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .gallary {
+    >div {
+      margin: var(--element-margin);
+    }
+
+    max-width: 50%;
+
+    img {
+      width: calc(100%/2);
+      height: calc(60vh/2);
+    }
+  }
+}
+
+.service-gallary-container.mirror {
+  justify-content: flex-end;
+}
+
 @media only screen and (max-width:480px) {
   .service {
     $content-margin: 10px;
-    $container-width: 83vw;
-
-    .service-container {
-      width: $container-width;
-      align-items: flex-start;
-    }
 
     .image img {
-      width: $container-width;
-      height: $container-width;
+      width: var(--container-width-mobile);
+      height: var(--container-width-mobile);
     }
 
     .text-content {
@@ -94,38 +106,12 @@
 
     }
   }
-  .service-title .service-container {
+
+  .service-title .container {
     align-items: flex-start;
-  
+
     * {
       margin-bottom: 15px;
     }
   }
-}
-
-
-// SERVICE GALLARY
-.service-gallary-container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-
-  .gallary {
-    >div {
-      margin: var(--element-margin);
-    }
-
-    max-width: 50%;
-
-    img {
-      width: calc(100%/2);
-      height: calc(60vh/2);
-    }
-  }
-}
-
-.service-gallary-container.mirror {
-  justify-content: flex-end;
 }

@@ -18,7 +18,7 @@ export function ServiceTitle({ appContext, data }) {
     }
     return (
         <div className='page service themer service-title' id="SERVICE-TITLE">
-            <div className='service-container'>
+            <div className='container'>
                 <h2 className='heading-h2'>Our Services</h2>
                 <p className='paragraph'>Graphicnix boasts over 10,000 accomplished projects, accompanied by the esteemed recognition of winning the German Editing Award for our exceptional editing. Partnering with us means collaborating with a dedicated team of professionals who are passionate about driving your success.</p>
                 <h5 className='heading-h5'>Image Editing</h5>

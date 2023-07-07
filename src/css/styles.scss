@@ -8,6 +8,8 @@
 :root {
   --padding-page: 60px;
   --element-margin: 8px;
+  --container-width:65vw;
+  --container-width-mobile:83vw;
 }
 
 .flex-center {
@@ -40,9 +42,20 @@
   transition: background-color 0.8s ease;
   background-color: var(--themer-background);
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--container-width);
+}
 @media only screen and (max-width:480px){
   .page {
     padding: 0;
     padding-bottom: 40%;
+  }
+  .container {
+    all: unset;
+    width: var(--container-width-mobile);
+    align-items: flex-start;
   }
 }

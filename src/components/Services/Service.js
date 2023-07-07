@@ -19,7 +19,7 @@ export function Service() {
                 const id = serviceIds[index]
                 return (
                     <div id={id} className='page service'>
-                        <div className='service-container'>
+                        <div className='container'>
                             <div className='image'>
                                 <ImageCompare imageBefore={imageBefore} imageAfter={imageAfter} scrollTo={0} />
                             </div>
