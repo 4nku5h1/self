@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion'
 import { scrollToId } from '../../Common/helper';
-import './styles.scss';
 import AnimatedItems from '../../Common/Motion/AnimatedItems';
+
+import './styles.scss';
 
 export function ServiceTitle({ appContext, data }) {
 
