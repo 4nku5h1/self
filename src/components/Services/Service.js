@@ -4,7 +4,7 @@ import pageConfig from '../Common/Themer/config/pageConfig';
 import { services } from './data/data';
 
 import './styles.scss';
-import { ServiceTitle } from './ServiceTitle/ServiceTitle';
+import  ServiceLanding  from './ServiceLanding/ServiceLanding';
 
 export function Service() {
     const appContext = useAppContext();
@@ -12,7 +12,7 @@ export function Service() {
     serviceIds.shift()
     return (
         <>
-            <ServiceTitle appContext={appContext} data={services} />
+            <ServiceLanding appContext={appContext} data={services} />
             {services.map((data, index) => {
                 const { title, description, imageBefore, imageAfter } = data;
                 const id = serviceIds[index]

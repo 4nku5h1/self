@@ -13,7 +13,7 @@ export default function FloatingNav() {
             <span className={pageConfig?.pageName === 'HOME' ? 'active' : ''} onClick={() => { scrollToId('navbar') }}>
                 Home
             </span>
-            <span className={pageConfig?.pageName === 'SERVICES' ? 'active' : ''} onClick={() => { scrollToId('SERVICE-TITLE') }}>
+            <span className={pageConfig?.pageName === 'SERVICES' ? 'active' : ''} onClick={() => { scrollToId('SERVICE-LANDING') }}>
                 Services
             </span>
             <span> Gallary </span>

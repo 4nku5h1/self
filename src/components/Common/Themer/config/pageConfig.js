@@ -9,10 +9,10 @@ const pageConfig = {
         ...theme.themeLight,
         pageName: "ABOUT",
     },
-    'SERVICE-TITLE': {
+    'SERVICE-LANDING': {
         ...theme.themeDark,
         pageName: "SERVICES",
-        id:"SERVICE-TITLE"
+        id:"SERVICE-LANDING"
     },
     'SERVICE-1': {
         ...theme.themeLight,
