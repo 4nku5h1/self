@@ -10,12 +10,18 @@ export default function ServiceTitle({ appContext, data }) {
         return (
             <div onClick={() => {
                 scrollToId(`SERVICE-${index + 1}`)
-            }}>{item.title}</div>
+            }}>
+                <h2 c>{item.title}</h2>
+                <p>4X HONORABLE MENTION</p>
+            </div>
         )
     }
     const ItemVideoEditing = (item, index) => {
         return (
-            <div>{item}</div>
+            <div>
+                <h2 c>{item}</h2>
+                <p>4X HONORABLE MENTION</p>
+            </div>
         )
     }
     return (
@@ -25,9 +31,9 @@ export default function ServiceTitle({ appContext, data }) {
                 <h2 className='heading-h2'>Our Services</h2>
                 <p className='paragraph'>Graphicnix boasts over 10,000 accomplished projects, accompanied by the esteemed recognition of winning the German Editing Award for our exceptional editing. Partnering with us means collaborating with a dedicated team of professionals who are passionate about driving your success.</p>
                 <h5 className='heading-h5'>Image Editing</h5>
-                <AnimatedItems className="" animate={isCurrentPage} data={data} child={ItemImageEditing}/>
+                <AnimatedItems className="service-card" animate={isCurrentPage} data={data} child={ItemImageEditing} />
                 <h5 className='heading-h5'>Video Editing</h5>
-                <AnimatedItems animate={isCurrentPage} data={['video editing', 'vfx', 'sound fx', 'compositing', 'motion graphics', 'animation',]} child={ItemVideoEditing} />
+                <AnimatedItems className="service-card" animate={isCurrentPage} data={['Video Editing', 'VFX', 'Sound-FX', 'Compositing', 'Motion Graphics', 'Animation',]} child={ItemVideoEditing} />
             </div>
         </div>
     )

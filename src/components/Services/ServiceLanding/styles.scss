@@ -1,3 +1,61 @@
-.service-card{
-    
+.service-landing {
+    .container {
+        align-items: flex-start;
+
+        >* {
+            margin-bottom: 56px;
+        }
+    }
+
+    .service-card {
+        max-width: calc(100%/2);
+        min-width: calc(100%/2);
+        margin-bottom: 30px;
+        text-align: center;
+
+        * {
+            transition: all 0.7s;
+        }
+
+        h2 {
+            color: var(--themer-heading);
+            font-size: 28px;
+            font-weight: 400;
+            white-space: nowrap;
+            letter-spacing: -0.09px;
+            text-overflow: ellipsis;
+
+        }
+
+        p {
+            font-size: 9px;
+            letter-spacing: 2px;
+            line-height: 16px;
+            color: var(--themer-content);
+        }
+    }
+
+    .service-card:hover {
+        p {
+
+            color: var(--themer-accent);
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .service-landing {
+        .container {
+            align-items: flex-start;
+
+            * {
+                margin-bottom: 15px;
+            }
+        }
+
+        .service-card {
+            max-width: calc(100);
+            min-width: calc(100);
+        }
+    }
 }
