@@ -12,7 +12,6 @@ export function Service() {
     serviceIds.shift()
     return (
         <>
-
             <ServiceTitle appContext={appContext} data={services} />
             {services.map((data, index) => {
                 const { title, description, imageBefore, imageAfter } = data;

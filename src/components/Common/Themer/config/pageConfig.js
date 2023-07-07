@@ -44,7 +44,7 @@ const pageConfig = {
         ...theme.themeDark,
     },
     'CLIENTS': {
-        ...theme.themeGray,
+        ...theme.themeDark,
     },
     'FOOTER': {
         ...theme.themeGray,

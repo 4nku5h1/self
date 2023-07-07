@@ -3,17 +3,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
     margin-bottom: 3%;
 
     .item {
-        min-width: 250px;
-
-        * {
-            text-align: left !important;
-        }
-
-        height: fit-content;
+        max-width: 50%;
+        min-width: 50%;
 
         span {
             text-transform: uppercase;
@@ -29,15 +23,6 @@
             color: var(--themer-heading) !important;
         }
 
-        .border {
-            padding: 0;
-            margin: 0;
-            width: 0%;
-            height: 1px;
-            transition: all 0.7s;
-            border-bottom: 1px solid transparent;
-        }
-
     }
 
     .item:hover {
@@ -47,4 +32,18 @@
         }
     }
 
+}
+
+@media only screen and (max-width:480px) {
+    .item-container{
+        .item{
+            margin-bottom: 30px;
+            span {
+                color: var(--themer-content);
+                font-size: 11px;
+                line-height: 16px;
+                letter-spacing: 2px;
+            }
+        }
+    }
 }
