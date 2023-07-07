@@ -44,19 +44,18 @@
 
 .heading-h2 {
     text-transform: capitalize;
-    font-size: 44px;
+    font-size: 36px;
     color: var(--themer-heading);
+    margin-bottom: 8px !important;
 }
 
 .heading-h5 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 8px;
+    font-size: 24px;
 }
 
 .paragraph {
     color: var(--themer-content);
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .item-container {
@@ -75,8 +74,6 @@
         }
 
         height: fit-content;
-        // width: 20%;
-
         span {
             text-transform: uppercase;
             font-family: poppins !important;
@@ -119,4 +116,20 @@
     color: var(--themer-heading);
     letter-spacing: 3px;
     line-height: 20px;
+}
+
+@media only screen and (max-width:480px) {
+    .heading-h2 {
+        font-size: 28px;
+    }
+    
+    .heading-h5 {
+        font-size: 21px;
+        font-weight: 400;
+    }
+    
+    .paragraph {
+        font-size: 21px;
+        margin-bottom: 24px !important;
+    }
 }

@@ -51,7 +51,7 @@
   align-items: flex-start;
 
   * {
-    margin-bottom: 30px;
+    margin-bottom: 18px;
   }
 }
 
@@ -92,6 +92,13 @@
         overflow: hidden;
       }
 
+    }
+  }
+  .service-title .service-container {
+    align-items: flex-start;
+  
+    * {
+      margin-bottom: 15px;
     }
   }
 }
