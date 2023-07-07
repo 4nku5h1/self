@@ -1,5 +1,5 @@
 import theme from "../theme/themes"
-
+// backgroundColor:"#F0F0F0",
 const pageConfig = {
     'HOME': {
         pageName: "HOME",
@@ -10,8 +10,7 @@ const pageConfig = {
         pageName: "ABOUT",
     },
     'SERVICE-TITLE': {
-        ...theme.themeLight,
-        backgroundColor:"#F0F0F0",
+        ...theme.themeDark,
         pageName: "SERVICES",
         id:"SERVICE-TITLE"
     },

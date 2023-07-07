@@ -3,20 +3,21 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 3%;
-
     .item {
-        max-width: 50%;
-        min-width: 50%;
-
+        max-width: max-content;
+        min-width: calc(100%/3);
+        margin-bottom: 30px;
+        text-align: center;
         span {
+            color: var(--themer-content);
             text-transform: uppercase;
             font-family: poppins !important;
-            font-size: 16px;
+            font-size: 11px;
             font-weight: 400;
             font-family: tth;
             white-space: nowrap;
             text-overflow: ellipsis;
+            
         }
 
         span:hover {
@@ -35,11 +36,14 @@
 }
 
 @media only screen and (max-width:480px) {
-    .item-container{
-        .item{
+    .item-container {
+        .item {
+            text-align: left;
+            max-width: 50%;
+            min-width: 50%;
             margin-bottom: 30px;
+
             span {
-                color: var(--themer-content);
                 font-size: 11px;
                 line-height: 16px;
                 letter-spacing: 2px;
