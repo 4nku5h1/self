@@ -27,40 +27,40 @@ $nav-spacing: 30px;
         // transition: all 0.5s;
     }
 
-    .nav-bar {
-        width: inherit;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    display: flex;
 
-        .nav-icon {
-            height: 30px;
-            width: 30px;
+    .nav-icon {
+        height: 30px;
+        width: 30px;
 
-            img {
-                height: inherit;
-                width: inherit;
-            }
-        }
-
-        .nav-items {
-            * {
-                text-align: center;
-            }
-            span {
-                padding: 8px;
-                border-radius: 10px;
-                font-size: 16px;
-                font-weight: 400;
-                text-transform: capitalize;
-                color: var(--themer-content);
-            }
-
-            span.active {
-                color: #E3E3E3;
-            }
+        img {
+            height: inherit;
+            width: inherit;
         }
     }
+
+    .nav-items {
+        * {
+            text-align: center;
+        }
+
+        span {
+            padding: 8px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: capitalize;
+            color: var(--themer-content);
+        }
+
+        span.active {
+            color: #E3E3E3;
+        }
+    }
+
 }
 
 .floating-nav.hidden {
@@ -77,27 +77,22 @@ $nav-spacing: 30px;
         left: auto;
         right: calc(50% - ($panel-width/2));
 
-        .nav-bar {
-            justify-content: space-between;
+        justify-content: space-between;
 
-            .nav-icon {
-                margin: 24px;
+        .nav-icon {
+            margin: 24px;
+        }
+
+        .hide-on-mobile {
+            span {
+                display: none;
             }
 
-            .dummy {
+            span.active {
                 display: block;
             }
-
-            .nav-items {
-                span {
-                    display: none;
-                }
-
-                span.active {
-                    display: block;
-                }
-            }
         }
+
     }
 
     .floating-nav.hidden {
@@ -106,27 +101,13 @@ $nav-spacing: 30px;
         transform: translateY(0);
         right: $nav-spacing;
         left: auto;
+        justify-content: center;
+        align-items: center;
 
-        .nav-bar {
-
-            justify-content: center;
-            align-items: center;
-
-            .nav-icon {
-                margin: 0;
-                display: none;
-            }
-
-            .dummy {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .nav-items {
-                display: none;
-            }
+        .hide-on-mobile {
+            display: none;
         }
+
 
     }
 }

@@ -10,26 +10,24 @@ export default function FloatingNav() {
     const pageConfig = appContext.state.pageConfig;
     return (
         <div className={`floating-nav ${pageConfig?.hideFloatingMenu ? 'hidden' : ''}`}>
-            <div className='nav-bar'>
-                <div className='nav-icon' >
-                    <img src={logo} />
-                </div>
-                <div className='nav-items'>
-                    <span className={pageConfig?.pageName === 'HOME' ? 'active' : ''} onClick={() => { scrollToId('navbar') }}>
-                        Home
-                    </span>
-                    <span className={pageConfig?.pageName === 'SERVICES' ? 'active' : ''} onClick={() => { scrollToId('SERVICE-LANDING') }}>
-                        Services
-                    </span>
-                    <span> Gallary </span>
+            <div className='nav-icon hide-on-mobile' >
+                <img src={logo} />
+            </div>
+            <div className='nav-items hide-on-mobile'>
+                <span className={pageConfig?.pageName === 'HOME' ? 'active' : ''} onClick={() => { scrollToId('navbar') }}>
+                    Home
+                </span>
+                <span className={pageConfig?.pageName === 'SERVICES' ? 'active' : ''} onClick={() => { scrollToId('SERVICE-LANDING') }}>
+                    Services
+                </span>
+                <span> Gallary </span>
 
-                    <span className={pageConfig?.pageName === 'FOOTER' ? 'active' : ''} onClick={() => { scrollToId('FOOTER') }}>
-                        Contact
-                    </span>
-                </div>
-                <div className='nav-icon dummy' onClick={() => setMenuOpen(!menuOpen)}>
-                    <CollapsibleCloseButton isOpen={menuOpen} />
-                </div>
+                <span className={pageConfig?.pageName === 'FOOTER' ? 'active' : ''} onClick={() => { scrollToId('FOOTER') }}>
+                    Contact
+                </span>
+            </div>
+            <div className='nav-icon' onClick={() => setMenuOpen(!menuOpen)}>
+                <CollapsibleCloseButton isOpen={menuOpen} />
             </div>
             {/* {menuOpen ? (
                 <div className='nav-page'>
