@@ -7,7 +7,7 @@ const colorConfig = {
     buttonLight: '#E3E3E3',
     buttonDark: '#5E5E5E',
     accentColor: '#00948C',
-    gray: '#0d0d0d',
+    gray: '#191919',
     white: '#fff',
     black: '#000'
 }

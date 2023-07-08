@@ -4,17 +4,19 @@ $font-size: 18px;
     background-color: var(--themer-background);
 
     * {
-        color: var(--themer-heading);
         font-size: $font-size;
     }
-    padding:75px 75px;
+
+    padding:75px 12vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
 
     .nav-logo {
+        color: var(--themer-heading);
         flex: 1;
+
         h2 {
             font-weight: 800;
             letter-spacing: 1px;
@@ -26,19 +28,27 @@ $font-size: 18px;
             }
         }
     }
-    .nav-items{
+
+    .nav-items {
+        color: var(--themer-content);
         flex: 4;
         display: flex;
         justify-content: flex-end;
-        >*{
+        >* {
             margin-left: 50px;
-            
+
         }
-        span{
+
+        span {
             letter-spacing: -0.06px;
             line-height: 18.24px;
             font-weight: 400;
             font-size: 18px;
+            transition: all 0.4s;
+        }
+
+        span:hover {
+            color: var(--themer-heading);
         }
     }
 

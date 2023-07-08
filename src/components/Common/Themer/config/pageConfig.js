@@ -3,7 +3,7 @@ import theme from "../theme/themes"
 const pageConfig = {
     'HOME': {
         pageName: "HOME",
-        ...theme.themeLight,
+        ...theme.themeGray,
     },
     'SERVICE-LANDING': {
         ...theme.themeDark,

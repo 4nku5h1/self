@@ -1,7 +1,7 @@
 import React from 'react';
+import { scrollToContact, scrollToGallary, scrollToServices } from '../FloatingNav/helper';
 
 import './styles.scss'
-import { scrollToContact, scrollToGallary, scrollToServices } from '../FloatingNav/helper';
 
 export default function Navbar() {
     return (

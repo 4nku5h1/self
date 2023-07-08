@@ -1,7 +1,6 @@
 .home {
   * {
     user-select: none;
-    font-family: 'poppins';
   }
 
   display: flex;
@@ -17,31 +16,47 @@
   }
 
   .text-banner {
+    margin-bottom: 100px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+
     * {
-      color: var(--themer-heading);
-      text-transform: uppercase;
-      text-align: center;
+      text-align: left !important;
     }
 
     h2 {
-      transform: (1, 1.2);
-      font-size: 6vw;
+      color: var(--themer-content);
+      width: 100%;
+      font-size: 44px;
+      line-height: 54px;
+      letter-spacing: -0.14px;
       font-weight: 400;
     }
+  }
+  .text-banner :first-child{
+    color: var(--themer-heading);
   }
 }
 
 @media only screen and (max-width:480px) {
   .home {
+    padding-top: 50% !important;
+
     .banner {
       img {
         width: 100vw;
         height: 40vh;
       }
     }
+
     .text-banner {
+      margin-bottom: 50px;
       h2 {
         font-weight: 500;
+        font-size: 25px;
+        letter-spacing: -0.08px;
+        line-height: 32px;
       }
     }
   }

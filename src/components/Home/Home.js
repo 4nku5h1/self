@@ -6,35 +6,14 @@ import './styles.scss';
 export default function Home({ uid }) {
     return (
         <div className='home page' id={uid}>
-            <div className='text-banner'>
-                <h2>Design studio </h2>
-                <h2> DRIVEN BY RESEARCH  </h2>
-                <h2>& STRATEGY</h2>
+            <div className='container text-banner'>
+                <h2>Hello, we are Graphicnix </h2>
+                <h2>We create strong brands</h2>
+                <h2>for a tough world.</h2>
             </div>
             <div className='banner'>
                 <img src={backg} />
             </div>
-            {/* <div className='service-card'>
-                <h4>We deals in</h4>
-                <div className='image-container'>
-                    <div className='image-wrapper'>
-                        <img src={b1} />
-                        <p>Photo</p>
-                    </div>
-                    <div className='image-wrapper'>
-                        <img src={b1} />
-                        <p>Video</p>
-                    </div>
-                    <div className='image-wrapper'>
-                        <img src={b1} />
-                        <p>Graphic</p>
-                    </div>
-                    <div className='image-wrapper'>
-                        <img src={b1} />
-                        <p>Post production</p>
-                    </div>
-                </div>
-            </div> */}
         </div>
 
     )
