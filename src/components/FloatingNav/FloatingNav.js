@@ -10,8 +10,8 @@ export default function FloatingNav() {
     const pageConfig = appContext.state.pageConfig;
     const pageName = appContext.state?.pageConfig?.pageName;
 
-    function handleMenuButtonClick(isMenuOpen) {
-        setMenuOpen(isMenuOpen)
+    function handleMenuButtonClick() {
+        setMenuOpen(!menuOpen)
     }
     function scrollTo(id){
         scrollToId(id);
