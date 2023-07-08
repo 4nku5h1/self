@@ -4,6 +4,7 @@ import './styles.scss'
 import CollapsibleCloseButton from '../Common/Button/CollapsibleCloseButton/CollapsibleCloseButton';
 import { useState } from 'react';
 import { scrollToId } from '../Common/helper';
+import { scrollToContact, scrollToGallary, scrollToHome, scrollToServices } from './helper';
 export default function FloatingNav() {
     const [menuOpen, setMenuOpen] = useState(false)
     const appContext = useAppContext();
@@ -13,11 +14,10 @@ export default function FloatingNav() {
     function handleMenuButtonClick() {
         setMenuOpen(!menuOpen)
     }
-    function scrollTo(id){
-        scrollToId(id);
-        setTimeout(()=>{
+    function closeMenu() {
+        setTimeout(() => {
             setMenuOpen(false);
-        },1000)
+        }, 1000)
     }
     const shrinkStyle = (pageConfig?.hideFloatingMenu || menuOpen) ? 'shrink' : ''
     // default - bar
@@ -45,10 +45,22 @@ export default function FloatingNav() {
             </div>
             {menuOpen ? (
                 <div className='menu'>
-                    <h2 className={pageName === 'HOME' ? 'active' : ''} onClick={()=>scrollTo("HOME")}>Home</h2>
-                    <h2 className={pageName === 'SERVICES' ? 'active' : ''} onClick={()=>scrollTo("SERVICES")}>Services</h2>
-                    <h2 className={pageName === 'GALLARY' ? 'active' : ''} onClick={()=>scrollTo("GALLARY")}>Gallary</h2>
-                    <h2 className={pageName === 'FOOTER' ? 'active' : ''} onClick={()=>scrollTo("FOOTER")}>Contact</h2>
+                    <h2 className={pageName === 'HOME' ? 'active' : ''} onClick={() => {
+                        scrollToHome();
+                        closeMenu();
+                    }}>Home</h2>
+                    <h2 className={pageName === 'SERVICES' ? 'active' : ''} onClick={() => {
+                        scrollToServices();
+                        closeMenu();
+                    }}>Services</h2>
+                    <h2 className={pageName === 'GALLARY' ? 'active' : ''} onClick={() => {
+                        scrollToGallary();
+                        closeMenu();
+                    }}>Gallary</h2>
+                    <h2 className={pageName === 'FOOTER' ? 'active' : ''} onClick={() => {
+                        scrollToContact();
+                        closeMenu();
+                    }}>Contact</h2>
                 </div>
             ) : null}
         </div>

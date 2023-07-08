@@ -7,18 +7,14 @@ $font-size: 18px;
         color: var(--themer-heading);
         font-size: $font-size;
     }
-    backdrop-filter: blur(7px);
-    padding:24px 36px;
+    padding:75px 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    >span {
-        font-size: 12px;
-        font-weight: 600;
-    }
+    flex-wrap: nowrap;
 
     .nav-logo {
+        flex: 1;
         h2 {
             font-weight: 800;
             letter-spacing: 1px;
@@ -30,13 +26,20 @@ $font-size: 18px;
             }
         }
     }
-
-    .lets-talk {
-        margin-top: 0;
-        font-size: $font-size;
-        font-weight: 900;
-        color: var(--themer-heading);
-        font-size: 9px;
+    .nav-items{
+        flex: 4;
+        display: flex;
+        justify-content: flex-end;
+        >*{
+            margin-left: 50px;
+            
+        }
+        span{
+            letter-spacing: -0.06px;
+            line-height: 18.24px;
+            font-weight: 400;
+            font-size: 18px;
+        }
     }
 
 }
