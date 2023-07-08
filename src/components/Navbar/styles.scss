@@ -42,16 +42,7 @@ $font-size: 18px;
 }
 
 @media only screen and (max-width:480px) {
-    $font-size: 10px !important;
-
     .navbar {
-        * {
-            font-size: $font-size;
-        }
-
-        padding:24px 12px;
-        >span {
-            font-size: 8px !important;
-        }
+        display: none;
     }
 }
