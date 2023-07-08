@@ -10,13 +10,7 @@
         text-transform: capitalize;
         align-self: center;
         color: var(--themer-heading);
-        margin-bottom: 48px;
-    }
-
-    .client-item {
-        max-width: 150px !important;
-        text-align: center;
-        color: var(--themer-content);
+        margin-bottom: 24px !important;
     }
 }
 
@@ -26,6 +20,12 @@
             width: 100%;
             text-align: left;
             margin-bottom: 48px;
+            color: var(--themer-content);
+        }
+
+        .client-item {
+            color: var(--themer-heading) !important;
         }
     }
+
 }

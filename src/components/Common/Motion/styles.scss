@@ -40,9 +40,10 @@
             text-align: left;
             max-width: 50%;
             min-width: 50%;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
 
             span {
+                color: var(--themer-heading);
                 font-size: 11px;
                 line-height: 16px;
                 letter-spacing: 2px;
