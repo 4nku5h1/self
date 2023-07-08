@@ -8,36 +8,33 @@ export default function FloatingNav() {
     const [menuOpen, setMenuOpen] = useState(false)
     const appContext = useAppContext();
     const pageConfig = appContext.state.pageConfig;
+    const pageName = appContext.state?.pageConfig?.pageName;
 
-    function handleMenuButtonClick(){
-
+    function handleMenuButtonClick(isMenuOpen) {
+        setMenuOpen(isMenuOpen)
     }
+    const shrinkStyle = (pageConfig?.hideFloatingMenu || menuOpen) ? 'shrink' : ''
+    // default - bar
+    // shrink - round with menu
+    // expand - full page
     return (
-        <div className={`floating-nav ${pageConfig?.hideFloatingMenu ? 'hidden' : ''}`}>
-            <div className='nav-icon hide-on-mobile' >
+        <div className={`floating-nav ${shrinkStyle} ${menuOpen ? 'expand' : ''}`}>
+            <div className="nav-item logo">
                 <img src={logo} />
             </div>
-            <div className='nav-items hide-on-mobile'>
-                <span className={pageConfig?.pageName === 'HOME' ? 'active' : ''} onClick={() => { scrollToId('navbar') }}>
-                    Home
-                </span>
-                <span className={pageConfig?.pageName === 'SERVICES' ? 'active' : ''} onClick={() => { scrollToId('SERVICE-LANDING') }}>
-                    Services
-                </span>
-                <span> Gallary </span>
-
-                <span className={pageConfig?.pageName === 'FOOTER' ? 'active' : ''} onClick={() => { scrollToId('FOOTER') }}>
-                    Contact
+            <div className="nav-item page-name">
+                <span>
+                    {pageName}
                 </span>
             </div>
-            <div className='nav-icon'>
-                <CollapsibleCloseButton isOpen={menuOpen} handleClick={handleMenuButtonClick}/>
+            <div className='nav-item'>
+                <CollapsibleCloseButton isOpen={menuOpen} handleClick={handleMenuButtonClick} />
             </div>
-            {/* {menuOpen ? (
+            {menuOpen ? (
                 <div className='nav-page'>
 
                 </div>
-            ) : null} */}
+            ) : null}
         </div>
     )
 }

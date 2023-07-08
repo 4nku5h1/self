@@ -1,112 +1,69 @@
 $panel-height: 60px;
+$panel-width: 93vw;
 $nav-spacing: 30px;
 
 .floating-nav {
-    $panel-width: 400px;
-    z-index: 2;
-
-    * {
-        user-select: none;
-    }
-
-    width: $panel-width;
-    height: $panel-height;
-
-    position: fixed;
-    bottom: $nav-spacing;
-    left: calc(50% - ($panel-width/2));
-    background-color: var(--themer-foreground);
-    border-radius: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    transition: all 0.5s;
-
-    >* {
-        margin: calc(var(--element-margin));
-        // transition: all 0.5s;
-    }
-
-    justify-content: center;
-    align-items: center;
-    width: inherit;
-    display: flex;
-
-    .nav-icon {
-        height: 30px;
-        width: 30px;
-
-        img {
-            height: inherit;
-            width: inherit;
-        }
-    }
-
-    .nav-items {
-        * {
-            text-align: center;
-        }
-
-        span {
-            padding: 8px;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: 400;
-            text-transform: capitalize;
-            color: var(--themer-content);
-        }
-
-        span.active {
-            color: #E3E3E3;
-        }
-    }
-
-}
-
-.floating-nav.hidden {
-    margin-bottom: 60px;
-    transform: translateY(500px);
+    display: none;
 }
 
 @media only screen and (max-width:480px) {
     .floating-nav {
-        $panel-width: 93vw;
-        width: $panel-width;
+        z-index: 2;
+        position: fixed;
         top: $nav-spacing;
         left: auto;
         right: calc(50% - ($panel-width/2));
-
+        display: flex;
         justify-content: space-between;
+        align-items: center;
+        width: $panel-width;
+        height: $panel-height;
+        background-color: var(--themer-foreground);
+        transition: all 0.5s;
+        border-radius: 50px;
 
-        .nav-icon {
+        .nav-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 30px;
             margin: 24px;
-        }
 
-        .hide-on-mobile {
-            span {
-                display: none;
+            img {
+                height: inherit;
+                width: inherit;
             }
-
-            span.active {
-                display: block;
+            span {
+                color: #E3E3E3;
             }
         }
 
     }
 
-    .floating-nav.hidden {
+    .shrink {
         width: $panel-height;
-        // display: none;
         transform: translateY(0);
         right: $nav-spacing;
         left: auto;
         justify-content: center;
         align-items: center;
 
-        .hide-on-mobile {
+        .logo,.page-name{
             display: none;
         }
+    }
 
-
+    .expand {
+        overflow-y: hidden;
+        overflow-x: hidden;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        left: auto;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 0;
     }
 }
