@@ -6,27 +6,33 @@ const colorConfig = {
     borderLight: '#e4d6d6',
     buttonLight: '#E3E3E3',
     buttonDark: '#5E5E5E',
-    accentColor:'#00948C',
+    accentColor: '#00948C',
+    gray: '#0d0d0d',
+    white: '#fff',
+    black: '#000'
 }
 const theme = {
-    themeLight : {
-        backgroundColor: '#fff',
+    themeLight: {
+        backgroundColor: colorConfig.white,
+        foregroundColor: colorConfig.black,
         headingColor: colorConfig.headingDark,
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.buttonDark,
         borderColor: colorConfig.borderLight,
-        accentColor: colorConfig.accentColor
+        accentColor: colorConfig.accentColor,
     },
-    themeGray : {
-        backgroundColor: '#0d0d0d',
+    themeGray: {
+        backgroundColor: colorConfig.gray,
+        foregroundColor: colorConfig.black,
         headingColor: colorConfig.headingLight,
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.buttonLight,
         borderColor: colorConfig.borderDark,
         accentColor: colorConfig.accentColor
     },
-    themeDark : {
-        backgroundColor: '#000',
+    themeDark: {
+        backgroundColor: colorConfig.black,
+        foregroundColor: colorConfig.gray,
         headingColor: colorConfig.headingLight,
         contentColor: colorConfig.contentDark,
         buttonColor: colorConfig.buttonLight,

@@ -8,43 +8,52 @@ const pageConfig = {
     'SERVICE-LANDING': {
         ...theme.themeDark,
         pageName: "SERVICES",
-        id:"SERVICE-LANDING"
+        id:"SERVICE-LANDING",
+        hideFloatingMenu: true,
     },
     'SERVICE-1': {
         ...theme.themeDark,
         pageName: "SERVICES",
-        id:"SERVICE-1"
+        id:"SERVICE-1",
+        hideFloatingMenu: true,
     },
     'SERVICE-2': {
         ...theme.themeGray,
         pageName: "SERVICES",
+        hideFloatingMenu: true,
     },
     'SERVICE-3': {
         ...theme.themeGray,
         pageName: "SERVICES",
+        hideFloatingMenu: true,
     },
     'SERVICE-4': {
         ...theme.themeLight,
         pageName: "SERVICES",
+        hideFloatingMenu: true,
     },
     'SERVICE-5': {
         ...theme.themeLight,
         pageName: "SERVICES",
+        hideFloatingMenu: true,
     },
     'SERVICE-6': {
         ...theme.themeDark,
         pageName: "SERVICES",
+        hideFloatingMenu: true,
     },
     'ABOUT': {
         ...theme.themeDark,
+        hideFloatingMenu: true,
     },
     'CLIENTS': {
         ...theme.themeGray,
+        hideFloatingMenu: true,
     },
     'FOOTER': {
         ...theme.themeGray,
         pageName: "FOOTER",
-        hideFloatingMenu: true,
+        hideFloatingMenu: false,
     }
 }
 export default pageConfig;

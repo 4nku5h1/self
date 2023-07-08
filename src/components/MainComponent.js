@@ -17,7 +17,7 @@ export default function MainComponent() {
         <div className='main'>
             <div className='background-image'/>
             <Navbar />
-            {/* <FloatingNav /> */}
+            <FloatingNav />
             <Home uid='HOME' />
             <Service />
             <Content uid='ABOUT' image={roseImage} title={"ABOUT US"} description={about} />

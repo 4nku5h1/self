@@ -17,6 +17,7 @@ export default function Themer({ changePageStateFunction }) {
             document.documentElement.style.setProperty('--themer-button-border', pageConfig[id].borderColor);
             document.documentElement.style.setProperty('--themer-button', pageConfig[id].buttonColor);
             document.documentElement.style.setProperty('--themer-accent', pageConfig[id].accentColor);
+            document.documentElement.style.setProperty('--themer-foreground', pageConfig[id].foregroundColor);
         }
         Object.keys(pageConfig).map((id) => {
             try {
