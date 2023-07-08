@@ -31,11 +31,11 @@ export default function FloatingNav() {
                     <CollapsibleCloseButton isOpen={menuOpen} />
                 </div>
             </div>
-            {menuOpen ? (
+            {/* {menuOpen ? (
                 <div className='nav-page'>
 
                 </div>
-            ) : null}
+            ) : null} */}
         </div>
     )
 }

@@ -1,5 +1,6 @@
 $hamburger-color: #fff;
 $width:30px; 
+$bar-spacing:35%;
 .hamburger {
   display: block;
   width: $width;
@@ -21,16 +22,16 @@ $width:30px;
   }
 
   &:before {
-    top: 0;
+    top: $bar-spacing;
   }
 
   & span {
-    bottom: 0;
+    bottom: $bar-spacing;
     opacity: 1;
   }
 
   &:after {
-    bottom: 50%;
+    bottom: $bar-spacing;
   }
 
   &.active span {
