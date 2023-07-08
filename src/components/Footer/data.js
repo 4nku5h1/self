@@ -9,11 +9,6 @@ import email from '../../assets/contact/mail.svg';
 import phone from '../../assets/contact/phone.svg';
 export const socialdata = [
     {
-        image: facebook,
-        title: "",
-        url: "https://www.facebook.com/profile.php?id=100085868422293&mibextid=ZbWKwL"
-    },
-    {
         image: linkedin,
         title: "",
         url: ""

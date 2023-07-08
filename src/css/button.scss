@@ -7,6 +7,13 @@
     text-transform: uppercase;
     background-color: transparent;
     letter-spacing: 1px;
+    transition: all 0.7s;
+}
+.button:hover{
+    border: 1px solid var(--themer-accent);
+}
+.button:active{
+    border: 1px solid var(--themer-accent);
 }
 
 @media only screen and (max-width:480px) {

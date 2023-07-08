@@ -13,31 +13,32 @@ export default function Footer({ uid }) {
                     <h1><span>Got a brand on your hands?</span> Let’s talk about it.</h1>
                     <button className="button">Get In Touch</button>
                 </div>
+                <div className="footer-bar">
+                    <div className="contact">
+                        <div className="item">
+                            <p className="highlight">graphicnix.com</p>
+                            <p>Privacy Policy © 2023 <span className="highlight"> Graphicnix</span></p>
+                        </div>
+                        <div className="item">
+                            <p>South Extension 42</p>
+                            <p>New Delhi, India</p>
+                        </div>
+                        <div className="item">
+                            <p className="highlight">graphicnix@gmail.com</p>
+                            <p>(+91) <span className="highlight">74171 89899</span></p>
+                        </div>
 
-                <div className="social">
-                    <div className="item">
-                        <p className="highlight">graphicnix.com</p>
-                        <p>Privacy Policy © 2023 <span className="highlight"> Graphicnix</span></p>
                     </div>
-                    <div className="item">
-                        <p>South Extension 42</p>
-                        <p>New Delhi, India</p>
-                    </div>
-                    <div className="item">
-                        <p className="highlight">graphicnix@gmail.com</p>
-                        <p>(+91) <span className="highlight">74171 89899</span></p>
-                    </div>
-                    <div className="item-img">
+                    <div className="social">
                         {socialdata.map((e) => {
                             return (
-                                <div className="item">
-
-                                    <img src={e.image}></img>
-                                </div>
+                                <img src={e.image}></img>
                             )
                         })}
                     </div>
                 </div>
+
+
             </div>
         </div>
     )
