@@ -8,6 +8,10 @@ export default function FloatingNav() {
     const [menuOpen, setMenuOpen] = useState(false)
     const appContext = useAppContext();
     const pageConfig = appContext.state.pageConfig;
+
+    function handleMenuButtonClick(){
+
+    }
     return (
         <div className={`floating-nav ${pageConfig?.hideFloatingMenu ? 'hidden' : ''}`}>
             <div className='nav-icon hide-on-mobile' >
@@ -26,8 +30,8 @@ export default function FloatingNav() {
                     Contact
                 </span>
             </div>
-            <div className='nav-icon' onClick={() => setMenuOpen(!menuOpen)}>
-                <CollapsibleCloseButton isOpen={menuOpen} />
+            <div className='nav-icon'>
+                <CollapsibleCloseButton isOpen={menuOpen} handleClick={handleMenuButtonClick}/>
             </div>
             {/* {menuOpen ? (
                 <div className='nav-page'>
