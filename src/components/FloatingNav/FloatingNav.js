@@ -19,22 +19,25 @@ export default function FloatingNav() {
     // expand - full page
     return (
         <div className={`floating-nav ${shrinkStyle} ${menuOpen ? 'expand' : ''}`}>
-            <div className="nav-item logo">
-                <img src={logo} />
-            </div>
-            <div className="nav-item page-name">
-                <span>
-                    {pageName}
-                </span>
-            </div>
-            <div className='nav-item'>
-                <CollapsibleCloseButton isOpen={menuOpen} handleClick={handleMenuButtonClick} />
-            </div>
-            {menuOpen ? (
-                <div className='nav-page'>
-
+            <div className='top-bar'>
+                <div className="nav-item logo">
+                    <img src={logo} />
                 </div>
-            ) : null}
+                <div className="nav-item page-name">
+                    <span>
+                        {pageName?.toLowerCase()}
+                    </span>
+                </div>
+                <div className='nav-item menu-btn'>
+                    <CollapsibleCloseButton isOpen={menuOpen} handleClick={handleMenuButtonClick} />
+                </div>
+                {menuOpen ? (
+                    <div className='nav-page'>
+
+                    </div>
+                ) : null}
+            </div>
+            {/* <h1>sdf</h1> */}
         </div>
     )
 }
