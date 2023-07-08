@@ -2,6 +2,7 @@
 
 :root {
   --g-background-html: rgb(0, 0, 0);
+  --scrollbar-color:#ff2525;
 }
 
 html {
@@ -10,9 +11,10 @@ html {
   overflow-x: hidden;
 }
 
-body{
-}
 .App {
   text-align: center;
   font-family: 'poppins';
+}
+::-webkit-scrollbar {
+  display: none;
 }
