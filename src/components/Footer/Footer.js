@@ -7,6 +7,9 @@ import Logo from "../Logo/Logo";
 export default function Footer({ uid }) {
     return (
         <div className='page footer' id={uid}>
+            {/* <video preload="auto" autoplay="" loop="true" muted="" playsinline="" id="bgvid" className="video">
+                <source src={video} type="video/mp4" />
+            </video> */}
             <div className="container">
                 <Logo size={10} />
                 <div className="talk-to-us">
@@ -43,12 +46,3 @@ export default function Footer({ uid }) {
         </div>
     )
 }
-{/* <video preload="auto" autoplay="" loop="true" muted="" playsinline="" id="bgvid"  class="">
-                    <source src={video} type="video/mp4" />
-                </video> */}
-
-
-
-// Custom Editing', 'Enhancement', 'Virtual Staging', 'Day to Dusk', 'Item removal', 'Renders'
-// Custom Editing', 'Animation', 'Motion Graphics', 'Compositing', 'Sound FX', 'VFX'
-// Product (Shoes, Bags, Cloth)', 'Jewellery', 'Real Estate', 'Restoration'

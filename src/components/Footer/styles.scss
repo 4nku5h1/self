@@ -2,7 +2,15 @@
     display: flex;
     justify-content: center;
 
+    .video {
+        position: absolute;
+        z-index: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
     .container {
+        z-index: 1;
         height: 100vh;
         justify-content: space-evenly;
 
@@ -34,6 +42,7 @@
         .footer-bar {
             width: 100%;
             display: flex;
+
             p {
                 margin-bottom: 0;
             }
@@ -43,10 +52,12 @@
                     color: #5B5B5B;
                     text-align: left;
                 }
-                >*{
-                    
+
+                >* {
+
                     margin: 8px;
                 }
+
                 margin-bottom: 0;
 
                 display: flex;
@@ -80,7 +91,8 @@
                     width: 30px;
                 }
             }
-            .social :first-child{
+
+            .social :first-child {
                 margin-left: 56px;
             }
         }
@@ -116,38 +128,41 @@
                     margin-top: 18px;
                 }
             }
+
             .footer-bar {
-                $margin:8px;
+                $margin: 8px;
+
                 .contact {
                     flex-direction: column;
                     align-items: flex-start;
-    
+
                     .item {
                         margin-bottom: $margin;
                     }
-    
+
                     .item .highlight {
                         color: var(--themer-accent);
                     }
                 }
-    
+
                 .social {
                     >* {
-    
+
                         margin-left: 0px;
                         margin-bottom: calc($margin + 30px);
                     }
-    
+
                     display: flex;
                     flex-direction: column;
                     flex: 1;
-    
+
                     img {
                         height: 30px;
                         width: 30px;
                     }
                 }
-                .social :first-child{
+
+                .social :first-child {
                     margin-left: 0px;
                     // margin-top: 12px;
                 }
