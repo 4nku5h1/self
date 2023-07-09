@@ -18,7 +18,7 @@ import render1 from '../../../assets/services/render1.jpeg'
 // import i1 from '../../../assets/horizontalgallary/1.webp'
 // import i3 from '../../../assets/horizontalgallary/3.webp'
 
-export const about = 'Graphicnix is the leading online hub for all things digital. Our global team of professional editing experts are ready to transform your photos into eye-catching professional images. Simply upload your photos and let our professionals take care of the rest. We offer a wide range of services including, photo editing, virtual staging, floor plan redraws, renders, and virtual renovations. The process is fast, easy-to-use and extremely affordable.'
+export const about = 'Graphicnix is the leading online hub for all things digital. Our global team of professional editing experts are ready to transform your photos into eye-catching professional images. Simply upload your photos and let our professionals take care of the rest. The process is fast, easy-to-use and extremely affordable.'
 export const services = [
     {
         id: 'services',
