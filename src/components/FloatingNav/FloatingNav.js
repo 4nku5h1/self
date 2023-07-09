@@ -9,7 +9,7 @@ import './styles.scss'
 export default function FloatingNav() {
     const [menuOpen, setMenuOpen] = useState(false)
     const appContext = useAppContext();
-    const pageConfig = appContext.state.pageConfig;
+    const shrinkIsland = !appContext.state?.pageConfig?.showFullDynamicIsland;
     const pageName = appContext.state?.pageConfig?.pageName;
 
     function handleMenuButtonClick() {
@@ -21,12 +21,12 @@ export default function FloatingNav() {
         }, 1000)
     }
     return (
-        <div className={`dynamic-island-container ${menuOpen ? 'expand': ''}`}>
+        <div className={`dynamic-island-container ${menuOpen ? 'expand' : ''} ${shrinkIsland && !menuOpen ? 'shrink' : ''}`}>
             <div className='btn item'>
                 <CollapsibleCloseButton isOpen={menuOpen} handleClick={handleMenuButtonClick} />
             </div>
             <div className={`dynamic-island ${menuOpen ? 'active' : ''}`}>
-                <div className={`top-bar ${menuOpen ?'shrink' :''}`}>
+                <div className={`top-bar ${menuOpen || shrinkIsland ? 'shrink' : ''}`}>
                     <div className="item">
                         <img src={logo} />
                     </div>

@@ -67,6 +67,8 @@ $transition : all 0.7s;
                 left: 0;
                 height: $panel-height;
                 width: calc($panel-width - $panel-height);
+                background-color: var(--themer-foreground);
+                border-radius: 50px;
                 display: flex;
                 align-items: center;
                 img {
@@ -102,5 +104,8 @@ $transition : all 0.7s;
         width: 102vw;
         transition-delay: 0.3s;
         border-radius: 0;
+    }
+    .dynamic-island-container.shrink{
+        background-color: transparent;
     }
 }
