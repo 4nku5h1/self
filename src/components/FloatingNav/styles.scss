@@ -3,12 +3,12 @@ $panel-width: 93vw;
 $nav-spacing: 30px;
 $nav-margin : calc((100vw - $panel-width)/2);
 
-.dynamic-island {
+.dynamic-island-container {
     display: none;
 }
 
 @media only screen and (max-width:480px) {
-    .dynamic-island {
+    .dynamic-island-container{
         position: fixed;
         z-index: 2;
         display: flex;
@@ -31,13 +31,15 @@ $nav-margin : calc((100vw - $panel-width)/2);
 
         .menu-btn {
             z-index:3;
-            position: fixed;
-            right: $nav-margin;
+            position: absolute;
+            right: 0;
+            // position: fixed;
+            // right: $nav-margin;
             background-color: var(--themer-foreground);
             
         }
 
-        .menu {
+        .dynamic-island {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
@@ -81,7 +83,7 @@ $nav-margin : calc((100vw - $panel-width)/2);
             }
         }
 
-        .menu.active {
+        .dynamic-island.active {
             margin: 50% 0;
             height: 50vh;
 

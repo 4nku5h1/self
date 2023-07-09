@@ -20,16 +20,12 @@ export default function FloatingNav() {
             setMenuOpen(false);
         }, 1000)
     }
-    const shrinkStyle = (pageConfig?.hideFloatingMenu || menuOpen) ? 'shrink' : ''
-    // default - bar
-    // shrink - round with menu
-    // expand - full page
     return (
-        <div className={`dynamic-island`}>
+        <div className={`dynamic-island-container`}>
             <div className='menu-btn item'>
                 <CollapsibleCloseButton isOpen={menuOpen} handleClick={handleMenuButtonClick} />
             </div>
-            <div className={`menu ${menuOpen ? 'active' : ''}`}>
+            <div className={`dynamic-island ${menuOpen ? 'active' : ''}`}>
                 <div className={`top-bar ${menuOpen ?'shrink' :''}`}>
                     <div className="item">
                         <img src={logo} />
