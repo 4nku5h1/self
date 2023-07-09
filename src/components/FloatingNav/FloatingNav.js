@@ -1,10 +1,11 @@
+import { useState } from 'react';
 import { useAppContext } from '../Common/AppContext/AppContext'
 import logo from '../../assets/logo/logo.svg'
-import './styles.scss'
 import CollapsibleCloseButton from '../Common/Button/CollapsibleCloseButton/CollapsibleCloseButton';
-import { useState } from 'react';
-import { scrollToId } from '../Common/helper';
 import { scrollToContact, scrollToGallary, scrollToHome, scrollToServices } from './helper';
+
+import './styles.scss'
+
 export default function FloatingNav() {
     const [menuOpen, setMenuOpen] = useState(false)
     const appContext = useAppContext();
