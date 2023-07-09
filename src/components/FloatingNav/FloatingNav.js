@@ -30,7 +30,7 @@ export default function FloatingNav() {
                 <CollapsibleCloseButton isOpen={menuOpen} handleClick={handleMenuButtonClick} />
             </div>
             <div className={`menu ${menuOpen ? 'active' : ''}`}>
-                <div className='top-bar'>
+                <div className={`top-bar ${menuOpen ?'shrink' :''}`}>
                     <div className="item">
                         <img src={logo} />
                     </div>

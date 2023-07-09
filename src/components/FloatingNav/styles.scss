@@ -78,6 +78,10 @@ $nav-margin : calc((100vw - $panel-width)/2);
                 }
                 transition: all 0.7s;
             }
+            .top-bar.shrink{
+                opacity: 0;
+                left: $panel-width;
+            }
         }
 
         .menu.active {
@@ -86,10 +90,6 @@ $nav-margin : calc((100vw - $panel-width)/2);
 
             h2 {
                 display: block;
-            }
-            .top-bar{
-                opacity: 0;
-                left: $panel-width;
             }
         }
        
