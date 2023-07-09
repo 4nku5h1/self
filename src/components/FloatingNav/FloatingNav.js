@@ -21,8 +21,8 @@ export default function FloatingNav() {
         }, 1000)
     }
     return (
-        <div className={`dynamic-island-container`}>
-            <div className='menu-btn item'>
+        <div className={`dynamic-island-container ${menuOpen ? 'expand': ''}`}>
+            <div className='btn item'>
                 <CollapsibleCloseButton isOpen={menuOpen} handleClick={handleMenuButtonClick} />
             </div>
             <div className={`dynamic-island ${menuOpen ? 'active' : ''}`}>
