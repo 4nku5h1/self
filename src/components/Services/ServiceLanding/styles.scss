@@ -8,6 +8,10 @@
         >h5{
             margin-bottom: 24px;
         }
+        >div{
+            
+        margin-bottom: 50px;
+        }
     }
     h5{
         color: var(--themer-accent);
@@ -17,9 +21,8 @@
     }
     
     .service-card {
-        // border-bottom: 1px solid var(--themer-content);
-        max-width: calc(100%/2);
-        min-width: calc(100%/2);
+        max-width: calc(100%/2 - 5%);
+        min-width: calc(100%/2 - 5%);
         margin-bottom: 30px;
         text-align: center;
 
@@ -28,6 +31,7 @@
         }
 
         h2 {
+            width: 100%;
             color: var(--themer-heading);
             font-size: 28px;
             font-weight: 400;
@@ -42,6 +46,7 @@
             letter-spacing: 2px;
             line-height: 16px;
             color: var(--themer-content);
+            text-transform: uppercase;
         }
     }
 
@@ -64,8 +69,9 @@
         }
 
         .service-card {
-            max-width: calc(100%);
-            min-width: calc(100%);
+            border-bottom: 1px solid var(--themer-content);
+            max-width: 100%;
+            min-width: 100%;
         }
     }
 }
