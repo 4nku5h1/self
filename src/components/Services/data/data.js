@@ -24,7 +24,7 @@ export const services = [
         id: 'services',
         title: 'Product Editing',
         description: 'Professional jewelry photo retouching attracts potential buyers and presents precious gemstones in the most appealing way. Necklaces, earrings, rings and other jewelry will shine after photoshopping.',
-        descriptionOverview:'Edit Product/ecommerce photos and make them Amazon or catalog-worthy. (e.g: Shoes, Bags, Cloth, etc.)',
+        descriptionOverview:'Edit Product/ecommerce photos and make them Amazon or catalog-worthy. (e.g: Jewellery, Shoes, Bags, etc.)',
         imageBefore: productBefore,
         imageAfter: productAfter,
 
@@ -69,7 +69,7 @@ export const services = [
         id: 'service4',
         title: 'Item Removal',
         description: 'Our photo editing experts can remove unwanted items from your photos.',
-        descriptionOverview:'Item Removal without leaving any trace of editing.',
+        descriptionOverview:'Removes unwanted items without leaving any trace of editing.',
         imageBefore: itemRemovalBefore,
         imageAfter: itemRemovalAfter,
 
@@ -78,7 +78,7 @@ export const services = [
         id: 'service6',
         title: 'Renders and Floor Plan',
         description: 'Our talented professionals use their skills and recent technological advancements to produce professional 3D renderings that allow clients to see every part of the interior/Exterior',
-        descriptionOverview:'3D rendering, 2D/3D floor plans, Site plans renders',
+        descriptionOverview:'3D rendering, 2D/3D floor plans and Site plans renders',
         imageBefore: render1,
         imageAfter: render1,
     }
