@@ -25,45 +25,36 @@ export default function FloatingNav() {
     // shrink - round with menu
     // expand - full page
     return (
-        <div className={`floating-nav ${shrinkStyle} ${menuOpen ? 'expand' : ''}`}>
-            <div className='top-bar'>
-                <div className="nav-item logo">
-                    <img src={logo} />
-                </div>
-                <div className="nav-item page-name">
-                    <span>
-                        {pageName?.toLowerCase()}
-                    </span>
-                </div>
-                <div className='nav-item menu-btn'>
-                    <CollapsibleCloseButton isOpen={menuOpen} handleClick={handleMenuButtonClick} />
-                </div>
-                {menuOpen ? (
-                    <div className='nav-page'>
-
-                    </div>
-                ) : null}
+        <div className={`dynamic-island`}>
+            <div className='menu-btn item'>
+                <CollapsibleCloseButton isOpen={menuOpen} handleClick={handleMenuButtonClick} />
             </div>
-            {menuOpen ? (
-                <div className='menu'>
-                    <h2 className={pageName === 'HOME' ? 'active' : ''} onClick={() => {
-                        scrollToHome();
-                        closeMenu();
-                    }}>Home</h2>
-                    <h2 className={pageName === 'SERVICES' ? 'active' : ''} onClick={() => {
-                        scrollToServices();
-                        closeMenu();
-                    }}>Services</h2>
-                    <h2 className={pageName === 'GALLARY' ? 'active' : ''} onClick={() => {
-                        scrollToGallary();
-                        closeMenu();
-                    }}>Gallary</h2>
-                    <h2 className={pageName === 'FOOTER' ? 'active' : ''} onClick={() => {
-                        scrollToContact();
-                        closeMenu();
-                    }}>Contact</h2>
+            <div className={`menu ${menuOpen ? 'active' : ''}`}>
+                <div className='top-bar'>
+                    <div className="item">
+                        <img src={logo} />
+                    </div>
+                    <div className="item">
+                        <span>{pageName?.toLowerCase()}</span>
+                    </div>
                 </div>
-            ) : null}
+                <h2 className={pageName === 'HOME' ? 'highlight' : ''} onClick={() => {
+                    scrollToHome();
+                    closeMenu();
+                }}>Home</h2>
+                <h2 className={pageName === 'SERVICES' ? 'highlight' : ''} onClick={() => {
+                    scrollToServices();
+                    closeMenu();
+                }}>Services</h2>
+                <h2 className={pageName === 'GALLARY' ? 'highlight' : ''} onClick={() => {
+                    scrollToGallary();
+                    closeMenu();
+                }}>Gallary</h2>
+                <h2 className={pageName === 'FOOTER' ? 'highlight' : ''} onClick={() => {
+                    scrollToContact();
+                    closeMenu();
+                }}>Contact</h2>
+            </div>
         </div>
     )
 }
