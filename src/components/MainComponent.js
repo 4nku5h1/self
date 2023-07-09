@@ -22,7 +22,7 @@ export default function MainComponent() {
             <Service />
             <Content uid='ABOUT' image={roseImage} title={"ABOUT US"} description={about} />
             <Client uid="CLIENTS" />
-            <Footer uid="FOOTER" aboutData={about}/>
+            <Footer uid="CONTACT" aboutData={about}/>
         </div>
     )
 }

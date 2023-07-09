@@ -10,5 +10,5 @@ export function scrollToGallary(){
     scrollToId('GALLARY')
 }
 export function scrollToContact(){
-    scrollToId('FOOTER')
+    scrollToId('CONTACT')
 }

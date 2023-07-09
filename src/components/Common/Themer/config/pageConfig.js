@@ -52,9 +52,9 @@ const pageConfig = {
         pageName: "CLIENTS",
         hideFloatingMenu: true,
     },
-    'FOOTER': {
+    'CONTACT': {
         ...theme.themeGray,
-        pageName: "FOOTER",
+        pageName: "CONTACT",
         hideFloatingMenu: false,
     }
 }

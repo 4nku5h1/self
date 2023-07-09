@@ -46,7 +46,7 @@ export default function FloatingNav() {
                     scrollToGallary();
                     closeMenu();
                 }}>Gallary</h2>
-                <h2 className={pageName === 'FOOTER' ? 'highlight' : ''} onClick={() => {
+                <h2 className={pageName === 'CONTACT' ? 'highlight' : ''} onClick={() => {
                     scrollToContact();
                     closeMenu();
                 }}>Contact</h2>
