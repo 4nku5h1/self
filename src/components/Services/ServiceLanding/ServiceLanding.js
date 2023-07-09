@@ -38,3 +38,6 @@ export default function ServiceTitle({ appContext, data }) {
         </div>
     )
 }
+// Custom Editing', 'Enhancement', 'Virtual Staging', 'Day to Dusk', 'Item removal', 'Renders'
+// Custom Editing', 'Animation', 'Motion Graphics', 'Compositing', 'Sound FX', 'VFX'
+// Product (Shoes, Bags, Cloth)', 'Jewellery', 'Real Estate', 'Restoration'

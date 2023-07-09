@@ -40,8 +40,6 @@ export default function Footer({ uid }) {
                         })}
                     </div>
                 </div>
-
-
             </div>
         </div>
     )
