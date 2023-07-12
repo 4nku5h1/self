@@ -9,17 +9,17 @@ $transition : all 0.7s;
 }
 
 @media only screen and (max-width:480px) {
-    .dynamic-island-container{
+    .dynamic-island-container {
         position: fixed;
         z-index: 2;
         display: flex;
         flex-direction: column;
         margin: $nav-spacing calc(50% - ($panel-width/2));
         width: $panel-width;
-        background-color: var(--themer-foreground);
         border-radius: 50px;
         overflow-x: hidden;
         transition: $transition;
+        background-color: var(--themer-foreground);
 
 
         .item {
@@ -32,14 +32,11 @@ $transition : all 0.7s;
         }
 
         .btn {
-            z-index:3;
-            // position: absolute;
-            // right: 0;
+            z-index: 3;
             transition: $transition;
             position: fixed;
             right: $nav-margin;
             background-color: var(--themer-foreground);
-            
         }
 
         .dynamic-island {
@@ -64,27 +61,36 @@ $transition : all 0.7s;
             .top-bar {
                 position: absolute;
                 top: 0;
-                left: 0;
+                right: 0;
                 height: $panel-height;
-                width: calc($panel-width - $panel-height);
+                width: calc($panel-width);
                 background-color: var(--themer-foreground);
                 border-radius: 50px;
                 display: flex;
                 align-items: center;
+
                 img {
                     height: 30px;
                     width: 30px;
                 }
+
                 span {
                     margin-left: calc($panel-width/2);
                     text-transform: capitalize;
                     color: #E3E3E3;
                 }
+
+                transition-delay: 0.7s;
                 transition: $transition;
             }
-            .top-bar.shrink{
-                opacity: 0;
-                left: $panel-width;
+
+            .top-bar.shrink {
+                // opacity: 0;
+                // left: $panel-width;
+                *{
+                    display: none;
+                }
+                width: 0;
             }
         }
 
@@ -96,16 +102,18 @@ $transition : all 0.7s;
                 display: block;
             }
         }
-       
+
     }
-    .dynamic-island-container.expand{
+
+    .dynamic-island-container.expand {
         padding: $nav-spacing calc(50% - ($panel-width/2));
         margin: 0;
         width: 102vw;
         transition-delay: 0.3s;
         border-radius: 0;
     }
-    .dynamic-island-container.shrink{
+
+    .dynamic-island-container.shrink {
         background-color: transparent;
     }
 }
