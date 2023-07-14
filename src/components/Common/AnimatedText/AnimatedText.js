@@ -3,7 +3,7 @@ import TextTransition, { presets } from 'react-text-transition';
 
 const TEXTS = ['One-default', 'Two-default', 'Three-default'];
 
-export default function TextAnimation({ texts = TEXTS }) {
+export default function AnimatedText({ texts = TEXTS }) {
     const [index, setIndex] = React.useState(0);
 
     useEffect(() => {

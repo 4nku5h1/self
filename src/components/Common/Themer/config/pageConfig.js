@@ -40,10 +40,6 @@ const pageConfig = {
         ...theme.themeDark,
         pageName: "ABOUT",
     },
-    'CLIENTS': {
-        ...theme.themeGray,
-        pageName: "CLIENTS",
-    },
     'CONTACT': {
         ...theme.themeGray,
         pageName: "CONTACT",

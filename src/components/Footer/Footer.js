@@ -3,10 +3,11 @@ import { contactData, socialdata } from "./data.js";
 import video from '../../assets/video/backgroundVideo.mp4'
 import './styles.scss';
 import Logo from "../Logo/Logo";
+import AnimatedText from "../Common/AnimatedText/AnimatedText.js";
 
 export default function Footer({ uid }) {
     return (
-        <div className='page footer' id={uid}>
+        <div className='page footer'>
             {/* <video preload="auto" autoplay="" loop="true" muted="" playsinline="" id="bgvid" className="video">
                 <source src={video} type="video/mp4" />
             </video> */}
@@ -39,6 +40,9 @@ export default function Footer({ uid }) {
                             )
                         })}
                     </div>
+                </div>
+                <div className="developer-text" id={uid}>
+                    <a href="https://wa.me/+919457776161">Love this Site?<span> Get in Touch with Skilled Developers and Bring Your Vision to Life.</span></a>
                 </div>
             </div>
         </div>

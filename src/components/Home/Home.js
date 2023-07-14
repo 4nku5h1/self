@@ -1,5 +1,4 @@
 import React from 'react';
-import TextAnimation from '../Common/TextAnimation';
 import backg from '../../assets/background/bus.webp'
 
 import './styles.scss';
@@ -18,10 +17,3 @@ export default function Home({ uid }) {
 
     )
 }
-{/* <div className='subtitle'>
-                    <span>Turning Ideas into</span>
-                    <h2><TextAnimation texts={['Reality.', 'PHOTO.', 'VIDEO.']} /></h2>
-                </div> */}
-{/* <div className='home-id-cards'>
-                    {idCards.map((item) => <Card {...item} />)}
-                </div> */}

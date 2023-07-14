@@ -6,7 +6,7 @@ import { services } from './data/data';
 import './styles.scss';
 import  ServiceLanding  from './ServiceLanding/ServiceLanding';
 
-export function Service() {
+export default function Service() {
     const appContext = useAppContext();
     const serviceIds = Object.keys(pageConfig).filter((id) => id.includes("SERVICE"));
     serviceIds.shift()

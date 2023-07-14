@@ -1,6 +1,7 @@
 .footer {
     display: flex;
     justify-content: center;
+    position: relative;
 
     .video {
         position: absolute;
@@ -97,6 +98,18 @@
             }
         }
 
+        .developer-text {
+            position: absolute;
+            bottom: 24px;
+            a {
+                color: var(--themer-accent);
+            }
+
+            span {
+                color: var(--themer-heading);
+            }
+            justify-self: flex-end;
+        }
     }
 }
 
