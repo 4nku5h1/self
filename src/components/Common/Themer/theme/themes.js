@@ -2,6 +2,7 @@ const colorConfig = {
     headingLight: '#E3E3E3',
     headingDark: '#111111',
     contentDark: '#5E5E5E',
+    contentLight:'#999999',
     borderDark: '#525252',
     borderLight: '#e4d6d6',
     buttonLight: '#E3E3E3',
@@ -34,7 +35,7 @@ const theme = {
         backgroundColor: colorConfig.black,
         foregroundColor: colorConfig.gray,
         headingColor: colorConfig.headingLight,
-        contentColor: colorConfig.contentDark,
+        contentColor: colorConfig.contentLight,
         buttonColor: colorConfig.buttonLight,
         borderColor: colorConfig.borderDark,
         accentColor: colorConfig.accentColor
