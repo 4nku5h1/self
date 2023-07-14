@@ -1,11 +1,20 @@
 :root {
     --rotate-degree: -6deg;
 }
-.page:has(.image-gallary){
+
+.page:has(.image-gallary) {
     padding: 0;
 }
+
 .image-gallary {
     position: relative;
+    overflow-y: hidden;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    .btn-view-gallery-mobile {
+        display: none;
+    }
+
     .image-gallary-container {
         margin-top: 10%;
         margin-bottom: 10%;
@@ -15,7 +24,6 @@
 
         .row {
             user-select: none;
-            transform: translateX(-220px);
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -25,8 +33,17 @@
                 margin: 10px;
                 width: 650px;
                 height: 400px;
+                min-width: 600px;
             }
         }
+    }
+
+    .image-gallary-container div:nth-child(even) {
+        transform: translateX(-120px);
+    }
+
+    .image-gallary-container div:nth-child(odd) {
+        transform: translateX(0);
     }
 
     .image-gallary-foreground {
@@ -41,23 +58,64 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        > *{
+
+        >* {
             transition: all 0.6s;
             opacity: 0;
         }
-        h2{
-            color: var(--themer-heading);
+
+        h2 {
+            color: #E3E3E3;
             font-size: 44px;
         }
-        .button{
+
+        .button {
+            color: #E3E3E3;
             margin-top: 18px;
             padding: 10px 24px;
         }
     }
-    .image-gallary-foreground:hover{
-        >*{
+
+    .image-gallary-foreground:hover {
+        >* {
             opacity: 1;
         }
+
         background-color: rgba(0, 0, 0, 0.85);
     }
+}
+
+@media only screen and (max-width:480px) {
+    .image-gallary {
+        margin-top: 20%;
+        margin-bottom: 50%;
+        .btn-view-gallery-mobile {
+            display: block;
+            margin-top: 20%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .image-gallary-container {
+            .row {
+                img {
+                    margin: 5px;
+                    width: 280px;
+                    height: 200px;
+                    min-width: 250px;
+                }
+            }
+        }
+
+        .image-gallary-container div:nth-child(even) {
+            transform: translateX(-70px);
+        }
+
+        .image-gallary-container div:nth-child(odd) {
+            transform: translateX(0);
+        }
+        .image-gallary-foreground {
+           display: none;
+        }
+    }
+
 }

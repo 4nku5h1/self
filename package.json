@@ -22,6 +22,7 @@
     "react-slider": "^2.0.5",
     "react-slideshow-image": "^4.0.4",
     "react-text-transition": "^3.1.0",
+    "react-use-scroll-direction": "^0.1.0",
     "sass": "^1.63.3",
     "sass-loader": "^13.3.2",
     "web-vitals": "^2.1.4"
