@@ -3,10 +3,8 @@ import { about } from './Services/data/data';
 import Navbar from './Navbar/NavBar';
 import Home from './Home/Home';
 import Footer from './Footer/Footer';
-import Content from './Content/Content';
-import roseImage from '../assets/background/rose.webp'
+import About from './About/About';
 import FloatingNav from './FloatingNav/FloatingNav';
-import Client from './Client/Client';
 
 import { Service } from './Services/Service';
 
@@ -22,8 +20,7 @@ export default function MainComponent() {
             <Home uid='HOME' />
             <Service />
             <ImageGallary />
-            <Content uid='ABOUT' image={roseImage} title={"ABOUT US"} description={about} />
-            <Client uid="CLIENTS" />
+            <About uid='ABOUT' />
             <Footer uid="CONTACT" aboutData={about}/>
         </div>
     )

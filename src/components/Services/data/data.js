@@ -83,3 +83,6 @@ export const services = [
         imageAfter: render1,
     }
 ]
+const clientNames = ["GOLD MARK", 'Geeky Estate', 'BIMBRA', "IGNITE CREATIVE", 'INTERPRETING', "FOX MORTGAGE", 'RHINO', 'CITI ESTATE', 'NEON TREE', 'GREEN STREET', 'CHOPSTYX','ROTNGRX', 'AURA', 'ENLIVEN SENIOR', 'HOUSES MART'];
+const clientDescription = "Our dedication to delivering exceptional quality and exceeding expectations has earned us the trust and loyalty of countless individuals, businesses, and creative professionals. From aspiring photographers to established studios, from e-commerce entrepreneurs to advertising agencies, our client list encompasses a diverse range of industries and creative pursuits."
+export  {clientNames, clientDescription};
