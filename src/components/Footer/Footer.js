@@ -15,7 +15,9 @@ export default function Footer({ uid }) {
                 <Logo size={10} />
                 <div className="talk-to-us">
                     <h1><span>Got a brand on your hands?</span> Let’s talk about it.</h1>
-                    <button className="button">Get In Touch</button>
+                    <a href="https://wa.me/+917417189899">
+                        <button className="button">Get In Touch</button>
+                    </a>
                 </div>
                 <div className="footer-bar">
                     <div className="contact">
