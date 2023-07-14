@@ -11,6 +11,7 @@ import Client from './Client/Client';
 import { Service } from './Services/Service';
 
 import '../css/styles.scss'
+import ImageGallary from './Common/ImageGallary/ImageGallary';
 
 export default function MainComponent() {
     return (
@@ -20,6 +21,7 @@ export default function MainComponent() {
             <FloatingNav />
             <Home uid='HOME' />
             <Service />
+            <ImageGallary />
             <Content uid='ABOUT' image={roseImage} title={"ABOUT US"} description={about} />
             <Client uid="CLIENTS" />
             <Footer uid="CONTACT" aboutData={about}/>
