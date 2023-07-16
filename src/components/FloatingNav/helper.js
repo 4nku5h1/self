@@ -7,7 +7,7 @@ export function scrollToServices(){
     scrollToId('SERVICE-LANDING')
 }
 export function scrollToGallary(){
-    scrollToId('GALLARY')
+    scrollToId('GALLERY')
 }
 export function scrollToContact(){
     scrollToId('CONTACT')
