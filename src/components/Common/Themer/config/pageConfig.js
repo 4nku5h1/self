@@ -3,8 +3,9 @@ import theme from "../theme/themes"
 const pageConfig = {
     'HOME': {
         pageName: "HOME",
-        ...theme.themeGray,
+        ...theme.themeDark,
         showFullDynamicIsland:true,
+        backgroundColor:'transparent'
     },
     'SERVICE-LANDING': {
         ...theme.themeDark,
@@ -33,17 +34,22 @@ const pageConfig = {
         pageName: "SERVICES",
     },
     'SERVICE-6': {
-        ...theme.themeDark,
+        ...theme.themeGray,
         pageName: "SERVICES",
+    },
+    'GALLERY':{
+        ...theme.themeDark,
+        pageName: "GALLERY",
     },
     'ABOUT': {
         ...theme.themeDark,
         pageName: "ABOUT",
     },
     'CONTACT': {
-        ...theme.themeGray,
+        ...theme.themeDark,
         pageName: "CONTACT",
         showFullDynamicIsland:true,
+        backgroundColor:'transparent'
     },
 }
 export default pageConfig;

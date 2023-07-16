@@ -1,6 +1,5 @@
 import { contactData, socialdata } from "./data.js";
 
-import video from '../../assets/video/backgroundVideo.mp4'
 import './styles.scss';
 import Logo from "../Logo/Logo";
 import AnimatedText from "../Common/AnimatedText/AnimatedText.js";
@@ -8,9 +7,6 @@ import AnimatedText from "../Common/AnimatedText/AnimatedText.js";
 export default function Footer({ uid }) {
     return (
         <div className='page footer'>
-            {/* <video preload="auto" autoplay="" loop="true" muted="" playsinline="" id="bgvid" className="video">
-                <source src={video} type="video/mp4" />
-            </video> */}
             <div className="container">
                 <Logo size={10} />
                 <div className="talk-to-us">
@@ -30,8 +26,8 @@ export default function Footer({ uid }) {
                             <p>New Delhi, India</p>
                         </div>
                         <div className="item">
-                            <p className="highlight">graphicnix@gmail.com</p>
-                            <p>(+91) <span className="highlight">74171 89899</span></p>
+                            <p className="highlight link"><a href="mailto:graphicnix.studio@gmail.com?subject=Request for Editing Services&body=Hi,">graphicnix.studio@gmail.com</a></p>
+                            <p className="link"><a href="tel:+917417189899">(+91) <span className="highlight">74171 89899</span></a></p>
                         </div>
 
                     </div>

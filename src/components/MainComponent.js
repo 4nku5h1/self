@@ -15,12 +15,11 @@ export default function MainComponent() {
     return (
         <div className='main'>
             <Galaxy />
-            <div className='background-image' />
             <Navbar />
             <FloatingNav />
             <Home uid='HOME' />
             <Service />
-            <ImageGallary />
+            <ImageGallary uid="GALLERY"/>
             <About uid='ABOUT' />
             <Footer uid="CONTACT" aboutData={about} />
         </div>

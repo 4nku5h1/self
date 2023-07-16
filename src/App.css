@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
 
-:root {
-  --g-background-html: rgb(0, 0, 0);
-  --scrollbar-color:#ff2525;
-}
-
 html {
   font-size: 16px;
   cursor: pointer;
   overflow-x: hidden;
+  background-color: black !important;
+}
+body{
+  background-color: transparent !important;
 }
 
 .App {

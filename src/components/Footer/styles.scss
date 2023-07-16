@@ -68,11 +68,20 @@
                     font-size: 13px;
                     padding: 0;
                     margin: 0;
+                    .link a{
+                        
+                        text-decoration: none !important;
+                    }
+                    .link :hover {
+
+                        color: var(--themer-accent);
+                    }
                 }
 
                 .item .highlight {
                     color: #999999;
                 }
+
             }
 
             .social {
@@ -99,6 +108,7 @@
         .developer-text {
             position: absolute;
             bottom: 24px;
+
             a {
                 color: var(--themer-accent);
             }
@@ -106,6 +116,7 @@
             span {
                 color: var(--themer-heading);
             }
+
             justify-self: flex-end;
         }
     }
@@ -113,7 +124,6 @@
 
 .page.footer {
     padding-bottom: 0;
-    background-color: #000;
 }
 
 @media only screen and (max-width:480px) {
