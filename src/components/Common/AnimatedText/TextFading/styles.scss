@@ -1,55 +1,142 @@
-.text-fading{
-    #title {
-        position: absolute;
-        font-weight: 300;
-        top: 36%;
-        left: 0;
-        right: 0;
-        margin-top: -80px;
-    
-        font-size: 130px;
-        text-align: center;
-        letter-spacing: 20px;
-        padding-left: 20px;
-    
-        background: -webkit-linear-gradient(white, rgb(219, 221, 224), #38495a);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    
-        animation-duration: 6s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease;
-        animation-name: animGravity;
+.text-fading {
+  #title {
+    position: absolute;
+    font-weight: 300;
+    top: 36%;
+    left: 0;
+    right: 0;
+    margin-top: -80px;
+
+    font-size: 130px;
+    text-align: center;
+    letter-spacing: 20px;
+    padding-left: 20px;
+
+    background: -webkit-linear-gradient(white, rgb(219, 221, 224), #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-name: animGravity;
+  }
+
+  #subtitle {
+    position: absolute;
+    font-weight: 300;
+    top: 70%;
+    left: 0;
+    right: 0;
+
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 6px;
+
+    span {
+      color: rgb(216, 216, 216);
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+
+      &:nth-child(1) {
+        animation-name: animDont;
       }
-    
-      #subtitle {
-        position: absolute;
-        font-weight: 300;
-        top: 70%;
-        left: 0;
-        right: 0;
-    
-        font-size: 25px;
-        text-align: center;
-        letter-spacing: 6px;
-    
-        span {
-          color: rgb(216, 216, 216);
-          animation-duration: 6s;
-          animation-iteration-count: infinite;
-          animation-timing-function: ease;
-    
-          &:nth-child(1) {
-            animation-name: animDont;
-          }
-    
-          &:nth-child(2) {
-            animation-name: animLet;
-          }
-    
-          &:nth-child(3) {
-            animation-name: animGo;
-          }
-        }
+
+      &:nth-child(2) {
+        animation-name: animLet;
       }
+
+      &:nth-child(3) {
+        animation-name: animGo;
+      }
+    }
+  }
+  @keyframes animGravity {
+    0% {
+      transform: translateY(-26px);
+      opacity: 0;
+    }
+
+    30%,
+    80% {
+      letter-spacing: 40px;
+      padding-left: 40px;
+      transform: translateY(0px);
+      opacity: 1;
+    }
+
+    92%,
+    100% {
+      letter-spacing: 35px;
+      padding-left: 35px;
+      transform: translateY(-4px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes animDont {
+
+    0%,
+    15% {
+      transform: translateY(-26px);
+      opacity: 0;
+    }
+
+    35%,
+    80% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+
+    92%,
+    100% {
+      transform: translateY(-4px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes animLet {
+
+    0%,
+    25% {
+      transform: translateY(-26px);
+      opacity: 0;
+    }
+
+    45%,
+    80% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+
+    92%,
+    100% {
+      transform: translateY(-4px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes animGo {
+
+    0%,
+    35% {
+      transform: translateY(-26px);
+      opacity: 0;
+    }
+
+    55%,
+    80% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+
+    92%,
+    100% {
+      transform: translateY(-4px);
+      opacity: 0;
+    }
+  }
+
+  ;
 }

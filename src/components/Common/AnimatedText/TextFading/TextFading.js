@@ -2,9 +2,9 @@ import './styles.scss'
 export default function TextFading() {
     return (
         <div className='text-fading'>
-            {/* <div id="title">
+            <div id="title">
                 GRAVITY
-            </div> */}
+            </div>
             <div id="subtitle">
                 <span>
                     DONT
