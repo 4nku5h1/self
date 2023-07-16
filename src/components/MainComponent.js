@@ -9,10 +9,12 @@ import Footer from './Footer/Footer';
 import { about } from './Services/data/data';
 
 import '../css/styles.scss'
+import Galaxy from './Common/Galaxy/Galaxy';
 
 export default function MainComponent() {
     return (
         <div className='main'>
+            <Galaxy />
             <div className='background-image' />
             <Navbar />
             <FloatingNav />
