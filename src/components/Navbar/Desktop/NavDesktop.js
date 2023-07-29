@@ -4,7 +4,7 @@ import { scrollToContact, onGallaryClickHandler, scrollToServices } from '../hel
 import './styles.scss'
 import { Link } from 'react-router-dom';
 
-export default function Navbar() {
+export default function NavDesktop() {
     return (
         <div className='navbar' id='navbar'>
             <div className='nav-logo'>

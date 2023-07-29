@@ -6,7 +6,7 @@ import { scrollToContact, onGallaryClickHandler, scrollToHome, scrollToServices 
 
 import './styles.scss'
 
-export default function FloatingNav() {
+export default function NavMobile() {
     const [menuOpen, setMenuOpen] = useState(false)
     const appContext = useAppContext();
     const shrinkIsland = !appContext.state?.pageConfig?.showFullDynamicIsland;
