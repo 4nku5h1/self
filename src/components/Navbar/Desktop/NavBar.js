@@ -1,5 +1,5 @@
 import React from 'react';
-import { scrollToContact, onGallaryClickHandler, scrollToServices } from '../FloatingNav/helper';
+import { scrollToContact, onGallaryClickHandler, scrollToServices } from '../helper';
 
 import './styles.scss'
 

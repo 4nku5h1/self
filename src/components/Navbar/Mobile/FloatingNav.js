@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { useAppContext } from '../Common/AppContext/AppContext'
-import logo from '../../assets/logo/logo.svg'
-import CollapsibleCloseButton from '../Common/Button/CollapsibleCloseButton/CollapsibleCloseButton';
-import { scrollToContact, onGallaryClickHandler, scrollToHome, scrollToServices } from './helper';
+import { useAppContext } from '../../Common/AppContext/AppContext'
+import logo from '../../../assets/logo/logo.svg'
+import CollapsibleCloseButton from '../../Common/Button/CollapsibleCloseButton/CollapsibleCloseButton';
+import { scrollToContact, onGallaryClickHandler, scrollToHome, scrollToServices } from '../helper';
 
 import './styles.scss'
 

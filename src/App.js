@@ -6,9 +6,9 @@ import { useAppContext } from './components/Common/AppContext/AppContext.js';
 import Themer from './components/Common/Themer/Themer.js';
 import { setCursorBall } from './components/Common/CustomCursor/helper.js';
 import Galaxy from './components/Common/Galaxy/Galaxy.js';
-import Navbar from './components/Navbar/NavBar.js';
+import Navbar from './components/Navbar/Desktop/NavBar.js';
 import Footer from './components/Footer/Footer.js';
-import FloatingNav from './components/FloatingNav/FloatingNav.js';
+import FloatingNav from './components/Navbar/Mobile/FloatingNav.js';
 
 function App() {
   const appContext = useAppContext();
