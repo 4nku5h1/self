@@ -1,5 +1,5 @@
 import React from 'react';
-import { scrollToContact, scrollToGallary, scrollToServices } from '../FloatingNav/helper';
+import { scrollToContact, onGallaryClickHandler, scrollToServices } from '../FloatingNav/helper';
 
 import './styles.scss'
 
@@ -11,7 +11,7 @@ export default function Navbar() {
             </div>
             <div className='nav-items'>
                 <span onClick={scrollToServices}>Services</span>
-                <span onClick={scrollToGallary}>Gallary</span>
+                <span onClick={onGallaryClickHandler}>Gallary</span>
                 <span onClick={scrollToContact}>Contact</span>
             </div>
         </div>

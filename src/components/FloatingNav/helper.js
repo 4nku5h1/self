@@ -6,7 +6,7 @@ export function scrollToHome(){
 export function scrollToServices(){
     scrollToId('SERVICE-LANDING')
 }
-export function scrollToGallary(){
+export function onGallaryClickHandler(){
     scrollToId('GALLERY')
 }
 export function scrollToContact(){

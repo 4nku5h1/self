@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useAppContext } from '../Common/AppContext/AppContext'
 import logo from '../../assets/logo/logo.svg'
 import CollapsibleCloseButton from '../Common/Button/CollapsibleCloseButton/CollapsibleCloseButton';
-import { scrollToContact, scrollToGallary, scrollToHome, scrollToServices } from './helper';
+import { scrollToContact, onGallaryClickHandler, scrollToHome, scrollToServices } from './helper';
 
 import './styles.scss'
 
@@ -43,7 +43,7 @@ export default function FloatingNav() {
                     closeMenu();
                 }}>Services</h2>
                 <h2 className={pageName === 'GALLARY' ? 'highlight' : ''} onClick={() => {
-                    scrollToGallary();
+                    onGallaryClickHandler();
                     closeMenu();
                 }}>Gallary</h2>
                 <h2 className={pageName === 'CONTACT' ? 'highlight' : ''} onClick={() => {
