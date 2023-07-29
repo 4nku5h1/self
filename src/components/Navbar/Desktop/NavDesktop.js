@@ -1,5 +1,5 @@
 import React from 'react';
-import { scrollToContact, onGallaryClickHandler, scrollToServices } from '../helper';
+import { scrollToContact, scrollToServices } from '../helper';
 
 import './styles.scss'
 import { Link } from 'react-router-dom';
@@ -13,7 +13,7 @@ export default function NavDesktop() {
             <div className='nav-items'>
                 <span onClick={scrollToServices}>Services</span>
                 <Link to="/gallary">
-                    <span onClick={onGallaryClickHandler}>Gallary</span>
+                    <span>Gallary</span>
                 </Link>
                 <span onClick={scrollToContact}>Contact</span>
             </div>

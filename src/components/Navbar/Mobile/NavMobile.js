@@ -5,6 +5,7 @@ import CollapsibleCloseButton from '../../Common/Button/CollapsibleCloseButton/C
 import { scrollToContact, onGallaryClickHandler, scrollToHome, scrollToServices } from '../helper';
 
 import './styles.scss'
+import { Link } from 'react-router-dom';
 
 export default function NavMobile() {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -42,10 +43,13 @@ export default function NavMobile() {
                     scrollToServices();
                     closeMenu();
                 }}>Services</h2>
-                <h2 className={pageName === 'GALLARY' ? 'highlight' : ''} onClick={() => {
-                    onGallaryClickHandler();
-                    closeMenu();
-                }}>Gallary</h2>
+
+                <Link to="/gallary">
+                    <h2 className={pageName === 'GALLARY' ? 'highlight' : ''} onClick={() => {
+                        onGallaryClickHandler();
+                        closeMenu();
+                    }}>Gallary</h2>
+                </Link>
                 <h2 className={pageName === 'CONTACT' ? 'highlight' : ''} onClick={() => {
                     scrollToContact();
                     closeMenu();

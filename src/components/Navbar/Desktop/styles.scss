@@ -34,17 +34,15 @@ $font-size: 18px;
         flex: 4;
         display: flex;
         justify-content: flex-end;
-        >* {
-            margin-left: 50px;
-
-        }
-
         span {
+            display: flex;
+            margin-left: 50px;
             letter-spacing: -0.06px;
             line-height: 18.24px;
             font-weight: 400;
             font-size: 18px;
             transition: all 0.4s;
+            color: var(--themer-content);
         }
 
         span:hover {

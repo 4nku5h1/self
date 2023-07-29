@@ -9,7 +9,9 @@ html {
 body{
   background-color: transparent !important;
 }
-
+a {
+  text-decoration: none !important;
+}
 .App {
   text-align: center;
   font-family: 'poppins';
