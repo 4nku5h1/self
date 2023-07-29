@@ -5,7 +5,7 @@ import b4 from '../../../assets/horizontalgallary/4.webp'
 import b5 from '../../../assets/horizontalgallary/5.webp'
 import './styles.scss';
 
-export default function ImageGallary({ uid, data }) {
+export default function ImageGridBanner({ uid, data }) {
     data = {
         row1: [b1, b2, b5, b1],
         row2: [b3, b4, b5, b1],
