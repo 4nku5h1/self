@@ -1,5 +1,5 @@
-import { scrollToId } from '../../Common/helper';
-import AnimatedItems from '../../Common/Motion/AnimatedItems';
+import { scrollToId } from '../../../Common/helper';
+import AnimatedItems from '../../../Common/Motion/AnimatedItems';
 
 import './styles.scss'
 

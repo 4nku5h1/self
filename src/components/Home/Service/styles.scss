@@ -38,28 +38,6 @@
 
 }
 
-// SERVICE GALLARY
-.service-gallary-container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-
-  .gallary {
-    >div {
-      margin: var(--element-margin);
-    }
-
-    max-width: 50%;
-
-    img {
-      width: calc(100%/2);
-      height: calc(60vh/2);
-    }
-  }
-}
-
 .service-gallary-container.mirror {
   justify-content: flex-end;
 }

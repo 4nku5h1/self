@@ -1,22 +1,22 @@
-import productBefore from '../../../assets/services/productBefore.jpg'
-import productAfter from '../../../assets/services/productAfter.jpg'
+import productBefore from '../assets/services/productBefore.jpg'
+import productAfter from '../assets/services/productAfter.jpg'
 
-import virtualStagingBefore from '../../../assets/services/virtualStagingBefore.jpg'
-import virtualStagingAfter from '../../../assets/services/virtualStagingAfter.jpg'
+import virtualStagingBefore from '../assets/services/virtualStagingBefore.jpg'
+import virtualStagingAfter from '../assets/services/virtualStagingAfter.jpg'
 
-import day2DuskBefore from '../../../assets/services/day2DuskBefore.jpg'
-import day2DuskAfter from '../../../assets/services/day2DuskAfter.jpg'
+import day2DuskBefore from '../assets/services/day2DuskBefore.jpg'
+import day2DuskAfter from '../assets/services/day2DuskAfter.jpg'
 
-import imageEnhancementBefore from '../../../assets/services/imageEnhancementBefore.jpeg'
-import imageEnhancementAfter from '../../../assets/services/imageEnhancementAfter.jpeg'
+import imageEnhancementBefore from '../assets/services/imageEnhancementBefore.jpeg'
+import imageEnhancementAfter from '../assets/services/imageEnhancementAfter.jpeg'
 
-import itemRemovalBefore from '../../../assets/services/itemRemovalBefore.jpg'
-import itemRemovalAfter from '../../../assets/services/itemRemovalAfter.jpg'
+import itemRemovalBefore from '../assets/services/itemRemovalBefore.jpg'
+import itemRemovalAfter from '../assets/services/itemRemovalAfter.jpg'
 
-import render1 from '../../../assets/services/render1.jpeg'
+import render1 from '../assets/services/render1.jpeg'
 
-// import i1 from '../../../assets/horizontalgallary/1.webp'
-// import i3 from '../../../assets/horizontalgallary/3.webp'
+// import i1 from '../assets/horizontalgallary/1.webp'
+// import i3 from '../assets/horizontalgallary/3.webp'
 
 export const about = 'Graphicnix is the leading online hub for all things digital. Our global team of professional editing experts are ready to transform your photos into eye-catching professional images. Simply upload your photos and let our professionals take care of the rest. The process is fast, easy-to-use and extremely affordable.'
 export const services = [

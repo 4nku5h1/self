@@ -1,6 +1,6 @@
 import roseImage from '../../assets/background/rose.webp'
 import AnimatedItems from '../Common/Motion/AnimatedItems'
-import { about, clientDescription, clientNames } from '../Services/data/data'
+import { about, clientDescription, clientNames } from '../data'
 
 import './styles.scss'
 export default function About({ uid, description, image }) {

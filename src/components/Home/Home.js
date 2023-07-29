@@ -1,5 +1,5 @@
 import Banner from './Banner';
-import Service from '../Services/Service';
+import Service from './Service/Service';
 import ImageGallary from '../Common/ImageGallary/ImageGallary';
 import About from '../About/About';
 import './styles.scss';

@@ -1,7 +1,7 @@
-import { useAppContext } from '../Common/AppContext/AppContext';
-import ImageCompare from '../Common/ImageCompare/ImageCompare'
-import pageConfig from '../Common/Themer/config/pageConfig';
-import { services } from './data/data';
+import { useAppContext } from '../../Common/AppContext/AppContext';
+import ImageCompare from '../../Common/ImageCompare/ImageCompare'
+import pageConfig from '../../Common/Themer/config/pageConfig';
+import { services } from '../../data';
 
 import './styles.scss';
 import  ServiceLanding  from './ServiceLanding/ServiceLanding';
