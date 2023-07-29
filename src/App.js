@@ -9,6 +9,7 @@ import Galaxy from './components/Common/Galaxy/Galaxy.js';
 import Navbar from './components/Navbar/Desktop/NavBar.js';
 import Footer from './components/Footer/Footer.js';
 import FloatingNav from './components/Navbar/Mobile/FloatingNav.js';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   const appContext = useAppContext();
@@ -18,13 +19,16 @@ function App() {
 
   return (
     <div className="App">
+
       <Themer changePageStateFunction={changePageConfig} />
       <CustomCursor />
       <Galaxy />
-      <Navbar />
-      <FloatingNav />
-      <MainComponent />
-      <Footer uid="CONTACT"/>
+      <BrowserRouter>
+        <Navbar />
+        <FloatingNav />
+        <MainComponent />
+        <Footer uid="CONTACT" />
+      </BrowserRouter>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { scrollToContact, onGallaryClickHandler, scrollToServices } from '../helper';
 
 import './styles.scss'
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     return (
@@ -11,7 +12,9 @@ export default function Navbar() {
             </div>
             <div className='nav-items'>
                 <span onClick={scrollToServices}>Services</span>
-                <span onClick={onGallaryClickHandler}>Gallary</span>
+                <Link to="/gallary">
+                    <span onClick={onGallaryClickHandler}>Gallary</span>
+                </Link>
                 <span onClick={scrollToContact}>Contact</span>
             </div>
         </div>
