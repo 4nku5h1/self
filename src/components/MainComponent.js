@@ -8,10 +8,9 @@ export default function MainComponent() {
         <div className='main'>
             <Routes>
                 <Route path="/" element={<Home />} />
-                {/* <Route path="/gallary" element={<Home />} /> */}
-                
-                <Route path="*" element={<h1>Page Not Found</h1>}
-                />
+                <Route path="/services" element={<Home />} />
+
+                <Route path="*" element={<h1>Page Not Found</h1>}/>
             </Routes>
         </div>
     )

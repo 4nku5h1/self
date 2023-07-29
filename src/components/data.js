@@ -23,8 +23,8 @@ export const services = [
     {
         id: 'services',
         title: 'Product Editing',
-        description: 'Professional jewelry photo retouching attracts potential buyers and presents precious gemstones in the most appealing way. Necklaces, earrings, rings and other jewelry will shine after photoshopping.',
-        descriptionOverview:'Edit Product/ecommerce photos and make them Amazon or catalog-worthy. (e.g: Jewellery, Shoes, Bags, etc.)',
+        description: 'Enhancing product images to make them look more appealing and professional, which can be crucial for e-commerce businesses and marketing campaigns.',
+        descriptionOverview: 'Edit Product/ecommerce photos and make them Amazon or catalog-worthy. (e.g: Jewellery, Shoes, Bags, etc.)',
         imageBefore: productBefore,
         imageAfter: productAfter,
 
@@ -32,8 +32,8 @@ export const services = [
     {
         id: 'service1',
         title: 'Image Enhancement',
-        description: 'Perfect for real estate photo editing so you can present your listing with top-notch, retouched professional-looking photos.',
-        descriptionOverview:'Sky Replacement, White Balancing, Sharpening, Lens correction, Tone Adjustment, Lawn Enhancement, Flash &  Reflection Removal, etc',
+        description: 'Improving the quality and visual appeal of images through various editing techniques, such as color correction, retouching, and cropping.',
+        descriptionOverview: 'Sky Replacement, White Balancing, Sharpening, Lens correction, Tone Adjustment, Lawn Enhancement, Flash &  Reflection Removal, etc',
         imageBefore: imageEnhancementBefore,
         imageAfter: imageEnhancementAfter,
         process: {
@@ -45,8 +45,8 @@ export const services = [
     {
         id: 'service2',
         title: 'Virtual Staging',
-        description: 'Our team can add furniture to real estate photography to show potential buyers just how versatile the space is.',
-        descriptionOverview:'clutter removal, interior and exterior virtual renovation/remodeling',
+        description: ' Adding virtual furniture and decor to empty spaces, making them more attractive and inviting for potential buyers or renters.',
+        descriptionOverview: 'clutter removal, interior and exterior virtual renovation/remodeling',
         imageBefore: virtualStagingBefore,
         imageAfter: virtualStagingAfter,
 
@@ -54,8 +54,8 @@ export const services = [
     {
         id: 'service3',
         title: 'Day to Dusk',
-        description: 'Dusk is a beautiful time of the day but is notoriously hard to photograph,We can turn any daytime or gloomy sky into a breathtaking sunset to really make your listing stand out from the rest. Our photo retouching service will take your exterior property photo from drab to fab by replacing your sky with a beautiful dusk setting.',
-        descriptionOverview:'Sky Replacement, Correct light & shadows',
+        description: 'Transforming daytime photos into captivating dusk or twilight scenes, adding a different mood and atmosphere to the images.',
+        descriptionOverview: 'Sky Replacement, Correct light & shadows',
         imageBefore: day2DuskBefore,
         imageAfter: day2DuskAfter,
         process: {
@@ -68,8 +68,8 @@ export const services = [
     {
         id: 'service4',
         title: 'Item Removal',
-        description: 'Our photo editing experts can remove unwanted items from your photos.',
-        descriptionOverview:'Removes unwanted items without leaving any trace of editing.',
+        description: 'Removing unwanted objects or elements from images to create a clean and polished final result.',
+        descriptionOverview: 'Removes unwanted items without leaving any trace of editing.',
         imageBefore: itemRemovalBefore,
         imageAfter: itemRemovalAfter,
 
@@ -77,12 +77,40 @@ export const services = [
     {
         id: 'service6',
         title: 'Renders and Floor Plan',
-        description: 'Our talented professionals use their skills and recent technological advancements to produce professional 3D renderings that allow clients to see every part of the interior/Exterior',
-        descriptionOverview:'3D rendering, 2D/3D floor plans and Site plans renders',
+        description: 'Creating realistic 3D renders of architectural designs and providing floor plans for real estate projects.',
+        descriptionOverview: '3D rendering, 2D/3D floor plans and Site plans renders',
         imageBefore: render1,
         imageAfter: render1,
     }
 ]
-const clientNames = ["GOLD MARK", 'Geeky Estate', 'BIMBRA', "IGNITE CREATIVE", 'INTERPRETING', "FOX MORTGAGE", 'RHINO', 'CITI ESTATE', 'NEON TREE', 'GREEN STREET', 'CHOPSTYX','ROTNGRX', 'AURA', 'ENLIVEN SENIOR', 'HOUSES MART'];
+
+export const videoServices = [
+    {
+        title: 'Video Editing',
+        description: 'Editing and arranging video footage to create compelling and engaging videos for various purposes.'
+    },
+    {
+        title: 'VFX',
+        description: 'Incorporating computer-generated visual effects into videos or images to achieve stunning and eye-catching results.'
+    },
+    {
+        title: 'Sound-FX',
+        description: 'Adding sound effects to videos to enhance the overall audiovisual experience.'
+    },
+    {
+        title: 'Compositing',
+        description: 'Combining multiple images or video elements to create a seamless and cohesive final composition.'
+    },
+    {
+        title: 'Motion Graphics',
+        description: ' Designing and animating graphic elements to add movement and visual interest to videos or presentations.'
+    },
+    {
+        title: 'Animation',
+        description: 'Creating animated sequences or characters to convey messages or tell stories effectively.'
+    }
+]
+
+const clientNames = ["GOLD MARK", 'Geeky Estate', 'BIMBRA', "IGNITE CREATIVE", 'INTERPRETING', "FOX MORTGAGE", 'RHINO', 'CITI ESTATE', 'NEON TREE', 'GREEN STREET', 'CHOPSTYX', 'ROTNGRX', 'AURA', 'ENLIVEN SENIOR', 'HOUSES MART'];
 const clientDescription = "Our dedication to delivering exceptional quality and exceeding expectations has earned us the trust and loyalty of countless individuals, businesses, and creative professionals. From aspiring photographers to established studios, from e-commerce entrepreneurs to advertising agencies, our client list encompasses a diverse range of industries and creative pursuits."
-export  {clientNames, clientDescription};
+export { clientNames, clientDescription };

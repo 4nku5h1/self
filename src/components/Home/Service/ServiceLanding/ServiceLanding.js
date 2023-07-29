@@ -1,6 +1,6 @@
 import { scrollToId } from '../../../Common/helper';
 import AnimatedItems from '../../../Common/Motion/AnimatedItems';
-
+import { videoServices } from '../../../data';
 import './styles.scss'
 
 export default function ServiceTitle({ appContext, data }) {
@@ -18,8 +18,8 @@ export default function ServiceTitle({ appContext, data }) {
     const ItemVideoEditing = (item, index) => {
         return (
             <div>
-                <h2>{item}</h2>
-                <p style={{opacity:0, height:0}}>GRAPHICNIX PREMIUM SERVICE</p>
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
             </div>
         )
     }
@@ -31,11 +31,8 @@ export default function ServiceTitle({ appContext, data }) {
                 <h5 className='small-capital-heading'>Image Editing</h5>
                 <AnimatedItems className="service-card" animate={true} data={data} child={ItemImageEditing} />
                 <h5 className='small-capital-heading'>Video Editing</h5>
-                <AnimatedItems className="service-card" animate={true} data={['Video Editing', 'VFX', 'Sound-FX', 'Compositing', 'Motion Graphics', 'Animation',]} child={ItemVideoEditing} />
+                <AnimatedItems className="service-card" animate={true} data={videoServices} child={ItemVideoEditing} />
             </div>
         </div>
     )
 }
-// Custom Editing', 'Enhancement', 'Virtual Staging', 'Day to Dusk', 'Item removal', 'Renders'
-// Custom Editing', 'Animation', 'Motion Graphics', 'Compositing', 'Sound FX', 'VFX'
-// Product (Shoes, Bags, Cloth)', 'Jewellery', 'Real Estate', 'Restoration'
