@@ -22,42 +22,58 @@ export const about = 'Graphicnix is the leading online hub for all things digita
 export const services = [
     {
         id: 'services',
+        path: 'product-editing',
         title: 'Product Editing',
         description: 'Enhancing product images to make them look more appealing and professional, which can be crucial for e-commerce businesses and marketing campaigns.',
         descriptionOverview: 'Edit Product/ecommerce photos and make them Amazon or catalog-worthy. (e.g: Jewellery, Shoes, Bags, etc.)',
-        imageBefore: productBefore,
-        imageAfter: productAfter,
+        imageBeforeOverview: productBefore,
+        imageAfterOverview: productAfter,
+        imageBanner: productAfter
 
     },
     {
         id: 'service1',
+        path: 'image-enhancement',
         title: 'Image Enhancement',
         description: 'Improving the quality and visual appeal of images through various editing techniques, such as color correction, retouching, and cropping.',
         descriptionOverview: 'Sky Replacement, White Balancing, Sharpening, Lens correction, Tone Adjustment, Lawn Enhancement, Flash &  Reflection Removal, etc',
-        imageBefore: imageEnhancementBefore,
-        imageAfter: imageEnhancementAfter,
-        process: {
-            title: '10 Step Enhancement Process',
-            list: ['White Balancing, Sharpening', 'Remove Minor Blemishes', 'Lens Distortion Removal', 'Brightness Contrast & Tone Adjustment', 'Sky Replacement', 'Lawn Enhancement – Repair or Replace', 'Ocean/River Water Enhancement', 'TV Screen Replacement', 'Flash & Photographer’s Reflection Removal', 'HDR Bracketing with Indoor Window Replacement']
+        imageBeforeOverview: imageEnhancementBefore,
+        imageAfterOverview: imageEnhancementAfter,
+        imageBanner: imageEnhancementAfter,
+        additionalData: {
+            description: [
+                'we offer a diverse range of image enhancement services, from color correction and flawless retouching to perspective correction, background refinement, and dynamic contrast boost.',
+                'Our creative filters and effects, specialized object enhancement, HDR imaging, noise reduction, and glamour and beauty retouching cater to diverse needs. Additionally, we provide creative color grading to set the right mood and tone in your visuals.',
+                ' At Graphicnix, we are passionate about enhancing photographs to leave a lasting impact on your audience, regardless of your field.'
+            ],
+            types:{
+                description:'We provide a wide array of image enhancement services to suit your specific needs.',
+                list: ['White Balancing', 'Sharpening', 'Remove Blemishes', 'Brightness Adjustment', 'Contrast  Adjustment', 'Tone Adjustment', 'Sky Replacement', 'Lawn Enhancement', 'TV Screen Replacement', 'Flash Removal', 'HDR Bracketing', 'Lens Distortion Removal', 'Indoor Window Replacement', 'Ocean/River Water Enhancement', 'Photographer’s Reflection Removal'],
+
+            }
         },
 
     },
     {
         id: 'service2',
+        path: 'virtual-staging',
         title: 'Virtual Staging',
         description: ' Adding virtual furniture and decor to empty spaces, making them more attractive and inviting for potential buyers or renters.',
         descriptionOverview: 'clutter removal, interior and exterior virtual renovation/remodeling',
-        imageBefore: virtualStagingBefore,
-        imageAfter: virtualStagingAfter,
+        imageBeforeOverview: virtualStagingBefore,
+        imageAfterOverview: virtualStagingAfter,
+        imageBanner: virtualStagingAfter,
 
     },
     {
         id: 'service3',
+        path: 'day-to-dusk',
         title: 'Day to Dusk',
         description: 'Transforming daytime photos into captivating dusk or twilight scenes, adding a different mood and atmosphere to the images.',
         descriptionOverview: 'Sky Replacement, Correct light & shadows',
-        imageBefore: day2DuskBefore,
-        imageAfter: day2DuskAfter,
+        imageBeforeOverview: day2DuskBefore,
+        imageAfterOverview: day2DuskAfter,
+        imageBanner: day2DuskAfter,
         process: {
             title: '10 Step Enhancement Process',
             list: []
@@ -67,20 +83,24 @@ export const services = [
     },
     {
         id: 'service4',
+        path: 'item-removal',
         title: 'Item Removal',
         description: 'Removing unwanted objects or elements from images to create a clean and polished final result.',
         descriptionOverview: 'Removes unwanted items without leaving any trace of editing.',
-        imageBefore: itemRemovalBefore,
-        imageAfter: itemRemovalAfter,
+        imageBeforeOverview: itemRemovalBefore,
+        imageAfterOverview: itemRemovalAfter,
+        imageBanner: itemRemovalAfter,
 
     },
     {
         id: 'service6',
+        path: 'reners-and-floor-plan',
         title: 'Renders and Floor Plan',
         description: 'Creating realistic 3D renders of architectural designs and providing floor plans for real estate projects.',
         descriptionOverview: '3D rendering, 2D/3D floor plans and Site plans renders',
-        imageBefore: render1,
-        imageAfter: render1,
+        imageBeforeOverview: render1,
+        imageAfterOverview: render1,
+        imageBanner: render1,
     }
 ]
 

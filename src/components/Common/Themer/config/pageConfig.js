@@ -51,5 +51,9 @@ const pageConfig = {
         showFullDynamicIsland:true,
         backgroundColor:'transparent'
     },
+    'SERVICE-PAGE':{
+        ...theme.themeLight,
+        pageName: "SERVICES",
+    }
 }
 export default pageConfig;

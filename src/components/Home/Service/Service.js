@@ -14,13 +14,13 @@ export default function Service() {
         <>
             <ServiceLanding appContext={appContext} data={services} />
             {services.map((data, index) => {
-                const { title, description, imageBefore, imageAfter } = data;
+                const { title, description, imageBeforeOverview, imageAfterOverview } = data;
                 const id = serviceIds[index]
                 return (
                     <div id={id} className='page service'>
                         <div className='container'>
                             <div className='image'>
-                                <ImageCompare imageBefore={imageBefore} imageAfter={imageAfter} scrollTo={0} />
+                                <ImageCompare imageBeforeOverview={imageBeforeOverview} imageAfterOverview={imageAfterOverview} scrollTo={0} />
                             </div>
                             <div className='text-content'>
                                 <h3>{title}</h3>
