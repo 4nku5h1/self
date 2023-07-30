@@ -1,12 +1,14 @@
 $font-size: 18px;
 
 .navbar {
-    background-color: var(--themer-background);
+    // background-color: var(--themer-background);
 
     * {
         font-size: $font-size;
     }
-
+    position: absolute;
+    top: 0;
+    width: 100%;
     padding:75px 12vw;
     display: flex;
     justify-content: space-between;
@@ -42,11 +44,11 @@ $font-size: 18px;
             font-weight: 400;
             font-size: 18px;
             transition: all 0.4s;
-            color: var(--themer-content);
+            color: var(--themer-heading);
         }
 
         span:hover {
-            color: var(--themer-heading);
+            color: var(--themer-content);
         }
     }
 
