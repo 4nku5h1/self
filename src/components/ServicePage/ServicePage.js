@@ -4,6 +4,7 @@ import './styles.scss'
 import { services } from '../data';
 import AnimatedItems from '../Common/Motion/AnimatedItems';
 import ImageCompare from '../Common/ImageCompare/ImageCompare';
+import Tablet from '../Common/Tablet/Tablet';
 
 export default function ServicePage() {
     const { id: pageName } = useParams();
@@ -21,8 +22,8 @@ export default function ServicePage() {
             <div className='container'>
                 <div className='content-hp section'>
                     <h3>{pageData.title}</h3>
-                    {pageData.additionalData?.description.map((para)=>{
-                        return(
+                    {pageData.additionalData?.description.map((para) => {
+                        return (
                             <p className='paragraph'>{para}</p>
                         )
                     })}
@@ -33,12 +34,11 @@ export default function ServicePage() {
                     <AnimatedItems className="process-items" animate={true} data={pageData.additionalData?.types?.list} child={Item} />
                 </div>
                 <div className="images section">
-                    <div className='tablet'>
-                        <div className='tablet-home-bar'></div>
+                    <Tablet title={pageData.title} child={
                         <div className='compare'>
                             <ImageCompare imageBeforeOverview={pageData.imageBeforeOverview} imageAfterOverview={pageData.imageAfterOverview} disablecompare={false} />
                         </div>
-                    </div>
+                    } />
                 </div>
             </div>
         </div>

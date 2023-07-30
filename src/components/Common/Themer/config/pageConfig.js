@@ -54,6 +54,7 @@ const pageConfig = {
     'SERVICE-PAGE':{
         ...theme.themeLight,
         pageName: "SERVICES",
+        backgroundColor:'#F0F0F0'
     }
 }
 export default pageConfig;

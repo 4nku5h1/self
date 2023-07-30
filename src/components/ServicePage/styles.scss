@@ -47,26 +47,6 @@
         }
 
         .images {
-            .tablet {
-                position: relative;
-                height: 425px;
-                width: 825px;
-                border: 50px solid #000;
-                border-radius: 15px;
-
-                .tablet-home-bar {
-                    $homebarSize: 150px;
-                    width: $homebarSize;
-                    height: 4px;
-                    position: absolute;
-                    bottom: -34px;
-                    left: calc(50% - $homebarSize/2);
-                    border-radius: 15px;
-                    background-color: #d3d3ed;
-                    z-index: 100;
-                }
-            }
-
             .compare {
                 display: flex;
                 justify-content: center;
@@ -78,7 +58,7 @@
                     width: 800px;
                 }
             }
-
+            margin-bottom: 20%;
         }
     }
 }
