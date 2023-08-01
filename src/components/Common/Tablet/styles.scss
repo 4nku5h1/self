@@ -1,30 +1,42 @@
-
-.tablet-container{
-    p{
+.tablet-container {
+    p {
         font-size: 44px;
         line-height: 1.4;
         margin-bottom: 20%;
         width: 90%;
         color: #111111;
     }
+
     .tablet {
         position: relative;
-        height: 425px;
-        width: 825px;
-        border: 50px solid #000;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        // border: 50px solid #000;
+        background-color: #111111;
         border-radius: 15px;
-    
+
         .tablet-home-bar {
             $homebarSize: 150px;
             width: $homebarSize;
             height: 4px;
             position: absolute;
-            bottom: -34px;
+            bottom: 15px;
             left: calc(50% - $homebarSize/2);
             border-radius: 15px;
             background-color: #d3d3ed;
             z-index: 100;
         }
-        
+
+        .tablet-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                border-radius: 5px;
+            }
+        }
+
     }
 }

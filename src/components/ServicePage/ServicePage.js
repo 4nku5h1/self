@@ -34,10 +34,8 @@ export default function ServicePage() {
                     <AnimatedItems className="process-items" animate={true} data={pageData.additionalData?.types?.list} child={Item} />
                 </div>
                 <div className="images section">
-                    <Tablet title={pageData.title} child={
-                        <div className='compare'>
-                            <ImageCompare imageBeforeOverview={pageData.imageBeforeOverview} imageAfterOverview={pageData.imageAfterOverview} disablecompare={false} />
-                        </div>
+                    <Tablet title={pageData.title} height={400} width={800} child={
+                        <ImageCompare imageBeforeOverview={pageData.imageBeforeOverview} imageAfterOverview={pageData.imageAfterOverview} disablecompare={false} />
                     } />
                 </div>
             </div>
