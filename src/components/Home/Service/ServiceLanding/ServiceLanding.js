@@ -30,8 +30,8 @@ export default function ServiceTitle({ appContext, data }) {
                 <p className='paragraph'>Graphicnix boasts over 10,000 accomplished projects, accompanied by the esteemed recognition of winning the German Editing Award for our exceptional editing. Partnering with us means collaborating with a dedicated team of professionals who are passionate about driving your success.</p>
                 <h5 className='small-capital-heading'>Image Editing</h5>
                 <AnimatedItems className="service-card" animate={true} data={data} child={ItemImageEditing} />
-                <h5 className='small-capital-heading'>Video Editing</h5>
-                <AnimatedItems className="service-card" animate={true} data={videoServices} child={ItemVideoEditing} />
+                {/* <h5 className='small-capital-heading'>Video Editing</h5>
+                <AnimatedItems className="service-card" animate={true} data={videoServices} child={ItemVideoEditing} /> */}
             </div>
         </div>
     )

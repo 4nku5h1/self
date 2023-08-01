@@ -25,7 +25,7 @@ export default function Service() {
                             <div className='text-content'>
                                 <h3>{title}</h3>
                                 <p>{description}</p>
-                                <button className='button'>Explore more</button>
+                                {/* <button className='button'>Explore more</button> */}
                             </div>
                         </div>
                     </div>

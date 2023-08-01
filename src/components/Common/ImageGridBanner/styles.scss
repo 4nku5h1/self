@@ -11,6 +11,7 @@
     overflow-y: hidden;
     margin-top: 10%;
     margin-bottom: 20%;
+
     .btn-view-gallery-mobile {
         display: none;
     }
@@ -88,12 +89,14 @@
     .image-gallary {
         margin-top: 20%;
         margin-bottom: 50%;
+
         .btn-view-gallery-mobile {
             display: block;
             margin-top: 20%;
             margin-left: auto;
             margin-right: auto;
         }
+
         .image-gallary-container {
             .row {
                 img {
@@ -112,8 +115,9 @@
         .image-gallary-container div:nth-child(odd) {
             transform: translateX(0);
         }
+
         .image-gallary-foreground {
-           display: none;
+            display: none;
         }
     }
 

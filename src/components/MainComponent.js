@@ -10,7 +10,7 @@ export default function MainComponent() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/page-not-found" element={<h1>Page Not Found</h1>}/>
-                <Route path="/:id" element={<ServicePage />} />
+                {/* <Route path="/:id" element={<ServicePage />} /> */}
             </Routes>
         </div>
     )

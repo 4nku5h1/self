@@ -1,4 +1,4 @@
-import backg from '../../assets/background/bus.webp'
+import backg from '../../assets/parallax/b3.webp'
 
 export default function Banner({ uid }) {
     return (
