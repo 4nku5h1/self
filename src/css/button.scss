@@ -9,10 +9,12 @@
     letter-spacing: 1px;
     transition: all 0.7s;
 }
-.button:hover{
+
+.button:hover {
     border: 1px solid var(--themer-accent);
 }
-.button:active{
+
+.button:active {
     border: 1px solid var(--themer-accent);
 }
 

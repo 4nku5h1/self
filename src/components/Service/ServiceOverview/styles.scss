@@ -1,4 +1,6 @@
-.service-landing {
+.service-overview {
+    display: flex;
+    justify-content: center;
     .container {
         align-items: flex-start;
 
@@ -18,6 +20,10 @@
         font-size: 14px;
         text-transform: uppercase;
         letter-spacing: 3px;
+    }
+    a{
+        // margin-top: 10%;
+        align-self: center;
     }
     
     .service-card {
@@ -58,7 +64,7 @@
 }
 
 @media only screen and (max-width:480px) {
-    .service-landing {
+    .service-overview {
         .container {
             align-items: flex-start;
 

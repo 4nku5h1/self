@@ -1,18 +1,15 @@
-import { useAppContext } from '../../Common/AppContext/AppContext';
-import ImageCompare from '../../Common/ImageCompare/ImageCompare'
+import { Link } from 'react-router-dom';
+import ImageCompare from '../../Common/ImageCompare/ImageCompare';
 import pageConfig from '../../Common/Themer/config/pageConfig';
 import { services } from '../../data';
 
-import './styles.scss';
-import  ServiceLanding  from './ServiceLanding/ServiceLanding';
+import '../styles.scss';
 
-export default function Service() {
-    const appContext = useAppContext();
+export default function AllServices() {
     const serviceIds = Object.keys(pageConfig).filter((id) => id.includes("SERVICE"));
     serviceIds.shift()
     return (
         <>
-            <ServiceLanding appContext={appContext} data={services} />
             {services.map((data, index) => {
                 const { title, description, imageBeforeOverview, imageAfterOverview } = data;
                 const id = serviceIds[index]
@@ -25,7 +22,9 @@ export default function Service() {
                             <div className='text-content'>
                                 <h3>{title}</h3>
                                 <p>{description}</p>
-                                {/* <button className='button'>Explore more</button> */}
+                                <Link to={`/services/${data.path}`}>
+                                <button className='button'>Explore more</button>
+                                </Link>
                             </div>
                         </div>
                     </div>

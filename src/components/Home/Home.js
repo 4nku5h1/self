@@ -1,14 +1,15 @@
 import Banner from './Banner';
-import Service from './Service/Service';
 import ImageGridBanner from '../Common/ImageGridBanner/ImageGridBanner';
 import About from '../About/About';
+import ServiceOverview from '../Service/ServiceOverview/ServiceOverview';
+
 import './styles.scss';
 
 export default function Home() {
     return (
         <>
             <Banner uid='HOME' />
-            <Service />
+            <ServiceOverview  showDescription={false}/>
             <ImageGridBanner uid="GALLERY" />
             <About uid='ABOUT' />
         </>

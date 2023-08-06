@@ -1,12 +1,13 @@
 import { useParams } from 'react-router-dom'
 
-import './styles.scss'
-import { services } from '../data';
-import AnimatedItems from '../Common/Motion/AnimatedItems';
-import ImageCompare from '../Common/ImageCompare/ImageCompare';
-import Tablet from '../Common/Tablet/Tablet';
+import { services } from '../../data';
+import AnimatedItems from '../../Common/Motion/AnimatedItems';
+import ImageCompare from '../../Common/ImageCompare/ImageCompare';
+import Tablet from '../../Common/Tablet/Tablet';
 
-export default function ServicePage() {
+import './styles.scss'
+
+export default function ServiceDetail() {
     const { id: pageName } = useParams();
     const pageData = services.filter((service) => service.path === pageName)[0];
     console.log(pageData)
@@ -17,7 +18,7 @@ export default function ServicePage() {
     }
 
     return (
-        <div className='service-page themer' id={'SERVICE-PAGE'}>
+        <div className='service-details themer' id={'SERVICE-PAGE'}>
             <img className="banner" src={pageData.imageBanner} />
             <div className='container'>
                 <div className='content-hp section'>

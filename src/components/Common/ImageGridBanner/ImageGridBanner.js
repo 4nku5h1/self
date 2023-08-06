@@ -4,13 +4,14 @@ import b3 from '../../../assets/horizontalgallary/2.webp'
 import b4 from '../../../assets/horizontalgallary/4.webp'
 import b5 from '../../../assets/horizontalgallary/5.webp'
 import './styles.scss';
+import Button from '../Button/Primary/Button'
 
 export default function ImageGridBanner({ uid, data }) {
     data = {
         row1: [b1, b2, b5, b1],
         row2: [b3, b4, b5, b1],
     }
-    function handleScroll(e){
+    function handleScroll(e) {
         console.log(e)
     }
     return (
@@ -30,11 +31,11 @@ export default function ImageGridBanner({ uid, data }) {
                         )
                     })}
                 </div>
-                
-                <button  className='button btn-view-gallery-mobile'>View Gallery</button>
+
+                <Button className='button btn-view-gallery-mobile' label="View Gallery" />
                 <div className='image-gallary-foreground' >
                     <h2>Want to see more?</h2>
-                    <button  className='button'>View Gallery</button>
+                    <Button className='button' label="View Gallery" />
                 </div>
             </div>
 
