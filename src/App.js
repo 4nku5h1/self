@@ -9,6 +9,7 @@ import Galaxy from './components/Common/Galaxy/Galaxy.js';
 import Footer from './components/Footer/Footer.js';
 import { BrowserRouter } from 'react-router-dom';
 import NavBar from './components/Navbar/NavBar.js';
+import ScrollToTop from './components/Common/ScrollToTop/ScrollToTop.js';
 
 function App() {
   const appContext = useAppContext();
@@ -22,6 +23,7 @@ function App() {
       <CustomCursor />
       <Galaxy />
       <BrowserRouter>
+        <ScrollToTop />
         <NavBar />
         <MainComponent />
         <Footer uid="CONTACT" />

@@ -6,6 +6,7 @@ import ImageCompare from '../../Common/ImageCompare/ImageCompare';
 import Tablet from '../../Common/Tablet/Tablet';
 
 import './styles.scss'
+import DetailsSection from '../../Common/DetailsSection/DetailsSection';
 
 export default function ServiceDetail() {
     const { id: pageName } = useParams();
@@ -30,10 +31,7 @@ export default function ServiceDetail() {
                     })}
 
                 </div>
-                <div className="process section">
-                    <p className='paragraph'>{pageData.additionalData?.types?.description}</p>
-                    <AnimatedItems className="process-items" animate={true} data={pageData.additionalData?.types?.list} child={Item} />
-                </div>
+                <DetailsSection paragraph={pageData.additionalData?.types?.description} items={pageData.additionalData?.types?.list} />
                 <div className="images section">
                     <Tablet title={pageData.title} height={400} width={800} child={
                         <ImageCompare imageBeforeOverview={pageData.imageBeforeOverview} imageAfterOverview={pageData.imageAfterOverview} disablecompare={false} />
