@@ -11,7 +11,9 @@ export default function NavDesktop() {
                 <h2>GRAPHIC<span>NIX</span></h2>
             </div>
             <div className='nav-items'>
-                <span onClick={scrollToServices}>Services</span>
+                <Link to="/services">
+                    <span onClick={scrollToServices}>Services</span>
+                </Link>
                 <Link to="/gallary">
                     <span>Gallary</span>
                 </Link>

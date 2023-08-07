@@ -8,12 +8,16 @@ import './styles.scss'
 export default function ServiceOverview({ data = services }) {
     const ItemImageEditing = (item, index) => {
         return (
-            <div onClick={() => {
-                scrollToId(`SERVICE-${index + 1}`)
-            }}>
-                <h2 c>{item.title}</h2>
-                <p>{item.descriptionOverview}</p>
-            </div>
+            <Link to="/services">
+                <div onClick={() => {
+                    setTimeout(() => {
+                        scrollToId(`SERVICE-${index + 1}`)
+                    }, 400)
+                }}>
+                    <h2 c>{item.title}</h2>
+                    <p>{item.descriptionOverview}</p>
+                </div>
+            </Link>
         )
     }
     const ItemVideoEditing = (item, index) => {
