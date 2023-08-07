@@ -38,18 +38,18 @@ export const services = [
             types: {
                 description: 'We provide a wide array of product editing services to suit your specific needs.',
                 list: [
-                    'Color Enhancement and Correction',
-                    'Background Removal or Replacement',
-                    'Shadow and Reflection Addition',
-                    'Product Retouching',
-                    '360-Degree View Creation',
+                    'Color Correction',
                     'Color Variants',
-                    'Image Cropping and Resizing',
-                    'Composite Product Images',
+                    'Reflection Addition',
                     'Packaging Mockups',
-                    'Label and Logo Application:',
-                    'Product Grouping and Arrangement',
-                    'High-Quality Image Preparation'
+                    'Background Removal',
+                    'Shadow Addition',
+                    'Product Retouching',
+                    'Logo Application',
+                    'Background Replacement',
+                    'Image Cropping & Resizing',
+                    '360-Degree View Creation',
+                    'Composite Product Images',
                 ],
 
             }
@@ -115,16 +115,16 @@ export const services = [
                 list: [
                     "Residential Staging",
                     "Commercial Staging",
-                    "Interior Design Concepts",
-                    "Architectural Visualization",
+                    "Interior Concepts",
                     "Home Staging for Sale",
+                    "Outdoor Space Staging",
+                    "Aesthetic Theme Staging",
+                    "Home Flipping Presentation",
                     "Rental Property Marketing",
+                    "Architectural Visualization",
                     "Vacant Property Enhancement",
                     "Custom Furniture Arrangements",
-                    "Outdoor Space Staging",
                     "Virtual Renovation Visualization",
-                    "Home Flipping Presentation",
-                    "Aesthetic Theme Staging"
                 ],
 
             }
@@ -152,13 +152,12 @@ export const services = [
                 list: [
                     "Residential Real Estate",
                     "Commercial Properties",
-                    "Architectural Visualization",
                     "Outdoor Landscapes",
                     "Hospitality Industry",
                     "Event Venues",
                     "Real Estate Listings",
-                    "Architectural Presentations",
                     "Outdoor Amenities",
+                    "Architectural Visualization",
                     "Interior-Exterior Balance"
                 ],
 
@@ -187,17 +186,20 @@ export const services = [
                 list: [
                     "Background Cleanup",
                     "Object Erasure",
-                    "Blemish and Imperfection Removal",
-                    "Logo and Watermark Removal",
-                    "Tourist or Crowds Removal",
-                    "Wires and Cables Removal",
-                    "Unwanted Text or Graphics Removal",
-                    "Vehicle or Object Removal",
-                    "Reflection or Glare Removal",
-                    "Facial Blemish Retouching",
+                    "Blemish  Removal",
+                    "Imperfection Removal",
+                    "Logo Removal",
+                    "Watermark Removal",
+                    "Crowds Removal",
+                    "Wires  Removal",
+                    "Vehicle Removal",
+                    "Unwanted Text Removal",
+                    "Graphics Removal",
                     "Complex Object Removal",
+                    "Glare Removal",
+                    "Reflection Removal",
                     "Distraction Removal"
-                  ],
+                ],
 
             }
         },
@@ -220,19 +222,16 @@ export const services = [
             types: {
                 description: 'We provide a wide array of rendering services to suit your specific needs.',
                 list: [
-                    "Residential Property",
-                    "Commercial Building",
+                    "Interior Design",
+                    "Outdoor Design",
                     "Architectural Render",
                     "Interior Ambiance Creation",
-                    "Hotel Showcase",
                     "Real Estate Presentation",
                     "Event Venue Marketing",
-                    "Nature and Landscape Showcase",
-                    "Interior Design Presentation",
-                    "Outdoor Dining and Hospitality",
-                    "Architectural Portfolio Enhancement",
+                    "Architectural Enhancement",
                     "Outdoor Venue Enhancement",
-                  ],
+                    "Nature and Landscape",
+                ],
 
             }
         },
