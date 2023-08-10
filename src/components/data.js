@@ -15,8 +15,7 @@ import itemRemovalAfter from '../assets/services/itemRemovalAfter.jpg'
 
 import render1 from '../assets/services/render1.jpeg'
 
-// import i1 from '../assets/horizontalgallary/1.webp'
-// import i3 from '../assets/horizontalgallary/3.webp'
+import productBanner from '../assets/services/product/banner.jpg'
 
 export const about = 'Graphicnix is the leading online hub for all things digital. Our global team of professional editing experts are ready to transform your photos into eye-catching professional images. Simply upload your photos and let our professionals take care of the rest. The process is fast, easy-to-use and extremely affordable.'
 export const services = [
@@ -28,15 +27,15 @@ export const services = [
         descriptionOverview: 'Edit Product/ecommerce photos and make them Amazon or catalog-worthy. (e.g: Jewellery, Shoes, Bags, etc.)',
         imageBeforeOverview: productBefore,
         imageAfterOverview: productAfter,
-        imageBanner: productAfter,
         additionalData: {
+            banner:productBanner, 
             description: [
                 'Transforming products into visual perfection is our specialty at Graphicnix. Our expert product editing services are designed to make your offerings stand out in a crowded marketplace.',
                 'From enhancing details to ensuring accurate colors, we meticulously refine your product images, resulting in visuals that captivate and convert.',
                 ' Let us elevate your products to the next level and leave a lasting impression on your customers.'
             ],
             types: {
-                description: 'We provide a wide array of product editing services to suit your specific needs.',
+                description: 'We offer an extensive range of product editing services tailored to meet your specific requirements. Our expertise extends to assisting with over 500+ products, ensuring that each one receives meticulous attention.',
                 list: [
                     'Color Correction',
                     'Color Variants',
@@ -64,8 +63,8 @@ export const services = [
         descriptionOverview: 'Sky Replacement, White Balancing, Sharpening, Lens correction, Tone Adjustment, Lawn Enhancement, Flash &  Reflection Removal, etc',
         imageBeforeOverview: imageEnhancementBefore,
         imageAfterOverview: imageEnhancementAfter,
-        imageBanner: imageEnhancementAfter,
         additionalData: {
+            banner:imageEnhancementAfter, 
             description: [
                 'we offer a diverse range of image enhancement services, from color correction and flawless retouching to perspective correction, background refinement, and dynamic contrast boost.',
                 'Our creative filters and effects, specialized object enhancement, HDR imaging, noise reduction, and glamour and beauty retouching cater to diverse needs. Additionally, we provide creative color grading to set the right mood and tone in your visuals.',
@@ -103,8 +102,8 @@ export const services = [
         descriptionOverview: 'clutter removal, interior and exterior virtual renovation/remodeling',
         imageBeforeOverview: virtualStagingBefore,
         imageAfterOverview: virtualStagingAfter,
-        imageBanner: virtualStagingAfter,
         additionalData: {
+            banner:virtualStagingAfter, 
             description: [
                 'Transform empty spaces into captivating, furnished environments with our virtual staging expertise at Graphicnix',
                 'Our virtual staging services are designed to showcase the potential of properties, whether for real estate listings, interior design concepts, or architectural presentations.',
@@ -139,8 +138,8 @@ export const services = [
         descriptionOverview: 'Sky Replacement, Correct light & shadows',
         imageBeforeOverview: day2DuskBefore,
         imageAfterOverview: day2DuskAfter,
-        imageBanner: day2DuskAfter,
         additionalData: {
+            banner:day2DuskAfter, 
             description: [
                 'Transform the mood of your property images from day to enchanting dusk with our Day to Dusk service at Graphicnix. ',
                 'We specialize in enhancing the ambiance of your visuals, making them radiate warmth and allure',
@@ -174,8 +173,8 @@ export const services = [
         descriptionOverview: 'Removes unwanted items without leaving any trace of editing.',
         imageBeforeOverview: itemRemovalBefore,
         imageAfterOverview: itemRemovalAfter,
-        imageBanner: itemRemovalAfter,
         additionalData: {
+            banner:itemRemovalAfter, 
             description: [
                 'At Graphicnix, we specialize in perfecting visual narratives by seamlessly removing unwanted elements from your images.',
                 'Our Item Removal service is designed to create clean, clutter-free compositions that highlight your subject. Whether it is removing distracting objects or enhancing the overall aesthetics, we ensure your images convey a clear and captivating message.',
@@ -213,8 +212,8 @@ export const services = [
         descriptionOverview: '3D rendering, 2D/3D floor plans and Site plans renders',
         imageBeforeOverview: render1,
         imageAfterOverview: render1,
-        imageBanner: render1,
         additionalData: {
+            banner:render1, 
             description: [
                 'At Graphicnix, we excel in creating clean and uncluttered visual narratives through our Renders and Floor Plan Enhancement service. Our expertise lies in removing unwanted elements and refining floor plans to convey a clear and inviting representation of spaces. ',
                 'Whether it is decluttering interior renders or optimizing architectural floor plans, we ensure your visuals tell a compelling story. Let us transform your renders and floor plans into polished masterpieces that captivate and impress.',
