@@ -33,7 +33,7 @@ export default function ServiceDetail() {
                         )
                     })}
                 </div>
-
+                {/* capcule adobe xdd */}
                 <div className="images section">
                     <Tablet title={pageData.title} height={400} width={800} child={
                         <ImageCompare imageBeforeOverview={pageData.imageBeforeOverview} imageAfterOverview={pageData.imageAfterOverview} disablecompare={false} />
