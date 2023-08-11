@@ -1,21 +1,37 @@
+// Product
 import productBefore from '../assets/services/productBefore.jpg'
 import productAfter from '../assets/services/productAfter.jpg'
+import productBanner from '../assets/services/product/banner.jpg'
+import productImage1 from '../assets/services/product/image1.jpg'
 
-import virtualStagingBefore from '../assets/services/virtualStagingBefore.jpg'
-import virtualStagingAfter from '../assets/services/virtualStagingAfter.jpg'
-
-import day2DuskBefore from '../assets/services/day2DuskBefore.jpg'
-import day2DuskAfter from '../assets/services/day2DuskAfter.jpg'
-
+// Image Enhancement
 import imageEnhancementBefore from '../assets/services/imageEnhancementBefore.jpeg'
 import imageEnhancementAfter from '../assets/services/imageEnhancementAfter.jpeg'
+import enhancementBanner from '../assets/services/enhancement/banner.jpg'
+import enhancementImage1 from '../assets/services/enhancement/image1.jpg'
 
+// Virtual Staging
+import virtualStagingBefore from '../assets/services/virtualStagingBefore.jpg'
+import virtualStagingAfter from '../assets/services/virtualStagingAfter.jpg'
+import stagingBanner from '../assets/services/staging/banner.jpg'
+import stagingImage1 from '../assets/services/staging/image1.jpg'
+
+// Day to dusk
+import day2DuskBefore from '../assets/services/day2DuskBefore.jpg'
+import day2DuskAfter from '../assets/services/day2DuskAfter.jpg'
+import duskBanner from '../assets/services/d2d/banner.jpg'
+import duskImage1 from '../assets/services/d2d/image1.jpg'
+
+// Item Removal
 import itemRemovalBefore from '../assets/services/itemRemovalBefore.jpg'
 import itemRemovalAfter from '../assets/services/itemRemovalAfter.jpg'
+import itemRemovalBanner from '../assets/services/itemRemoval/banner.jpg'
+import itemRemovalImage1 from '../assets/background/rose.webp'
 
+// Rendering
 import render1 from '../assets/services/render1.jpeg'
-
-import productBanner from '../assets/services/product/banner.jpg'
+import renderingBanner from '../assets/services/rendering/banner.jpg'
+import renderingImage1 from '../assets/services/rendering/image1.jpg'
 
 export const about = 'Graphicnix is the leading online hub for all things digital. Our global team of professional editing experts are ready to transform your photos into eye-catching professional images. Simply upload your photos and let our professionals take care of the rest. The process is fast, easy-to-use and extremely affordable.'
 export const services = [
@@ -29,6 +45,7 @@ export const services = [
         imageAfterOverview: productAfter,
         additionalData: {
             banner:productBanner, 
+            images:[productImage1],
             description: [
                 'Transforming products into visual perfection is our specialty at Graphicnix. Our expert product editing services are designed to make your offerings stand out in a crowded marketplace.',
                 'From enhancing details to ensuring accurate colors, we meticulously refine your product images, resulting in visuals that captivate and convert.',
@@ -64,11 +81,11 @@ export const services = [
         imageBeforeOverview: imageEnhancementBefore,
         imageAfterOverview: imageEnhancementAfter,
         additionalData: {
-            banner:imageEnhancementAfter, 
+            banner:enhancementBanner, 
+            images:[enhancementImage1],
             description: [
-                'we offer a diverse range of image enhancement services, from color correction and flawless retouching to perspective correction, background refinement, and dynamic contrast boost.',
-                'Our creative filters and effects, specialized object enhancement, HDR imaging, noise reduction, and glamour and beauty retouching cater to diverse needs. Additionally, we provide creative color grading to set the right mood and tone in your visuals.',
-                ' At Graphicnix, we are passionate about enhancing photographs to leave a lasting impact on your audience, regardless of your field.'
+                'We offer a diverse range of image enhancement services, from color correction and flawless retouching to perspective correction, background refinement, and dynamic contrast boost. Our creative filters and effects, specialized object enhancement, HDR imaging, noise reduction, and glamour and beauty retouching cater to diverse needs. Additionally, we provide creative color grading to set the right mood and tone in your visuals.',
+                'At Graphicnix, we are passionate about enhancing photographs to leave a lasting impact on your audience, regardless of your field.'
             ],
             types: {
                 description: 'We provide a wide array of image enhancement services to suit your specific needs.',
@@ -103,7 +120,8 @@ export const services = [
         imageBeforeOverview: virtualStagingBefore,
         imageAfterOverview: virtualStagingAfter,
         additionalData: {
-            banner:virtualStagingAfter, 
+            banner:stagingBanner, 
+            images:[stagingImage1],
             description: [
                 'Transform empty spaces into captivating, furnished environments with our virtual staging expertise at Graphicnix',
                 'Our virtual staging services are designed to showcase the potential of properties, whether for real estate listings, interior design concepts, or architectural presentations.',
@@ -139,7 +157,8 @@ export const services = [
         imageBeforeOverview: day2DuskBefore,
         imageAfterOverview: day2DuskAfter,
         additionalData: {
-            banner:day2DuskAfter, 
+            banner:duskBanner, 
+            images:[duskImage1],
             description: [
                 'Transform the mood of your property images from day to enchanting dusk with our Day to Dusk service at Graphicnix. ',
                 'We specialize in enhancing the ambiance of your visuals, making them radiate warmth and allure',
@@ -174,7 +193,8 @@ export const services = [
         imageBeforeOverview: itemRemovalBefore,
         imageAfterOverview: itemRemovalAfter,
         additionalData: {
-            banner:itemRemovalAfter, 
+            banner:itemRemovalBanner, 
+            images:[itemRemovalImage1],
             description: [
                 'At Graphicnix, we specialize in perfecting visual narratives by seamlessly removing unwanted elements from your images.',
                 'Our Item Removal service is designed to create clean, clutter-free compositions that highlight your subject. Whether it is removing distracting objects or enhancing the overall aesthetics, we ensure your images convey a clear and captivating message.',
@@ -213,7 +233,8 @@ export const services = [
         imageBeforeOverview: render1,
         imageAfterOverview: render1,
         additionalData: {
-            banner:render1, 
+            banner:renderingBanner, 
+            images:[renderingImage1],
             description: [
                 'At Graphicnix, we excel in creating clean and uncluttered visual narratives through our Renders and Floor Plan Enhancement service. Our expertise lies in removing unwanted elements and refining floor plans to convey a clear and inviting representation of spaces. ',
                 'Whether it is decluttering interior renders or optimizing architectural floor plans, we ensure your visuals tell a compelling story. Let us transform your renders and floor plans into polished masterpieces that captivate and impress.',
