@@ -12,7 +12,7 @@ export default function ServiceDetail() {
     const pageData = services.filter((service) => service.path === pageName)[0];
     const Image = ({ img }) => {
         return (
-            <div className='image'>
+            <div className='image' id="SERVICE-DETAILS-IMAGE1" >
                 <img src={img} />
             </div>
         )
@@ -21,9 +21,9 @@ export default function ServiceDetail() {
         <div className='service-details themer' id={'SERVICE-DETAIL'}>
             <img className="banner" src={pageData.additionalData?.banner} />
             <div className='container'>
-                <DetailsSection heading={pageData.title} paragraph={pageData.additionalData?.types?.description} items={pageData.additionalData?.types?.list} />
+                <DetailsSection uid="SERVICE-DETAILS-SECTION" heading={pageData.title} paragraph={pageData.additionalData?.types?.description} items={pageData.additionalData?.types?.list} />
                 <Image img={pageData?.additionalData?.images[0]} />
-                <div className='content-hp section'>
+                <div className='content-hp section' id="SERVICE-DETAILS-CONTENT">
                     {pageData.additionalData?.description.map((para) => {
                         return (
                             <p className='paragraph'>{para}</p>
@@ -32,7 +32,7 @@ export default function ServiceDetail() {
                 </div>
                 {/* <Image img={pageData?.additionalData?.images[1]} /> */}
                 {/* capcule adobe xdd */}
-                <div className="images section">
+                <div className="images section" id="SERVICE-DETAILS-TABLET">
                     <Tablet title={pageData.title} height={400} width={800} child={
                         <ImageCompare imageBeforeOverview={pageData.imageBeforeOverview} imageAfterOverview={pageData.imageAfterOverview} disablecompare={false} />
                     } />

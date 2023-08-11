@@ -1,15 +1,21 @@
 import { useEffect } from "react";
 import { useLocation } from 'react-router-dom'
 import { observeElementById } from "../helper";
-import pageConfig, { homeConfig, servicesConfig } from "./config/pageConfig";
+import pageConfig, { homeConfig, serviceDetailsConfig, servicesConfig } from "./config/pageConfig";
 import './styles.scss';
 export default function Themer({ changePageStateFunction }) {
     const location = useLocation();
+    const url = location.pathname;
+    const exactPath = url.split('/')[2]
     useEffect(() => {
-        switch (location.pathname) {
+        switch (url) {
             case '/': startThemer(homeConfig)
+                break;
             case '/services': startThemer(servicesConfig)
-            case '/services/product-editing': startThemer(servicesConfig);
+                break;
+            default:
+                startThemer(serviceDetailsConfig[exactPath]);
+                break;
         }
     }, [location.pathname])
 

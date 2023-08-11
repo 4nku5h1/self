@@ -45,12 +45,10 @@ export const servicesConfig = {
     'SERVICE-OVERVIEW': {
         ...theme.themeDark,
         pageName: "SERVICES",
-        id: "SERVICE-OVERVIEW",
     },
     'SERVICE-1': {
         ...theme.themeDark,
         pageName: "SERVICES",
-        id: "SERVICE-1",
     },
     'SERVICE-2': {
         ...theme.themeGray,
@@ -76,4 +74,107 @@ export const servicesConfig = {
         ...theme.themeDark,
         pageName: "ABOUT",
     },
+}
+
+export const serviceDetailsConfig = {
+    'product-editing': {
+        ...commonConfig,
+        'SERVICE-DETAILS-SECTION': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-CONTENT': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-IMAGE1': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-TABLET': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+            backgroundColor: '#F0F0F0'
+        }
+    },
+    'image-enhancement': {
+        ...commonConfig,
+        'SERVICE-DETAILS-SECTION': {
+            ...theme.themeGray,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-CONTENT': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-IMAGE1': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-TABLET': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+            backgroundColor: '#F0F0F0'
+        }
+    },
+    'virtual-staging': {
+        ...commonConfig,
+        'SERVICE-DETAILS-SECTION': {
+            ...theme.themeGray,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-CONTENT': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-IMAGE1': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-TABLET': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+            backgroundColor: '#F0F0F0'
+        }
+    },
+    'day-to-dusk': {
+        ...commonConfig,
+        'SERVICE-DETAILS-SECTION': {
+            ...theme.themeGray,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-CONTENT': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-IMAGE1': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-TABLET': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+            backgroundColor: '#F0F0F0'
+        }
+    },
+    renderAndFloorPlan: {
+        ...commonConfig,
+        'SERVICE-DETAILS-SECTION': {
+            ...theme.themeGray,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-CONTENT': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-IMAGE1': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-TABLET': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+            backgroundColor: '#F0F0F0'
+        }
+    }
 }
