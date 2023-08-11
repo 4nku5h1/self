@@ -5,7 +5,7 @@ import AnimatedItems from '../../Common/Motion/AnimatedItems';
 import { services, videoServices } from '../../data';
 import './styles.scss'
 
-export default function ServiceOverview({ data = services }) {
+export default function ServiceOverview({ data = services, uid }) {
     const ItemImageEditing = (item, index) => {
         return (
             <Link to="/services">
@@ -30,7 +30,7 @@ export default function ServiceOverview({ data = services }) {
         )
     }
     return (
-        <div className='page service themer service-overview' id="SERVICE-LANDING">
+        <div className='page service themer service-overview' id={uid}>
             <div className='container'>
                 <h2 className='heading-h2'>Services</h2>
                 <p className='paragraph'>Graphicnix boasts over 10,000 accomplished projects, accompanied by the esteemed recognition of winning the German Editing Award for our exceptional editing. Partnering with us means collaborating with a dedicated team of professionals who are passionate about driving your success.</p>

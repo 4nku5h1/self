@@ -1,7 +1,7 @@
 import Button from '../../Common/Button/Primary/Button';
 import './styles.scss';
 
-export default function Stats() {
+export default function Stats({ uid }) {
     const StatsCard = ({ title, description }) => {
         return (
             <div className='stats-card'>
@@ -11,7 +11,7 @@ export default function Stats() {
         )
     }
     return (
-        <div className='page stats'>
+        <div className='page stats' id={uid}>
             <div className='cards container'>
                 <StatsCard title={"10 +"} description={"YEARS OF EDITING EXPERIANCE"} />
                 <StatsCard title={"10 K +"} description={"PROJECT DELIVERED"} />

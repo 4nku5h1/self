@@ -15,8 +15,8 @@ export default function ImageGridBanner({ uid, data }) {
         console.log(e)
     }
     return (
-        <div className='page themer'>
-            <div id={uid} className='image-gallary' onScroll={handleScroll}>
+        <div className='page themer' id={uid}>
+            <div className='image-gallary' onScroll={handleScroll}>
                 <div className='image-gallary-container'>
                     {Object.values(data).map((row) => {
                         return (

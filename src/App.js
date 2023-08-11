@@ -19,14 +19,14 @@ function App() {
 
   return (
     <div className="App">
-      <Themer changePageStateFunction={changePageConfig} />
       <CustomCursor />
       <Galaxy />
       <BrowserRouter>
+      <Themer changePageStateFunction={changePageConfig} />
         <ScrollToTop />
         <NavBar />
         <MainComponent />
-        <Footer uid="CONTACT" />
+        <Footer />
       </BrowserRouter>
     </div>
   );

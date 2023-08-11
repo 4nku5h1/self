@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import ImageCompare from '../../Common/ImageCompare/ImageCompare';
-import pageConfig from '../../Common/Themer/config/pageConfig';
+import { servicesConfig } from '../../Common/Themer/config/pageConfig';
 import { services } from '../../data';
 
 import '../styles.scss';
 
 export default function AllServices() {
-    const serviceIds = Object.keys(pageConfig).filter((id) => id.includes("SERVICE"));
+    const serviceIds = Object.keys(servicesConfig).filter((id) => id.includes("SERVICE"));
     serviceIds.shift()
     return (
         <>

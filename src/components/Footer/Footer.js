@@ -2,9 +2,8 @@ import { contactData, socialdata } from "./data.js";
 
 import './styles.scss';
 import Logo from "../Logo/Logo";
-import AnimatedText from "../Common/AnimatedText/AnimatedText.js";
 
-export default function Footer({ uid }) {
+export default function Footer() {
     return (
         <div className='page footer'>
             <div className="container">
@@ -39,7 +38,7 @@ export default function Footer({ uid }) {
                         })}
                     </div>
                 </div>
-                <div className="developer-text" id={uid}>
+                <div className="developer-text" id="FOOTER">
                     <a href="https://wa.me/+919457776161">Love this Site?<span> Get in Touch with Skilled Developers and Bring Your Vision to Life.</span></a>
                 </div>
             </div>

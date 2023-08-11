@@ -18,7 +18,7 @@ export default function ServiceDetail() {
         )
     }
     return (
-        <div className='service-details themer' id={'SERVICE-PAGE'}>
+        <div className='service-details themer' id={'SERVICE-DETAIL'}>
             <img className="banner" src={pageData.additionalData?.banner} />
             <div className='container'>
                 <DetailsSection heading={pageData.title} paragraph={pageData.additionalData?.types?.description} items={pageData.additionalData?.types?.list} />

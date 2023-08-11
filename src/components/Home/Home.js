@@ -10,8 +10,8 @@ export default function Home() {
     return (
         <>
             <Banner uid='HOME' />
-            <ServiceOverview />
-            <Stats />
+            <ServiceOverview uid='SERVICE-OVERVIEW'/>
+            <Stats uid='STATS'/>
             <ImageGridBanner uid="GALLERY" />
             <About uid='ABOUT' />
         </>

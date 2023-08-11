@@ -4,11 +4,11 @@ export function scrollToHome(){
     scrollToId('HOME')
 }
 export function scrollToServices(){
-    scrollToId('SERVICE-LANDING')
+    scrollToId('SERVICE-OVERVIEW')
 }
 export function onGallaryClickHandler(){
     scrollToId('GALLERY')
 }
 export function scrollToContact(){
-    scrollToId('CONTACT')
+    scrollToId('FOOTER')
 }

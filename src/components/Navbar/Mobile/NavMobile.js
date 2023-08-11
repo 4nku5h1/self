@@ -50,7 +50,7 @@ export default function NavMobile() {
                         closeMenu();
                     }}>Gallary</h2>
                 </Link>
-                <h2 className={pageName === 'CONTACT' ? 'highlight' : ''} onClick={() => {
+                <h2 className={pageName === 'FOOTER' ? 'highlight' : ''} onClick={() => {
                     scrollToContact();
                     closeMenu();
                 }}>Contact</h2>

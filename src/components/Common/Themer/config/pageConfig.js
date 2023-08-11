@@ -1,21 +1,56 @@
 import theme from "../theme/themes"
 // backgroundColor:"#F0F0F0",
-const pageConfig = {
+
+const commonConfig = {
+    'FOOTER': {
+        ...theme.themeDark,
+        pageName: "FOOTER",
+        showFullDynamicIsland: true,
+        backgroundColor: 'transparent'
+    },
+}
+
+// for '/'
+export const homeConfig = {
+    ...commonConfig,
     'HOME': {
         pageName: "HOME",
         ...theme.themeDark,
-        showFullDynamicIsland:true,
-        backgroundColor:'transparent'
+        showFullDynamicIsland: true,
+        backgroundColor: 'transparent'
     },
-    'SERVICE-LANDING': {
+    'SERVICE-OVERVIEW': {
         ...theme.themeDark,
         pageName: "SERVICES",
-        id:"SERVICE-LANDING",
+        id: "SERVICE-OVERVIEW",
+    },
+    'STATS': {
+        ...theme.themeDark,
+        pageName: "SERVICES",
+        id: "SERVICE-OVERVIEW",
+    },
+    'GALLERY': {
+        ...theme.themeDark,
+        pageName: "GALLERY",
+    },
+    'ABOUT': {
+        ...theme.themeDark,
+        pageName: "ABOUT",
+    },
+}
+
+// for '/services'
+export const servicesConfig = {
+    ...commonConfig,
+    'SERVICE-OVERVIEW': {
+        ...theme.themeDark,
+        pageName: "SERVICES",
+        id: "SERVICE-OVERVIEW",
     },
     'SERVICE-1': {
         ...theme.themeDark,
         pageName: "SERVICES",
-        id:"SERVICE-1",
+        id: "SERVICE-1",
     },
     'SERVICE-2': {
         ...theme.themeGray,
@@ -37,24 +72,8 @@ const pageConfig = {
         ...theme.themeGray,
         pageName: "SERVICES",
     },
-    'GALLERY':{
-        ...theme.themeDark,
-        pageName: "GALLERY",
-    },
     'ABOUT': {
         ...theme.themeDark,
         pageName: "ABOUT",
     },
-    'CONTACT': {
-        ...theme.themeDark,
-        pageName: "CONTACT",
-        showFullDynamicIsland:true,
-        backgroundColor:'transparent'
-    },
-    'SERVICE-PAGE':{
-        ...theme.themeLight,
-        pageName: "SERVICES",
-        // backgroundColor:'#F0F0F0'
-    }
 }
-export default pageConfig;
