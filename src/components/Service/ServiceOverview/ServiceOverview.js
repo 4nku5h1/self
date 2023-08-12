@@ -39,7 +39,7 @@ export default function ServiceOverview({ data = services, uid }) {
                 <h5 className='small-capital-heading'>Video Editing</h5>
                 <AnimatedItems className="service-card" animate={true} data={videoServices} child={ItemVideoEditing} />
                 <Link to="/services">
-                    <Button label="Get In Touch" />
+                    <Button label="CONTACT US" />
                 </Link>
             </div>
         </div>
