@@ -6,7 +6,6 @@ import ImageCompare from '../../Common/ImageCompare/ImageCompare';
 import Tablet from '../../Common/Tablet/Tablet';
 
 import './styles.scss'
-import ThemerObserver from '../../Common/Themer/Observer/ThemerObserver';
 
 export default function ServiceDetail() {
     const { id: pageName } = useParams();

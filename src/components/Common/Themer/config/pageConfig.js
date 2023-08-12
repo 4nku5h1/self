@@ -45,6 +45,7 @@ export const servicesConfig = {
     'SERVICE-OVERVIEW': {
         ...theme.themeDark,
         pageName: "SERVICES",
+        showFullDynamicIsland: true,
     },
     'SERVICE-1': {
         ...theme.themeDark,
