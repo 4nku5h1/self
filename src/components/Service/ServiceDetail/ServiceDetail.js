@@ -6,19 +6,12 @@ import ImageCompare from '../../Common/ImageCompare/ImageCompare';
 import Tablet from '../../Common/Tablet/Tablet';
 
 import './styles.scss'
+import Image from '../../Common/Image/Image';
 
 export default function ServiceDetail() {
     const { id: pageName } = useParams();
     const pageData = services.filter((service) => service.path === pageName)[0];
-    const Image = ({ img }) => {
-        return (
-            < div className='image' >
-                <img src={img} />
-            </div >
-
-
-        )
-    }
+  
 
     {/* <ThemerObserver uid="SERVICE-DETAILS-IMAGE1"/> */ }
     return (
