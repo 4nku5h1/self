@@ -84,7 +84,8 @@ export const services = [
             banner:enhancementBanner, 
             images:[enhancementImage1],
             description: [
-                'We offer a diverse range of image enhancement services, from color correction and flawless retouching to perspective correction, background refinement, and dynamic contrast boost. Our creative filters and effects, specialized object enhancement, HDR imaging, noise reduction, and glamour and beauty retouching cater to diverse needs. Additionally, we provide creative color grading to set the right mood and tone in your visuals.',
+                'We offer a diverse range of image enhancement services, from color correction and flawless retouching to perspective correction, background refinement, and dynamic contrast boost.',
+                'Our creative filters and effects, specialized object enhancement, HDR imaging, noise reduction, and glamour and beauty retouching cater to diverse needs. Additionally, we provide creative color grading to set the right mood and tone in your visuals.',
                 'At Graphicnix, we are passionate about enhancing photographs to leave a lasting impact on your audience, regardless of your field.'
             ],
             types: {

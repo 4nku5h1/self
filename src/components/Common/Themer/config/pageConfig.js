@@ -87,10 +87,6 @@ export const serviceDetailsConfig = {
             ...theme.themeLight,
             pageName: "DETAILS-SECTION",
         },
-        'SERVICE-DETAILS-IMAGE1': {
-            ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
-        },
         'SERVICE-DETAILS-TABLET': {
             ...theme.themeLight,
             pageName: "DETAILS-SECTION",
@@ -100,21 +96,17 @@ export const serviceDetailsConfig = {
     'image-enhancement': {
         ...commonConfig,
         'SERVICE-DETAILS-SECTION': {
-            ...theme.themeGray,
+            ...theme.themeDark,
             pageName: "DETAILS-SECTION",
         },
         'SERVICE-DETAILS-CONTENT': {
-            ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
-        },
-        'SERVICE-DETAILS-IMAGE1': {
-            ...theme.themeLight,
+            ...theme.themeDark,
             pageName: "DETAILS-SECTION",
         },
         'SERVICE-DETAILS-TABLET': {
             ...theme.themeLight,
             pageName: "DETAILS-SECTION",
-            backgroundColor: '#dcd6d3'
+            backgroundColor: '#dcd6d3',
         }
     },
     'virtual-staging': {
@@ -124,10 +116,6 @@ export const serviceDetailsConfig = {
             pageName: "DETAILS-SECTION",
         },
         'SERVICE-DETAILS-CONTENT': {
-            ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
-        },
-        'SERVICE-DETAILS-IMAGE1': {
             ...theme.themeLight,
             pageName: "DETAILS-SECTION",
         },
@@ -147,10 +135,6 @@ export const serviceDetailsConfig = {
             ...theme.themeLight,
             pageName: "DETAILS-SECTION",
         },
-        'SERVICE-DETAILS-IMAGE1': {
-            ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
-        },
         'SERVICE-DETAILS-TABLET': {
             ...theme.themeLight,
             pageName: "DETAILS-SECTION",
@@ -164,10 +148,6 @@ export const serviceDetailsConfig = {
             pageName: "DETAILS-SECTION",
         },
         'SERVICE-DETAILS-CONTENT': {
-            ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
-        },
-        'SERVICE-DETAILS-IMAGE1': {
             ...theme.themeLight,
             pageName: "DETAILS-SECTION",
         },

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import ImageCompare from '../../Common/ImageCompare/ImageCompare';
 import { servicesConfig } from '../../Common/Themer/config/pageConfig';
 import { services } from '../../data';
+import Button from '../../Common/Button/Primary/Button'
 
 import '../styles.scss';
 
@@ -23,7 +24,7 @@ export default function AllServices() {
                                 <h3>{title}</h3>
                                 <p>{description}</p>
                                 <Link to={`/services/${data.path}`}>
-                                <button className='button'>Explore more</button>
+                                    <Button label={"Explore more"} />
                                 </Link>
                             </div>
                         </div>
