@@ -1,7 +1,4 @@
 .details-section {
-    >* {
-        margin-bottom: 28px;
-    }
     align-self: center;
     width: 75%;
     margin: 15% 0;
@@ -9,9 +6,12 @@
     h2{
         font-size: 44px;
         color: var(--themer-heading);
+        margin-bottom: 34px;
     }
     p {
         font-size: 28px;
+        line-height: 37px;
+        margin-bottom: 60px;
     }
 
     .items {
@@ -19,12 +19,13 @@
         margin-bottom: 15px;
         width: 30%;
         color: var(--themer-content);
-        // padding-bottom: 24px;
         span{
             font-size: 9px;
             color: var(--themer-content);
         }
-        // border-bottom: 1px solid #dcdcdc;
+        span:hover{
+            color: var(--themer-accent);
+        }
     }
 
 }

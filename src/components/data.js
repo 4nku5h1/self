@@ -88,7 +88,7 @@ export const services = [
                 'At Graphicnix, we are passionate about enhancing photographs to leave a lasting impact on your audience, regardless of your field.'
             ],
             types: {
-                description: 'We provide a wide array of image enhancement services to suit your specific needs.',
+                description: 'Welcome to Graphicnix, your comprehensive creative partner. We are here to elevate your visuals across a wide spectrum of services that cater to every need.',
                 list: [
                     'White Balancing',
                     'Sharpening',

@@ -114,7 +114,7 @@ export const serviceDetailsConfig = {
         'SERVICE-DETAILS-TABLET': {
             ...theme.themeLight,
             pageName: "DETAILS-SECTION",
-            backgroundColor: '#F0F0F0'
+            backgroundColor: '#dcd6d3'
         }
     },
     'virtual-staging': {
