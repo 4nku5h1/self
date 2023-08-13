@@ -16,7 +16,7 @@ export default function Stats({ uid }) {
                 <StatsCard title={"10 +"} description={"YEARS OF EDITING EXPERIANCE"} />
                 <StatsCard title={"10 K +"} description={"PROJECT DELIVERED"} />
                 <StatsCard title={"500 +"} description={"HAPPY CLINTS"} />
-                <StatsCard title={"250 +"} description={"PROFESSIONAL EDITORS"} />
+                <StatsCard title={"150 +"} description={"PROFESSIONAL EMPLOYEES"} />
             </div>
             <Button label={'GET IN TOUCH'} />
         </div>
