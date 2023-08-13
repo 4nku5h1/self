@@ -49,13 +49,14 @@ export const homeConfig = {
 export const servicesConfig = {
     ...commonConfig,
     'SERVICE-OVERVIEW': {
-        ...theme.themeDark,
+        ...theme.themeLight,
         pageName: "SERVICES",
         showFullDynamicIsland: true,
     },
     'SERVICE-1': {
-        ...theme.themeDark,
+        ...theme.themeLight,
         pageName: "SERVICES",
+        backgroundColor:'#F0F0F0'
     },
     'SERVICE-2': {
         ...theme.themeGray,
