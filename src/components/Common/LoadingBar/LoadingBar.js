@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import './styles.scss';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+
+import './styles.scss';
 
 export default function ({ isLoading = false, afterLoadingHandler = () => { } }) {
     const [loadingPercentage, setLoadingPercentage] = useState(0);
