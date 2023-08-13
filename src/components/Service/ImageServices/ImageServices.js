@@ -1,13 +1,20 @@
-import ImageCompare from '../../Common/ImageCompare/ImageCompare';
-import { servicesConfig } from '../../Common/Themer/config/pageConfig';
-import { services } from '../../data';
-import MaterialPage from '../../Common/MaterialPage/MaterialPage';
+import { services } from "../../data";
+import { servicesConfig } from "../../Common/Themer/config/pageConfig";
 
-export default function AllServices() {
+import ImageCompare from "../../Common/ImageCompare/ImageCompare";
+import MaterialPage from "../../Common/MaterialPage/MaterialPage";
+import Spacer from "../../Common/Spacer/Spacer";
+import ServiceOverview from "../ServiceOverview/ServiceOverview";
+
+import './styles.scss';
+
+export default function ImageServices() {
     const serviceIds = Object.keys(servicesConfig).filter((id) => id.includes("SERVICE"));
-    serviceIds.shift()
+    serviceIds.shift();
     return (
-        <>
+        <div className="services-page themer">
+            <Spacer className="spacer" />
+            <ServiceOverview uid='SERVICE-OVERVIEW' />
             {services.map((data, index) => {
                 const { title, description, imageBeforeOverview, imageAfterOverview } = data;
                 const id = serviceIds[index]
@@ -21,7 +28,6 @@ export default function AllServices() {
                     />
                 )
             })}
-        </>
-
+        </div>
     )
 }

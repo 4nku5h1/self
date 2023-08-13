@@ -1,12 +1,12 @@
 import { useParams } from 'react-router-dom'
 import { services } from '../../data';
 
+import Image from '../../Common/Image/Image';
 import DetailsSection from '../../Common/DetailsSection/DetailsSection';
 import ImageCompare from '../../Common/ImageCompare/ImageCompare';
 import Tablet from '../../Common/Tablet/Tablet';
 
 import './styles.scss'
-import Image from '../../Common/Image/Image';
 
 export default function ServiceDetail() {
     const { id: pageName } = useParams();
