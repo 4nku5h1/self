@@ -1,10 +1,6 @@
-import { Link } from 'react-router-dom';
 import ImageCompare from '../../Common/ImageCompare/ImageCompare';
 import { servicesConfig } from '../../Common/Themer/config/pageConfig';
 import { services } from '../../data';
-import Button from '../../Common/Button/Primary/Button'
-
-import '../styles.scss';
 import MaterialPage from '../../Common/MaterialPage/MaterialPage';
 
 export default function AllServices() {

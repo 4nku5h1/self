@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import Button from "../Button/Primary/Button";
 import Image from "../Image/Image";
 
+import './styles.scss';
+
 export default function MaterialPage({ uid, title, description, imageOptions = { default: true, image: null, child: null }, buttonOptions = { path: '/', onClick: () => { } } }) {
-    console.log(buttonOptions, 'bbggg')
     return (
-        <div id={uid} className='page service'>
+        <div id={uid} className='page material-page'>
             <div className='container'>
                 <div className='image'>
                     {imageOptions.default ?

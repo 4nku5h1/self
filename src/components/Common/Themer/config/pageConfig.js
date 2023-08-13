@@ -19,8 +19,13 @@ export const homeConfig = {
         showFullDynamicIsland: true,
         backgroundColor: 'transparent'
     },
-    'SERVICE-OVERVIEW': {
+    'SERVICE-IMAGE-EDITING': {
         ...theme.themeDark,
+        pageName: "SERVICES",
+        id: "SERVICE-OVERVIEW",
+    },
+    'SERVICE-VIDEO-EDITING': {
+        ...theme.themeGray,
         pageName: "SERVICES",
         id: "SERVICE-OVERVIEW",
     },
