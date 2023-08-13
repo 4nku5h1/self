@@ -1,12 +1,12 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useAppContext } from '../../Common/AppContext/AppContext'
 import logo from '../../../assets/logo/logo.svg'
 import CollapsibleCloseButton from '../../Common/Button/CollapsibleCloseButton/CollapsibleCloseButton';
 import { scrollToContact, onGallaryClickHandler, scrollToHome, scrollToServices } from '../helper';
 
-import './styles.scss'
-import { Link } from 'react-router-dom';
 
+import './styles.scss'
 export default function NavMobile() {
     const [menuOpen, setMenuOpen] = useState(false)
     const appContext = useAppContext();

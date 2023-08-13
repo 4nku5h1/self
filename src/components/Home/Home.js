@@ -6,6 +6,8 @@ import './styles.scss';
 import Stats from './Stats/Stats';
 import imageEditing from '../../assets/home/imageEditing.jpg'
 import videoEditing from '../../assets/home/videoEditing.jpg'
+import softwareDevelopment from '../../assets/home/softwareDevelopment.jpg'
+
 import MaterialPage from '../Common/MaterialPage/MaterialPage';
 
 export default function Home() {
@@ -26,13 +28,13 @@ export default function Home() {
                 description={"Experience the art of storytelling through our expert video editing. Our skilled editors craft each frame to create captivating narratives that leave a lasting impression."}
                 buttonOptions={{ label: 'Explore More', path:'video-editing-services' }}
             />
-            {/* <MaterialPage
+            <MaterialPage
                 uid={"SERVICE-IMAGE-SOFTWARE"}
-                imageOptions={{ default:true, image:  image}}
+                imageOptions={{ default:true, image:  softwareDevelopment}}
                 title={"Software Development"}
-                description={"description"}
-                buttonOptions={{ label: 'Explore More' }}
-            /> */}
+                description={"Embark on a journey of innovation with our software development expertise. Our seasoned team turns your ideas into functional solutions, employing cutting-edge technology to drive your success. Experience tailored development that meets your unique needs and propels your business forward."}
+                buttonOptions={{ label: 'Coming Soon...' }}
+            />
             <Stats uid='STATS' />
             <ImageGridBanner uid="GALLERY" />
             <About uid='ABOUT' />
