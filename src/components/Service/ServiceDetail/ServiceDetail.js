@@ -7,11 +7,13 @@ import ImageCompare from '../../Common/ImageCompare/ImageCompare';
 import Tablet from '../../Common/Tablet/Tablet';
 
 import './styles.scss'
+import MaterialTitleAction from '../../Common/MaterialTitleAction/MaterialTitleAction';
+import { scrollToId } from '../../Common/helper';
 
 export default function ServiceDetail() {
     const { id: pageName } = useParams();
     const pageData = services.filter((service) => service.path === pageName)[0];
-  
+
 
     {/* <ThemerObserver uid="SERVICE-DETAILS-IMAGE1"/> */ }
     return (
@@ -29,6 +31,13 @@ export default function ServiceDetail() {
                 </div>
                 {/* <Image img={pageData?.additionalData?.images[1]} /> */}
                 {/* capcule adobe xdd */}
+                <MaterialTitleAction
+                    title="Time to work on your project, now."
+                    action={{ label: 'CONTACT US', onClick: ()=>{
+                        scrollToId('FOOTER')
+                        console.log("hhuuiuoiuj")
+                    }}}
+                />
                 <div className="images section" id="SERVICE-DETAILS-TABLET">
                     <Tablet title={pageData.title} height={400} width={800} child={
                         <ImageCompare imageBeforeOverview={pageData.imageBeforeOverview} imageAfterOverview={pageData.imageAfterOverview} disablecompare={false} />
