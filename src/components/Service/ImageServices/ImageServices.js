@@ -4,7 +4,7 @@ import { servicesConfig } from "../../Common/Themer/config/pageConfig";
 import ImageCompare from "../../Common/ImageCompare/ImageCompare";
 import MaterialPage from "../../Common/MaterialPage/MaterialPage";
 import Spacer from "../../Common/Spacer/Spacer";
-import ServiceOverview from "../ServiceOverview/ServiceOverview";
+import MaterialPageData from "../../Common/MaterialPageData/MaterialPageData";
 
 import './styles.scss';
 
@@ -14,7 +14,13 @@ export default function ImageServices() {
     return (
         <div className="services-page themer">
             <Spacer className="spacer" />
-            <ServiceOverview uid='SERVICE-OVERVIEW' />
+            <MaterialPageData
+                uid='SERVICE-OVERVIEW'
+                data={services}
+                heading="Services"
+                paragraph="Graphicnix boasts over 10,000 accomplished projects, accompanied by the esteemed recognition of winning the German Editing Award for our exceptional editing. Partnering with us means collaborating with a dedicated team of professionals who are passionate about driving your success."
+                dataHeading="Image Editing"
+            />
             {services.map((data, index) => {
                 const { title, description, imageBeforeOverview, imageAfterOverview } = data;
                 const id = serviceIds[index]

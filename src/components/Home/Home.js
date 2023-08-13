@@ -1,5 +1,5 @@
 import Banner from './Banner';
-import ServiceOverview from '../Service/ServiceOverview/ServiceOverview';
+import ServiceOverview from '../Common/MaterialPageData/MaterialPageData';
 import ImageGridBanner from '../Common/ImageGridBanner/ImageGridBanner';
 import About from '../About/About';
 
