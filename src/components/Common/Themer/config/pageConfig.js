@@ -147,10 +147,26 @@ export const serviceDetailsConfig = {
             backgroundColor: '#F0F0F0'
         }
     },
-    renderAndFloorPlan: {
+    'item-removal': {
         ...commonConfig,
         'SERVICE-DETAILS-SECTION': {
             ...theme.themeGray,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-CONTENT': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+        },
+        'SERVICE-DETAILS-TABLET': {
+            ...theme.themeLight,
+            pageName: "DETAILS-SECTION",
+            backgroundColor: '#F0F0F0'
+        }
+    },
+    'reners-and-floor-plan': {
+        ...commonConfig,
+        'SERVICE-DETAILS-SECTION': {
+            ...theme.themeLight,
             pageName: "DETAILS-SECTION",
         },
         'SERVICE-DETAILS-CONTENT': {
