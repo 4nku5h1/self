@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer.js';
 import { BrowserRouter } from 'react-router-dom';
 import NavBar from './components/Navbar/NavBar.js';
 import ScrollToTop from './components/Common/ScrollToTop/ScrollToTop.js';
+import LoadingBar from './components/Common/LoadingBar/LoadingBar.js';
 
 function App() {
   const appContext = useAppContext();
@@ -23,6 +24,7 @@ function App() {
       <Galaxy />
       <BrowserRouter>
       <Themer changePageStateFunction={changePageConfig} />
+        <LoadingBar />
         <ScrollToTop />
         <NavBar />
         <MainComponent />

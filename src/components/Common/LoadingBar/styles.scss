@@ -1,0 +1,18 @@
+.loading-bar {
+    position: fixed;
+    overflow-x: hidden;
+    bottom: 0;
+    height: 10px;
+    width: 100vw;
+
+    .loader {
+        // #ebd4a0
+        // #a72822
+        background-color: #ebd4a0;
+    }
+}
+
+.hidden.hidden {
+    display: none;
+    overflow-y: hidden;
+}

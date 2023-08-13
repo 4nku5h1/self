@@ -4,7 +4,7 @@ import { scrollToId } from '../helper';
 import AnimatedItems from '../Motion/AnimatedItems';
 import './styles.scss'
 
-export default function MaterialPageData({ uid, heading, paragraph, dataHeading, data = [], }) {
+export default function MaterialPageData({ uid, heading, paragraph, dataHeading, data = [], action = { label: '', path: null, onClick: () => { } } }) {
     const Item = (item, index) => {
         return (
             <div onClick={() => {
@@ -24,9 +24,12 @@ export default function MaterialPageData({ uid, heading, paragraph, dataHeading,
                 <p className='paragraph'>{paragraph}</p>
                 <h5 className='small-capital-heading'>{dataHeading}</h5>
                 <AnimatedItems className="service-card" animate={true} data={data} child={Item} />
-                <Link to="/services">
-                    <Button label="CONTACT US" />
+                <Link to={action?.path}>
+                    <Button label={action.label} onClick={action?.onClick} />
                 </Link>
+
+
+
             </div>
         </div>
     )
