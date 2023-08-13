@@ -1,0 +1,13 @@
+.services-page {
+    .spacer {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .services-page {
+        .spacer {
+            height: 120px;
+        }
+    }
+}

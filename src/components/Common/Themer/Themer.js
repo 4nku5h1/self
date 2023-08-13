@@ -11,7 +11,9 @@ export default function Themer({ changePageStateFunction }) {
         switch (url) {
             case '/': startThemer(homeConfig)
                 break;
-            case '/image-services': startThemer(servicesConfig)
+            case '/image-editing-services': startThemer(servicesConfig)
+                break;
+            case '/video-editing-services': startThemer(servicesConfig)
                 break;
             default:
                 startThemer(serviceDetailsConfig[exactPath]);
