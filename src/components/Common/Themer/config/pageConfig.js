@@ -20,14 +20,15 @@ export const homeConfig = {
         backgroundColor: 'transparent'
     },
     'SERVICE-IMAGE-EDITING': {
-        ...theme.themeDark,
+        ...theme.themeGray,
         pageName: "SERVICES",
         id: "SERVICE-OVERVIEW",
     },
     'SERVICE-VIDEO-EDITING': {
-        ...theme.themeGray,
+        ...theme.themeLight,
         pageName: "SERVICES",
         id: "SERVICE-OVERVIEW",
+        backgroundColor:'#F0F0F0'
     },
     'STATS': {
         ...theme.themeDark,
