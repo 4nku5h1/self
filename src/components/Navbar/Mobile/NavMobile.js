@@ -7,7 +7,8 @@ import { scrollToContact, onGallaryClickHandler, scrollToHome, scrollToServices 
 
 
 import './styles.scss'
-export default function NavMobile() {
+import { scrollToId } from '../../Common/helper';
+export default function NavMobile({ actions = [] }) {
     const [menuOpen, setMenuOpen] = useState(false)
     const appContext = useAppContext();
     const shrinkIsland = !appContext.state?.pageConfig?.showFullDynamicIsland;
@@ -20,6 +21,20 @@ export default function NavMobile() {
         setTimeout(() => {
             setMenuOpen(false);
         }, 1000)
+    }
+    function NavAction(action) {
+        return (
+            <Link to={action.path}>
+                <h2 className={pageName === action.name ? 'highlight' : ''} onClick={() => {
+                    if (action?.id) {
+                        setTimeout(() => {
+                            scrollToId(action.id);
+                        }, 200)
+                    }
+                    closeMenu();
+                }}>{action.name}</h2>
+            </Link>
+        )
     }
     return (
         <div className={`dynamic-island-container ${menuOpen ? 'expand' : ''} ${shrinkIsland && !menuOpen ? 'shrink' : ''}`}>
@@ -35,25 +50,7 @@ export default function NavMobile() {
                         <span>{pageName?.toLowerCase()}</span>
                     </div>
                 </div>
-                <h2 className={pageName === 'HOME' ? 'highlight' : ''} onClick={() => {
-                    scrollToHome();
-                    closeMenu();
-                }}>Home</h2>
-                <h2 className={pageName === 'SERVICES' ? 'highlight' : ''} onClick={() => {
-                    scrollToServices();
-                    closeMenu();
-                }}>Services</h2>
-
-                <Link to="/gallary">
-                    <h2 className={pageName === 'GALLARY' ? 'highlight' : ''} onClick={() => {
-                        onGallaryClickHandler();
-                        closeMenu();
-                    }}>Gallary</h2>
-                </Link>
-                <h2 className={pageName === 'FOOTER' ? 'highlight' : ''} onClick={() => {
-                    scrollToContact();
-                    closeMenu();
-                }}>Contact</h2>
+                {actions.map((act) => <NavAction {...act} />)}
             </div>
         </div>
     )
