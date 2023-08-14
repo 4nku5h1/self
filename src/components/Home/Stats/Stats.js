@@ -1,4 +1,5 @@
 import Button from '../../Common/Button/Primary/Button';
+import { scrollToId } from '../../Common/helper';
 import './styles.scss';
 
 export default function Stats({ uid }) {
@@ -18,7 +19,7 @@ export default function Stats({ uid }) {
                 <StatsCard title={"500 +"} description={"HAPPY CLINTS"} />
                 <StatsCard title={"150 +"} description={"PROFESSIONAL EMPLOYEES"} />
             </div>
-            <Button label={'GET IN TOUCH'} />
+            <Button label={'CONTACT US'} onClick={()=>scrollToId("FOOTER")}/>
         </div>
     )
 }
