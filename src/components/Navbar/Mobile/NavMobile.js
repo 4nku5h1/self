@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppContext } from '../../Common/AppContext/AppContext'
+import { scrollToId } from '../../Common/helper';
 import logo from '../../../assets/logo/logo.svg'
 import CollapsibleCloseButton from '../../Common/Button/CollapsibleCloseButton/CollapsibleCloseButton';
-import { scrollToContact, onGallaryClickHandler, scrollToHome, scrollToServices } from '../helper';
-
 
 import './styles.scss'
-import { scrollToId } from '../../Common/helper';
+
 export default function NavMobile({ actions = [] }) {
     const [menuOpen, setMenuOpen] = useState(false)
     const appContext = useAppContext();
@@ -25,7 +24,7 @@ export default function NavMobile({ actions = [] }) {
     function NavAction(action) {
         return (
             <Link to={action.path}>
-                <h2 className={pageName === action.name ? 'highlight' : ''} onClick={() => {
+                <h2 className={pageName.toLowerCase() === action.name.toLowerCase()  ? 'highlight' : ''} onClick={() => {
                     if (action?.id) {
                         setTimeout(() => {
                             scrollToId(action.id);

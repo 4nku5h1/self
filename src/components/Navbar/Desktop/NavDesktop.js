@@ -1,5 +1,4 @@
 import React from 'react';
-import { scrollToContact, scrollToServices } from '../helper';
 
 import './styles.scss'
 import { Link } from 'react-router-dom';
