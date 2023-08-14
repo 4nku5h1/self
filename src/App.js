@@ -24,7 +24,7 @@ function App() {
       <Galaxy />
       <BrowserRouter>
       <Themer changePageStateFunction={changePageConfig} />
-        <LoadingBar />
+        {/* <LoadingBar /> */}
         <ScrollToTop />
         <NavBar />
         <MainComponent />
