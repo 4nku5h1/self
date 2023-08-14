@@ -29,17 +29,22 @@ export default function ServiceDetail() {
                         )
                     })}
                 </div>
-                {/* <Image img={pageData?.additionalData?.images[1]} /> */}
-                {/* capcule adobe xdd */}
-                <MaterialTitleAction
-                    title="Time to work on your project, now."
-                    action={{ label: 'CONTACT US', onClick: ()=>{
+            </div>
+            {/* <Image img={pageData?.additionalData?.images[1]} /> */}
+            {/* capcule adobe xdd */}
+
+            <MaterialTitleAction
+                title="Time to work on your project, now."
+                action={{
+                    label: 'CONTACT US', onClick: () => {
                         scrollToId('FOOTER')
                         console.log("hhuuiuoiuj")
-                    }}}
-                />
+                    }
+                }}
+            />
+            <div className='container'>
                 <div className="tablet-compare section" id="SERVICE-DETAILS-TABLET">
-                    <Tablet title={pageData.title}  child={
+                    <Tablet title={pageData.title} child={
                         <ImageCompare imageBeforeOverview={pageData.imageBeforeOverview} imageAfterOverview={pageData.imageAfterOverview} disablecompare={false} />
                     } />
                 </div>
