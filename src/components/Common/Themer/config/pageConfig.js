@@ -87,97 +87,127 @@ export const servicesConfig = {
 export const serviceDetailsConfig = {
     'product-editing': {
         ...commonConfig,
+        'SERVICE-DETAILS-BANNER':{
+            ...theme.themeDark,
+            pageName: "Product Editing",
+            showFullDynamicIsland: true,
+        },
         'SERVICE-DETAILS-SECTION': {
             ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
+            pageName: "Product Editing",
         },
         'SERVICE-DETAILS-CONTENT': {
             ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
+            pageName: "Product Editing",
         },
         'SERVICE-DETAILS-TABLET': {
             ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
+            pageName: "Product Editing",
             backgroundColor: '#F0F0F0'
         }
     },
     'image-enhancement': {
         ...commonConfig,
+        'SERVICE-DETAILS-BANNER':{
+            ...theme.themeDark,
+            pageName: "Image Enhancement",
+            showFullDynamicIsland: true,
+        },
         'SERVICE-DETAILS-SECTION': {
             ...theme.themeDark,
-            pageName: "DETAILS-SECTION",
+            pageName: "Image Enhancement",
         },
         'SERVICE-DETAILS-CONTENT': {
             ...theme.themeDark,
-            pageName: "DETAILS-SECTION",
+            pageName: "Image Enhancement",
         },
         'SERVICE-DETAILS-TABLET': {
             ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
+            pageName: "Image Enhancement",
             backgroundColor: '#dcd6d3',
         }
     },
     'virtual-staging': {
         ...commonConfig,
+        'SERVICE-DETAILS-BANNER':{
+            ...theme.themeDark,
+            pageName: "Virtual Staging",
+            showFullDynamicIsland: true,
+        },
         'SERVICE-DETAILS-SECTION': {
             ...theme.themeGray,
-            pageName: "DETAILS-SECTION",
+            pageName: "Virtual Staging",
         },
         'SERVICE-DETAILS-CONTENT': {
             ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
+            pageName: "Virtual Staging",
         },
         'SERVICE-DETAILS-TABLET': {
             ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
+            pageName: "Virtual Staging",
             backgroundColor: '#F0F0F0'
         }
     },
     'day-to-dusk': {
         ...commonConfig,
+        'SERVICE-DETAILS-BANNER':{
+            ...theme.themeGray,
+            pageName: "Day to Dusk",
+            showFullDynamicIsland: true,
+        },
         'SERVICE-DETAILS-SECTION': {
             ...theme.themeGray,
-            pageName: "DETAILS-SECTION",
+            pageName: "Day to Dusk",
         },
         'SERVICE-DETAILS-CONTENT': {
             ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
+            pageName: "Day to Dusk",
         },
         'SERVICE-DETAILS-TABLET': {
             ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
+            pageName: "Day to Dusk",
             backgroundColor: '#F0F0F0'
         }
     },
     'item-removal': {
         ...commonConfig,
+        'SERVICE-DETAILS-BANNER':{
+            ...theme.themeGray,
+            pageName: "Item Removal",
+            showFullDynamicIsland: true,
+        },
         'SERVICE-DETAILS-SECTION': {
             ...theme.themeGray,
-            pageName: "DETAILS-SECTION",
+            pageName: "Item Removal",
         },
         'SERVICE-DETAILS-CONTENT': {
-            ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
+            ...theme.themeGray,
+            pageName: "Item Removal",
         },
         'SERVICE-DETAILS-TABLET': {
             ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
+            pageName: "Item Removal",
             backgroundColor: '#F0F0F0'
         }
     },
     'reners-and-floor-plan': {
         ...commonConfig,
+        'SERVICE-DETAILS-BANNER':{
+            ...theme.themeLight,
+            pageName: "Renders",
+            showFullDynamicIsland: true,
+        },
         'SERVICE-DETAILS-SECTION': {
             ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
+            pageName: "Renders",
         },
         'SERVICE-DETAILS-CONTENT': {
             ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
+            pageName: "Renders",
         },
         'SERVICE-DETAILS-TABLET': {
             ...theme.themeLight,
-            pageName: "DETAILS-SECTION",
+            pageName: "Renders",
             backgroundColor: '#F0F0F0'
         }
     }

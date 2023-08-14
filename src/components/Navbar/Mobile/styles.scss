@@ -31,6 +31,13 @@ $transition : all 0.7s;
             border-radius: 50%;
         }
 
+        .pageName {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: calc(100% - $panel-height*2);
+        }
+
         .btn {
             z-index: 3;
             transition: $transition;
@@ -75,7 +82,8 @@ $transition : all 0.7s;
                 }
 
                 span {
-                    margin-left: calc($panel-width/2);
+                    // calc($panel-height * 3);
+                    // margin-left: calc($panel-width/2 + calc(-200px/2));
                     text-transform: capitalize;
                     color: #E3E3E3;
                 }
@@ -85,11 +93,13 @@ $transition : all 0.7s;
             }
 
             .top-bar.shrink {
+
                 // opacity: 0;
                 // left: $panel-width;
-                *{
+                * {
                     display: none;
                 }
+
                 width: 0;
             }
         }

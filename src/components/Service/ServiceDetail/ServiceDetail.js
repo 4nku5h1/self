@@ -18,7 +18,7 @@ export default function ServiceDetail() {
     {/* <ThemerObserver uid="SERVICE-DETAILS-IMAGE1"/> */ }
     return (
         <div className='service-details themer' id={'SERVICE-DETAIL'}>
-            <img className="banner" src={pageData.additionalData?.banner} />
+            <img id="SERVICE-DETAILS-BANNER" className="banner" src={pageData.additionalData?.banner} />
             <div className='container'>
                 <DetailsSection uid="SERVICE-DETAILS-SECTION" heading={pageData.title} paragraph={pageData.additionalData?.types?.description} items={pageData.additionalData?.types?.list} />
                 <Image img={pageData?.additionalData?.images[0]} />

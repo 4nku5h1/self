@@ -45,7 +45,7 @@ export default function NavMobile({ actions = [] }) {
                     <div className="item">
                         <img src={logo} />
                     </div>
-                    <div className="item">
+                    <div className="pageName">
                         <span>{pageName?.toLowerCase()}</span>
                     </div>
                 </div>
