@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router-dom";
+
 import Home from './Home/Home';
 import ImageServices from "./Service/ImageServices/ImageServices";
+import VideoServices from "./Service/VideoServices/VideoServices";
 import ServiceDetail from "./Service/ServiceDetail/ServiceDetail";
 
 import '../css/styles.scss'
-import VideoServices from "./Service/VideoServices/VideoServices";
 
 export default function MainComponent() {
 

@@ -24,7 +24,7 @@ export default function NavMobile({ actions = [] }) {
     function NavAction(action) {
         return (
             <Link to={action.path}>
-                <h2 className={pageName.toLowerCase() === action.name.toLowerCase()  ? 'highlight' : ''} onClick={() => {
+                <h2 className={pageName?.toLowerCase() === action?.name?.toLowerCase()  ? 'highlight' : ''} onClick={() => {
                     if (action?.id) {
                         setTimeout(() => {
                             scrollToId(action.id);
