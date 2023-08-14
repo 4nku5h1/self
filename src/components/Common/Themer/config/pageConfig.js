@@ -4,7 +4,7 @@ import theme from "../theme/themes"
 const commonConfig = {
     'FOOTER': {
         ...theme.themeDark,
-        pageName: "FOOTER",
+        pageName: "CONTACT",
         showFullDynamicIsland: true,
         backgroundColor: 'transparent'
     },
