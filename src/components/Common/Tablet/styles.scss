@@ -41,3 +41,42 @@
 
     }
 }
+
+@media only screen and (max-width:480px){
+    .tablet-container {
+        p {
+            font-size: 26px;
+            width: 100%;
+            letter-spacing: -0.09px;
+            line-height: 38px;
+        }
+    
+        .tablet {
+            background-color: #111111;
+    
+            .tablet-home-bar {
+                $homebarSize: 150px;
+                width: $homebarSize;
+                height: 4px;
+                position: absolute;
+                bottom: 15px;
+                left: calc(50% - $homebarSize/2);
+                border-radius: 15px;
+                background-color: #ffffff;
+                z-index: 100;
+                border: 1px solid rgb(182, 182, 182);
+            }
+    
+            .tablet-child {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                img {
+                    border-radius: 5px;
+                }
+            }
+    
+        }
+    }
+}

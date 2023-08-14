@@ -20,53 +20,90 @@
             align-self: center;
             width: 75%;
             margin: 15% 0;
-
-            h3 {
-                font-size: 44px;
-                color: var(--themer-heading);
-                margin-bottom: 28px;
-            }
-
         }
 
         .content-hp {
-            p{
-                
+            p {
                 margin-bottom: 64px;
             }
         }
 
-        .process {
-            >* {
-                margin-bottom: 28px;
-            }
+        .tablet-compare {
+            $tablet-width: 800px;
+            $tablet-height: 400px;
 
-            .process-items {
-                text-transform: uppercase;
-                margin-bottom: 15px;
-                width: 30%;
-                color: var(--themer-content);
-            }
-
-            p {
-                font-size: 44px;
-            }
-        }
-
-        .images {
             img {
-                height: 400px;
-                width: 800px;
+                height: $tablet-height;
+                width: $tablet-width;
             }
+
+            .tablet {
+                height: calc($tablet-height + 25px);
+                width: calc($tablet-width + 25px);
+            }
+
             margin-bottom: 20%;
         }
-        .image{
+
+        .image {
             padding-top: 20%;
             padding-bottom: 20%;
-            img{
+
+            img {
                 height: 400px;
                 width: 600px;
             }
         }
     }
+}
+
+@media only screen and (max-width:480px) {
+    .service-details {
+
+        .banner {
+            height: 580px;
+        }
+
+        .container {
+            .section {
+                width: 100%;
+            }
+
+            .content-hp {
+                p {
+                    font-size: 21px;
+                    margin-bottom: 64px;
+                }
+            }
+
+            .tablet-compare {
+                $tablet-width: 80vw;
+                $tablet-height: 300px;
+
+                img {
+                    height: $tablet-height;
+                    width: $tablet-width;
+                }
+
+                .tablet {
+                    height: calc($tablet-height + 25px);
+                    width: calc($tablet-width + 25px);
+                }
+
+                margin-bottom: 20%;
+            }
+
+            .image {
+                padding-top: 20%;
+                padding-bottom: 20%;
+
+                img {
+                    object-fit: scale-down;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
 }

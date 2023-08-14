@@ -38,8 +38,8 @@ export default function ServiceDetail() {
                         console.log("hhuuiuoiuj")
                     }}}
                 />
-                <div className="images section" id="SERVICE-DETAILS-TABLET">
-                    <Tablet title={pageData.title} height={400} width={800} child={
+                <div className="tablet-compare section" id="SERVICE-DETAILS-TABLET">
+                    <Tablet title={pageData.title}  child={
                         <ImageCompare imageBeforeOverview={pageData.imageBeforeOverview} imageAfterOverview={pageData.imageAfterOverview} disablecompare={false} />
                     } />
                 </div>

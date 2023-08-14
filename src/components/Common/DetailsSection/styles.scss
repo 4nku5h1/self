@@ -3,11 +3,12 @@
     width: 75%;
     margin: 15% 0;
 
-    h2{
+    h2 {
         font-size: 44px;
         color: var(--themer-heading);
         margin-bottom: 34px;
     }
+
     p {
         font-size: 28px;
         line-height: 37px;
@@ -19,13 +20,42 @@
         margin-bottom: 15px;
         width: 30%;
         color: var(--themer-content);
-        span{
+
+        span {
             font-size: 9px;
             color: var(--themer-content);
         }
-        span:hover{
+
+        span:hover {
             color: var(--themer-accent);
         }
     }
 
+}
+
+@media only screen and (max-width:480px) {
+    .details-section {
+        width: 100%;
+        margin: 30% 0;
+        h2 {
+            font-size: 30px;
+            margin-bottom: 34px;
+        }
+        p {
+            font-size: 21px;
+            line-height: 28px;
+        }
+
+        .items {
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            width: 45%;
+            color: var(--themer-content);
+
+            span {
+                
+            }
+        }
+
+    }
 }
