@@ -4,7 +4,10 @@ import './styles.scss'
 export default function DetailsSection({ uid, heading, paragraph, items }) {
     const Item = (item) => {
         return (
-            <span className='small-capital-heading'>{item}</span>
+            <div className="item-inner">
+                <div className="bullet"/>
+                <span className='small-capital-heading'>{item}</span>
+            </div>
         )
     }
     return (

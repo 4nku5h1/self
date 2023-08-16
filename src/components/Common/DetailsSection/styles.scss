@@ -37,10 +37,12 @@
     .details-section {
         width: 100%;
         margin: 30% 0;
+
         h2 {
             font-size: 30px;
             margin-bottom: 34px;
         }
+
         p {
             font-size: 21px;
             line-height: 28px;
@@ -48,12 +50,27 @@
 
         .items {
             text-transform: uppercase;
-            margin-bottom: 15px;
-            width: 45%;
+            margin-bottom: 20px;
+            width: 100%;
             color: var(--themer-content);
 
+            .item-inner {
+                display: flex;
+            }
+
+            .bullet {
+                align-self: center;
+                $bullet-size: 10px;
+                width: $bullet-size;
+                height: $bullet-size;
+                margin-right: 20px;
+                background-color: var(--themer-heading);
+            }
+
             span {
-                
+                width: 100%;
+                font-size: 12px;
+
             }
         }
 
