@@ -1,5 +1,3 @@
-import backg from '../../assets/parallax/b3.webp'
-
 export default function Banner({ uid }) {
     return (
         <div className='home page' id={uid}>
@@ -9,9 +7,10 @@ export default function Banner({ uid }) {
                 <h2>into your visuals for an </h2>
                 <h2>ever-evolving world.</h2>
             </div>
-            <div className='banner'>
+            
+            {/* <div className='banner'>
                 <img src={backg} />
-            </div>
+            </div> */}
         </div>
 
     )

@@ -35,7 +35,6 @@ export default function Home() {
                 description={"Embark on a journey of innovation with our software development expertise. Our seasoned team turns your ideas into functional solutions, employing cutting-edge technology to drive your success. Experience tailored development that meets your unique needs and propels your business forward."}
                 buttonOptions={{ label: 'Coming Soon...' }}
             />
-            <Stats uid='STATS' />
             <ImageGridBanner uid="GALLERY" />
             <About uid='ABOUT' />
         </>

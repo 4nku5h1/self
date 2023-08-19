@@ -28,12 +28,7 @@ export const homeConfig = {
         ...theme.themeLight,
         pageName: "SERVICES",
         id: "SERVICE-OVERVIEW",
-        backgroundColor:'#F0F0F0'
-    },
-    'STATS': {
-        ...theme.themeDark,
-        pageName: "SERVICES",
-        id: "SERVICE-OVERVIEW",
+        backgroundColor: '#F0F0F0'
     },
     'GALLERY': {
         ...theme.themeDark,
@@ -56,7 +51,7 @@ export const servicesConfig = {
     'SERVICE-1': {
         ...theme.themeLight,
         pageName: "SERVICES",
-        backgroundColor:'#F0F0F0'
+        backgroundColor: '#F0F0F0'
     },
     'SERVICE-2': {
         ...theme.themeGray,
@@ -87,7 +82,7 @@ export const servicesConfig = {
 export const serviceDetailsConfig = {
     'product-editing': {
         ...commonConfig,
-        'SERVICE-DETAILS-BANNER':{
+        'SERVICE-DETAILS-BANNER': {
             ...theme.themeDark,
             pageName: "Product Editing",
             showFullDynamicIsland: true,
@@ -108,7 +103,7 @@ export const serviceDetailsConfig = {
     },
     'image-enhancement': {
         ...commonConfig,
-        'SERVICE-DETAILS-BANNER':{
+        'SERVICE-DETAILS-BANNER': {
             ...theme.themeDark,
             pageName: "Image Enhancement",
             showFullDynamicIsland: true,
@@ -129,7 +124,7 @@ export const serviceDetailsConfig = {
     },
     'virtual-staging': {
         ...commonConfig,
-        'SERVICE-DETAILS-BANNER':{
+        'SERVICE-DETAILS-BANNER': {
             ...theme.themeDark,
             pageName: "Virtual Staging",
             showFullDynamicIsland: true,
@@ -150,7 +145,7 @@ export const serviceDetailsConfig = {
     },
     'day-to-dusk': {
         ...commonConfig,
-        'SERVICE-DETAILS-BANNER':{
+        'SERVICE-DETAILS-BANNER': {
             ...theme.themeGray,
             pageName: "Day to Dusk",
             showFullDynamicIsland: true,
@@ -171,7 +166,7 @@ export const serviceDetailsConfig = {
     },
     'item-removal': {
         ...commonConfig,
-        'SERVICE-DETAILS-BANNER':{
+        'SERVICE-DETAILS-BANNER': {
             ...theme.themeGray,
             pageName: "Item Removal",
             showFullDynamicIsland: true,
@@ -192,7 +187,7 @@ export const serviceDetailsConfig = {
     },
     'reners-and-floor-plan': {
         ...commonConfig,
-        'SERVICE-DETAILS-BANNER':{
+        'SERVICE-DETAILS-BANNER': {
             ...theme.themeLight,
             pageName: "Renders",
             showFullDynamicIsland: true,

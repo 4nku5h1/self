@@ -2,18 +2,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .spacer{
+
+    .spacer {
         margin-bottom: 40%;
     }
+
     img {
-        margin-bottom: 20%;
+        margin-bottom: 40%;
         width: 500px;
         height: 300px;
     }
 
     $desktop-width: 75%;
 
-    h3 {
+    .about-heading {
         width: $desktop-width;
         margin-bottom: 24px;
         margin-left: -24px;
@@ -22,7 +24,7 @@
         font-weight: 500;
     }
 
-    p {
+    .about-paragraph {
         max-width: $desktop-width;
         text-align: left;
         font-size: 28px !important;
@@ -34,19 +36,20 @@
 @media only screen and (max-width:480px) {
     .content {
         img {
-            margin-bottom: 20%;
+            margin-top: 60%;
+            margin-bottom: 80%;
             width: var(--container-width-mobile);
             height: min-content;
         }
 
-        h3 {
+        .about-heading {
             margin-left: 0;
             width: 100%;
             text-align: left;
             margin-bottom: 24px;
         }
 
-        p {
+        .about-paragraph {
             max-width: 100%;
             text-align: left;
             font-size: 18px !important;

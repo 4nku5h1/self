@@ -9,6 +9,11 @@ const navigationActions = [
         name: 'Services',
         path: '/',
     },
+    {
+        id: 'ABOUT',
+        name: 'About',
+        path: '/',
+    },
     // {
     //     id: '',
     //     name: 'Gallary',
