@@ -237,7 +237,8 @@ export const services = [
             banner:renderingBanner, 
             images:[renderingImage1],
             description: [
-                'At Graphicnix, we excel in creating clean and uncluttered visual narratives through our Renders and Floor Plan Enhancement service. Our expertise lies in removing unwanted elements and refining floor plans to convey a clear and inviting representation of spaces. ',
+                'At Graphicnix, we excel in creating clean and uncluttered visual narratives through our Renders and Floor Plan Enhancement service.',
+                'Our expertise lies in removing unwanted elements and refining floor plans to convey a clear and inviting representation of spaces. ',
                 'Whether it is decluttering interior renders or optimizing architectural floor plans, we ensure your visuals tell a compelling story. Let us transform your renders and floor plans into polished masterpieces that captivate and impress.',
             ],
             types: {
