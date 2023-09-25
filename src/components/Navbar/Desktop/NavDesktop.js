@@ -21,7 +21,7 @@ export default function NavDesktop({ actions = [] }) {
     return (
         <div className='navbar' id='navbar'>
             <div className='nav-logo'>
-                <h2>GRAPHIC<span>NIX</span></h2>
+                <h2>PIXO<span>BREW</span></h2>
             </div>
             <div className='nav-items'>
                 {actions.map((act) => <NavAction {...act} />)}

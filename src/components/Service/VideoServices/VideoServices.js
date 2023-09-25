@@ -17,7 +17,7 @@ export default function VideoServices({data=videoServices}) {
                 uid='SERVICE-OVERVIEW'
                 data={data}
                 heading="Video Services"
-                paragraph="Graphicnix boasts over 10,000 accomplished projects, accompanied by the esteemed recognition of winning the German Editing Award for our exceptional editing. Partnering with us means collaborating with a dedicated team of professionals who are passionate about driving your success."
+                paragraph="Pixobrew boasts over 10,000 accomplished projects, accompanied by the esteemed recognition of winning the German Editing Award for our exceptional editing. Partnering with us means collaborating with a dedicated team of professionals who are passionate about driving your success."
                 // dataHeading="Video Editing"
                 buttonOptions={{ label: "CONTACT US", onClick: ()=>scrollToId("FOOTER") }}
             />
