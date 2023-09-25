@@ -25,7 +25,7 @@ export default function Footer() {
                             <p>New Delhi, India</p>
                         </div>
                         <div className="item">
-                            <p className="highlight link"><a href="mailto:pixobrew.studio@gmail.com?subject=Request for Editing Services&body=Hi,">pixobrew@gmail.com</a></p>
+                            <p className="highlight link"><a href="mailto:pixobrew@gmail.com?subject=Request for Editing Services&body=Hi,">pixobrew@gmail.com</a></p>
                             <p className="link"><a href="tel:+919457776161">(+91) <span className="highlight">94577 76161</span></a></p>
                         </div>
 

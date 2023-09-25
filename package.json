@@ -2,7 +2,7 @@
   "name": "pixobrew",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://pixobrew.com",
+  "homepage": "http://pixobrew.com/#",
   "dependencies": {
     "@motionone/utils": "^10.15.1",
     "@react-spring/parallax": "^9.7.2",

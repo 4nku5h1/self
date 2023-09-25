@@ -7,7 +7,7 @@ import Themer from './components/Common/Themer/Themer.js';
 import { setCursorBall } from './components/Common/CustomCursor/helper.js';
 import Galaxy from './components/Common/Galaxy/Galaxy.js';
 import Footer from './components/Footer/Footer.js';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import NavBar from './components/Navbar/NavBar.js';
 import ScrollToTop from './components/Common/ScrollToTop/ScrollToTop.js';
 import LoadingBar from './components/Common/LoadingBar/LoadingBar.js';
@@ -22,14 +22,14 @@ function App() {
     <div className="App">
       <CustomCursor />
       <Galaxy />
-      <BrowserRouter>
+      <HashRouter>
       <Themer changePageStateFunction={changePageConfig} />
         {/* <LoadingBar /> */}
         <ScrollToTop />
         <NavBar />
         <MainComponent />
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
